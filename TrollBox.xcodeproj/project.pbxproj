@@ -1,0 +1,649 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F1351718294D373A005C8DE3 /* Addon.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1351717294D373A005C8DE3 /* Addon.swift */; };
+		F135171D294D37DD005C8DE3 /* TSUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F135171C294D37DD005C8DE3 /* TSUtil.m */; };
+		F1351721294D39B9005C8DE3 /* RootHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1351720294D39B9005C8DE3 /* RootHelper.swift */; };
+		F1351724294D3A53005C8DE3 /* RemLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1351723294D3A53005C8DE3 /* RemLog.swift */; };
+		F135172E294D3AE7005C8DE3 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = F135172D294D3AE7005C8DE3 /* Person.swift */; };
+		F1351730294D3AEC005C8DE3 /* Sharing.swift in Sources */ = {isa = PBXBuildFile; fileRef = F135172F294D3AEC005C8DE3 /* Sharing.swift */; };
+		F1351732294D3AEE005C8DE3 /* TrollController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1351731294D3AEE005C8DE3 /* TrollController.swift */; };
+		F1351734294D3B2F005C8DE3 /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1351733294D3B2F005C8DE3 /* ImagePickerView.swift */; };
+		F1351736294D3B92005C8DE3 /* AirSpamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1351735294D3B92005C8DE3 /* AirSpamView.swift */; };
+		F135173A294D3C73005C8DE3 /* ToolsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1351739294D3C73005C8DE3 /* ToolsView.swift */; };
+		F135173C294D3CAB005C8DE3 /* OtherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F135173B294D3CAB005C8DE3 /* OtherView.swift */; };
+		F135173E294D3E72005C8DE3 /* Trollface.png in Resources */ = {isa = PBXBuildFile; fileRef = F135173D294D3E72005C8DE3 /* Trollface.png */; };
+		F1351742294D3F76005C8DE3 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1351741294D3F76005C8DE3 /* AboutView.swift */; };
+		F13DCCF9294D270700EBA2DF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13DCCF8294D270700EBA2DF /* ContentView.swift */; };
+		F13DCCFB294D270900EBA2DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F13DCCFA294D270900EBA2DF /* Assets.xcassets */; };
+		F13DCCFE294D270900EBA2DF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F13DCCFD294D270900EBA2DF /* Preview Assets.xcassets */; };
+		F13DCD24294D2B6000EBA2DF /* Supervise.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13DCD23294D2B6000EBA2DF /* Supervise.swift */; };
+		F1F20BA9294FC50500E9916C /* TrollBoxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F20BA8294FC50500E9916C /* TrollBoxApp.swift */; };
+		F1F20BAC294FCD9F00E9916C /* LocSimManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F20BAB294FCD9F00E9916C /* LocSimManager.swift */; };
+		F1F20BAF294FCDB900E9916C /* CarrierNameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F20BAE294FCDB900E9916C /* CarrierNameManager.swift */; };
+		F1F20BB1294FCDC100E9916C /* LocationSimulationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F20BB0294FCDC100E9916C /* LocationSimulationView.swift */; };
+		F1F20BB3294FCDD200E9916C /* CarrierNameChangerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F20BB2294FCDD200E9916C /* CarrierNameChangerView.swift */; };
+		F1F20BB5294FCEE000E9916C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1F20BB4294FCEE000E9916C /* MapKit.framework */; };
+		F1F20BB8294FCFE300E9916C /* Map in Frameworks */ = {isa = PBXBuildFile; productRef = F1F20BB7294FCFE300E9916C /* Map */; };
+		F1F20BBA294FD3D100E9916C /* RingtoneVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F20BB9294FD3D100E9916C /* RingtoneVIew.swift */; };
+		F1F20BC0294FD45400E9916C /* WallpaperGetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F20BBF294FD45300E9916C /* WallpaperGetter.swift */; };
+		F1F20BC3294FD4DC00E9916C /* ZIPFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = F1F20BC2294FD4DB00E9916C /* ZIPFoundation */; };
+		F1F20BC5294FD69300E9916C /* GesturesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F20BC4294FD69300E9916C /* GesturesView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F1351717294D373A005C8DE3 /* Addon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Addon.swift; sourceTree = "<group>"; };
+		F1351719294D3799005C8DE3 /* RemoteLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RemoteLog.h; sourceTree = "<group>"; };
+		F135171C294D37DD005C8DE3 /* TSUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSUtil.m; sourceTree = "<group>"; };
+		F135171E294D37EE005C8DE3 /* TSUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSUtil.h; sourceTree = "<group>"; };
+		F135171F294D37F4005C8DE3 /* CoreServices.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreServices.h; sourceTree = "<group>"; };
+		F1351720294D39B9005C8DE3 /* RootHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootHelper.swift; sourceTree = "<group>"; };
+		F1351723294D3A53005C8DE3 /* RemLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemLog.swift; sourceTree = "<group>"; };
+		F135172D294D3AE7005C8DE3 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		F135172F294D3AEC005C8DE3 /* Sharing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sharing.swift; sourceTree = "<group>"; };
+		F1351731294D3AEE005C8DE3 /* TrollController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrollController.swift; sourceTree = "<group>"; };
+		F1351733294D3B2F005C8DE3 /* ImagePickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
+		F1351735294D3B92005C8DE3 /* AirSpamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirSpamView.swift; sourceTree = "<group>"; };
+		F1351739294D3C73005C8DE3 /* ToolsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolsView.swift; sourceTree = "<group>"; };
+		F135173B294D3CAB005C8DE3 /* OtherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherView.swift; sourceTree = "<group>"; };
+		F135173D294D3E72005C8DE3 /* Trollface.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Trollface.png; sourceTree = "<group>"; };
+		F1351741294D3F76005C8DE3 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		F13DCCF3294D270700EBA2DF /* TrollBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrollBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F13DCCF8294D270700EBA2DF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F13DCCFA294D270900EBA2DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F13DCCFD294D270900EBA2DF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F13DCD23294D2B6000EBA2DF /* Supervise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Supervise.swift; sourceTree = "<group>"; };
+		F1F20BA7294FC50500E9916C /* TrollBox-bringing-header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TrollBox-bringing-header.h"; sourceTree = "<group>"; };
+		F1F20BA8294FC50500E9916C /* TrollBoxApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrollBoxApp.swift; sourceTree = "<group>"; };
+		F1F20BAA294FCD9200E9916C /* LocSimPrivateHeaders.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LocSimPrivateHeaders.h; path = "../../../../../../../Downloads/TrollTools-main/TrollTools/Private APIs/LocSim/LocSimPrivateHeaders.h"; sourceTree = "<group>"; };
+		F1F20BAB294FCD9F00E9916C /* LocSimManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocSimManager.swift; sourceTree = "<group>"; };
+		F1F20BAD294FCDAA00E9916C /* LocSimPrivateHeaders.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocSimPrivateHeaders.h; sourceTree = "<group>"; };
+		F1F20BAE294FCDB900E9916C /* CarrierNameManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarrierNameManager.swift; sourceTree = "<group>"; };
+		F1F20BB0294FCDC100E9916C /* LocationSimulationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationSimulationView.swift; sourceTree = "<group>"; };
+		F1F20BB2294FCDD200E9916C /* CarrierNameChangerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarrierNameChangerView.swift; sourceTree = "<group>"; };
+		F1F20BB4294FCEE000E9916C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		F1F20BB9294FD3D100E9916C /* RingtoneVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingtoneVIew.swift; sourceTree = "<group>"; };
+		F1F20BBF294FD45300E9916C /* WallpaperGetter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WallpaperGetter.swift; sourceTree = "<group>"; };
+		F1F20BC4294FD69300E9916C /* GesturesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GesturesView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F13DCCF0294D270700EBA2DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1F20BB5294FCEE000E9916C /* MapKit.framework in Frameworks */,
+				F1F20BB8294FCFE300E9916C /* Map in Frameworks */,
+				F1F20BC3294FD4DC00E9916C /* ZIPFoundation in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F1351722294D3A1E005C8DE3 /* CarrierChanger */ = {
+			isa = PBXGroup;
+			children = (
+				F1F20BB2294FCDD200E9916C /* CarrierNameChangerView.swift */,
+				F1F20BAE294FCDB900E9916C /* CarrierNameManager.swift */,
+			);
+			path = CarrierChanger;
+			sourceTree = "<group>";
+		};
+		F13DCCEA294D270700EBA2DF = {
+			isa = PBXGroup;
+			children = (
+				F13DCCF5294D270700EBA2DF /* TrollBox */,
+				F13DCCF4294D270700EBA2DF /* Products */,
+				F13DCD29294D335900EBA2DF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F13DCCF4294D270700EBA2DF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F13DCCF3294D270700EBA2DF /* TrollBox.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F13DCCF5294D270700EBA2DF /* TrollBox */ = {
+			isa = PBXGroup;
+			children = (
+				F1F20BA7294FC50500E9916C /* TrollBox-bringing-header.h */,
+				F1F20BA8294FC50500E9916C /* TrollBoxApp.swift */,
+				F13DCD15294D28E200EBA2DF /* Tools */,
+				F13DCD14294D28DA00EBA2DF /* Libs */,
+				F13DCCF8294D270700EBA2DF /* ContentView.swift */,
+				F1351741294D3F76005C8DE3 /* AboutView.swift */,
+				F13DCCFA294D270900EBA2DF /* Assets.xcassets */,
+				F13DCCFC294D270900EBA2DF /* Preview Content */,
+			);
+			path = TrollBox;
+			sourceTree = "<group>";
+		};
+		F13DCCFC294D270900EBA2DF /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F13DCCFD294D270900EBA2DF /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F13DCD05294D273800EBA2DF /* IconTheming */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = IconTheming;
+			sourceTree = "<group>";
+		};
+		F13DCD06294D275F00EBA2DF /* LocationSimulator */ = {
+			isa = PBXGroup;
+			children = (
+				F1F20BB0294FCDC100E9916C /* LocationSimulationView.swift */,
+				F1F20BAB294FCD9F00E9916C /* LocSimManager.swift */,
+				F1F20BAD294FCDAA00E9916C /* LocSimPrivateHeaders.h */,
+				F1F20BAA294FCD9200E9916C /* LocSimPrivateHeaders.h */,
+			);
+			path = LocationSimulator;
+			sourceTree = "<group>";
+		};
+		F13DCD07294D277900EBA2DF /* PasscodeTheming */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PasscodeTheming;
+			sourceTree = "<group>";
+		};
+		F13DCD08294D279000EBA2DF /* HomeScreenLayoutEditing */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = HomeScreenLayoutEditing;
+			sourceTree = "<group>";
+		};
+		F13DCD09294D27AE00EBA2DF /* RingtoneManager */ = {
+			isa = PBXGroup;
+			children = (
+				F1F20BB9294FD3D100E9916C /* RingtoneVIew.swift */,
+			);
+			path = RingtoneManager;
+			sourceTree = "<group>";
+		};
+		F13DCD0A294D27C300EBA2DF /* AirSpam */ = {
+			isa = PBXGroup;
+			children = (
+				F135173D294D3E72005C8DE3 /* Trollface.png */,
+				F1351735294D3B92005C8DE3 /* AirSpamView.swift */,
+				F135172D294D3AE7005C8DE3 /* Person.swift */,
+				F135172F294D3AEC005C8DE3 /* Sharing.swift */,
+				F1351731294D3AEE005C8DE3 /* TrollController.swift */,
+			);
+			path = AirSpam;
+			sourceTree = "<group>";
+		};
+		F13DCD0B294D27DF00EBA2DF /* SystemInfo */ = {
+			isa = PBXGroup;
+			children = (
+				F13DCD0C294D27E800EBA2DF /* Battery */,
+			);
+			path = SystemInfo;
+			sourceTree = "<group>";
+		};
+		F13DCD0C294D27E800EBA2DF /* Battery */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Battery;
+			sourceTree = "<group>";
+		};
+		F13DCD0D294D280600EBA2DF /* WalletEditor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = WalletEditor;
+			sourceTree = "<group>";
+		};
+		F13DCD0E294D282A00EBA2DF /* CrashLogger */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CrashLogger;
+			sourceTree = "<group>";
+		};
+		F13DCD0F294D287700EBA2DF /* Downgrade */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Downgrade;
+			sourceTree = "<group>";
+		};
+		F13DCD10294D288200EBA2DF /* NetworkMngr */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NetworkMngr;
+			sourceTree = "<group>";
+		};
+		F13DCD11294D289B00EBA2DF /* NonceSetter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NonceSetter;
+			sourceTree = "<group>";
+		};
+		F13DCD12294D28A900EBA2DF /* OtherTools */ = {
+			isa = PBXGroup;
+			children = (
+				F13DCD23294D2B6000EBA2DF /* Supervise.swift */,
+				F135173B294D3CAB005C8DE3 /* OtherView.swift */,
+				F1F20BC4294FD69300E9916C /* GesturesView.swift */,
+			);
+			path = OtherTools;
+			sourceTree = "<group>";
+		};
+		F13DCD14294D28DA00EBA2DF /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				F1351733294D3B2F005C8DE3 /* ImagePickerView.swift */,
+				F135171C294D37DD005C8DE3 /* TSUtil.m */,
+				F1F20BBF294FD45300E9916C /* WallpaperGetter.swift */,
+				F135171E294D37EE005C8DE3 /* TSUtil.h */,
+				F135171F294D37F4005C8DE3 /* CoreServices.h */,
+				F1351717294D373A005C8DE3 /* Addon.swift */,
+				F1351719294D3799005C8DE3 /* RemoteLog.h */,
+				F1351720294D39B9005C8DE3 /* RootHelper.swift */,
+				F1351723294D3A53005C8DE3 /* RemLog.swift */,
+			);
+			path = Libs;
+			sourceTree = "<group>";
+		};
+		F13DCD15294D28E200EBA2DF /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				F1351722294D3A1E005C8DE3 /* CarrierChanger */,
+				F13DCD0E294D282A00EBA2DF /* CrashLogger */,
+				F13DCD05294D273800EBA2DF /* IconTheming */,
+				F13DCD06294D275F00EBA2DF /* LocationSimulator */,
+				F13DCD07294D277900EBA2DF /* PasscodeTheming */,
+				F13DCD08294D279000EBA2DF /* HomeScreenLayoutEditing */,
+				F13DCD09294D27AE00EBA2DF /* RingtoneManager */,
+				F13DCD0A294D27C300EBA2DF /* AirSpam */,
+				F13DCD0F294D287700EBA2DF /* Downgrade */,
+				F13DCD10294D288200EBA2DF /* NetworkMngr */,
+				F13DCD0B294D27DF00EBA2DF /* SystemInfo */,
+				F13DCD11294D289B00EBA2DF /* NonceSetter */,
+				F13DCD0D294D280600EBA2DF /* WalletEditor */,
+				F13DCD12294D28A900EBA2DF /* OtherTools */,
+				F1351739294D3C73005C8DE3 /* ToolsView.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		F13DCD29294D335900EBA2DF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F1F20BB4294FCEE000E9916C /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F13DCCF2294D270700EBA2DF /* TrollBox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F13DCD01294D270900EBA2DF /* Build configuration list for PBXNativeTarget "TrollBox" */;
+			buildPhases = (
+				F13DCCEF294D270700EBA2DF /* Sources */,
+				F13DCCF0294D270700EBA2DF /* Frameworks */,
+				F13DCCF1294D270700EBA2DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TrollBox;
+			packageProductDependencies = (
+				F1F20BB7294FCFE300E9916C /* Map */,
+				F1F20BC2294FD4DB00E9916C /* ZIPFoundation */,
+			);
+			productName = TSSwissKnife;
+			productReference = F13DCCF3294D270700EBA2DF /* TrollBox.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F13DCCEB294D270700EBA2DF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					F13DCCF2294D270700EBA2DF = {
+						CreatedOnToolsVersion = 14.1;
+						LastSwiftMigration = 1410;
+					};
+				};
+			};
+			buildConfigurationList = F13DCCEE294D270700EBA2DF /* Build configuration list for PBXProject "TrollBox" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F13DCCEA294D270700EBA2DF;
+			packageReferences = (
+				F1F20BB6294FCFE300E9916C /* XCRemoteSwiftPackageReference "Map" */,
+				F1F20BC1294FD4DB00E9916C /* XCRemoteSwiftPackageReference "ZIPFoundation" */,
+			);
+			productRefGroup = F13DCCF4294D270700EBA2DF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F13DCCF2294D270700EBA2DF /* TrollBox */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F13DCCF1294D270700EBA2DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F13DCCFE294D270900EBA2DF /* Preview Assets.xcassets in Resources */,
+				F135173E294D3E72005C8DE3 /* Trollface.png in Resources */,
+				F13DCCFB294D270900EBA2DF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F13DCCEF294D270700EBA2DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1F20BAC294FCD9F00E9916C /* LocSimManager.swift in Sources */,
+				F1351742294D3F76005C8DE3 /* AboutView.swift in Sources */,
+				F135172E294D3AE7005C8DE3 /* Person.swift in Sources */,
+				F1351730294D3AEC005C8DE3 /* Sharing.swift in Sources */,
+				F135173A294D3C73005C8DE3 /* ToolsView.swift in Sources */,
+				F1351718294D373A005C8DE3 /* Addon.swift in Sources */,
+				F1351721294D39B9005C8DE3 /* RootHelper.swift in Sources */,
+				F1F20BAF294FCDB900E9916C /* CarrierNameManager.swift in Sources */,
+				F135171D294D37DD005C8DE3 /* TSUtil.m in Sources */,
+				F13DCD24294D2B6000EBA2DF /* Supervise.swift in Sources */,
+				F1F20BC5294FD69300E9916C /* GesturesView.swift in Sources */,
+				F1F20BC0294FD45400E9916C /* WallpaperGetter.swift in Sources */,
+				F1351736294D3B92005C8DE3 /* AirSpamView.swift in Sources */,
+				F1351724294D3A53005C8DE3 /* RemLog.swift in Sources */,
+				F1F20BB1294FCDC100E9916C /* LocationSimulationView.swift in Sources */,
+				F1351734294D3B2F005C8DE3 /* ImagePickerView.swift in Sources */,
+				F1F20BBA294FD3D100E9916C /* RingtoneVIew.swift in Sources */,
+				F1351732294D3AEE005C8DE3 /* TrollController.swift in Sources */,
+				F13DCCF9294D270700EBA2DF /* ContentView.swift in Sources */,
+				F1F20BA9294FC50500E9916C /* TrollBoxApp.swift in Sources */,
+				F135173C294D3CAB005C8DE3 /* OtherView.swift in Sources */,
+				F1F20BB3294FCDD200E9916C /* CarrierNameChangerView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F13DCCFF294D270900EBA2DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "TSSwissKnife/TSSwissKnife-Bridging-Header.h\n";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F13DCD00294D270900EBA2DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_BRIDGING_HEADER = "TSSwissKnife/TSSwissKnife-Bridging-Header.h\n";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F13DCD02294D270900EBA2DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TrollBox/Preview Content\"";
+				DEVELOPMENT_TEAM = 7G89J82G2A;
+				ENABLE_PREVIEWS = YES;
+				GCC_PREFIX_HEADER = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = TrollBox;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = live.cclerc.trollbox;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "TrollBox/TrollBox-bringing-header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F13DCD03294D270900EBA2DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TrollBox/Preview Content\"";
+				DEVELOPMENT_TEAM = 7G89J82G2A;
+				ENABLE_PREVIEWS = YES;
+				GCC_PREFIX_HEADER = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = TrollBox;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = live.cclerc.trollbox;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "TrollBox/TrollBox-bringing-header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F13DCCEE294D270700EBA2DF /* Build configuration list for PBXProject "TrollBox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F13DCCFF294D270900EBA2DF /* Debug */,
+				F13DCD00294D270900EBA2DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F13DCD01294D270900EBA2DF /* Build configuration list for PBXNativeTarget "TrollBox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F13DCD02294D270900EBA2DF /* Debug */,
+				F13DCD03294D270900EBA2DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F1F20BB6294FCFE300E9916C /* XCRemoteSwiftPackageReference "Map" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pauljohanneskraft/Map";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.0;
+			};
+		};
+		F1F20BC1294FD4DB00E9916C /* XCRemoteSwiftPackageReference "ZIPFoundation" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/weichsel/ZIPFoundation";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.9;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F1F20BB7294FCFE300E9916C /* Map */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F1F20BB6294FCFE300E9916C /* XCRemoteSwiftPackageReference "Map" */;
+			productName = Map;
+		};
+		F1F20BC2294FD4DB00E9916C /* ZIPFoundation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F1F20BC1294FD4DB00E9916C /* XCRemoteSwiftPackageReference "ZIPFoundation" */;
+			productName = ZIPFoundation;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = F13DCCEB294D270700EBA2DF /* Project object */;
+}
