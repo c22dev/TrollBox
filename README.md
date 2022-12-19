@@ -22,7 +22,10 @@
   - Nonce setter
   - Wallet Image editor
   - and more to come!
-
+## Screenshots
+<img src='https://i.ibb.co/8jN984t/Simulator-Screen-Shot-i-Phone-TROLL-2022-12-19-at-01-04-44-iphone13midnight-portrait.png' width=200><p>0.0.1 version</p>
+   
+   
 ## Requirements
 To make this app works, you need to install [TrollStore](https://github.com/opa334/TrollStore). Regular sideloading just won't work.
 
