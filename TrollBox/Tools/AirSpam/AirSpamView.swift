@@ -33,7 +33,7 @@ struct AirSpamView: View {
                 if trollController.people.count == 0 { // No users in radius
                     VStack {
                         ProgressView()
-                        Text("Searching for devices...")
+                        Text("This TrollBox functionnality isn't working yet (still looking nearby).")
                             .foregroundColor(.secondary)
                             .padding()
                     }

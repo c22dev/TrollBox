@@ -18,7 +18,7 @@ struct ToolsView: View {
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
                                 .frame(width: 24, height: 24)
-                                .foregroundColor(.purple)
+                                .foregroundColor(.primary)
                             Text("AirSpam")
                         }
                     }
@@ -28,7 +28,7 @@ struct ToolsView: View {
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
                                 .frame(width: 24, height: 24)
-                                .foregroundColor(.purple)
+                                .foregroundColor(.primary)
                             Text("Carrier Changer")
                         }
                     }
@@ -38,7 +38,7 @@ struct ToolsView: View {
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
                                 .frame(width: 24, height: 24)
-                                .foregroundColor(.purple)
+                                .foregroundColor(.primary)
                             Text("LocSim")
                         }
                     }
@@ -48,8 +48,18 @@ struct ToolsView: View {
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
                                 .frame(width: 24, height: 24)
-                                .foregroundColor(.purple)
+                                .foregroundColor(.primary)
                             Text("Enable Gestures")
+                        }
+                    }
+                    NavigationLink(destination: WallSet()) {
+                        HStack {
+                            Image(systemName: "slider.horizontal.2.square.on.square")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 24, height: 24)
+                                .foregroundColor(.primary)
+                            Text("Wallpaper Setter")
                         }
                     }
                     NavigationLink(destination: OtherView()) {
@@ -58,7 +68,7 @@ struct ToolsView: View {
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
                                 .frame(width: 24, height: 24)
-                                .foregroundColor(.purple)
+                                .foregroundColor(.primary)
                             Text("Other minor tools")
                         }
                     }
@@ -70,7 +80,9 @@ struct ToolsView: View {
     }
 }
 
-
+extension Color {
+    static let primary = Color("AccentColor")
+}
 
 struct ToolsView_Previews: PreviewProvider {
     static var previews: some View {

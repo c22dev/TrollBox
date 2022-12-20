@@ -24,6 +24,8 @@
 		F13DCCFB294D270900EBA2DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F13DCCFA294D270900EBA2DF /* Assets.xcassets */; };
 		F13DCCFE294D270900EBA2DF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F13DCCFD294D270900EBA2DF /* Preview Assets.xcassets */; };
 		F13DCD24294D2B6000EBA2DF /* Supervise.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13DCD23294D2B6000EBA2DF /* Supervise.swift */; };
+		F1A59FB629526F6800A57361 /* WallSetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A59FB529526F6800A57361 /* WallSetView.swift */; };
+		F1A59FB929526FC700A57361 /* invoke.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A59FB829526FC700A57361 /* invoke.m */; };
 		F1F20BA9294FC50500E9916C /* TrollBoxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F20BA8294FC50500E9916C /* TrollBoxApp.swift */; };
 		F1F20BAC294FCD9F00E9916C /* LocSimManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F20BAB294FCD9F00E9916C /* LocSimManager.swift */; };
 		F1F20BAF294FCDB900E9916C /* CarrierNameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F20BAE294FCDB900E9916C /* CarrierNameManager.swift */; };
@@ -59,6 +61,9 @@
 		F13DCCFA294D270900EBA2DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F13DCCFD294D270900EBA2DF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F13DCD23294D2B6000EBA2DF /* Supervise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Supervise.swift; sourceTree = "<group>"; };
+		F1A59FB529526F6800A57361 /* WallSetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallSetView.swift; sourceTree = "<group>"; };
+		F1A59FB729526FA000A57361 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F1A59FB829526FC700A57361 /* invoke.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = invoke.m; sourceTree = "<group>"; };
 		F1F20BA7294FC50500E9916C /* TrollBox-bringing-header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TrollBox-bringing-header.h"; sourceTree = "<group>"; };
 		F1F20BA8294FC50500E9916C /* TrollBoxApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrollBoxApp.swift; sourceTree = "<group>"; };
 		F1F20BAA294FCD9200E9916C /* LocSimPrivateHeaders.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LocSimPrivateHeaders.h; path = "../../../../../../../Downloads/TrollTools-main/TrollTools/Private APIs/LocSim/LocSimPrivateHeaders.h"; sourceTree = "<group>"; };
@@ -116,6 +121,7 @@
 		F13DCCF5294D270700EBA2DF /* TrollBox */ = {
 			isa = PBXGroup;
 			children = (
+				F1A59FB729526FA000A57361 /* Info.plist */,
 				F1F20BA7294FC50500E9916C /* TrollBox-bringing-header.h */,
 				F1F20BA8294FC50500E9916C /* TrollBoxApp.swift */,
 				F13DCD15294D28E200EBA2DF /* Tools */,
@@ -267,6 +273,7 @@
 		F13DCD15294D28E200EBA2DF /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				F1A59FB429526F5300A57361 /* WallSet */,
 				F1351722294D3A1E005C8DE3 /* CarrierChanger */,
 				F13DCD0E294D282A00EBA2DF /* CrashLogger */,
 				F13DCD05294D273800EBA2DF /* IconTheming */,
@@ -292,6 +299,15 @@
 				F1F20BB4294FCEE000E9916C /* MapKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F1A59FB429526F5300A57361 /* WallSet */ = {
+			isa = PBXGroup;
+			children = (
+				F1A59FB529526F6800A57361 /* WallSetView.swift */,
+				F1A59FB829526FC700A57361 /* invoke.m */,
+			);
+			path = WallSet;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -381,6 +397,7 @@
 				F135173A294D3C73005C8DE3 /* ToolsView.swift in Sources */,
 				F1351718294D373A005C8DE3 /* Addon.swift in Sources */,
 				F1351721294D39B9005C8DE3 /* RootHelper.swift in Sources */,
+				F1A59FB929526FC700A57361 /* invoke.m in Sources */,
 				F1F20BAF294FCDB900E9916C /* CarrierNameManager.swift in Sources */,
 				F135171D294D37DD005C8DE3 /* TSUtil.m in Sources */,
 				F13DCD24294D2B6000EBA2DF /* Supervise.swift in Sources */,
@@ -390,6 +407,7 @@
 				F1351724294D3A53005C8DE3 /* RemLog.swift in Sources */,
 				F1F20BB1294FCDC100E9916C /* LocationSimulationView.swift in Sources */,
 				F1351734294D3B2F005C8DE3 /* ImagePickerView.swift in Sources */,
+				F1A59FB629526F6800A57361 /* WallSetView.swift in Sources */,
 				F1F20BBA294FD3D100E9916C /* RingtoneVIew.swift in Sources */,
 				F1351732294D3AEE005C8DE3 /* TrollController.swift in Sources */,
 				F13DCCF9294D270700EBA2DF /* ContentView.swift in Sources */,
@@ -531,6 +549,7 @@
 				ENABLE_PREVIEWS = YES;
 				GCC_PREFIX_HEADER = "";
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TrollBox/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = TrollBox;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -567,6 +586,7 @@
 				ENABLE_PREVIEWS = YES;
 				GCC_PREFIX_HEADER = "";
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TrollBox/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = TrollBox;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
