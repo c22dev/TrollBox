@@ -12,14 +12,14 @@ struct ToolsView: View {
         NavigationView {
             List {
                 Section {
-                    NavigationLink(destination: AirSpamView()) {
+                    NavigationLink(destination: PasscodeEditorView()) {
                         HStack {
-                            Image(systemName: "antenna.radiowaves.left.and.right.circle.fill")
+                            Image(systemName: "lock.ipad")
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
                                 .frame(width: 24, height: 24)
                                 .foregroundColor(.primary)
-                            Text("AirSpam")
+                            Text("Passcode Themer")
                         }
                     }
                     NavigationLink(destination: CarrierNameChangerView()) {
@@ -52,16 +52,16 @@ struct ToolsView: View {
                             Text("Enable Gestures")
                         }
                     }
-                    NavigationLink(destination: WallSet()) {
-                        HStack {
-                            Image(systemName: "slider.horizontal.2.square.on.square")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .frame(width: 24, height: 24)
-                                .foregroundColor(.primary)
-                            Text("Wallpaper Setter")
-                        }
-                    }
+//                    NavigationLink(destination: WallSet()) {
+//                        HStack {
+//                            Image(systemName: "slider.horizontal.2.square.on.square")
+//                                .resizable()
+//                                .aspectRatio(contentMode: .fit)
+//                                .frame(width: 24, height: 24)
+//                                .foregroundColor(.primary)
+//                            Text("Wallpaper Setter")
+//                        }
+//                    }
                     NavigationLink(destination: OtherView()) {
                         HStack {
                             Image(systemName: "ellipsis")

@@ -26,6 +26,8 @@
 		F13DCD24294D2B6000EBA2DF /* Supervise.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13DCD23294D2B6000EBA2DF /* Supervise.swift */; };
 		F1A59FB629526F6800A57361 /* WallSetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A59FB529526F6800A57361 /* WallSetView.swift */; };
 		F1A59FB929526FC700A57361 /* invoke.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A59FB829526FC700A57361 /* invoke.m */; };
+		F1A59FE429527A6600A57361 /* PasscodeEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A59FE329527A6600A57361 /* PasscodeEditorView.swift */; };
+		F1A59FE629527A8000A57361 /* PasscodeKeyFaceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A59FE529527A8000A57361 /* PasscodeKeyFaceManager.swift */; };
 		F1F20BA9294FC50500E9916C /* TrollBoxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F20BA8294FC50500E9916C /* TrollBoxApp.swift */; };
 		F1F20BAC294FCD9F00E9916C /* LocSimManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F20BAB294FCD9F00E9916C /* LocSimManager.swift */; };
 		F1F20BAF294FCDB900E9916C /* CarrierNameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F20BAE294FCDB900E9916C /* CarrierNameManager.swift */; };
@@ -62,8 +64,9 @@
 		F13DCCFD294D270900EBA2DF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F13DCD23294D2B6000EBA2DF /* Supervise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Supervise.swift; sourceTree = "<group>"; };
 		F1A59FB529526F6800A57361 /* WallSetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallSetView.swift; sourceTree = "<group>"; };
-		F1A59FB729526FA000A57361 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		F1A59FB829526FC700A57361 /* invoke.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = invoke.m; sourceTree = "<group>"; };
+		F1A59FE329527A6600A57361 /* PasscodeEditorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasscodeEditorView.swift; sourceTree = "<group>"; };
+		F1A59FE529527A8000A57361 /* PasscodeKeyFaceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasscodeKeyFaceManager.swift; sourceTree = "<group>"; };
 		F1F20BA7294FC50500E9916C /* TrollBox-bringing-header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TrollBox-bringing-header.h"; sourceTree = "<group>"; };
 		F1F20BA8294FC50500E9916C /* TrollBoxApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrollBoxApp.swift; sourceTree = "<group>"; };
 		F1F20BAA294FCD9200E9916C /* LocSimPrivateHeaders.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LocSimPrivateHeaders.h; path = "../../../../../../../Downloads/TrollTools-main/TrollTools/Private APIs/LocSim/LocSimPrivateHeaders.h"; sourceTree = "<group>"; };
@@ -121,7 +124,6 @@
 		F13DCCF5294D270700EBA2DF /* TrollBox */ = {
 			isa = PBXGroup;
 			children = (
-				F1A59FB729526FA000A57361 /* Info.plist */,
 				F1F20BA7294FC50500E9916C /* TrollBox-bringing-header.h */,
 				F1F20BA8294FC50500E9916C /* TrollBoxApp.swift */,
 				F13DCD15294D28E200EBA2DF /* Tools */,
@@ -142,13 +144,6 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		F13DCD05294D273800EBA2DF /* IconTheming */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = IconTheming;
-			sourceTree = "<group>";
-		};
 		F13DCD06294D275F00EBA2DF /* LocationSimulator */ = {
 			isa = PBXGroup;
 			children = (
@@ -163,6 +158,8 @@
 		F13DCD07294D277900EBA2DF /* PasscodeTheming */ = {
 			isa = PBXGroup;
 			children = (
+				F1A59FE529527A8000A57361 /* PasscodeKeyFaceManager.swift */,
+				F1A59FE329527A6600A57361 /* PasscodeEditorView.swift */,
 			);
 			path = PasscodeTheming;
 			sourceTree = "<group>";
@@ -276,7 +273,6 @@
 				F1A59FB429526F5300A57361 /* WallSet */,
 				F1351722294D3A1E005C8DE3 /* CarrierChanger */,
 				F13DCD0E294D282A00EBA2DF /* CrashLogger */,
-				F13DCD05294D273800EBA2DF /* IconTheming */,
 				F13DCD06294D275F00EBA2DF /* LocationSimulator */,
 				F13DCD07294D277900EBA2DF /* PasscodeTheming */,
 				F13DCD08294D279000EBA2DF /* HomeScreenLayoutEditing */,
@@ -362,6 +358,7 @@
 			packageReferences = (
 				F1F20BB6294FCFE300E9916C /* XCRemoteSwiftPackageReference "Map" */,
 				F1F20BC1294FD4DB00E9916C /* XCRemoteSwiftPackageReference "ZIPFoundation" */,
+				F1A59FD429527A1B00A57361 /* XCRemoteSwiftPackageReference "SantanderWrappers" */,
 			);
 			productRefGroup = F13DCCF4294D270700EBA2DF /* Products */;
 			projectDirPath = "";
@@ -410,9 +407,11 @@
 				F1A59FB629526F6800A57361 /* WallSetView.swift in Sources */,
 				F1F20BBA294FD3D100E9916C /* RingtoneVIew.swift in Sources */,
 				F1351732294D3AEE005C8DE3 /* TrollController.swift in Sources */,
+				F1A59FE629527A8000A57361 /* PasscodeKeyFaceManager.swift in Sources */,
 				F13DCCF9294D270700EBA2DF /* ContentView.swift in Sources */,
 				F1F20BA9294FC50500E9916C /* TrollBoxApp.swift in Sources */,
 				F135173C294D3CAB005C8DE3 /* OtherView.swift in Sources */,
+				F1A59FE429527A6600A57361 /* PasscodeEditorView.swift in Sources */,
 				F1F20BB3294FCDD200E9916C /* CarrierNameChangerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -552,6 +551,7 @@
 				INFOPLIST_FILE = TrollBox/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = TrollBox;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Allow the app to access photo library for choosing passcode faces.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -589,6 +589,7 @@
 				INFOPLIST_FILE = TrollBox/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = TrollBox;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Allow the app to access photo library for choosing passcode faces.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -634,6 +635,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		F1A59FD429527A1B00A57361 /* XCRemoteSwiftPackageReference "SantanderWrappers" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SerenaKit/SantanderWrappers";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 		F1F20BB6294FCFE300E9916C /* XCRemoteSwiftPackageReference "Map" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/pauljohanneskraft/Map";
