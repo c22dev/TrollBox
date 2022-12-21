@@ -32,6 +32,16 @@ struct ToolsView: View {
                             Text("Carrier Changer")
                         }
                     }
+//                    NavigationLink(destination: WallSet()) {
+//                        HStack {
+//                            Image(systemName: "wand.and.rays")
+//                                .resizable()
+//                                .aspectRatio(contentMode: .fit)
+//                                .frame(width: 24, height: 24)
+//                                .foregroundColor(.primary)
+//                            Text("Wallsetter")
+//                        }
+//                    }
                     NavigationLink(destination: LocationSimulationView()) {
                         HStack {
                             Image(systemName: "map.circle.fill")
@@ -52,16 +62,6 @@ struct ToolsView: View {
                             Text("Enable Gestures")
                         }
                     }
-//                    NavigationLink(destination: WallSet()) {
-//                        HStack {
-//                            Image(systemName: "slider.horizontal.2.square.on.square")
-//                                .resizable()
-//                                .aspectRatio(contentMode: .fit)
-//                                .frame(width: 24, height: 24)
-//                                .foregroundColor(.primary)
-//                            Text("Wallpaper Setter")
-//                        }
-//                    }
                     NavigationLink(destination: OtherView()) {
                         HStack {
                             Image(systemName: "ellipsis")

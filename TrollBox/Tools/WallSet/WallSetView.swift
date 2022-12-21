@@ -1,10 +1,3 @@
-//
-//  WallSetView.swift
-//  TrollBox
-//
-//  Created by Constantin Clerc on 20/12/2022.
-//
-
 //import SwiftUI
 //
 //struct WallSet: View {

@@ -11,11 +11,7 @@
 		F135171D294D37DD005C8DE3 /* TSUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F135171C294D37DD005C8DE3 /* TSUtil.m */; };
 		F1351721294D39B9005C8DE3 /* RootHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1351720294D39B9005C8DE3 /* RootHelper.swift */; };
 		F1351724294D3A53005C8DE3 /* RemLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1351723294D3A53005C8DE3 /* RemLog.swift */; };
-		F135172E294D3AE7005C8DE3 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = F135172D294D3AE7005C8DE3 /* Person.swift */; };
-		F1351730294D3AEC005C8DE3 /* Sharing.swift in Sources */ = {isa = PBXBuildFile; fileRef = F135172F294D3AEC005C8DE3 /* Sharing.swift */; };
-		F1351732294D3AEE005C8DE3 /* TrollController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1351731294D3AEE005C8DE3 /* TrollController.swift */; };
 		F1351734294D3B2F005C8DE3 /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1351733294D3B2F005C8DE3 /* ImagePickerView.swift */; };
-		F1351736294D3B92005C8DE3 /* AirSpamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1351735294D3B92005C8DE3 /* AirSpamView.swift */; };
 		F135173A294D3C73005C8DE3 /* ToolsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1351739294D3C73005C8DE3 /* ToolsView.swift */; };
 		F135173C294D3CAB005C8DE3 /* OtherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F135173B294D3CAB005C8DE3 /* OtherView.swift */; };
 		F135173E294D3E72005C8DE3 /* Trollface.png in Resources */ = {isa = PBXBuildFile; fileRef = F135173D294D3E72005C8DE3 /* Trollface.png */; };
@@ -24,6 +20,10 @@
 		F13DCCFB294D270900EBA2DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F13DCCFA294D270900EBA2DF /* Assets.xcassets */; };
 		F13DCCFE294D270900EBA2DF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F13DCCFD294D270900EBA2DF /* Preview Assets.xcassets */; };
 		F13DCD24294D2B6000EBA2DF /* Supervise.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13DCD23294D2B6000EBA2DF /* Supervise.swift */; };
+		F14D866829538B89008F06D2 /* Sharing.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14D866429538B80008F06D2 /* Sharing.swift */; };
+		F14D866929538B89008F06D2 /* TrollController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14D866529538B83008F06D2 /* TrollController.swift */; };
+		F14D866A29538B89008F06D2 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14D866629538B86008F06D2 /* Person.swift */; };
+		F14D866B29538B89008F06D2 /* AirSpam.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14D866729538B89008F06D2 /* AirSpam.swift */; };
 		F1A59FB629526F6800A57361 /* WallSetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A59FB529526F6800A57361 /* WallSetView.swift */; };
 		F1A59FB929526FC700A57361 /* invoke.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A59FB829526FC700A57361 /* invoke.m */; };
 		F1A59FE429527A6600A57361 /* PasscodeEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A59FE329527A6600A57361 /* PasscodeEditorView.swift */; };
@@ -49,11 +49,7 @@
 		F135171F294D37F4005C8DE3 /* CoreServices.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreServices.h; sourceTree = "<group>"; };
 		F1351720294D39B9005C8DE3 /* RootHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootHelper.swift; sourceTree = "<group>"; };
 		F1351723294D3A53005C8DE3 /* RemLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemLog.swift; sourceTree = "<group>"; };
-		F135172D294D3AE7005C8DE3 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
-		F135172F294D3AEC005C8DE3 /* Sharing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sharing.swift; sourceTree = "<group>"; };
-		F1351731294D3AEE005C8DE3 /* TrollController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrollController.swift; sourceTree = "<group>"; };
 		F1351733294D3B2F005C8DE3 /* ImagePickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
-		F1351735294D3B92005C8DE3 /* AirSpamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirSpamView.swift; sourceTree = "<group>"; };
 		F1351739294D3C73005C8DE3 /* ToolsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolsView.swift; sourceTree = "<group>"; };
 		F135173B294D3CAB005C8DE3 /* OtherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherView.swift; sourceTree = "<group>"; };
 		F135173D294D3E72005C8DE3 /* Trollface.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Trollface.png; sourceTree = "<group>"; };
@@ -63,6 +59,10 @@
 		F13DCCFA294D270900EBA2DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F13DCCFD294D270900EBA2DF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F13DCD23294D2B6000EBA2DF /* Supervise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Supervise.swift; sourceTree = "<group>"; };
+		F14D866429538B80008F06D2 /* Sharing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sharing.swift; sourceTree = "<group>"; };
+		F14D866529538B83008F06D2 /* TrollController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrollController.swift; sourceTree = "<group>"; };
+		F14D866629538B86008F06D2 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		F14D866729538B89008F06D2 /* AirSpam.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AirSpam.swift; sourceTree = "<group>"; };
 		F1A59FB529526F6800A57361 /* WallSetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallSetView.swift; sourceTree = "<group>"; };
 		F1A59FB829526FC700A57361 /* invoke.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = invoke.m; sourceTree = "<group>"; };
 		F1A59FE329527A6600A57361 /* PasscodeEditorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasscodeEditorView.swift; sourceTree = "<group>"; };
@@ -182,11 +182,11 @@
 		F13DCD0A294D27C300EBA2DF /* AirSpam */ = {
 			isa = PBXGroup;
 			children = (
+				F14D866729538B89008F06D2 /* AirSpam.swift */,
+				F14D866629538B86008F06D2 /* Person.swift */,
+				F14D866429538B80008F06D2 /* Sharing.swift */,
+				F14D866529538B83008F06D2 /* TrollController.swift */,
 				F135173D294D3E72005C8DE3 /* Trollface.png */,
-				F1351735294D3B92005C8DE3 /* AirSpamView.swift */,
-				F135172D294D3AE7005C8DE3 /* Person.swift */,
-				F135172F294D3AEC005C8DE3 /* Sharing.swift */,
-				F1351731294D3AEE005C8DE3 /* TrollController.swift */,
 			);
 			path = AirSpam;
 			sourceTree = "<group>";
@@ -387,10 +387,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F14D866A29538B89008F06D2 /* Person.swift in Sources */,
 				F1F20BAC294FCD9F00E9916C /* LocSimManager.swift in Sources */,
 				F1351742294D3F76005C8DE3 /* AboutView.swift in Sources */,
-				F135172E294D3AE7005C8DE3 /* Person.swift in Sources */,
-				F1351730294D3AEC005C8DE3 /* Sharing.swift in Sources */,
 				F135173A294D3C73005C8DE3 /* ToolsView.swift in Sources */,
 				F1351718294D373A005C8DE3 /* Addon.swift in Sources */,
 				F1351721294D39B9005C8DE3 /* RootHelper.swift in Sources */,
@@ -398,15 +397,16 @@
 				F1F20BAF294FCDB900E9916C /* CarrierNameManager.swift in Sources */,
 				F135171D294D37DD005C8DE3 /* TSUtil.m in Sources */,
 				F13DCD24294D2B6000EBA2DF /* Supervise.swift in Sources */,
+				F14D866B29538B89008F06D2 /* AirSpam.swift in Sources */,
+				F14D866929538B89008F06D2 /* TrollController.swift in Sources */,
 				F1F20BC5294FD69300E9916C /* GesturesView.swift in Sources */,
 				F1F20BC0294FD45400E9916C /* WallpaperGetter.swift in Sources */,
-				F1351736294D3B92005C8DE3 /* AirSpamView.swift in Sources */,
 				F1351724294D3A53005C8DE3 /* RemLog.swift in Sources */,
 				F1F20BB1294FCDC100E9916C /* LocationSimulationView.swift in Sources */,
 				F1351734294D3B2F005C8DE3 /* ImagePickerView.swift in Sources */,
 				F1A59FB629526F6800A57361 /* WallSetView.swift in Sources */,
 				F1F20BBA294FD3D100E9916C /* RingtoneVIew.swift in Sources */,
-				F1351732294D3AEE005C8DE3 /* TrollController.swift in Sources */,
+				F14D866829538B89008F06D2 /* Sharing.swift in Sources */,
 				F1A59FE629527A8000A57361 /* PasscodeKeyFaceManager.swift in Sources */,
 				F13DCCF9294D270700EBA2DF /* ContentView.swift in Sources */,
 				F1F20BA9294FC50500E9916C /* TrollBoxApp.swift in Sources */,
@@ -561,7 +561,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.0.3;
 				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = live.cclerc.trollbox;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -599,7 +599,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.0.3;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = live.cclerc.trollbox;
