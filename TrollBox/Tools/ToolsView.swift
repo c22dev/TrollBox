@@ -32,16 +32,16 @@ struct ToolsView: View {
                             Text("Carrier Changer")
                         }
                     }
-//                    NavigationLink(destination: WallSet()) {
-//                        HStack {
-//                            Image(systemName: "wand.and.rays")
-//                                .resizable()
-//                                .aspectRatio(contentMode: .fit)
-//                                .frame(width: 24, height: 24)
-//                                .foregroundColor(.primary)
-//                            Text("Wallsetter")
-//                        }
-//                    }
+                    NavigationLink(destination: WalSetView()) {
+                        HStack {
+                            Image(systemName: "wand.and.rays")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 24, height: 24)
+                                .foregroundColor(.primary)
+                            Text("Wallpaper Setter")
+                        }
+                    }
                     NavigationLink(destination: LocationSimulationView()) {
                         HStack {
                             Image(systemName: "map.circle.fill")

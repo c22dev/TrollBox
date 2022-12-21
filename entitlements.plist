@@ -48,8 +48,6 @@
 	<true/>
 	<key>com.apple.managedconfiguration.profiled-access</key>
 	<true/>
-	<key>platform-application</key>
-	<true/>
 	<key>com.apple.wifi.manager-access</key>
 	<true/>
 	<key>com.apple.private.corewifi.internal</key>
@@ -83,8 +81,6 @@
 	<true/>
 	<key>com.apple.private.security.no-sandbox</key>
 	<true/>
-	<key>com.apple.private.security.container-manager</key>
-	<true/>
 	<key>com.apple.security.iokit-user-client-class</key>
 	<array>
 		<string>AGXDeviceUserClient</string>
@@ -97,5 +93,9 @@
 	<true/>
 	<key>com.apple.managedconfiguration.profiled-access</key>
 	<true/>
+	<key>com.apple.springboard.wallpaper-access</key>
+	<true/>
+	<key>com.apple.security.app-sandbox</key>
+	<false/>
 </dict>
 </plist>

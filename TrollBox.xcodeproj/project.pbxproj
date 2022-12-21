@@ -24,6 +24,7 @@
 		F14D866929538B89008F06D2 /* TrollController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14D866529538B83008F06D2 /* TrollController.swift */; };
 		F14D866A29538B89008F06D2 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14D866629538B86008F06D2 /* Person.swift */; };
 		F14D866B29538B89008F06D2 /* AirSpam.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14D866729538B89008F06D2 /* AirSpam.swift */; };
+		F14D866D295398D4008F06D2 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14D866C295398D4008F06D2 /* ImagePicker.swift */; };
 		F1A59FB629526F6800A57361 /* WallSetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A59FB529526F6800A57361 /* WallSetView.swift */; };
 		F1A59FB929526FC700A57361 /* invoke.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A59FB829526FC700A57361 /* invoke.m */; };
 		F1A59FE429527A6600A57361 /* PasscodeEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A59FE329527A6600A57361 /* PasscodeEditorView.swift */; };
@@ -63,6 +64,7 @@
 		F14D866529538B83008F06D2 /* TrollController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrollController.swift; sourceTree = "<group>"; };
 		F14D866629538B86008F06D2 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		F14D866729538B89008F06D2 /* AirSpam.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AirSpam.swift; sourceTree = "<group>"; };
+		F14D866C295398D4008F06D2 /* ImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		F1A59FB529526F6800A57361 /* WallSetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallSetView.swift; sourceTree = "<group>"; };
 		F1A59FB829526FC700A57361 /* invoke.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = invoke.m; sourceTree = "<group>"; };
 		F1A59FE329527A6600A57361 /* PasscodeEditorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasscodeEditorView.swift; sourceTree = "<group>"; };
@@ -302,6 +304,7 @@
 			children = (
 				F1A59FB529526F6800A57361 /* WallSetView.swift */,
 				F1A59FB829526FC700A57361 /* invoke.m */,
+				F14D866C295398D4008F06D2 /* ImagePicker.swift */,
 			);
 			path = WallSet;
 			sourceTree = "<group>";
@@ -390,6 +393,7 @@
 				F14D866A29538B89008F06D2 /* Person.swift in Sources */,
 				F1F20BAC294FCD9F00E9916C /* LocSimManager.swift in Sources */,
 				F1351742294D3F76005C8DE3 /* AboutView.swift in Sources */,
+				F14D866D295398D4008F06D2 /* ImagePicker.swift in Sources */,
 				F135173A294D3C73005C8DE3 /* ToolsView.swift in Sources */,
 				F1351718294D373A005C8DE3 /* Addon.swift in Sources */,
 				F1351721294D39B9005C8DE3 /* RootHelper.swift in Sources */,
