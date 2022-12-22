@@ -19,7 +19,6 @@
 		F13DCCF9294D270700EBA2DF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13DCCF8294D270700EBA2DF /* ContentView.swift */; };
 		F13DCCFB294D270900EBA2DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F13DCCFA294D270900EBA2DF /* Assets.xcassets */; };
 		F13DCCFE294D270900EBA2DF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F13DCCFD294D270900EBA2DF /* Preview Assets.xcassets */; };
-		F13DCD24294D2B6000EBA2DF /* Supervise.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13DCD23294D2B6000EBA2DF /* Supervise.swift */; };
 		F14D866829538B89008F06D2 /* Sharing.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14D866429538B80008F06D2 /* Sharing.swift */; };
 		F14D866929538B89008F06D2 /* TrollController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14D866529538B83008F06D2 /* TrollController.swift */; };
 		F14D866A29538B89008F06D2 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14D866629538B86008F06D2 /* Person.swift */; };
@@ -62,7 +61,6 @@
 		F13DCCF8294D270700EBA2DF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F13DCCFA294D270900EBA2DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F13DCCFD294D270900EBA2DF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		F13DCD23294D2B6000EBA2DF /* Supervise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Supervise.swift; sourceTree = "<group>"; };
 		F14D866429538B80008F06D2 /* Sharing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sharing.swift; sourceTree = "<group>"; };
 		F14D866529538B83008F06D2 /* TrollController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrollController.swift; sourceTree = "<group>"; };
 		F14D866629538B86008F06D2 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
@@ -204,7 +202,6 @@
 		F13DCD12294D28A900EBA2DF /* OtherTools */ = {
 			isa = PBXGroup;
 			children = (
-				F13DCD23294D2B6000EBA2DF /* Supervise.swift */,
 				F135173B294D3CAB005C8DE3 /* OtherView.swift */,
 				F1F20BC4294FD69300E9916C /* GesturesView.swift */,
 			);
@@ -354,7 +351,6 @@
 				F1A59FB929526FC700A57361 /* invoke.m in Sources */,
 				F1F20BAF294FCDB900E9916C /* CarrierNameManager.swift in Sources */,
 				F135171D294D37DD005C8DE3 /* TSUtil.m in Sources */,
-				F13DCD24294D2B6000EBA2DF /* Supervise.swift in Sources */,
 				F14D866B29538B89008F06D2 /* AirSpam.swift in Sources */,
 				F14D866929538B89008F06D2 /* TrollController.swift in Sources */,
 				F1F20BC5294FD69300E9916C /* GesturesView.swift in Sources */,
