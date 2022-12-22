@@ -39,7 +39,6 @@ struct GesturesView: View {
             }
             .frame(maxWidth: .infinity)
         }
-        .navigationTitle("iPhone X Gestures")
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {
                 Button(action: {

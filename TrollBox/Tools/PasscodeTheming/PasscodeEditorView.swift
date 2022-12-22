@@ -37,15 +37,10 @@ struct PasscodeEditorView: View {
                 //                    .background(Material.ultraThinMaterial)
                 //                    .ignoresSafeArea()
                 //                    .preferredColorScheme(.dark)
-                VStack {Text("Passcode Themer")
+                VStack {Text("Tap on any key and select a picture.")
                         .foregroundColor(.white)
                         .font(.title2)
                         .padding(1)
-                    Text("Tap on any key and select a picture.")
-                        .foregroundColor(.white)
-                        .font(.footnote)
-                        .multilineTextAlignment(.center)
-                        .lineSpacing(-4)
                     
                     VStack(spacing: 16) {
                         ForEach((0...2), id: \.self) { y in

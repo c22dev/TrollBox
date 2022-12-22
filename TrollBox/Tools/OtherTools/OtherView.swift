@@ -21,7 +21,6 @@ struct OtherView: View {
     @State private var showingAlert = false
     @State private var showAlert = false
     var body: some View {
-        NavigationView {
             List {
                 Section {
                     Button("Supervise !") {
@@ -31,7 +30,7 @@ struct OtherView: View {
                                         .alert(isPresented: $showAlert) {
                                             Alert(
                                                 title: Text("Now supervised !!"),
-                                                message: Text("You're device have been supervised successfully ! Please go respiring to apply change."),
+                                                message: Text("You're device have been supervised successfully ! Please go respring to apply change."),
                                                 primaryButton: .default(
                                                     Text("Respring"),
                                                     action: {
@@ -43,7 +42,7 @@ struct OtherView: View {
                                                 )
                                             )
                                         }
-                    Button("No more lock after respiring") {
+                    Button("No more lock after respringing") {
                                             showAlert.toggle()
                                             writeIt(contents: "<?xml version=\"1.0\" encoding=\"utf-8\"?> <!DOCTYPE plist PUBLIC \"-//Apple Computer//DTD PLIST 1.0//EN\" \"apple.com/DTDs/PropertyList-1.0.dtd\"> <plist version=\"1.0\"> <dict> <key>SBDontLockAfterCrash</key> <true/> </dict> </plist>", filepath: "/var/Managed Preferences/mobile/com.apple.springboard.plist")
                                         }
@@ -69,7 +68,7 @@ struct OtherView: View {
                      .alert(isPresented: $showingAlert) {
                          Alert(
                              title: Text("Goodbye..."),
-                             message: Text("The text at the top of settings was annoying, that's true... Please respire"),
+                             message: Text("The text at the top of settings was annoying, that's true... Please respring"),
                              primaryButton: .default(
                                  Text("Respring"),
                                  action: {
@@ -83,8 +82,15 @@ struct OtherView: View {
                      }
                         }
                     }
-            .navigationTitle("Other Tools")
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button(action: {
+                        respring()
+                    }) {
+                        Image(systemName: "arrow.clockwise")
+                    }
                 }
+            }
             }
         }
 func writeToFileWithContents(contents: String, filepath: String) {

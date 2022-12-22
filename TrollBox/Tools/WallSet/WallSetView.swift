@@ -119,8 +119,6 @@ struct WalSetView: View {
                 }
             }
             .listStyle(InsetGroupedListStyle())
-            .navigationTitle("WallpaperSetter")
-            .navigationBarTitleDisplayMode(.inline)
             .sheet(isPresented: $showingImagePicker) {
                 ImagePicker(image: $inputImage)
             }

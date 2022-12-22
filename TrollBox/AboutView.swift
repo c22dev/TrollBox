@@ -35,11 +35,10 @@ struct AboutView: View {
                Button(action: {
                    UIApplication.shared.alert(title: "Rebuilding icon cache...", body: "Please wait", animated: false, withButton: false)
                    do {
-                       try! RootHelper.rebuildIconCache()
+                       respring()
                    }
-                   catch { UIApplication.shared.change(body: error.localizedDescription) }
                }) {
-                   Text("Rebuild icon cache")
+                   Text("Respring")
                }
            }
        }

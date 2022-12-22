@@ -52,6 +52,16 @@ struct ToolsView: View {
                             Text("Apple Pay Card Custom image")
                         }
                     }
+                    NavigationLink(destination: AirSpam()) {
+                        HStack {
+                            Image(systemName: "antenna.radiowaves.left.and.right.circle.fill")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 24, height: 24)
+                                .foregroundColor(.primary)
+                            Text("AirSpam")
+                        }
+                    }
                     NavigationLink(destination: LocationSimulationView()) {
                         HStack {
                             Image(systemName: "map.circle.fill")

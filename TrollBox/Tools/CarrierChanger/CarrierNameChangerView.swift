@@ -54,7 +54,6 @@ struct CarrierNameChangerView: View {
             .ignoresSafeArea(.keyboard)
             .frame(maxWidth: .infinity)
         }
-        .navigationTitle("Carrier Changer")
     }
 }
 
