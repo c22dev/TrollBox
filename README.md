@@ -26,7 +26,7 @@
   - Nonce setter (need to rewrite OPA's code)
   - and more to come!
 ## Screenshots
-<img src='https://i.ibb.co/mGBgFKx/IMG-EF740-ED642-A8-1-iphone13midnight-portrait.png' width=200><p>0.0.3 version</p>
+<img src='https://i.ibb.co/yqFJsjK/IMG-5-AE7882-A744-B-1-iphone13midnight-portrait.png' width=200><p>0.0.4 version</p>
    
    
 ## Requirements
@@ -37,6 +37,7 @@ To make this app works, you need to install [TrollStore](https://github.com/opa3
 - [Jaility](https://github.com/haxi0/Jaility) (supervising features)
 - [TrollStore](https://github.com/opa334/TrollStore) (importing objC libs from TrollStore shared)
 - [WallpaperSetter](https://github.com/Skittyblock/WallpaperSetter) (the app in itself)
+- [Cardio](https://github.com/cisc0disco/Cardio) (image for apple pay)
 
 The use of some tweaks mentionned below are under GPL 3 license, so this app will be GPL 3.
 
