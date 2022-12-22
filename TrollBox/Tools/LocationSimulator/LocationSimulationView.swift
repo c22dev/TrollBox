@@ -2,7 +2,7 @@
 //  LocationSimulationView.swift
 //  TrollTools
 //
-//  Created by exerhythm on 11.11.2022.
+//  Created by Constantin Clerc on 21.12.2022.
 //
 
 import Map
@@ -34,9 +34,15 @@ struct LocationSimulationView: View {
             LocSimManager.startLocSim(location: .init(latitude: latitudeValue!, longitude: longitudeValue!))
             locations = [.init(coordinate: .init(latitude: latitudeValue!, longitude: longitudeValue! )),.init(coordinate: .init(latitude: latitudeValue!, longitude: longitudeValue!)),]
             calculateDirections()
-            print("Button was tapped")
+            print("LOCSIM ENABLED YEAH")
         }) {
             Text("Apply")
+        }
+        Button(action: {
+            LocSimManager.stopLocSim()
+            print("ohno")
+        }) {
+            Text("Stop")
         }
         Map(
             coordinateRegion: $region,

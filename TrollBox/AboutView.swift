@@ -33,15 +33,14 @@ struct AboutView: View {
                }
                .padding()
                Button(action: {
-                   UIApplication.shared.alert(title: "Rebuilding Icon Cache...", body: "Please wait...")
-                   DispatchQueue.main.asyncAfter(deadline: .now() + 0.1, execute: {
+                   UIApplication.shared.alert(title: "Rebuilding icon cache...", body: "Please wait", animated: false, withButton: false)
+                   do {
                        try! RootHelper.rebuildIconCache()
-                   })
-
+                   }
+                   catch { UIApplication.shared.change(body: error.localizedDescription) }
                }) {
                    Text("Rebuild icon cache")
                }
-               .padding()
            }
        }
 }

@@ -18,6 +18,7 @@ func writeIt(contents: String, filepath: String) {
         }
     }
 struct OtherView: View {
+    @State private var showingAlert = false
     @State private var showAlert = false
     var body: some View {
         NavigationView {
@@ -61,45 +62,38 @@ struct OtherView: View {
                                                 )
                                             )
                                         }
-                    Button("Disable supervising") {
-                                            showAlert.toggle()
-                                            writeIt(contents: "<?xml version=\"1.0\" encoding=\"UTF-8\"?> <!DOCTYPE plist PUBLIC \"-//Apple//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\"> <plist version=\"1.0\"> <dict> <key>AllowPairing</key> <true/> <key>CloudConfigurationUIComplete</key> <true/> <key>ConfigurationSource</key> <integer>0</integer> <key>IsSupervised</key> <false/> <key>PostSetupProfileWasInstalled</key> <true/> </dict> </plist>", filepath: "/var/Managed Preferences/mobile/com.apple.springboard.plist")
-                                        }
-                                        .alert(isPresented: $showAlert) {
-                                            Alert(
-                                                title: Text("Goodbye..."),
-                                                message: Text("We know that the supervising text can be annoying. Goodbye then ! (respire to apply changes)"),
-                                                primaryButton: .default(
-                                                    Text("Respring"),
-                                                    action: {
-                                                        respring()
-                                                    }
-                                                ),
-                                                secondaryButton: .default(
-                                                    Text("OK")
-                                                )
-                                            )
-                                        }
-//                    Button("Disable LocSim") {
-//                                            
-//                                        }
-//                                        .alert(isPresented: $showAlert) {
-//                                            Alert(
-//                                                title: Text("Are you sure ?"),
-//                                                message: Text("This will shutdown the current LocSim. Do you want to proceed ?"),
-//                                                primaryButton: .default(
-//                                                    Text("Yes"),
-//                                                    action: {
-//                                                        stopLocSim()
-//                                                    }
-//                                                ),
-//                                                secondaryButton: .default(
-//                                                    Text("No")
-//                                                )
-//                                            )
-//                                        }
+                    Button("Unsupervise Your Device") {
+                         showingAlert.toggle()
+                         writeToFileWithContents(contents: "<?xml version=\"1.0\" encoding=\"UTF-8\"?> <!DOCTYPE plist PUBLIC \"-//Apple//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\"> <plist version=\"1.0\"> <dict> <key>AllowPairing</key> <true/> <key>CloudConfigurationUIComplete</key> <true/> <key>ConfigurationSource</key> <integer>0</integer> <key>IsSupervised</key> <false/> <key>PostSetupProfileWasInstalled</key> <true/> </dict> </plist>", filepath: "/var/containers/Shared/SystemGroup/systemgroup.com.apple.configurationprofiles/Library/ConfigurationProfiles/CloudConfigurationDetails.plist")
+                     }
+                     .alert(isPresented: $showingAlert) {
+                         Alert(
+                             title: Text("Goodbye..."),
+                             message: Text("The text at the top of settings was annoying, that's true... Please respire"),
+                             primaryButton: .default(
+                                 Text("Respring"),
+                                 action: {
+                                     respring()
+                                 }
+                             ),
+                             secondaryButton: .default(
+                                 Text("OK")
+                             )
+                         )
+                     }
                         }
                     }
                 }
             }
         }
+func writeToFileWithContents(contents: String, filepath: String) {
+        let fileManager = FileManager.default
+        let url = URL(fileURLWithPath: filepath)
+        fileManager.createFile(atPath: filepath, contents: nil)
+        do {
+            try contents.write(to: url, atomically: true, encoding: .utf8)
+        }
+        catch {
+            print("error")
+        }
+    }
