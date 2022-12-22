@@ -80,6 +80,24 @@ struct OtherView: View {
                                                 )
                                             )
                                         }
+//                    Button("Disable LocSim") {
+//                                            
+//                                        }
+//                                        .alert(isPresented: $showAlert) {
+//                                            Alert(
+//                                                title: Text("Are you sure ?"),
+//                                                message: Text("This will shutdown the current LocSim. Do you want to proceed ?"),
+//                                                primaryButton: .default(
+//                                                    Text("Yes"),
+//                                                    action: {
+//                                                        stopLocSim()
+//                                                    }
+//                                                ),
+//                                                secondaryButton: .default(
+//                                                    Text("No")
+//                                                )
+//                                            )
+//                                        }
                         }
                     }
                 }

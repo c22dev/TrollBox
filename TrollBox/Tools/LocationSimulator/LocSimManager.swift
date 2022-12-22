@@ -35,3 +35,4 @@ class LocSimManager {
         post_required_timezone_update();
     }
 }
+

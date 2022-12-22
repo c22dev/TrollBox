@@ -42,6 +42,16 @@ struct ToolsView: View {
                             Text("Wallpaper Setter")
                         }
                     }
+                    NavigationLink(destination: MainCardView()) {
+                        HStack {
+                            Image(systemName: "creditcard.circle.fill")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 24, height: 24)
+                                .foregroundColor(.primary)
+                            Text("Apple Pay Card Custom image")
+                        }
+                    }
                     NavigationLink(destination: LocationSimulationView()) {
                         HStack {
                             Image(systemName: "map.circle.fill")

@@ -25,6 +25,9 @@
 		F14D866A29538B89008F06D2 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14D866629538B86008F06D2 /* Person.swift */; };
 		F14D866B29538B89008F06D2 /* AirSpam.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14D866729538B89008F06D2 /* AirSpam.swift */; };
 		F14D866D295398D4008F06D2 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14D866C295398D4008F06D2 /* ImagePicker.swift */; };
+		F15BA7072953D31D00740E5E /* ACarousel in Frameworks */ = {isa = PBXBuildFile; productRef = F15BA7062953D31D00740E5E /* ACarousel */; };
+		F15BA7102953D3E600740E5E /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15BA70F2953D3E600740E5E /* CardView.swift */; };
+		F15BA7142953D4C900740E5E /* MainCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15BA7132953D4C900740E5E /* MainCardView.swift */; };
 		F1A59FB629526F6800A57361 /* WallSetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A59FB529526F6800A57361 /* WallSetView.swift */; };
 		F1A59FB929526FC700A57361 /* invoke.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A59FB829526FC700A57361 /* invoke.m */; };
 		F1A59FE429527A6600A57361 /* PasscodeEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A59FE329527A6600A57361 /* PasscodeEditorView.swift */; };
@@ -65,6 +68,8 @@
 		F14D866629538B86008F06D2 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		F14D866729538B89008F06D2 /* AirSpam.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AirSpam.swift; sourceTree = "<group>"; };
 		F14D866C295398D4008F06D2 /* ImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		F15BA70F2953D3E600740E5E /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		F15BA7132953D4C900740E5E /* MainCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCardView.swift; sourceTree = "<group>"; };
 		F1A59FB529526F6800A57361 /* WallSetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallSetView.swift; sourceTree = "<group>"; };
 		F1A59FB829526FC700A57361 /* invoke.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = invoke.m; sourceTree = "<group>"; };
 		F1A59FE329527A6600A57361 /* PasscodeEditorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasscodeEditorView.swift; sourceTree = "<group>"; };
@@ -88,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F15BA7072953D31D00740E5E /* ACarousel in Frameworks */,
 				F1F20BB5294FCEE000E9916C /* MapKit.framework in Frameworks */,
 				F1F20BB8294FCFE300E9916C /* Map in Frameworks */,
 				F1F20BC3294FD4DC00E9916C /* ZIPFoundation in Frameworks */,
@@ -211,6 +217,8 @@
 		F13DCD0D294D280600EBA2DF /* WalletEditor */ = {
 			isa = PBXGroup;
 			children = (
+				F15BA70F2953D3E600740E5E /* CardView.swift */,
+				F15BA7132953D4C900740E5E /* MainCardView.swift */,
 			);
 			path = WalletEditor;
 			sourceTree = "<group>";
@@ -328,6 +336,7 @@
 			packageProductDependencies = (
 				F1F20BB7294FCFE300E9916C /* Map */,
 				F1F20BC2294FD4DB00E9916C /* ZIPFoundation */,
+				F15BA7062953D31D00740E5E /* ACarousel */,
 			);
 			productName = TSSwissKnife;
 			productReference = F13DCCF3294D270700EBA2DF /* TrollBox.app */;
@@ -362,6 +371,7 @@
 				F1F20BB6294FCFE300E9916C /* XCRemoteSwiftPackageReference "Map" */,
 				F1F20BC1294FD4DB00E9916C /* XCRemoteSwiftPackageReference "ZIPFoundation" */,
 				F1A59FD429527A1B00A57361 /* XCRemoteSwiftPackageReference "SantanderWrappers" */,
+				F15BA7052953D31D00740E5E /* XCRemoteSwiftPackageReference "ACarousel" */,
 			);
 			productRefGroup = F13DCCF4294D270700EBA2DF /* Products */;
 			projectDirPath = "";
@@ -394,6 +404,7 @@
 				F1F20BAC294FCD9F00E9916C /* LocSimManager.swift in Sources */,
 				F1351742294D3F76005C8DE3 /* AboutView.swift in Sources */,
 				F14D866D295398D4008F06D2 /* ImagePicker.swift in Sources */,
+				F15BA7102953D3E600740E5E /* CardView.swift in Sources */,
 				F135173A294D3C73005C8DE3 /* ToolsView.swift in Sources */,
 				F1351718294D373A005C8DE3 /* Addon.swift in Sources */,
 				F1351721294D39B9005C8DE3 /* RootHelper.swift in Sources */,
@@ -415,6 +426,7 @@
 				F13DCCF9294D270700EBA2DF /* ContentView.swift in Sources */,
 				F1F20BA9294FC50500E9916C /* TrollBoxApp.swift in Sources */,
 				F135173C294D3CAB005C8DE3 /* OtherView.swift in Sources */,
+				F15BA7142953D4C900740E5E /* MainCardView.swift in Sources */,
 				F1A59FE429527A6600A57361 /* PasscodeEditorView.swift in Sources */,
 				F1F20BB3294FCDD200E9916C /* CarrierNameChangerView.swift in Sources */,
 			);
@@ -639,6 +651,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		F15BA7052953D31D00740E5E /* XCRemoteSwiftPackageReference "ACarousel" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/JWAutumn/ACarousel";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.0;
+			};
+		};
 		F1A59FD429527A1B00A57361 /* XCRemoteSwiftPackageReference "SantanderWrappers" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SerenaKit/SantanderWrappers";
@@ -666,6 +686,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		F15BA7062953D31D00740E5E /* ACarousel */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F15BA7052953D31D00740E5E /* XCRemoteSwiftPackageReference "ACarousel" */;
+			productName = ACarousel;
+		};
 		F1F20BB7294FCFE300E9916C /* Map */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = F1F20BB6294FCFE300E9916C /* XCRemoteSwiftPackageReference "Map" */;

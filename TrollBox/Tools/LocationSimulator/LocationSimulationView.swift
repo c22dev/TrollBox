@@ -14,13 +14,30 @@ struct LocationSimulationView: View {
         var coordinate: CLLocationCoordinate2D
         var id = UUID()
     }
-    
     @State var locations: [Location] = []
+    @State private var long = ""
+    @State private var lat = ""
+
     @State var directions: MKDirections.Response? = nil
     
     @State private var region = MKCoordinateRegion(.world)
     
     var body: some View {
+        TextField("Enter latitude", text: $lat)
+            .textFieldStyle(RoundedBorderTextFieldStyle())
+
+        TextField("Enter longitude", text: $long)
+            .textFieldStyle(RoundedBorderTextFieldStyle())
+        let latitudeValue = Double(lat)
+        let longitudeValue = Double(long)
+        Button(action: {
+            LocSimManager.startLocSim(location: .init(latitude: latitudeValue!, longitude: longitudeValue!))
+            locations = [.init(coordinate: .init(latitude: latitudeValue!, longitude: longitudeValue! )),.init(coordinate: .init(latitude: latitudeValue!, longitude: longitudeValue!)),]
+            calculateDirections()
+            print("Button was tapped")
+        }) {
+            Text("Apply")
+        }
         Map(
             coordinateRegion: $region,
             informationVisibility: .default.union(.userLocation),
@@ -28,7 +45,7 @@ struct LocationSimulationView: View {
             annotationItems: locations,
             annotationContent: { location in
                 ViewMapAnnotation(coordinate: location.coordinate) {
-                    Color.red
+                    Color.accentColor
                         .frame(width: 24, height: 24)
                         .clipShape(Circle())
                 }
@@ -49,9 +66,6 @@ struct LocationSimulationView: View {
         )
         .onAppear {
             CLLocationManager().requestAlwaysAuthorization()
-            LocSimManager.startLocSim(location: .init(latitude: 51.507222, longitude: -0.1275))
-            locations = [.init(coordinate: .init(latitude: 51.507222, longitude: -0.1275)),.init(coordinate: .init(latitude: 51.507222, longitude: -0.0975)),]
-            calculateDirections()
         }
     }
     

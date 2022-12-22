@@ -3,6 +3,49 @@
 #import <Foundation/Foundation.h>
 #import <spawn.h>
 #import <sys/sysctl.h>
+#import "TSUtil.h"
+
+@implementation ObjcHelper
+
+-(NSNumber *)getDeviceSubType {
+    NSString *plistFullPath = [@"/private/var/containers/Shared/SystemGroup/systemgroup.com.apple.mobilegestaltcache/Library/Caches/" stringByAppendingPathComponent:@"com.apple.MobileGestalt.plist"];
+    NSMutableDictionary *plistDict = [[NSMutableDictionary alloc] initWithContentsOfFile:plistFullPath];
+    
+    NSMutableDictionary *artWork = plistDict[@"CacheExtra"][@"oPeik/9e8lQWMszEjbPzng"];
+    
+    return artWork[@"ArtworkDeviceSubType"];
+}
+
+-(void)updateDeviceSubType:(NSInteger)deviceSubType {
+    NSString *plistFullPath = [@"/private/var/containers/Shared/SystemGroup/systemgroup.com.apple.mobilegestaltcache/Library/Caches/" stringByAppendingPathComponent:@"com.apple.MobileGestalt.plist"];
+    NSMutableDictionary *plistDict = [[NSMutableDictionary alloc] initWithContentsOfFile:plistFullPath];
+    
+    [plistDict[@"CacheExtra"][@"oPeik/9e8lQWMszEjbPzng"] setObject:[NSNumber numberWithInteger: deviceSubType] forKey:@"ArtworkDeviceSubType"];
+    [plistDict writeToFile:plistFullPath atomically:YES];
+}
+
+-(void)imageToCPBitmap:(UIImage *)img path:(NSString *)path {
+    [img writeToCPBitmapFile:path flags:1];
+}
+
+-(void)respring {
+    killall(@"SpringBoard");
+    exit(0);
+}
+
+-(UIImage *)getImageFromData:(NSString *)path {
+    NSData *data = [NSData dataWithContentsOfFile:path];
+    UIImage *image = [UIImage imageWithData:data];
+    
+    return image;
+}
+
+-(void)saveImage:(UIImage *)image atPath:(NSString *)path {
+    [[NSFileManager defaultManager] removeItemAtPath:path error:nil];
+    [UIImagePNGRepresentation(image) writeToFile:path atomically:YES];
+}
+
+@end
 
 @interface PSAppDataUsagePolicyCache : NSObject
 + (instancetype)sharedInstance;
