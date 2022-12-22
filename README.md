@@ -7,23 +7,23 @@
  ## Features
 - Actually implemented :
   - Carrier Changer
-  - Location Simulator (need to fix how to choose location9
+  - Location Simulator
   - PassFace theming
   - Superviser
   - Gestures
   - Lock after respiring
   - Wallpaper setter
+  - Wallet Image editor
 - To come :
   - Crash Logger
-  - Icon theming
-  - AirSpam
+  - Icon theming (this will take longer than expected)
+  - AirSpam (already implemented, I need to fix a few errors)
   - Homescreen layout editing
   - Ringtone manager
   - Downgrader
   - Network Manager
   - System info
-  - Nonce setter
-  - Wallet Image editor (next feature to come)
+  - Nonce setter (need to rewrite OPA's code)
   - and more to come!
 ## Screenshots
 <img src='https://i.ibb.co/mGBgFKx/IMG-EF740-ED642-A8-1-iphone13midnight-portrait.png' width=200><p>0.0.3 version</p>
