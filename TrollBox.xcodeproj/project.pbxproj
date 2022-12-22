@@ -130,6 +130,7 @@
 		F13DCCF5294D270700EBA2DF /* TrollBox */ = {
 			isa = PBXGroup;
 			children = (
+				F1ECFC4C295522CC007E24CC /* Themer */,
 				F1F20BA7294FC50500E9916C /* TrollBox-bringing-header.h */,
 				F1F20BA8294FC50500E9916C /* TrollBoxApp.swift */,
 				F13DCD15294D28E200EBA2DF /* Tools */,
@@ -256,6 +257,13 @@
 				F1A59FB829526FC700A57361 /* invoke.m */,
 			);
 			path = WallSet;
+			sourceTree = "<group>";
+		};
+		F1ECFC4C295522CC007E24CC /* Themer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Themer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
