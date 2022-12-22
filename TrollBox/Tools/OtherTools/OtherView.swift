@@ -83,6 +83,7 @@ struct OtherView: View {
                      }
                         }
                     }
+            .navigationTitle("Other Tools")
                 }
             }
         }

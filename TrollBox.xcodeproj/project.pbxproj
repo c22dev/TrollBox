@@ -24,7 +24,7 @@
 		F14D866929538B89008F06D2 /* TrollController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14D866529538B83008F06D2 /* TrollController.swift */; };
 		F14D866A29538B89008F06D2 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14D866629538B86008F06D2 /* Person.swift */; };
 		F14D866B29538B89008F06D2 /* AirSpam.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14D866729538B89008F06D2 /* AirSpam.swift */; };
-		F14D866D295398D4008F06D2 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14D866C295398D4008F06D2 /* ImagePicker.swift */; };
+		F151CC2B2954DD1200367170 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F151CC2A2954DD1200367170 /* ImagePicker.swift */; };
 		F15BA7072953D31D00740E5E /* ACarousel in Frameworks */ = {isa = PBXBuildFile; productRef = F15BA7062953D31D00740E5E /* ACarousel */; };
 		F15BA7102953D3E600740E5E /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15BA70F2953D3E600740E5E /* CardView.swift */; };
 		F15BA7142953D4C900740E5E /* MainCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15BA7132953D4C900740E5E /* MainCardView.swift */; };
@@ -67,7 +67,7 @@
 		F14D866529538B83008F06D2 /* TrollController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrollController.swift; sourceTree = "<group>"; };
 		F14D866629538B86008F06D2 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		F14D866729538B89008F06D2 /* AirSpam.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AirSpam.swift; sourceTree = "<group>"; };
-		F14D866C295398D4008F06D2 /* ImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		F151CC2A2954DD1200367170 /* ImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		F15BA70F2953D3E600740E5E /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		F15BA7132953D4C900740E5E /* MainCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCardView.swift; sourceTree = "<group>"; };
 		F1A59FB529526F6800A57361 /* WallSetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallSetView.swift; sourceTree = "<group>"; };
@@ -172,13 +172,6 @@
 			path = PasscodeTheming;
 			sourceTree = "<group>";
 		};
-		F13DCD08294D279000EBA2DF /* HomeScreenLayoutEditing */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = HomeScreenLayoutEditing;
-			sourceTree = "<group>";
-		};
 		F13DCD09294D27AE00EBA2DF /* RingtoneManager */ = {
 			isa = PBXGroup;
 			children = (
@@ -199,21 +192,6 @@
 			path = AirSpam;
 			sourceTree = "<group>";
 		};
-		F13DCD0B294D27DF00EBA2DF /* SystemInfo */ = {
-			isa = PBXGroup;
-			children = (
-				F13DCD0C294D27E800EBA2DF /* Battery */,
-			);
-			path = SystemInfo;
-			sourceTree = "<group>";
-		};
-		F13DCD0C294D27E800EBA2DF /* Battery */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Battery;
-			sourceTree = "<group>";
-		};
 		F13DCD0D294D280600EBA2DF /* WalletEditor */ = {
 			isa = PBXGroup;
 			children = (
@@ -221,34 +199,6 @@
 				F15BA7132953D4C900740E5E /* MainCardView.swift */,
 			);
 			path = WalletEditor;
-			sourceTree = "<group>";
-		};
-		F13DCD0E294D282A00EBA2DF /* CrashLogger */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = CrashLogger;
-			sourceTree = "<group>";
-		};
-		F13DCD0F294D287700EBA2DF /* Downgrade */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Downgrade;
-			sourceTree = "<group>";
-		};
-		F13DCD10294D288200EBA2DF /* NetworkMngr */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = NetworkMngr;
-			sourceTree = "<group>";
-		};
-		F13DCD11294D289B00EBA2DF /* NonceSetter */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = NonceSetter;
 			sourceTree = "<group>";
 		};
 		F13DCD12294D28A900EBA2DF /* OtherTools */ = {
@@ -282,16 +232,10 @@
 			children = (
 				F1A59FB429526F5300A57361 /* WallSet */,
 				F1351722294D3A1E005C8DE3 /* CarrierChanger */,
-				F13DCD0E294D282A00EBA2DF /* CrashLogger */,
 				F13DCD06294D275F00EBA2DF /* LocationSimulator */,
 				F13DCD07294D277900EBA2DF /* PasscodeTheming */,
-				F13DCD08294D279000EBA2DF /* HomeScreenLayoutEditing */,
 				F13DCD09294D27AE00EBA2DF /* RingtoneManager */,
 				F13DCD0A294D27C300EBA2DF /* AirSpam */,
-				F13DCD0F294D287700EBA2DF /* Downgrade */,
-				F13DCD10294D288200EBA2DF /* NetworkMngr */,
-				F13DCD0B294D27DF00EBA2DF /* SystemInfo */,
-				F13DCD11294D289B00EBA2DF /* NonceSetter */,
 				F13DCD0D294D280600EBA2DF /* WalletEditor */,
 				F13DCD12294D28A900EBA2DF /* OtherTools */,
 				F1351739294D3C73005C8DE3 /* ToolsView.swift */,
@@ -311,8 +255,8 @@
 			isa = PBXGroup;
 			children = (
 				F1A59FB529526F6800A57361 /* WallSetView.swift */,
+				F151CC2A2954DD1200367170 /* ImagePicker.swift */,
 				F1A59FB829526FC700A57361 /* invoke.m */,
-				F14D866C295398D4008F06D2 /* ImagePicker.swift */,
 			);
 			path = WallSet;
 			sourceTree = "<group>";
@@ -403,7 +347,6 @@
 				F14D866A29538B89008F06D2 /* Person.swift in Sources */,
 				F1F20BAC294FCD9F00E9916C /* LocSimManager.swift in Sources */,
 				F1351742294D3F76005C8DE3 /* AboutView.swift in Sources */,
-				F14D866D295398D4008F06D2 /* ImagePicker.swift in Sources */,
 				F15BA7102953D3E600740E5E /* CardView.swift in Sources */,
 				F135173A294D3C73005C8DE3 /* ToolsView.swift in Sources */,
 				F1351718294D373A005C8DE3 /* Addon.swift in Sources */,
@@ -418,6 +361,7 @@
 				F1F20BC0294FD45400E9916C /* WallpaperGetter.swift in Sources */,
 				F1351724294D3A53005C8DE3 /* RemLog.swift in Sources */,
 				F1F20BB1294FCDC100E9916C /* LocationSimulationView.swift in Sources */,
+				F151CC2B2954DD1200367170 /* ImagePicker.swift in Sources */,
 				F1351734294D3B2F005C8DE3 /* ImagePickerView.swift in Sources */,
 				F1A59FB629526F6800A57361 /* WallSetView.swift in Sources */,
 				F1F20BBA294FD3D100E9916C /* RingtoneVIew.swift in Sources */,
