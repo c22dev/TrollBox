@@ -37,6 +37,7 @@ To make this app works, you need to install [TrollStore](https://github.com/opa3
 - [Jaility](https://github.com/haxi0/Jaility) (supervising features)
 - [TrollStore](https://github.com/opa334/TrollStore) (importing objC libs from TrollStore shared)
 - [WallpaperSetter](https://github.com/Skittyblock/WallpaperSetter) (the app in itself)
+- [AirTroller](https://github.com/sourcelocation/AirTroller) (AirDrop spammer)
 - [Cardio](https://github.com/cisc0disco/Cardio) (image for apple pay)
 
 The use of some tweaks mentionned below are under GPL 3 license, so this app will be GPL 3.
