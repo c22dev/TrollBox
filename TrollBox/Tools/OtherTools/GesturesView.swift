@@ -54,7 +54,7 @@ struct GesturesView: View {
                 let data = try Data(contentsOf: url)
                 
                 guard var plist = try PropertyListSerialization.propertyList(from: data, format: nil) as? [String:Any] else { throw NSError(domain: "CarrierName", code: 0, userInfo: [NSLocalizedDescriptionKey: "Could not find carrier name"]) }
-                let origDeviceTypeURL = URL(fileURLWithPath: "/var/mobile/.DO-NOT-DELETE-TrollTools/.DO-NOT-DELETE-ArtworkDeviceSubTypeBackup")
+                let origDeviceTypeURL = URL(fileURLWithPath: "/var/mobile/.DO-NOT-DELETE-TrollBox/.DO-NOT-DELETE-ArtworkDeviceSubTypeBackup")
                 var origDeviceType = 0
                 
                 if !FileManager.default.fileExists(atPath: origDeviceTypeURL.path) {
