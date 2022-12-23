@@ -6,6 +6,7 @@
  
  ## Features
 - Actually implemented :
+  - AirSpam
   - Carrier Changer
   - Location Simulator
   - PassFace theming
@@ -17,7 +18,6 @@
 - To come :
   - Crash Logger
   - Icon theming (this will take longer than expected)
-  - AirSpam (already implemented, I need to fix a few errors)
   - Homescreen layout editing
   - Ringtone manager
   - Downgrader
@@ -26,11 +26,11 @@
   - Nonce setter (need to rewrite OPA's code)
   - and more to come!
 ## Screenshots
-<img src='https://i.ibb.co/yqFJsjK/IMG-5-AE7882-A744-B-1-iphone13midnight-portrait.png' width=200><p>0.0.4 version</p>
+<img src='https://i.ibb.co/mBdZxTN/Simulator-Screen-Shot-i-Phone-TROLL-2022-12-23-at-01-35-12-iphone13midnight-portrait.png' width=200><p>0.0.5 version</p>
    
    
 ## Requirements
-To make this app works, you need to install [TrollStore](https://github.com/opa334/TrollStore). Regular sideloading just won't work.
+To make this app works, you need to install [TrollStore](https://github.com/opa334/TrollStore) 1.0.9 or newer. Regular sideloading just won't work.
 
 ## Credits
 - [TrollTools](https://github.com/sourcelocation/TrollTools) (some extensions and functions, but mainly some tools/assets)
