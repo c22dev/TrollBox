@@ -31,6 +31,9 @@
 		F1A59FB929526FC700A57361 /* invoke.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A59FB829526FC700A57361 /* invoke.m */; };
 		F1A59FE429527A6600A57361 /* PasscodeEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A59FE329527A6600A57361 /* PasscodeEditorView.swift */; };
 		F1A59FE629527A8000A57361 /* PasscodeKeyFaceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A59FE529527A8000A57361 /* PasscodeKeyFaceManager.swift */; };
+		F1ECFC7729552E5C007E24CC /* BadgeChangerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1ECFC7529552E56007E24CC /* BadgeChangerView.swift */; };
+		F1ECFC7829552E5C007E24CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1ECFC7629552E5B007E24CC /* Assets.xcassets */; };
+		F1ECFC7A29552E8F007E24CC /* BadgeChanger.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1ECFC7929552E8F007E24CC /* BadgeChanger.swift */; };
 		F1F20BA9294FC50500E9916C /* TrollBoxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F20BA8294FC50500E9916C /* TrollBoxApp.swift */; };
 		F1F20BAC294FCD9F00E9916C /* LocSimManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F20BAB294FCD9F00E9916C /* LocSimManager.swift */; };
 		F1F20BAF294FCDB900E9916C /* CarrierNameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F20BAE294FCDB900E9916C /* CarrierNameManager.swift */; };
@@ -72,6 +75,9 @@
 		F1A59FB829526FC700A57361 /* invoke.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = invoke.m; sourceTree = "<group>"; };
 		F1A59FE329527A6600A57361 /* PasscodeEditorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasscodeEditorView.swift; sourceTree = "<group>"; };
 		F1A59FE529527A8000A57361 /* PasscodeKeyFaceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasscodeKeyFaceManager.swift; sourceTree = "<group>"; };
+		F1ECFC7529552E56007E24CC /* BadgeChangerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BadgeChangerView.swift; sourceTree = "<group>"; };
+		F1ECFC7629552E5B007E24CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Themer/Badger/Assets.xcassets; sourceTree = "<group>"; };
+		F1ECFC7929552E8F007E24CC /* BadgeChanger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeChanger.swift; sourceTree = "<group>"; };
 		F1F20BA7294FC50500E9916C /* TrollBox-bringing-header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TrollBox-bringing-header.h"; sourceTree = "<group>"; };
 		F1F20BA8294FC50500E9916C /* TrollBoxApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrollBoxApp.swift; sourceTree = "<group>"; };
 		F1F20BAA294FCD9200E9916C /* LocSimPrivateHeaders.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LocSimPrivateHeaders.h; path = "../../../../../../../Downloads/TrollTools-main/TrollTools/Private APIs/LocSim/LocSimPrivateHeaders.h"; sourceTree = "<group>"; };
@@ -130,6 +136,7 @@
 		F13DCCF5294D270700EBA2DF /* TrollBox */ = {
 			isa = PBXGroup;
 			children = (
+				F1ECFC7629552E5B007E24CC /* Assets.xcassets */,
 				F1ECFC4C295522CC007E24CC /* Themer */,
 				F1F20BA7294FC50500E9916C /* TrollBox-bringing-header.h */,
 				F1F20BA8294FC50500E9916C /* TrollBoxApp.swift */,
@@ -262,8 +269,18 @@
 		F1ECFC4C295522CC007E24CC /* Themer */ = {
 			isa = PBXGroup;
 			children = (
+				F1ECFC7329552E3B007E24CC /* Badger */,
 			);
 			path = Themer;
+			sourceTree = "<group>";
+		};
+		F1ECFC7329552E3B007E24CC /* Badger */ = {
+			isa = PBXGroup;
+			children = (
+				F1ECFC7529552E56007E24CC /* BadgeChangerView.swift */,
+				F1ECFC7929552E8F007E24CC /* BadgeChanger.swift */,
+			);
+			path = Badger;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -338,6 +355,7 @@
 			files = (
 				F13DCCFE294D270900EBA2DF /* Preview Assets.xcassets in Resources */,
 				F135173E294D3E72005C8DE3 /* Trollface.png in Resources */,
+				F1ECFC7829552E5C007E24CC /* Assets.xcassets in Resources */,
 				F13DCCFB294D270900EBA2DF /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -349,6 +367,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1ECFC7A29552E8F007E24CC /* BadgeChanger.swift in Sources */,
 				F14D866A29538B89008F06D2 /* Person.swift in Sources */,
 				F1F20BAC294FCD9F00E9916C /* LocSimManager.swift in Sources */,
 				F1351742294D3F76005C8DE3 /* AboutView.swift in Sources */,
@@ -361,6 +380,7 @@
 				F135171D294D37DD005C8DE3 /* TSUtil.m in Sources */,
 				F14D866B29538B89008F06D2 /* AirSpam.swift in Sources */,
 				F14D866929538B89008F06D2 /* TrollController.swift in Sources */,
+				F1ECFC7729552E5C007E24CC /* BadgeChangerView.swift in Sources */,
 				F1F20BC5294FD69300E9916C /* GesturesView.swift in Sources */,
 				F1F20BC0294FD45400E9916C /* WallpaperGetter.swift in Sources */,
 				F1351724294D3A53005C8DE3 /* RemLog.swift in Sources */,

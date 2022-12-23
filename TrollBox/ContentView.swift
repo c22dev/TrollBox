@@ -14,6 +14,10 @@ struct ContentView: View {
                 .tabItem {
                     Label("Tools", systemImage: "wrench.and.screwdriver.fill")
                 }
+//            ThemeView()
+//                .tabItem {
+//                    Label("Tools", systemImage: "wrench.and.screwdriver.fill")
+//                }
             AboutView()
                 .tabItem {
                     Label("About", systemImage: "info.circle")
