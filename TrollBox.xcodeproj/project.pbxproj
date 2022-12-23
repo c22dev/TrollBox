@@ -545,7 +545,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.0.5;
+				MARKETING_VERSION = 0.0.6;
 				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = live.cclerc.trollbox;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -583,7 +583,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.0.5;
+				MARKETING_VERSION = 0.0.6;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = live.cclerc.trollbox;

@@ -2,14 +2,14 @@
 //  GesturesView.swift
 //  TrollBox
 //
-//  Created by Constantin Clerc on 19/12/2022.
+//  Created by c22 on 09.11.2022.
 //
 
 import SwiftUI
 
 struct GesturesView: View {
     @State var enabled = UserDefaults.standard.bool(forKey: "GesturesEnabled")
-    
+
     var body: some View {
         GeometryReader { proxy in
             VStack {
@@ -50,11 +50,14 @@ struct GesturesView: View {
         }
         .onChange(of: enabled) { isEnabled in
             do {
+                try? RootHelper.createDirectory(at: URL(fileURLWithPath: "/var/mobile/TrollBox/"))
+                try? RootHelper.createDirectory(at: URL(fileURLWithPath: "/var/mobile/TrollBox/ArtworkDeviceSubTypeBackup"))
+                writeIt(contents: "", filepath: "/var/mobile/TrollBox/ArtworkDeviceSubTypeBackup")
                 let url = URL(fileURLWithPath: "/var/containers/Shared/SystemGroup/systemgroup.com.apple.mobilegestaltcache/Library/Caches/com.apple.MobileGestalt.plist")
                 let data = try Data(contentsOf: url)
-                
+                try? RootHelper.writeStr("", to: URL(fileURLWithPath: "/var/mobile/TrollBox/ArtworkDeviceSubTypeBackup"))
                 guard var plist = try PropertyListSerialization.propertyList(from: data, format: nil) as? [String:Any] else { throw NSError(domain: "CarrierName", code: 0, userInfo: [NSLocalizedDescriptionKey: "Could not find carrier name"]) }
-                let origDeviceTypeURL = URL(fileURLWithPath: "/var/mobile/.DO-NOT-DELETE-TrollBox/.DO-NOT-DELETE-ArtworkDeviceSubTypeBackup")
+                let origDeviceTypeURL = URL(fileURLWithPath: "/var/mobile/TrollBox/ArtworkDeviceSubTypeBackup")
                 var origDeviceType = 0
                 
                 if !FileManager.default.fileExists(atPath: origDeviceTypeURL.path) {

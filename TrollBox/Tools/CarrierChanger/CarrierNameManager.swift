@@ -13,7 +13,7 @@ class CarrierNameManager {
         
         for url in try fm.contentsOfDirectory(at: URL(fileURLWithPath: "/var/mobile/Library/Carrier Bundles/Overlay/"), includingPropertiesForKeys: nil) {
             remLog(url)
-            let tempURL = URL(fileURLWithPath: "/var/mobile/.DO-NOT-DELETE-TrollTools/\(url.lastPathComponent)")
+            let tempURL = URL(fileURLWithPath: "/var/mobile/.DO-NOT-DELETE-TrollBox/\(url.lastPathComponent)")
             try? RootHelper.copy(from: url, to: tempURL)
             try? RootHelper.removeItem(at: url)
             
