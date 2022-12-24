@@ -31,6 +31,11 @@
 		F1A59FB929526FC700A57361 /* invoke.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A59FB829526FC700A57361 /* invoke.m */; };
 		F1A59FE429527A6600A57361 /* PasscodeEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A59FE329527A6600A57361 /* PasscodeEditorView.swift */; };
 		F1A59FE629527A8000A57361 /* PasscodeKeyFaceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A59FE529527A8000A57361 /* PasscodeKeyFaceManager.swift */; };
+		F1DAC9AC2956853B003BB965 /* Gestures.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1DAC9AB2956853B003BB965 /* Gestures.swift */; };
+		F1DAC9AF295685A4003BB965 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F1DAC9AE295685A4003BB965 /* Alamofire */; };
+		F1DAC9B22956860B003BB965 /* MGPreferences.m in Sources */ = {isa = PBXBuildFile; fileRef = F1DAC9B12956860B003BB965 /* MGPreferences.m */; };
+		F1DAC9B429568D17003BB965 /* CreditsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1DAC9B329568D17003BB965 /* CreditsView.swift */; };
+		F1DAC9B729568DC2003BB965 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = F1DAC9B629568DC2003BB965 /* SDWebImageSwiftUI */; };
 		F1ECFC7729552E5C007E24CC /* BadgeChangerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1ECFC7529552E56007E24CC /* BadgeChangerView.swift */; };
 		F1ECFC7829552E5C007E24CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1ECFC7629552E5B007E24CC /* Assets.xcassets */; };
 		F1ECFC7A29552E8F007E24CC /* BadgeChanger.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1ECFC7929552E8F007E24CC /* BadgeChanger.swift */; };
@@ -44,7 +49,6 @@
 		F1F20BBA294FD3D100E9916C /* RingtoneVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F20BB9294FD3D100E9916C /* RingtoneVIew.swift */; };
 		F1F20BC0294FD45400E9916C /* WallpaperGetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F20BBF294FD45300E9916C /* WallpaperGetter.swift */; };
 		F1F20BC3294FD4DC00E9916C /* ZIPFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = F1F20BC2294FD4DB00E9916C /* ZIPFoundation */; };
-		F1F20BC5294FD69300E9916C /* GesturesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F20BC4294FD69300E9916C /* GesturesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,6 +79,10 @@
 		F1A59FB829526FC700A57361 /* invoke.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = invoke.m; sourceTree = "<group>"; };
 		F1A59FE329527A6600A57361 /* PasscodeEditorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasscodeEditorView.swift; sourceTree = "<group>"; };
 		F1A59FE529527A8000A57361 /* PasscodeKeyFaceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasscodeKeyFaceManager.swift; sourceTree = "<group>"; };
+		F1DAC9AB2956853B003BB965 /* Gestures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gestures.swift; sourceTree = "<group>"; };
+		F1DAC9B029568607003BB965 /* MGPreferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGPreferences.h; sourceTree = "<group>"; };
+		F1DAC9B12956860B003BB965 /* MGPreferences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGPreferences.m; sourceTree = "<group>"; };
+		F1DAC9B329568D17003BB965 /* CreditsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsView.swift; sourceTree = "<group>"; };
 		F1ECFC7529552E56007E24CC /* BadgeChangerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BadgeChangerView.swift; sourceTree = "<group>"; };
 		F1ECFC7629552E5B007E24CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Themer/Badger/Assets.xcassets; sourceTree = "<group>"; };
 		F1ECFC7929552E8F007E24CC /* BadgeChanger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeChanger.swift; sourceTree = "<group>"; };
@@ -89,7 +97,6 @@
 		F1F20BB4294FCEE000E9916C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		F1F20BB9294FD3D100E9916C /* RingtoneVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingtoneVIew.swift; sourceTree = "<group>"; };
 		F1F20BBF294FD45300E9916C /* WallpaperGetter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WallpaperGetter.swift; sourceTree = "<group>"; };
-		F1F20BC4294FD69300E9916C /* GesturesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GesturesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +104,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1DAC9B729568DC2003BB965 /* SDWebImageSwiftUI in Frameworks */,
+				F1DAC9AF295685A4003BB965 /* Alamofire in Frameworks */,
 				F15BA7072953D31D00740E5E /* ACarousel in Frameworks */,
 				F1F20BB5294FCEE000E9916C /* MapKit.framework in Frameworks */,
 				F1F20BB8294FCFE300E9916C /* Map in Frameworks */,
@@ -143,6 +152,7 @@
 				F13DCD15294D28E200EBA2DF /* Tools */,
 				F13DCD14294D28DA00EBA2DF /* Libs */,
 				F13DCCF8294D270700EBA2DF /* ContentView.swift */,
+				F1DAC9B329568D17003BB965 /* CreditsView.swift */,
 				F1351741294D3F76005C8DE3 /* AboutView.swift */,
 				F13DCCFA294D270900EBA2DF /* Assets.xcassets */,
 				F13DCCFC294D270900EBA2DF /* Preview Content */,
@@ -211,7 +221,7 @@
 			isa = PBXGroup;
 			children = (
 				F135173B294D3CAB005C8DE3 /* OtherView.swift */,
-				F1F20BC4294FD69300E9916C /* GesturesView.swift */,
+				F1DAC9AB2956853B003BB965 /* Gestures.swift */,
 			);
 			path = OtherTools;
 			sourceTree = "<group>";
@@ -220,6 +230,8 @@
 			isa = PBXGroup;
 			children = (
 				F1351733294D3B2F005C8DE3 /* ImagePickerView.swift */,
+				F1DAC9B029568607003BB965 /* MGPreferences.h */,
+				F1DAC9B12956860B003BB965 /* MGPreferences.m */,
 				F135171C294D37DD005C8DE3 /* TSUtil.m */,
 				F1F20BBF294FD45300E9916C /* WallpaperGetter.swift */,
 				F135171E294D37EE005C8DE3 /* TSUtil.h */,
@@ -303,6 +315,8 @@
 				F1F20BB7294FCFE300E9916C /* Map */,
 				F1F20BC2294FD4DB00E9916C /* ZIPFoundation */,
 				F15BA7062953D31D00740E5E /* ACarousel */,
+				F1DAC9AE295685A4003BB965 /* Alamofire */,
+				F1DAC9B629568DC2003BB965 /* SDWebImageSwiftUI */,
 			);
 			productName = TSSwissKnife;
 			productReference = F13DCCF3294D270700EBA2DF /* TrollBox.app */;
@@ -338,6 +352,8 @@
 				F1F20BC1294FD4DB00E9916C /* XCRemoteSwiftPackageReference "ZIPFoundation" */,
 				F1A59FD429527A1B00A57361 /* XCRemoteSwiftPackageReference "SantanderWrappers" */,
 				F15BA7052953D31D00740E5E /* XCRemoteSwiftPackageReference "ACarousel" */,
+				F1DAC9AD295685A4003BB965 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				F1DAC9B529568DC2003BB965 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
 			);
 			productRefGroup = F13DCCF4294D270700EBA2DF /* Products */;
 			projectDirPath = "";
@@ -381,13 +397,15 @@
 				F14D866B29538B89008F06D2 /* AirSpam.swift in Sources */,
 				F14D866929538B89008F06D2 /* TrollController.swift in Sources */,
 				F1ECFC7729552E5C007E24CC /* BadgeChangerView.swift in Sources */,
-				F1F20BC5294FD69300E9916C /* GesturesView.swift in Sources */,
 				F1F20BC0294FD45400E9916C /* WallpaperGetter.swift in Sources */,
+				F1DAC9B22956860B003BB965 /* MGPreferences.m in Sources */,
 				F1351724294D3A53005C8DE3 /* RemLog.swift in Sources */,
 				F1F20BB1294FCDC100E9916C /* LocationSimulationView.swift in Sources */,
 				F151CC2B2954DD1200367170 /* ImagePicker.swift in Sources */,
 				F1351734294D3B2F005C8DE3 /* ImagePickerView.swift in Sources */,
 				F1A59FB629526F6800A57361 /* WallSetView.swift in Sources */,
+				F1DAC9B429568D17003BB965 /* CreditsView.swift in Sources */,
+				F1DAC9AC2956853B003BB965 /* Gestures.swift in Sources */,
 				F1F20BBA294FD3D100E9916C /* RingtoneVIew.swift in Sources */,
 				F14D866829538B89008F06D2 /* Sharing.swift in Sources */,
 				F1A59FE629527A8000A57361 /* PasscodeKeyFaceManager.swift in Sources */,
@@ -635,6 +653,22 @@
 				kind = branch;
 			};
 		};
+		F1DAC9AD295685A4003BB965 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		F1DAC9B529568DC2003BB965 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
 		F1F20BB6294FCFE300E9916C /* XCRemoteSwiftPackageReference "Map" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/pauljohanneskraft/Map";
@@ -658,6 +692,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F15BA7052953D31D00740E5E /* XCRemoteSwiftPackageReference "ACarousel" */;
 			productName = ACarousel;
+		};
+		F1DAC9AE295685A4003BB965 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F1DAC9AD295685A4003BB965 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		F1DAC9B629568DC2003BB965 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F1DAC9B529568DC2003BB965 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
 		};
 		F1F20BB7294FCFE300E9916C /* Map */ = {
 			isa = XCSwiftPackageProductDependency;

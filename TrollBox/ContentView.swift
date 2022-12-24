@@ -18,6 +18,10 @@ struct ContentView: View {
 //                .tabItem {
 //                    Label("Tools", systemImage: "wrench.and.screwdriver.fill")
 //                }
+            CreditsView()
+                .tabItem {
+                    Label("Credits", systemImage: "person.fill.questionmark")
+                }
             AboutView()
                 .tabItem {
                     Label("About", systemImage: "info.circle")

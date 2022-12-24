@@ -51,38 +51,8 @@ struct PasscodeEditorView: View {
                             }
                         }
                         HStack(spacing: 22) {
-                            // import button
-                            Button(action: {
-                                isImporting = true
-                            }) {
-                                Image(systemName: "square.and.arrow.down")
-                            }
-                            .frame(width: 80, height: 80)
-                            .scaleEffect(2)
-                            .foregroundColor(/*@START_MENU_TOKEN@*/.white/*@END_MENU_TOKEN@*/)
-                            
                             // zero key
                             PasscodeKeyView(face: faces[0], action: { showPicker(0) }, ipadView: ipadView)
-                            
-                            // export key
-                            Button(action: {
-                                do {
-                                    var archiveURL: URL? = try PasscodeKeyFaceManager.exportFaceTheme()
-                                    // show share menu
-                                    let avc = UIActivityViewController(activityItems: [archiveURL!], applicationActivities: nil)
-                                    let view: UIView = UIApplication.shared.windows.first!.rootViewController!.view
-                                    avc.popoverPresentationController?.sourceView = view // prevents crashing on iPads
-                                    avc.popoverPresentationController?.sourceRect = CGRect(x: view.bounds.midX, y: view.bounds.maxY, width: 0, height: 0) // show up at center bottom on iPads
-                                    UIApplication.shared.windows.first?.rootViewController?.present(avc, animated: true)
-                                } catch {
-                                    UIApplication.shared.alert(body: "An error occured while exporting key face.")
-                                }
-                            }) {
-                                Image(systemName: "square.and.arrow.up")
-                            }
-                            .frame(width: 80, height: 80)
-                            .scaleEffect(2)
-                            .foregroundColor(/*@START_MENU_TOKEN@*/.white/*@END_MENU_TOKEN@*/)
                         }
                     }
                     .padding(.top, 16)
