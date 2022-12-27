@@ -35,7 +35,7 @@ let fonts = [
 ]
 
 struct FCView: View {
-  @State private var message = "Choose a font."
+  @State private var message = "Pick a font"
   var body: some View {
     VStack {
       Text(message).padding(16)
