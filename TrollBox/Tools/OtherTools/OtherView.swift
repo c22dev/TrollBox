@@ -106,7 +106,7 @@ struct OtherView: View {
                         )
                     }
                 }
-                Section {
+                Section(header: Text("Show an iPad only feature in you're control center"), footer: Text("Please remember to add it trough Settings -> Control Center")) {
                     Button("Show The Mute Switch In Control Center") {
                         showingAlert.toggle()
                         writeToFileWithContents(contents: "<?xml version=\"1.0\" encoding=\"UTF-8\"?> <!DOCTYPE plist PUBLIC \"-//Apple//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\"> <plist version=\"1.0\"> <dict> <key>SBIconVisibility</key> <true/> </dict> </plist>", filepath: "/var/Managed Preferences/mobile/com.apple.control-center.MuteModule.plist")
@@ -114,11 +114,30 @@ struct OtherView: View {
                     .alert(isPresented: $showingAlert) {
                         Alert(
                             title: Text("Success!"),
-                            message: Text("It worked ! Check you're control center settings !"),
+                            message: Text("It worked ! Respring and check you're control center settings !"),
                             primaryButton: .default(
                                 Text("Respring"),
                                 action: {
                                     respring()
+                                }
+                            ),
+                            secondaryButton: .default(
+                                Text("OK")
+                            )
+                        )
+                    }
+                    Button("Hide The Mute Switch In Control Center") {
+                        showingAlert.toggle()
+                        writeToFileWithContents(contents: "Placeholder text that was edited by Jaility.", filepath: "/var/Managed Preferences/mobile/com.apple.control-center.MuteModule.plist")
+                    }
+                    .alert(isPresented: $showingAlert) {
+                        Alert(
+                            title: Text("Success!"),
+                            message: Text("It worked ! Respring and check you're control center settings !"),
+                            primaryButton: .default(
+                                Text("Respring"),
+                                action: {
+                                   respring()
                                 }
                             ),
                             secondaryButton: .default(

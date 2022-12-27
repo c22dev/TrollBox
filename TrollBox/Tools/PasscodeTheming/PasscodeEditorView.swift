@@ -132,7 +132,7 @@ struct PasscodeEditorView: View {
                             
                             let customAction = UIAlertAction(title: "Custom", style: .default) { (action) in
                                 // ask the user for a custom size
-                                var sizeAlert = UIAlertController(title: "Enter Key Dimensions", message: "Min: "+String(sizeLimit[0])+", Max: "+String(sizeLimit[1]), preferredStyle: .alert)
+                                let sizeAlert = UIAlertController(title: "Enter Key Dimensions", message: "Min: "+String(sizeLimit[0])+", Max: "+String(sizeLimit[1]), preferredStyle: .alert)
                                 // bring up the text prompts
                                 sizeAlert.addTextField { (textField) in
                                     // text field for width

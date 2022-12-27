@@ -16,7 +16,7 @@ struct ContentView: View {
                 }
             AirSpam()
                 .tabItem {
-                    Label("AirSpammer", systemImage: "antenna.radiowaves.left.and.right.circle")
+                    Label("AirSpammer", systemImage: "antenna.radiowaves.left.and.right")
                 }
             AboutView()
                 .tabItem {

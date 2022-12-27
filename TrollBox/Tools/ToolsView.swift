@@ -14,7 +14,7 @@ struct ToolsView: View {
                 Section {
                     NavigationLink(destination: PasscodeEditorView()) {
                         HStack {
-                            Image(systemName: "lock.ipad")
+                            Image(systemName: "lock.fill")
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
                                 .frame(width: 24, height: 24)
@@ -84,7 +84,7 @@ struct ToolsView: View {
                     }
                     NavigationLink(destination: LocationSimulationView()) {
                         HStack {
-                            Image(systemName: "map.circle.fill")
+                            Image(systemName: "mappin")
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
                                 .frame(width: 24, height: 24)
