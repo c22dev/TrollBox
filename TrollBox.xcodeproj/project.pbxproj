@@ -33,6 +33,13 @@
 		F16942D7295B257100C99444 /* PreviewFonts in Resources */ = {isa = PBXBuildFile; fileRef = F16942D5295B257100C99444 /* PreviewFonts */; };
 		F16942D8295B257100C99444 /* RepackedFonts in Resources */ = {isa = PBXBuildFile; fileRef = F16942D6295B257100C99444 /* RepackedFonts */; };
 		F16942DB295B2C6700C99444 /* LSFootNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16942DA295B2C6700C99444 /* LSFootNote.swift */; };
+		F16A8943295B9412006826FD /* ApplicationsWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = F16A8942295B9412006826FD /* ApplicationsWrapper */; };
+		F16A8945295B9412006826FD /* AssetCatalogWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = F16A8944295B9412006826FD /* AssetCatalogWrapper */; };
+		F16A8947295B9412006826FD /* CompressionWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = F16A8946295B9412006826FD /* CompressionWrapper */; };
+		F16A8949295B9412006826FD /* DiskImagesWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = F16A8948295B9412006826FD /* DiskImagesWrapper */; };
+		F16A894B295B9412006826FD /* FSOperations in Frameworks */ = {isa = PBXBuildFile; productRef = F16A894A295B9412006826FD /* FSOperations */; };
+		F16A894D295B9412006826FD /* NSTask in Frameworks */ = {isa = PBXBuildFile; productRef = F16A894C295B9412006826FD /* NSTask */; };
+		F16A894F295B9412006826FD /* SVGWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = F16A894E295B9412006826FD /* SVGWrapper */; };
 		F1A59FB629526F6800A57361 /* WallSetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A59FB529526F6800A57361 /* WallSetView.swift */; };
 		F1A59FB929526FC700A57361 /* invoke.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A59FB829526FC700A57361 /* invoke.m */; };
 		F1A59FE429527A6600A57361 /* PasscodeEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A59FE329527A6600A57361 /* PasscodeEditorView.swift */; };
@@ -116,11 +123,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1DAC9B729568DC2003BB965 /* SDWebImageSwiftUI in Frameworks */,
+				F16A894F295B9412006826FD /* SVGWrapper in Frameworks */,
+				F16A8949295B9412006826FD /* DiskImagesWrapper in Frameworks */,
+				F16A894D295B9412006826FD /* NSTask in Frameworks */,
 				F1DAC9AF295685A4003BB965 /* Alamofire in Frameworks */,
 				F15BA7072953D31D00740E5E /* ACarousel in Frameworks */,
 				F1F20BB5294FCEE000E9916C /* MapKit.framework in Frameworks */,
 				F1F20BB8294FCFE300E9916C /* Map in Frameworks */,
+				F16A8943295B9412006826FD /* ApplicationsWrapper in Frameworks */,
 				F1F20BC3294FD4DC00E9916C /* ZIPFoundation in Frameworks */,
+				F16A894B295B9412006826FD /* FSOperations in Frameworks */,
+				F16A8945295B9412006826FD /* AssetCatalogWrapper in Frameworks */,
+				F16A8947295B9412006826FD /* CompressionWrapper in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,6 +356,13 @@
 				F15BA7062953D31D00740E5E /* ACarousel */,
 				F1DAC9AE295685A4003BB965 /* Alamofire */,
 				F1DAC9B629568DC2003BB965 /* SDWebImageSwiftUI */,
+				F16A8942295B9412006826FD /* ApplicationsWrapper */,
+				F16A8944295B9412006826FD /* AssetCatalogWrapper */,
+				F16A8946295B9412006826FD /* CompressionWrapper */,
+				F16A8948295B9412006826FD /* DiskImagesWrapper */,
+				F16A894A295B9412006826FD /* FSOperations */,
+				F16A894C295B9412006826FD /* NSTask */,
+				F16A894E295B9412006826FD /* SVGWrapper */,
 			);
 			productName = TSSwissKnife;
 			productReference = F13DCCF3294D270700EBA2DF /* TrollBox.app */;
@@ -375,10 +396,10 @@
 			packageReferences = (
 				F1F20BB6294FCFE300E9916C /* XCRemoteSwiftPackageReference "Map" */,
 				F1F20BC1294FD4DB00E9916C /* XCRemoteSwiftPackageReference "ZIPFoundation" */,
-				F1A59FD429527A1B00A57361 /* XCRemoteSwiftPackageReference "SantanderWrappers" */,
 				F15BA7052953D31D00740E5E /* XCRemoteSwiftPackageReference "ACarousel" */,
 				F1DAC9AD295685A4003BB965 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				F1DAC9B529568DC2003BB965 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				F16A8941295B9412006826FD /* XCRemoteSwiftPackageReference "SantanderWrappers" */,
 			);
 			productRefGroup = F13DCCF4294D270700EBA2DF /* Products */;
 			projectDirPath = "";
@@ -675,7 +696,7 @@
 				minimumVersion = 0.2.0;
 			};
 		};
-		F1A59FD429527A1B00A57361 /* XCRemoteSwiftPackageReference "SantanderWrappers" */ = {
+		F16A8941295B9412006826FD /* XCRemoteSwiftPackageReference "SantanderWrappers" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SerenaKit/SantanderWrappers";
 			requirement = {
@@ -722,6 +743,41 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F15BA7052953D31D00740E5E /* XCRemoteSwiftPackageReference "ACarousel" */;
 			productName = ACarousel;
+		};
+		F16A8942295B9412006826FD /* ApplicationsWrapper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F16A8941295B9412006826FD /* XCRemoteSwiftPackageReference "SantanderWrappers" */;
+			productName = ApplicationsWrapper;
+		};
+		F16A8944295B9412006826FD /* AssetCatalogWrapper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F16A8941295B9412006826FD /* XCRemoteSwiftPackageReference "SantanderWrappers" */;
+			productName = AssetCatalogWrapper;
+		};
+		F16A8946295B9412006826FD /* CompressionWrapper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F16A8941295B9412006826FD /* XCRemoteSwiftPackageReference "SantanderWrappers" */;
+			productName = CompressionWrapper;
+		};
+		F16A8948295B9412006826FD /* DiskImagesWrapper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F16A8941295B9412006826FD /* XCRemoteSwiftPackageReference "SantanderWrappers" */;
+			productName = DiskImagesWrapper;
+		};
+		F16A894A295B9412006826FD /* FSOperations */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F16A8941295B9412006826FD /* XCRemoteSwiftPackageReference "SantanderWrappers" */;
+			productName = FSOperations;
+		};
+		F16A894C295B9412006826FD /* NSTask */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F16A8941295B9412006826FD /* XCRemoteSwiftPackageReference "SantanderWrappers" */;
+			productName = NSTask;
+		};
+		F16A894E295B9412006826FD /* SVGWrapper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F16A8941295B9412006826FD /* XCRemoteSwiftPackageReference "SantanderWrappers" */;
+			productName = SVGWrapper;
 		};
 		F1DAC9AE295685A4003BB965 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;

@@ -11,9 +11,9 @@ struct LSFootnoteChangerView: View {
     @State var footnoteText = ""
     @State var footnoteOffset: CGFloat = .zero
     @State var footnoteSize: [CGFloat] = [.zero, .zero]
-
+    
     var sharedDeviceConfigPath = "/var/containers/Shared/SystemGroup/systemgroup.com.apple.configurationprofiles/Library/ConfigurationProfiles"
-
+    
     var body: some View {
         ZStack {
             VStack {
@@ -29,7 +29,7 @@ struct LSFootnoteChangerView: View {
                                 // set the footnote textbox size
                                 footnoteSize[0] = geometry.size.width/3
                                 footnoteSize[1] = geometry.size.height/25
-
+                                
                                 // set the footnote textbox offset
                                 footnoteOffset = -geometry.size.height/2 + (870/990) * geometry.size.height + footnoteSize[1]/2
                             }
@@ -49,19 +49,19 @@ struct LSFootnoteChangerView: View {
                 Button(action: {
                     do {
                         let url = URL(fileURLWithPath: sharedDeviceConfigPath + "/SharedDeviceConfiguration.plist")
-
+                        
                         var plistData: Data
                         if !FileManager.default.fileExists(atPath: url.path) {
                             plistData = try PropertyListSerialization.data(fromPropertyList: ["LockScreenFootnote": footnoteText], format: .xml, options: 0)
                         } else {
-                            guard let data = try? Data(contentsOf: url), var plist = try PropertyListSerialization.propertyList(from: data, format: nil) as? [String:Any] else {         throw NSError(domain: "CarrierName", code: 0, userInfo: [NSLocalizedDescriptionKey: "Could read plist"]) }
+                            guard let data = try? Data(contentsOf: url), var plist = try PropertyListSerialization.propertyList(from: data, format: nil) as? [String:Any] else { throw NSError(domain: "PLIST", code: 0, userInfo: [NSLocalizedDescriptionKey: "Could not read the Plist"]) }
                             plist["LockScreenFootnote"] = footnoteText
-
+                            
                             // Save plist
                             plistData = try PropertyListSerialization.data(fromPropertyList: plist, format: .xml, options: 0)
                             UserDefaults.standard.set(footnoteText, forKey: "LSFootnoteText")
                         }
-
+                        
                         // write to file
                         try RootHelper.writeStr(String(decoding: plistData, as: UTF8.self), to: url)
                     } catch {

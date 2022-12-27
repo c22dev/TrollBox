@@ -105,7 +105,16 @@ struct ToolsView: View {
                 }
             }
             .navigationBarTitle("TrollBox")
-            .padding(.top, 10) 
+            .padding(.top, 10)
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button(action: {
+                        respring()
+                    }) {
+                        Image(systemName: "arrow.clockwise")
+                    }
+                }
+            }
         }
     }
 }

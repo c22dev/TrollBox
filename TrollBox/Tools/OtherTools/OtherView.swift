@@ -155,15 +155,6 @@ struct OtherView: View {
                         }.disabled(homeGestureButtonDisabled(homeGesture))
                     }
                     }
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    Button(action: {
-                        respring()
-                    }) {
-                        Image(systemName: "arrow.clockwise")
-                    }
-                }
-            }
             }
         }
 func writeToFileWithContents(contents: String, filepath: String) {
