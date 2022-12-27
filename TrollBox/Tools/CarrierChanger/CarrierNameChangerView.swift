@@ -49,6 +49,8 @@ struct CarrierNameChangerView: View {
                         UIApplication.shared.alert(body: error.localizedDescription)
                     }
                 }
+                Text("Note : This carrier changer isn't working for everyone and is not stable at the moment.")
+                    .frame(width: 300, height: 100)
                 .padding(.bottom)
             }
             .ignoresSafeArea(.keyboard)

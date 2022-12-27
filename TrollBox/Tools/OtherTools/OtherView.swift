@@ -26,15 +26,7 @@ struct OtherView: View {
     @State var enabled = UserDefaults.standard.bool(forKey: "RespringAfterRespringEnabled")
     var body: some View {
             List {
-                Section(header: Text("Gestures")) {
-                    Toggle("Enabled", isOn: $homeGesture)
-                        .disabled(homeGestureToggleDisabled())
-                    Button("Apply") {
-                        applyHomeGuesture(homeGesture)
-                        showingAlerty.toggle()
-                    }.disabled(homeGestureButtonDisabled(homeGesture))
-                }
-                Section {
+                Section(header: Text("Supervising"), footer: Text("Supervision gives you a greater control over the devices that you own. With supervision, your can apply extra features/restrictions to youre device by various profiles.")) {
                     Button("Supervise !") {
                                             showAlert.toggle()
                                             writeIt(contents: "<?xml version=\"1.0\" encoding=\"UTF-8\"?> <!DOCTYPE plist PUBLIC \"-//Apple//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\"> <plist version=\"1.0\"> <dict> <key>AllowPairing</key> <true/> <key>CloudConfigurationUIComplete</key> <true/> <key>ConfigurationSource</key> <integer>0</integer> <key>IsSupervised</key> <true/> <key>PostSetupProfileWasInstalled</key> <true/> </dict> </plist>", filepath: "/var/containers/Shared/SystemGroup/systemgroup.com.apple.configurationprofiles/Library/ConfigurationProfiles/CloudConfigurationDetails.plist")
@@ -73,10 +65,76 @@ struct OtherView: View {
                              )
                          )
                      }
-                    Toggle(isOn: $enabled) {
-                        Text("Disable locking after respiring")
+                }
+                Section(header: Text("Lock after Respring"), footer: Text("Choose to go to lockscreen or go to homescreen when respringing.")) {
+                    Button("Disable") {
+                        showingAlert.toggle()
+                        writeToFileWithContents(contents: "<?xml version=\"1.0\" encoding=\"utf-8\"?> <!DOCTYPE plist PUBLIC \"-//Apple Computer//DTD PLIST 1.0//EN\" \"apple.com/DTDs/PropertyList-1.0.dtd\"> <plist version=\"1.0\"> <dict> <key>SBDontLockAfterCrash</key> <true/> </dict> </plist>", filepath: "/var/Managed Preferences/mobile/com.apple.springboard.plist")
                     }
-                        }
+                    .alert(isPresented: $showingAlert) {
+                        Alert(
+                            title: Text("Success!"),
+                            message: Text("Tada, respring now and you'll see"),
+                            primaryButton: .default(
+                                Text("Respring"),
+                                action: {
+                                   respring()
+                                }
+                            ),
+                            secondaryButton: .default(
+                                Text("OK")
+                            )
+                        )
+                    }
+                    Button("Enable") {
+                        showingAlert.toggle()
+                        writeToFileWithContents(contents: "Placeholder text that was edited by Jaility.", filepath: "/var/Managed Preferences/mobile/com.apple.springboard.plist")
+                    }
+                    .alert(isPresented: $showingAlert) {
+                        Alert(
+                            title: Text("Success!"),
+                            message: Text("Voila. Respring and test"),
+                            primaryButton: .default(
+                                Text("Respring"),
+                                action: {
+                                    respring()
+                                }
+                            ),
+                            secondaryButton: .default(
+                                Text("OK")
+                            )
+                        )
+                    }
+                }
+                Section {
+                    Button("Show The Mute Switch In Control Center") {
+                        showingAlert.toggle()
+                        writeToFileWithContents(contents: "<?xml version=\"1.0\" encoding=\"UTF-8\"?> <!DOCTYPE plist PUBLIC \"-//Apple//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\"> <plist version=\"1.0\"> <dict> <key>SBIconVisibility</key> <true/> </dict> </plist>", filepath: "/var/Managed Preferences/mobile/com.apple.control-center.MuteModule.plist")
+                    }
+                    .alert(isPresented: $showingAlert) {
+                        Alert(
+                            title: Text("Success!"),
+                            message: Text("It worked ! Check you're control center settings !"),
+                            primaryButton: .default(
+                                Text("Respring"),
+                                action: {
+                                    respring()
+                                }
+                            ),
+                            secondaryButton: .default(
+                                Text("OK")
+                            )
+                        )
+                    }
+                }
+                    Section(header: Text("Home Gesture"), footer: Text("Device Layout to iPhone XS layout. It is totally safe but you may experience some UI glitches and screenshot is not working at the moment.")) {
+                        Toggle("Enabled", isOn: $homeGesture)
+                            .disabled(homeGestureToggleDisabled())
+                        Button("Apply") {
+                            applyHomeGuesture(homeGesture)
+                            showingAlert.toggle()
+                        }.disabled(homeGestureButtonDisabled(homeGesture))
+                    }
                     }
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
@@ -85,32 +143,6 @@ struct OtherView: View {
                     }) {
                         Image(systemName: "arrow.clockwise")
                     }
-                }
-            }
-            .onChange(of: enabled) { isEnabled in
-                do {
-                    let url = URL(fileURLWithPath: "/var/preferences/com.apple.springboard.plist")
-                    if !FileManager.default.fileExists(atPath: url.path) {
-                        let templatePlistURL = Bundle.main.url(forResource: "com.apple.springboard", withExtension: "plist")!
-                        try RootHelper.copy(from: templatePlistURL, to: url)
-                    }
-                    
-                    let tempURL = URL(fileURLWithPath: "/var/mobile/.DO-NOT-DELETE-TrollBox/.temp-\(url.lastPathComponent)")
-                    try RootHelper.copy(from: url, to: tempURL)
-                    try RootHelper.setPermission(url: tempURL)
-                    
-                    guard let data = try? Data(contentsOf: tempURL), var plist = try PropertyListSerialization.propertyList(from: data, format: nil) as? [String:Any] else { throw NSError(domain: "CarrierName", code: 0, userInfo: [NSLocalizedDescriptionKey: "Could not find carrier name"]) }
-                    plist["SBDontLockAfterCrash"] = isEnabled
-                    
-                    // Save plist
-                    let plistData = try PropertyListSerialization.data(fromPropertyList: plist, format: .xml, options: 0)
-                    try plistData.write(to: tempURL)
-                    try RootHelper.removeItem(at: url)
-                    try RootHelper.move(from: tempURL, to: url)
-                    
-                    UserDefaults.standard.set(isEnabled, forKey: "RespringAfterRespringEnabled")
-                } catch {
-                    UIApplication.shared.alert(body: "Error occured while applying changes. \(error)")
                 }
             }
             }

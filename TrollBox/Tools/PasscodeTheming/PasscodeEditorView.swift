@@ -32,6 +32,8 @@ struct PasscodeEditorView: View {
         GeometryReader { proxy in
             //let minSize = min(proxy.size.width, proxy.size.height)
             ZStack(alignment: .center) {
+                Color.black
+                    .ignoresSafeArea()
                 
                 //                Rectangle()
                 //                    .background(Material.ultraThinMaterial)

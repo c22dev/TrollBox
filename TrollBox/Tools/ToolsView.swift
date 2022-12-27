@@ -62,16 +62,16 @@ struct ToolsView: View {
                             Text("AirSpam")
                         }
                     }
-//                    NavigationLink(destination: Badge()) {
-//                        HStack {
-//                            Image(systemName: "gear.badge")
-//                                .resizable()
-//                                .aspectRatio(contentMode: .fit)
-//                                .frame(width: 24, height: 24)
-//                                .foregroundColor(.primary)
-//                            Text("Badge")
-//                        }
-//                    }
+                    NavigationLink(destination: BadgeChangerView()) {
+                        HStack {
+                            Image(systemName: "app.badge.fill")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 24, height: 24)
+                                .foregroundColor(.primary)
+                            Text("Badge Color Changer")
+                        }
+                    }
                     NavigationLink(destination: LocationSimulationView()) {
                         HStack {
                             Image(systemName: "map.circle.fill")

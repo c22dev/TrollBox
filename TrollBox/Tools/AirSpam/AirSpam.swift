@@ -23,13 +23,20 @@ struct AirSpam: View {
     var body: some View {
         NavigationView {
             Group {
-                    VStack {
-                            LazyVGrid(columns: gridItemLayout, spacing: 8) {
-                                ForEach(trollController.people.sorted(by: { a, b in a.displayName ?? "" < b.displayName ?? "" }), id: \.node) { p in
-                                    PersonView(person: p, selected: $selectedPeople[p.node])
-                                        .environmentObject(trollController)
-                                }
+                VStack {
+                    if trollController.people.count == 0 { // No users in radius
+                        ProgressView()
+                        Text("Searching for devices...")
+                            .foregroundColor(.secondary)
+                            .padding()
+                    }
+                    else {
+                        LazyVGrid(columns: gridItemLayout, spacing: 8) {
+                            ForEach(trollController.people.sorted(by: { a, b in a.displayName ?? "" < b.displayName ?? "" }), id: \.node) { p in
+                                PersonView(person: p, selected: $selectedPeople[p.node])
+                                    .environmentObject(trollController)
                             }
+                        }
                         .padding()
                         VStack {
                             if trollController.isRunning { Text("Sent AirDrops: \(totalAirDrops)") }
@@ -53,18 +60,18 @@ struct AirSpam: View {
                         .padding()
                     }
                 }
+                }
+            }
+            .navigationViewStyle(StackNavigationViewStyle())
+            .onAppear {
+                // Start searching nodes
+                trollController.startBrowser()
+            }
+            .onChange(of: rechargeDuration) { newValue in
+                trollController.rechargeDuration = newValue
+            }
+            
         }
-        .navigationViewStyle(StackNavigationViewStyle())
-        .onAppear {
-            // Start searching nodes
-            trollController.startBrowser()
-        }
-        .onChange(of: rechargeDuration) { newValue in
-            trollController.rechargeDuration = newValue
-        }
-        
-    }
-    
     // shows a privacy req dialog if needed
     func showPicker() {
         PHPhotoLibrary.requestAuthorization(for: .readWrite) { status in

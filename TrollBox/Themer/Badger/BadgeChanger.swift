@@ -5,72 +5,81 @@
 ////  Created by Constantin Clerc on 23/12/2022.
 ////
 //
-//import UIKit
-//import Dynamic
-//
-//class BadgeChanger {
-//    static func change(to color: UIColor, with radius: CGFloat) throws {
-//        let radius = max(1, radius)
-//        let badge: UIImage = try UIImage.circle(radius: UIDevice.current.userInterfaceIdiom == .pad ? radius * 2 : radius, color: color)
-//        let badgeBitmapPath = "/var/mobile/Library/Caches/MappedImageCache/Persistent/SBIconBadgeView.BadgeBackground:26:26.cpbitmap"
-//        try? FileManager.default.removeItem(atPath: badgeBitmapPath)
-//        
-//        badge.writeToCPBitmapFile(to: badgeBitmapPath as NSString)
-//    }
-//    
-//    static func change(to image: UIImage) throws {
-//        let size = CGSize(width: 26, height: 26)
-//        
-//        UIGraphicsBeginImageContextWithOptions(size, false, 0.0)
-//        image.draw(in: CGRect(origin: CGPoint.zero, size: size))
-//        let resizedImage = UIGraphicsGetImageFromCurrentImageContext()!
-//        UIGraphicsEndImageContext()
-//        
-//        let badgeBitmapPath = "/var/mobile/Library/Caches/MappedImageCache/Persistent/SBIconBadgeView.BadgeBackground:26:26.cpbitmap"
-//        try? FileManager.default.removeItem(atPath: badgeBitmapPath)
-//
-//        resizedImage.writeToCPBitmapFile(to: badgeBitmapPath as NSString)
-//    }
-//}
-//
-//extension UIImage {
-//    func writeToCPBitmapFile(to path: NSString) {
-//        Dynamic(self).writeToCPBitmapFile(path, flags: 1)
-//    }
-//    
-//    static func circle(radius: CGFloat, color: UIColor) throws -> UIImage {
-//        UIGraphicsBeginImageContextWithOptions(CGSize(width: radius, height: radius), false, 0)
-//        guard let ctx = UIGraphicsGetCurrentContext() else { throw "Unable to get context" }
-//        defer { UIGraphicsEndImageContext() }
-//        ctx.saveGState()
-//        
-//        let rect = CGRect(x: 0, y: 0, width: radius, height: radius)
-//        ctx.setFillColor(color.cgColor)
-//        ctx.fillEllipse(in: rect)
-//        
-//        ctx.restoreGState()
-//        guard let img = UIGraphicsGetImageFromCurrentImageContext() else { throw "Unable to get image"}
-//        
-//        return img
-//    }
-//    public func withRoundedCorners(radius: CGFloat? = nil) -> UIImage? {
-//        let maxRadius = min(size.width, size.height) / 2
-//        let cornerRadius: CGFloat
-//        if let radius = radius, radius > 0 && radius <= maxRadius {
-//            cornerRadius = radius
-//        } else {
-//            cornerRadius = maxRadius
-//        }
-//        UIGraphicsBeginImageContextWithOptions(size, false, scale)
-//        let rect = CGRect(origin: .zero, size: size)
-//        UIBezierPath(roundedRect: rect, cornerRadius: cornerRadius).addClip()
-//        draw(in: rect)
-//        let image = UIGraphicsGetImageFromCurrentImageContext()
-//        UIGraphicsEndImageContext()
-//        return image
-//    }
-//}
-//
-//extension String: LocalizedError {
-//    public var errorDescription: String? { return self }
-//}
+// Badge Colour Changing
+import SwiftUI
+func changeColour(colour: UIColor) {
+    var badge: UIImage = getRoundImage(12, 24, 24)!
+    
+    if UIDevice.current.userInterfaceIdiom == .pad {
+        badge = getRoundImage(24, 48, 48)!
+    }
+    
+    badge = changeImageColour(badge, colour)!
+    
+    let savePath = "/var/mobile/SBIconBadgeView.BadgeBackground:26:26.cpbitmap"
+    let targetPath = "/var/mobile/Library/Caches/MappedImageCache/Persistent/SBIconBadgeView.BadgeBackground:26:26.cpbitmap"
+    
+    let helper = ObjcHelper.init()
+    helper.image(toCPBitmap: badge, path: savePath)
+    
+    let fileManager = FileManager.default
+    do {
+        try fileManager.removeItem(atPath: targetPath)
+    } catch {
+        print("Failed to revert changes")
+    }
+    do {
+        try fileManager.moveItem(atPath: savePath, toPath: targetPath)
+    } catch {
+        print("Failed to move item")
+    }
+}
+
+func changeImageColour(_ src_image: UIImage?, _ color: UIColor?) -> UIImage? {
+
+    let rect = CGRect(x: 0, y: 0, width: src_image?.size.width ?? 0.0, height: src_image?.size.height ?? 0.0)
+    UIGraphicsBeginImageContextWithOptions(rect.size, false, 0.0)
+    let context = UIGraphicsGetCurrentContext()
+    if let CGImage = src_image?.cgImage {
+        context?.clip(to: rect, mask: CGImage)
+    }
+    if let cgColor = color?.cgColor {
+        context?.setFillColor(cgColor)
+    }
+    context?.fill(rect)
+    let colorized_image = UIGraphicsGetImageFromCurrentImageContext()
+    UIGraphicsEndImageContext()
+
+    return colorized_image
+}
+
+func getRoundImage(_ radius: Int, _ width: Int, _ height: Int) -> UIImage? {
+    
+    let rect = CGRect(x: 0, y: 0, width: CGFloat(width), height: CGFloat(height))
+    UIGraphicsBeginImageContextWithOptions(rect.size, false, 0.0)
+    let context = UIGraphicsGetCurrentContext()
+    context?.setFillColor(UIColor.black.cgColor)
+    context?.fill(rect)
+    let src_image = UIGraphicsGetImageFromCurrentImageContext()
+    UIGraphicsEndImageContext()
+
+    let image_layer = CALayer()
+    image_layer.frame = CGRect(x: 0, y: 0, width: src_image?.size.width ?? 0.0, height: src_image?.size.height ?? 0.0)
+    image_layer.contents = src_image?.cgImage
+
+    image_layer.masksToBounds = true
+    image_layer.cornerRadius = CGFloat(radius)
+
+    UIGraphicsBeginImageContextWithOptions(src_image?.size ?? CGSize.zero, false, 0.0)
+    if let aContext = UIGraphicsGetCurrentContext() {
+        image_layer.render(in: aContext)
+    }
+    let rounded_image = UIGraphicsGetImageFromCurrentImageContext()
+    UIGraphicsEndImageContext()
+
+    return rounded_image
+}
+
+func badgeButtonDiabled() -> Bool {
+    return checkSandbox()
+}

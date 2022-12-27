@@ -23,6 +23,7 @@ struct LocationSimulationView: View {
     @State private var region = MKCoordinateRegion(.world)
     
     var body: some View {
+        Text("Grab you're cordinates at [LatLong.net](https://www.latlong.net)")
         TextField("Enter latitude", text: $lat)
             .textFieldStyle(RoundedBorderTextFieldStyle())
 

@@ -4,20 +4,6 @@
 //
 //  Created by Constantin Clerc on 24/12/2022.
 //
-func checkSandbox() -> Bool {
-    let fileManager = FileManager.default
-    fileManager.createFile(atPath: "/var/mobile/me.soongyu.mugunghwa", contents: nil)
-    if fileManager.fileExists(atPath: "/var/mobile/me.soongyu.mugunghwa") {
-        do {
-            try fileManager.removeItem(atPath: "/var/mobile/me.soongyu.mugunghwa")
-        } catch {
-            print("Failed to remove sandbox check file")
-        }
-        return false
-    }
-    
-    return true
-}
 
 func applyHomeGuesture(_ enabled: Bool) {
     if enabled {
@@ -25,7 +11,7 @@ func applyHomeGuesture(_ enabled: Bool) {
         let helper = ObjcHelper.init()
         checkAndCreateBackupFolder()
         
-        let prefs = MGPreferences.init(identifier: "me.soongyu.mugunghwa")
+        let prefs = MGPreferences.init(identifier: "live.cclerc.TrollBox")
         if prefs.dictionary["DeviceSubType"] == nil {
             prefs.dictionary.setValue(helper.getDeviceSubType(), forKey: "DeviceSubType")
             prefs.updatePlist()
@@ -36,7 +22,7 @@ func applyHomeGuesture(_ enabled: Bool) {
         // Disable
         checkAndCreateBackupFolder()
         let helper = ObjcHelper.init()
-        let prefs = MGPreferences.init(identifier: "me.soongyu.mugunghwa")
+        let prefs = MGPreferences.init(identifier: "live.cclerc.TrollBox")
         if prefs.dictionary["DeviceSubType"] != nil {
             helper.updateDeviceSubType(prefs.dictionary["DeviceSubType"] as! Int)
         }
@@ -45,19 +31,19 @@ func applyHomeGuesture(_ enabled: Bool) {
 
 func checkAndCreateBackupFolder() {
     let fileManager = FileManager.default
-    if !fileManager.fileExists(atPath: "/private/var/mobile/mugunghwa/") {
-        try? fileManager.createDirectory(atPath: "/private/var/mobile/mugunghwa", withIntermediateDirectories: true)
+    if !fileManager.fileExists(atPath: "/private/var/mobile/TrollBox/") {
+        try? fileManager.createDirectory(atPath: "/private/var/mobile/TrollBox", withIntermediateDirectories: true)
     }
     
-    if !fileManager.fileExists(atPath: "/private/var/mobile/mugunghwa/Themes") {
-        try? fileManager.createDirectory(atPath: "/private/var/mobile/mugunghwa/Themes", withIntermediateDirectories: true)
+    if !fileManager.fileExists(atPath: "/private/var/mobile/TrollBox/Themes") {
+        try? fileManager.createDirectory(atPath: "/private/var/mobile/TrollBox/Themes", withIntermediateDirectories: true)
     }
 }
 
 func getCurrentState() -> Bool {
     checkAndCreateBackupFolder()
     let helper = ObjcHelper.init()
-    let prefs = MGPreferences.init(identifier: "me.soongyu.mugunghwa")
+    let prefs = MGPreferences.init(identifier: "live.cclerc.TrollBox")
     
     if prefs.dictionary["DeviceSubType"] != nil {
         if prefs.dictionary["DeviceSubType"] as! Int != helper.getDeviceSubType() as! Int {
@@ -95,10 +81,25 @@ func homeGestureButtonDisabled(_ enabled: Bool) -> Bool {
     }
     
     checkAndCreateBackupFolder()
-    let prefs = MGPreferences.init(identifier: "me.soongyu.mugunghwa")
+    let prefs = MGPreferences.init(identifier: "live.cclerc.TrollBox")
     if prefs.dictionary["DeviceSubType"] == nil && !enabled {
         return true
     }
     
     return false
+}
+
+func checkSandbox() -> Bool {
+    let fileManager = FileManager.default
+    fileManager.createFile(atPath: "/var/mobile/tboxtemp", contents: nil)
+    if fileManager.fileExists(atPath: "/var/mobile/tboxtemp") {
+        do {
+            try fileManager.removeItem(atPath: "/var/mobile/tboxtemp")
+        } catch {
+            print("Failed to remove sandbox check file")
+        }
+        return false
+    }
+    
+    return true
 }

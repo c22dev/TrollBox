@@ -34,7 +34,6 @@
 		F1DAC9AC2956853B003BB965 /* Gestures.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1DAC9AB2956853B003BB965 /* Gestures.swift */; };
 		F1DAC9AF295685A4003BB965 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F1DAC9AE295685A4003BB965 /* Alamofire */; };
 		F1DAC9B22956860B003BB965 /* MGPreferences.m in Sources */ = {isa = PBXBuildFile; fileRef = F1DAC9B12956860B003BB965 /* MGPreferences.m */; };
-		F1DAC9B429568D17003BB965 /* CreditsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1DAC9B329568D17003BB965 /* CreditsView.swift */; };
 		F1DAC9B729568DC2003BB965 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = F1DAC9B629568DC2003BB965 /* SDWebImageSwiftUI */; };
 		F1ECFC7729552E5C007E24CC /* BadgeChangerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1ECFC7529552E56007E24CC /* BadgeChangerView.swift */; };
 		F1ECFC7829552E5C007E24CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1ECFC7629552E5B007E24CC /* Assets.xcassets */; };
@@ -82,7 +81,6 @@
 		F1DAC9AB2956853B003BB965 /* Gestures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gestures.swift; sourceTree = "<group>"; };
 		F1DAC9B029568607003BB965 /* MGPreferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGPreferences.h; sourceTree = "<group>"; };
 		F1DAC9B12956860B003BB965 /* MGPreferences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGPreferences.m; sourceTree = "<group>"; };
-		F1DAC9B329568D17003BB965 /* CreditsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsView.swift; sourceTree = "<group>"; };
 		F1ECFC7529552E56007E24CC /* BadgeChangerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BadgeChangerView.swift; sourceTree = "<group>"; };
 		F1ECFC7629552E5B007E24CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Themer/Badger/Assets.xcassets; sourceTree = "<group>"; };
 		F1ECFC7929552E8F007E24CC /* BadgeChanger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeChanger.swift; sourceTree = "<group>"; };
@@ -152,7 +150,6 @@
 				F13DCD15294D28E200EBA2DF /* Tools */,
 				F13DCD14294D28DA00EBA2DF /* Libs */,
 				F13DCCF8294D270700EBA2DF /* ContentView.swift */,
-				F1DAC9B329568D17003BB965 /* CreditsView.swift */,
 				F1351741294D3F76005C8DE3 /* AboutView.swift */,
 				F13DCCFA294D270900EBA2DF /* Assets.xcassets */,
 				F13DCCFC294D270900EBA2DF /* Preview Content */,
@@ -404,7 +401,6 @@
 				F151CC2B2954DD1200367170 /* ImagePicker.swift in Sources */,
 				F1351734294D3B2F005C8DE3 /* ImagePickerView.swift in Sources */,
 				F1A59FB629526F6800A57361 /* WallSetView.swift in Sources */,
-				F1DAC9B429568D17003BB965 /* CreditsView.swift in Sources */,
 				F1DAC9AC2956853B003BB965 /* Gestures.swift in Sources */,
 				F1F20BBA294FD3D100E9916C /* RingtoneVIew.swift in Sources */,
 				F14D866829538B89008F06D2 /* Sharing.swift in Sources */,
@@ -563,7 +559,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.0.6;
+				MARKETING_VERSION = 0.0.7;
 				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = live.cclerc.trollbox;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -601,7 +597,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.0.6;
+				MARKETING_VERSION = 0.0.7;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = live.cclerc.trollbox;
