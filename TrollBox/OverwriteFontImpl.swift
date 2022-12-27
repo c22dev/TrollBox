@@ -11,7 +11,7 @@ func overwriteWithFont(name: String, completion: @escaping (String) -> Void) {
   DispatchQueue.global(qos: .userInteractive).async {
     let succeeded = overwriteWithFontImpl(name: name)
     DispatchQueue.main.async {
-      completion(succeeded ? "Success: force close an app to see results" : "Failed")
+      completion(succeeded ? "Success. You can discard the changes by restarting you're device." : "Failed")
     }
   }
 }

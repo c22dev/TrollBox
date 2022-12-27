@@ -34,7 +34,6 @@ struct WalSetView: View {
     }()
 
     var body: some View {
-        NavigationView {
             List {
                 Section {
                     HStack(spacing: 0) {
@@ -127,7 +126,6 @@ struct WalSetView: View {
             .onAppear {
                 loadWallpapers()
             }
-        }
     }
 
     // load current wallpaper(s)
