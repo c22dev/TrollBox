@@ -168,7 +168,6 @@
 		F13DCCF5294D270700EBA2DF /* TrollBox */ = {
 			isa = PBXGroup;
 			children = (
-				F16942C4295B1F8D00C99444 /* RepackedFonts */,
 				F16942BA295B1EB200C99444 /* PreviewFonts */,
 				F1ECFC7629552E5B007E24CC /* Assets.xcassets */,
 				F1ECFC4C295522CC007E24CC /* Themer */,
@@ -298,6 +297,7 @@
 		F16942B9295B1D4700C99444 /* FontChanger */ = {
 			isa = PBXGroup;
 			children = (
+				F16942C4295B1F8D00C99444 /* RepackedFonts */,
 				F16942D1295B1FFC00C99444 /* OverwriteFontImpl.swift */,
 				F16942D3295B201000C99444 /* FCView.swift */,
 			);
