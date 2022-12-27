@@ -26,7 +26,7 @@
   - Nonce setter (need to rewrite OPA's code)
   - and more to come!
 ## Screenshots
-<img src='https://i.ibb.co/mBdZxTN/Simulator-Screen-Shot-i-Phone-TROLL-2022-12-23-at-01-35-12-iphone13midnight-portrait.png' width=200><p>0.0.5 version</p>
+<img src='https://i.ibb.co/N32J3hL/IMG-3752.png' width=200><img src='https://i.ibb.co/LRHw4ZX/IMG-3754.png' width=200><p>0.0.7 version</p>
    
    
 ## Requirements
