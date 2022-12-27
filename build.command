@@ -42,7 +42,6 @@ if [ -e "$TARGET_APP/embedded.mobileprovision" ]; then
     rm -rf "$TARGET_APP/embedded.mobileprovision"
 fi
 
-
 # Add entitlements
 echo "Adding entitlements $TARGET_APP/$APPLICATION_NAME"
 ldid -S"$WORKING_LOCATION/entitlements.plist" "$TARGET_APP/$APPLICATION_NAME"

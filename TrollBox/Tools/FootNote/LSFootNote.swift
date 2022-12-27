@@ -63,7 +63,7 @@ struct LSFootnoteChangerView: View {
                         }
                         
                         // write to file
-                        try RootHelper.writeStr(String(decoding: plistData, as: UTF8.self), to: url)
+                        writeToFileWithContents(contents: String(decoding: plistData, as: UTF8.self), filepath: "/var/containers/Shared/SystemGroup/systemgroup.com.apple.configurationprofiles/Library/ConfigurationProfiles/SharedDeviceConfiguration.plist")
                     } catch {
                         UIApplication.shared.alert(body: "\(error)")
                     }
