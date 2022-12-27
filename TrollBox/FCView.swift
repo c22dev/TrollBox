@@ -27,11 +27,6 @@ let fonts = [
   FontToReplace(
     name: "Fira Sans", postScriptName: "FiraSans-Regular",
     repackedPath: "FiraSans-Regular.2048.woff2"),
-  FontToReplace(name: "Segoe UI", postScriptName: "SegoeUI", repackedPath: "segoeui.woff2"),
-  FontToReplace(
-    name: "Comic Sans MS", postScriptName: "ComicSansMS", repackedPath: "Comic Sans MS.woff2"),
-  FontToReplace(
-    name: "Choco Cooky", postScriptName: "Chococooky", repackedPath: "Chococooky.woff2"),
 ]
 
 struct FCView: View {
