@@ -1,7 +1,7 @@
 {
   "showpopup": "no",
-  "skippable": "no",
+  "skippable": "yes",
   "popuptitle": "Hey There",
   "popupcontent": "how are you?",
-  "nocancel": "true",
+  "nocancel": "false",
 }
