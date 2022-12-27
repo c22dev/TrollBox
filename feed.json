@@ -1,5 +1,7 @@
-"showpopup": "yes",
-"skippable": "no",
-"popuptitle": "Hey There",
-"popupcontent": "how are you?",
-"nocancel": "true",
+{
+  "showpopup": "yes",
+  "skippable": "no",
+  "popuptitle": "Hey There",
+  "popupcontent": "how are you?",
+  "nocancel": "true",
+}
