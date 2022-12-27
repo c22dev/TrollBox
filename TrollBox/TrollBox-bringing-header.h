@@ -6,6 +6,7 @@
 #import "LocSimPrivateHeaders.h"
 #include "RemoteLog.h"
 #import "MGPreferences.h"
+#import "vm_unaligned_copy_switch_race.h"
 void invoke(SEL selector, id target, void *arg);
 void invokeInt(SEL selector, id target, long long arg);
 void invokeDouble(SEL selector, id target, double arg);
