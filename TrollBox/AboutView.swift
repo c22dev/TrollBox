@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct AboutView: View {
+    let version: String = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as! String
     var body: some View {
            VStack(alignment: .center) {
                Image("mypage-icon")
@@ -40,6 +41,14 @@ struct AboutView: View {
                }) {
                    Text("Respring")
                }
+               Button(action: {
+                   if let url = URL(string: "https://github.com/c22dev/TrollBox/releases/latest") {
+                       UIApplication.shared.open(url)
+                   }
+               })  {
+                   Text("Version :  \(String(version))")
+               }
+               .padding()
            }
        }
 }

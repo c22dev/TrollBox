@@ -28,7 +28,7 @@ struct CarrierNameChangerView: View {
                                     
                                     // set the carrier textbox offset
                                     carrierOffset[0] = -geometry.size.width/2 + (135/640)*geometry.size.width + carrierBoxSize[0]/2
-                                    carrierOffset[1] = -geometry.size.height/2 + (142/1294) * geometry.size.height + carrierBoxSize[1]/2
+                                    carrierOffset[1] = -geometry.size.height/2 + (164/1318) * geometry.size.height + carrierBoxSize[1]/2
                                 }
                                 return .clear
                             })

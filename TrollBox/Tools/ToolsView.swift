@@ -52,14 +52,14 @@ struct ToolsView: View {
                             Text("Apple Pay Card Custom image")
                         }
                     }
-                    NavigationLink(destination: AirSpam()) {
+                    NavigationLink(destination: LSFootnoteChangerView()) {
                         HStack {
-                            Image(systemName: "antenna.radiowaves.left.and.right.circle.fill")
+                            Image(systemName: "arrow.down.doc.fill")
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
                                 .frame(width: 24, height: 24)
                                 .foregroundColor(.primary)
-                            Text("AirSpam")
+                            Text("Lock Screen Footnote")
                         }
                     }
                     NavigationLink(destination: BadgeChangerView()) {

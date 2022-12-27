@@ -14,10 +14,10 @@ struct ContentView: View {
                 .tabItem {
                     Label("Tools", systemImage: "wrench.and.screwdriver.fill")
                 }
-//            ThemeView()
-//                .tabItem {
-//                    Label("Tools", systemImage: "wrench.and.screwdriver.fill")
-//                }
+            AirSpam()
+                .tabItem {
+                    Label("AirSpammer", systemImage: "antenna.radiowaves.left.and.right.circle")
+                }
             AboutView()
                 .tabItem {
                     Label("About", systemImage: "info.circle")

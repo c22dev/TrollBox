@@ -32,6 +32,7 @@
 		F16942D4295B201000C99444 /* FCView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16942D3295B201000C99444 /* FCView.swift */; };
 		F16942D7295B257100C99444 /* PreviewFonts in Resources */ = {isa = PBXBuildFile; fileRef = F16942D5295B257100C99444 /* PreviewFonts */; };
 		F16942D8295B257100C99444 /* RepackedFonts in Resources */ = {isa = PBXBuildFile; fileRef = F16942D6295B257100C99444 /* RepackedFonts */; };
+		F16942DB295B2C6700C99444 /* LSFootNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16942DA295B2C6700C99444 /* LSFootNote.swift */; };
 		F1A59FB629526F6800A57361 /* WallSetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A59FB529526F6800A57361 /* WallSetView.swift */; };
 		F1A59FB929526FC700A57361 /* invoke.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A59FB829526FC700A57361 /* invoke.m */; };
 		F1A59FE429527A6600A57361 /* PasscodeEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A59FE329527A6600A57361 /* PasscodeEditorView.swift */; };
@@ -85,6 +86,7 @@
 		F16942D3295B201000C99444 /* FCView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCView.swift; sourceTree = "<group>"; };
 		F16942D5295B257100C99444 /* PreviewFonts */ = {isa = PBXFileReference; lastKnownFileType = folder; name = PreviewFonts; path = "../../../../../Downloads/WDBFontOverwrite-main/WDBFontOverwrite/PreviewFonts"; sourceTree = "<group>"; };
 		F16942D6295B257100C99444 /* RepackedFonts */ = {isa = PBXFileReference; lastKnownFileType = folder; name = RepackedFonts; path = "../../../../../Downloads/WDBFontOverwrite-main/WDBFontOverwrite/RepackedFonts"; sourceTree = "<group>"; };
+		F16942DA295B2C6700C99444 /* LSFootNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSFootNote.swift; sourceTree = "<group>"; };
 		F1A59FB529526F6800A57361 /* WallSetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallSetView.swift; sourceTree = "<group>"; };
 		F1A59FB829526FC700A57361 /* invoke.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = invoke.m; sourceTree = "<group>"; };
 		F1A59FE329527A6600A57361 /* PasscodeEditorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasscodeEditorView.swift; sourceTree = "<group>"; };
@@ -261,6 +263,7 @@
 		F13DCD15294D28E200EBA2DF /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				F16942D9295B2C5000C99444 /* FootNote */,
 				F1A59FB429526F5300A57361 /* WallSet */,
 				F1351722294D3A1E005C8DE3 /* CarrierChanger */,
 				F13DCD06294D275F00EBA2DF /* LocationSimulator */,
@@ -280,6 +283,14 @@
 				F1F20BB4294FCEE000E9916C /* MapKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F16942D9295B2C5000C99444 /* FootNote */ = {
+			isa = PBXGroup;
+			children = (
+				F16942DA295B2C6700C99444 /* LSFootNote.swift */,
+			);
+			path = FootNote;
 			sourceTree = "<group>";
 		};
 		F1A59FB429526F5300A57361 /* WallSet */ = {
@@ -427,6 +438,7 @@
 				F1F20BBA294FD3D100E9916C /* RingtoneVIew.swift in Sources */,
 				F14D866829538B89008F06D2 /* Sharing.swift in Sources */,
 				F1A59FE629527A8000A57361 /* PasscodeKeyFaceManager.swift in Sources */,
+				F16942DB295B2C6700C99444 /* LSFootNote.swift in Sources */,
 				F13DCCF9294D270700EBA2DF /* ContentView.swift in Sources */,
 				F1F20BA9294FC50500E9916C /* TrollBoxApp.swift in Sources */,
 				F135173C294D3CAB005C8DE3 /* OtherView.swift in Sources */,
@@ -581,7 +593,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.0.7;
+				MARKETING_VERSION = 0.0.8;
 				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = live.cclerc.trollbox;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -619,7 +631,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.0.7;
+				MARKETING_VERSION = 0.0.8;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = live.cclerc.trollbox;
