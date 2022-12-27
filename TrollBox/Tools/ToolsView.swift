@@ -112,6 +112,21 @@ struct ToolsView: View {
                         respring()
                     }) {
                         Image(systemName: "arrow.clockwise")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 24, height: 24)
+                    }
+                }
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button(action: {
+                        if let url3 = URL(string: "https://discord.gg/8gMyK6DSnB") {
+                            UIApplication.shared.open(url3)
+                        }
+                    }) {
+                        Image("discord")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 24, height: 24)
                     }
                 }
             }

@@ -1,6 +1,7 @@
 {
   "images" : [
     {
+      "filename" : "2022_12_27_11q_Kleki.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
@@ -9,7 +10,6 @@
       "scale" : "2x"
     },
     {
-      "filename" : "Group.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
