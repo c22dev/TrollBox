@@ -92,6 +92,16 @@ struct ToolsView: View {
                             Text("LocSim")
                         }
                     }
+                    NavigationLink(destination: NoCamSoundView()) {
+                        HStack {
+                            Image(systemName: "camera.shutter.button")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 24, height: 24)
+                                .foregroundColor(.primary)
+                            Text("No Shutter Sound")
+                        }
+                    }
                     NavigationLink(destination: OtherView()) {
                         HStack {
                             Image(systemName: "ellipsis")

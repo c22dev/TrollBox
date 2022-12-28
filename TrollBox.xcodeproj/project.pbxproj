@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F10BAC7B295BE4A9007387FF /* NoCamSoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10BAC79295BE4A9007387FF /* NoCamSoundView.swift */; };
+		F10BAC7D295BE4BB007387FF /* NoCameraSound.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10BAC7C295BE4BB007387FF /* NoCameraSound.swift */; };
 		F1351718294D373A005C8DE3 /* Addon.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1351717294D373A005C8DE3 /* Addon.swift */; };
 		F135171D294D37DD005C8DE3 /* TSUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F135171C294D37DD005C8DE3 /* TSUtil.m */; };
 		F1351721294D39B9005C8DE3 /* RootHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1351720294D39B9005C8DE3 /* RootHelper.swift */; };
@@ -62,6 +64,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F10BAC79295BE4A9007387FF /* NoCamSoundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoCamSoundView.swift; sourceTree = "<group>"; };
+		F10BAC7C295BE4BB007387FF /* NoCameraSound.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoCameraSound.swift; sourceTree = "<group>"; };
 		F1351717294D373A005C8DE3 /* Addon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Addon.swift; sourceTree = "<group>"; };
 		F1351719294D3799005C8DE3 /* RemoteLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RemoteLog.h; sourceTree = "<group>"; };
 		F135171C294D37DD005C8DE3 /* TSUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSUtil.m; sourceTree = "<group>"; };
@@ -137,6 +141,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F10BAC77295BE439007387FF /* NoCamSound */ = {
+			isa = PBXGroup;
+			children = (
+				F10BAC7C295BE4BB007387FF /* NoCameraSound.swift */,
+				F10BAC79295BE4A9007387FF /* NoCamSoundView.swift */,
+			);
+			path = NoCamSound;
+			sourceTree = "<group>";
+		};
 		F1351722294D3A1E005C8DE3 /* CarrierChanger */ = {
 			isa = PBXGroup;
 			children = (
@@ -272,6 +285,7 @@
 		F13DCD15294D28E200EBA2DF /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				F10BAC77295BE439007387FF /* NoCamSound */,
 				F16942D9295B2C5000C99444 /* FootNote */,
 				F1A59FB429526F5300A57361 /* WallSet */,
 				F1351722294D3A1E005C8DE3 /* CarrierChanger */,
@@ -455,7 +469,9 @@
 				F16942DB295B2C6700C99444 /* LSFootNote.swift in Sources */,
 				F13DCCF9294D270700EBA2DF /* ContentView.swift in Sources */,
 				F1F20BA9294FC50500E9916C /* TrollBoxApp.swift in Sources */,
+				F10BAC7D295BE4BB007387FF /* NoCameraSound.swift in Sources */,
 				F135173C294D3CAB005C8DE3 /* OtherView.swift in Sources */,
+				F10BAC7B295BE4A9007387FF /* NoCamSoundView.swift in Sources */,
 				F15BA7142953D4C900740E5E /* MainCardView.swift in Sources */,
 				F1A59FE429527A6600A57361 /* PasscodeEditorView.swift in Sources */,
 				F1F20BB3294FCDD200E9916C /* CarrierNameChangerView.swift in Sources */,
