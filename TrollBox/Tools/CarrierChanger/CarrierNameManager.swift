@@ -14,52 +14,45 @@ class CarrierNameManager {
         
         for url in try fm.contentsOfDirectory(at: URL(fileURLWithPath: "/var/mobile/Library/Carrier Bundles/Overlay/"), includingPropertiesForKeys: nil) {
             remLog(url)
-            let tempURL = URL(fileURLWithPath: "/var/mobile/.DO-NOT-DELETE-TrollBox/\(url.lastPathComponent)")
-            do {
-                // Get the URL of the location where the folder should be created
-                let folderURL = URL(fileURLWithPath: "/var/mobile/.DO-NOT-DELETE-TrollBox/")
-
-                // Use the `createDirectory` method to create the folder
-                try fileManager.createDirectory(at: folderURL, withIntermediateDirectories: false)
-            } catch {
-                throw NSError(domain: "CarrierName", code: 0, userInfo: [NSLocalizedDescriptionKey: "1 \(error)"])
-            }
-            do {
-                // Use the `copyItem` method to copy the file to the destination directory
-                try fileManager.copyItem(at: url, to: tempURL)
-            } catch {
-                throw NSError(domain: "CarrierName", code: 0, userInfo: [NSLocalizedDescriptionKey: "2 \(error)"])
-            }
-            do {
-                try fileManager.removeItem(at: url)
-            } catch {
-                throw NSError(domain: "CarrierName", code: 0, userInfo: [NSLocalizedDescriptionKey: "3 \(error)"])
-            }
-            
-            guard let data = try? Data(contentsOf: tempURL) else { continue }
+            let tempURL = URL(fileURLWithPath: "/var/mobile/Library/Application Support/TrollBox/\(url.lastPathComponent)")
+            guard let data = try? Data(contentsOf: url) else { continue }
             guard var plist = try? PropertyListSerialization.propertyList(from: data, format: nil) as? [String:Any] else { continue }
             
             // Modify values
-            if var images = plist["StatusBarImages"] as? [[String: Any]] {
-                for var (i, image) in images.enumerated() {
-                    image["StatusBarCarrierName"] = str
-                    
-                    images[i] = image
+            let fileManager = FileManager.default
+            let folderURL = URL(fileURLWithPath: "/var/mobile/Library/Carrier Bundles/Overlay/")
+
+            do {
+                let plistFiles = try fileManager.contentsOfDirectory(at: folderURL, includingPropertiesForKeys: nil, options: [.skipsHiddenFiles])
+                    .filter { $0.pathExtension == "plist" }
+
+                for plistFile in plistFiles {
+                    do {
+                        let data = try Data(contentsOf: plistFile)
+                        if var plist = try PropertyListSerialization.propertyList(from: data, options: .mutableContainersAndLeaves, format: nil) as? [String: Any] {
+                            // Modify the plist dictionary as needed
+                            if var images = plist["StatusBarImages"] as? [[String: Any]] {
+                                 for var (i, image) in images.enumerated() {
+                                     image["StatusBarCarrierName"] = str
+                                     
+                                     images[i] = image
+                                 }
+                                 plist["StatusBarImages"] = images
+                             }
+
+                            // Write the modified plist dictionary back to the file
+                            let newData = try PropertyListSerialization.data(fromPropertyList: plist, format: .xml, options: 0)
+                            try newData.write(to: plistFile)
+                        }
+                    } catch {
+                        throw NSError(domain: "CarrierName", code: 0, userInfo: [NSLocalizedDescriptionKey: "Error edditing plist file: \(error)"])
+                    }
                 }
-                plist["StatusBarImages"] = images
+            } catch {
+                throw NSError(domain: "CarrierName", code: 0, userInfo: [NSLocalizedDescriptionKey: "Error listing files in folder: \(error)"])
             }
-            
-            // Save plist
-            guard let plistData = try? PropertyListSerialization.data(fromPropertyList: plist, format: .xml, options: 0) else { continue }
-            try? plistData.write(to: tempURL)
             
             remLog("moving")
-            do {
-                // Use the `copyItem` method to copy the file to the destination directory
-                try fileManager.copyItem(at: tempURL, to: url)
-            } catch {
-                throw NSError(domain: "CarrierName", code: 0, userInfo: [NSLocalizedDescriptionKey: "4 \(error)"])
-            }
         }
     }
     

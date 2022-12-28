@@ -126,7 +126,7 @@ struct ToolsView: View {
                         Image("discord")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
-                            .frame(width: 30, height: 30)
+                            .frame(width: 27, height: 27)
                     }
                 }
             }
