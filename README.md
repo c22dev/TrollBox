@@ -25,7 +25,7 @@
   - Ringtone manager
   - and more to come!
 ## Screenshots
-<img src='https://i.ibb.co/dBqvHSN/IMG-3816.png' width=200><img src='https://i.ibb.co/grmh9hb/IMG-3817.png' width=200><img src='https://i.ibb.co/jfrFTSM/IMG-3818.png' width=200><img src='https://i.ibb.co/W2pjkLG/IMG-3821.png' width=200><img src='https://i.ibb.co/6m0kj0T/IMG-3822.png' width=200><p>0.0.8 version</p>
+<img src='https://i.ibb.co/dBqvHSN/IMG-3816.png' width=200><img src='https://i.ibb.co/grmh9hb/IMG-3817.png' width=200><img src='https://i.ibb.co/W2pjkLG/IMG-3821.png' width=200><img src='https://i.ibb.co/6m0kj0T/IMG-3822.png' width=200><p>0.0.8 version</p>
    
    
 ## Requirements
