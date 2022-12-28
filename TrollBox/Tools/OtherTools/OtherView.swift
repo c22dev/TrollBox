@@ -154,7 +154,23 @@ struct OtherView: View {
                             showingAlert.toggle()
                         }.disabled(homeGestureButtonDisabled(homeGesture))
                     }
+                    .alert(isPresented: $showingAlert) {
+                        Alert(
+                            title: Text("Success!"),
+                            message: Text("It worked ! Respring and check you're gestures will be working !"),
+                            primaryButton: .default(
+                                Text("Respring"),
+                                action: {
+                                   respring()
+                                }
+                            ),
+                            secondaryButton: .default(
+                                Text("OK")
+                            )
+                        )
                     }
+                    }
+                    
             }
         }
 func writeToFileWithContents(contents: String, filepath: String) {
