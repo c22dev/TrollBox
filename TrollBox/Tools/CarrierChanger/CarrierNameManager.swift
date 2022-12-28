@@ -22,18 +22,18 @@ class CarrierNameManager {
                 // Use the `createDirectory` method to create the folder
                 try fileManager.createDirectory(at: folderURL, withIntermediateDirectories: false)
             } catch {
-                throw NSError(domain: "CarrierName", code: 0, userInfo: [NSLocalizedDescriptionKey: "\(error)"])
+                throw NSError(domain: "CarrierName", code: 0, userInfo: [NSLocalizedDescriptionKey: "1 \(error)"])
             }
             do {
                 // Use the `copyItem` method to copy the file to the destination directory
                 try fileManager.copyItem(at: url, to: tempURL)
             } catch {
-                throw NSError(domain: "CarrierName", code: 0, userInfo: [NSLocalizedDescriptionKey: "\(error)"])
+                throw NSError(domain: "CarrierName", code: 0, userInfo: [NSLocalizedDescriptionKey: "2 \(error)"])
             }
             do {
                 try fileManager.removeItem(at: url)
             } catch {
-                throw NSError(domain: "CarrierName", code: 0, userInfo: [NSLocalizedDescriptionKey: "\(error)"])
+                throw NSError(domain: "CarrierName", code: 0, userInfo: [NSLocalizedDescriptionKey: "3 \(error)"])
             }
             
             guard let data = try? Data(contentsOf: tempURL) else { continue }
@@ -58,7 +58,7 @@ class CarrierNameManager {
                 // Use the `copyItem` method to copy the file to the destination directory
                 try fileManager.copyItem(at: tempURL, to: url)
             } catch {
-                // Handle the error
+                throw NSError(domain: "CarrierName", code: 0, userInfo: [NSLocalizedDescriptionKey: "4 \(error)"])
             }
         }
     }
