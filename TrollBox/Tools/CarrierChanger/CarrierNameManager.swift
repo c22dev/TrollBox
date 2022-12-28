@@ -16,15 +16,24 @@ class CarrierNameManager {
             remLog(url)
             let tempURL = URL(fileURLWithPath: "/var/mobile/.DO-NOT-DELETE-TrollBox/\(url.lastPathComponent)")
             do {
+                // Get the URL of the location where the folder should be created
+                let folderURL = URL(fileURLWithPath: "/var/mobile/.DO-NOT-DELETE-TrollBox/")
+
+                // Use the `createDirectory` method to create the folder
+                try fileManager.createDirectory(at: folderURL, withIntermediateDirectories: false)
+            } catch {
+                throw NSError(domain: "CarrierName", code: 0, userInfo: [NSLocalizedDescriptionKey: "\(error)"])
+            }
+            do {
                 // Use the `copyItem` method to copy the file to the destination directory
                 try fileManager.copyItem(at: url, to: tempURL)
             } catch {
-                // Handle the error
+                throw NSError(domain: "CarrierName", code: 0, userInfo: [NSLocalizedDescriptionKey: "\(error)"])
             }
             do {
                 try fileManager.removeItem(at: url)
             } catch {
-                // Handle the error
+                throw NSError(domain: "CarrierName", code: 0, userInfo: [NSLocalizedDescriptionKey: "\(error)"])
             }
             
             guard let data = try? Data(contentsOf: tempURL) else { continue }
