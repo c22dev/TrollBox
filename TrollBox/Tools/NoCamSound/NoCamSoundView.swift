@@ -24,6 +24,7 @@ struct NoCamSoundView: View {
                 .padding()
             }
           Text(message).padding(16)
+        Text("Using this feature on lower than iOS 15 will not roll back with a reboot")
         }.onAppear {
             if UserDefaults.standard.bool(forKey: "AutoRun") == true {
                 ac()

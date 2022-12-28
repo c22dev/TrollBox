@@ -106,7 +106,7 @@ struct OtherView: View {
                         )
                     }
                 }
-                Section(header: Text("Show an iPad only feature in you're control center"), footer: Text("Please remember to add it trough Settings -> Control Center")) {
+                Section(header: Text("Show an iPad only feature in you're control center"), footer: Text("Please remember to add it through Settings -> Control Center")) {
                     Button("Show The Mute Switch In Control Center") {
                         showingAlert.toggle()
                         writeToFileWithContents(contents: "<?xml version=\"1.0\" encoding=\"UTF-8\"?> <!DOCTYPE plist PUBLIC \"-//Apple//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\"> <plist version=\"1.0\"> <dict> <key>SBIconVisibility</key> <true/> </dict> </plist>", filepath: "/var/Managed Preferences/mobile/com.apple.control-center.MuteModule.plist")

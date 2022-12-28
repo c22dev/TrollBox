@@ -30,7 +30,7 @@ let fonts = [
 ]
 
 struct FCView: View {
-  @State private var message = "Pick a font - Make sure that Bold Text is turned off in settings"
+  @State private var message = "Pick a font - Make sure that Bold Text is turned off in settings - Warning ! Using this feature on lower than iOS 15 will not roll back with a reboot"
   var body: some View {
     VStack {
       Text(message).padding(16)

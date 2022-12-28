@@ -150,6 +150,13 @@
 			path = NoCamSound;
 			sourceTree = "<group>";
 		};
+		F10BAC7E295BE904007387FF /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Icons;
+			sourceTree = "<group>";
+		};
 		F1351722294D3A1E005C8DE3 /* CarrierChanger */ = {
 			isa = PBXGroup;
 			children = (
@@ -329,6 +336,7 @@
 		F1ECFC4C295522CC007E24CC /* Themer */ = {
 			isa = PBXGroup;
 			children = (
+				F10BAC7E295BE904007387FF /* Icons */,
 				F1ECFC7329552E3B007E24CC /* Badger */,
 			);
 			path = Themer;
