@@ -14,6 +14,23 @@ struct TSSwissKnifeApp: App {
         WindowGroup {
             ContentView()
                 .onAppear {
+                    let haveBeenShow = "no"
+                    let havee = UserDefaults.standard.string(forKey: haveBeenShow)
+                    let operatingSystemVersion = ProcessInfo().operatingSystemVersion
+                    if operatingSystemVersion.majorVersion >= 15 && operatingSystemVersion.minorVersion >= 7 {
+                        if havee == "no" {
+                            UIApplication.shared.confirmAlert(title: "You're using iOS \(operatingSystemVersion.majorVersion).\(operatingSystemVersion.minorVersion)", body: "You're probably using palera1n. Please note that TrollBox is not stable on these versions. Do not use Gestures or you may not be able to revert back. If any issue is found, please report it to us.", onOK: {}, noCancel: true)
+                            UserDefaults.standard.set("yes", forKey: haveBeenShow)
+                            UserDefaults.standard.synchronize()
+                        }
+                    }
+                    else if operatingSystemVersion.majorVersion == 14 && operatingSystemVersion.minorVersion <= 8 {
+                        if havee == "no"{
+                            UIApplication.shared.confirmAlert(title: "You're using iOS \(operatingSystemVersion.majorVersion).\(operatingSystemVersion.minorVersion)", body: "The app is at the moment mostly designed for iOS 15. You may experience some UI glitches, and various bugs. Please report them to us on our Discord server. ", onOK: {}, noCancel: true)
+                            UserDefaults.standard.set("yes", forKey: haveBeenShow)
+                            UserDefaults.standard.synchronize()
+                        }
+                    }
                     for url in (try? FileManager.default.contentsOfDirectory(at: FileManager.default.temporaryDirectory, includingPropertiesForKeys: nil)) ?? [] {
                         try? FileManager.default.removeItem(at: url)
                     }

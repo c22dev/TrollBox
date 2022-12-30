@@ -84,7 +84,7 @@ struct ToolsView: View {
                     }
                     NavigationLink(destination: LocationSimulationView()) {
                         HStack {
-                            Image(systemName: "mappin")
+                            Image(systemName: "globe.americas")
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
                                 .frame(width: 24, height: 24)
