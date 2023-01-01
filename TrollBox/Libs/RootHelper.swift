@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import NSTaskBridge
 
 class RootHelper {
     static let rootHelperPath = Bundle.main.url(forAuxiliaryExecutable: "trolltoolsroothelper")?.path ?? "/"

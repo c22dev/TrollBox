@@ -34,12 +34,6 @@
 		F16942D7295B257100C99444 /* PreviewFonts in Resources */ = {isa = PBXBuildFile; fileRef = F16942D5295B257100C99444 /* PreviewFonts */; };
 		F16942D8295B257100C99444 /* RepackedFonts in Resources */ = {isa = PBXBuildFile; fileRef = F16942D6295B257100C99444 /* RepackedFonts */; };
 		F16942DB295B2C6700C99444 /* LSFootNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16942DA295B2C6700C99444 /* LSFootNote.swift */; };
-		F17CDC1A295B9852004BEAFF /* ApplicationsWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = F17CDC19295B9852004BEAFF /* ApplicationsWrapper */; };
-		F17CDC1C295B9852004BEAFF /* AssetCatalogWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = F17CDC1B295B9852004BEAFF /* AssetCatalogWrapper */; };
-		F17CDC1E295B9852004BEAFF /* CompressionWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = F17CDC1D295B9852004BEAFF /* CompressionWrapper */; };
-		F17CDC20295B9852004BEAFF /* DiskImagesWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = F17CDC1F295B9852004BEAFF /* DiskImagesWrapper */; };
-		F17CDC22295B9852004BEAFF /* FSOperations in Frameworks */ = {isa = PBXBuildFile; productRef = F17CDC21295B9852004BEAFF /* FSOperations */; };
-		F17CDC24295B9852004BEAFF /* NSTask in Frameworks */ = {isa = PBXBuildFile; productRef = F17CDC23295B9852004BEAFF /* NSTask */; };
 		F1A59FB629526F6800A57361 /* WallSetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A59FB529526F6800A57361 /* WallSetView.swift */; };
 		F1A59FB929526FC700A57361 /* invoke.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A59FB829526FC700A57361 /* invoke.m */; };
 		F1A59FE429527A6600A57361 /* PasscodeEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A59FE329527A6600A57361 /* PasscodeEditorView.swift */; };
@@ -124,17 +118,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1DAC9B729568DC2003BB965 /* SDWebImageSwiftUI in Frameworks */,
-				F17CDC20295B9852004BEAFF /* DiskImagesWrapper in Frameworks */,
-				F17CDC24295B9852004BEAFF /* NSTask in Frameworks */,
 				F1DAC9AF295685A4003BB965 /* Alamofire in Frameworks */,
 				F15BA7072953D31D00740E5E /* ACarousel in Frameworks */,
 				F1F20BB5294FCEE000E9916C /* MapKit.framework in Frameworks */,
 				F1F20BB8294FCFE300E9916C /* Map in Frameworks */,
-				F17CDC1A295B9852004BEAFF /* ApplicationsWrapper in Frameworks */,
 				F1F20BC3294FD4DC00E9916C /* ZIPFoundation in Frameworks */,
-				F17CDC22295B9852004BEAFF /* FSOperations in Frameworks */,
-				F17CDC1C295B9852004BEAFF /* AssetCatalogWrapper in Frameworks */,
-				F17CDC1E295B9852004BEAFF /* CompressionWrapper in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,12 +361,6 @@
 				F15BA7062953D31D00740E5E /* ACarousel */,
 				F1DAC9AE295685A4003BB965 /* Alamofire */,
 				F1DAC9B629568DC2003BB965 /* SDWebImageSwiftUI */,
-				F17CDC19295B9852004BEAFF /* ApplicationsWrapper */,
-				F17CDC1B295B9852004BEAFF /* AssetCatalogWrapper */,
-				F17CDC1D295B9852004BEAFF /* CompressionWrapper */,
-				F17CDC1F295B9852004BEAFF /* DiskImagesWrapper */,
-				F17CDC21295B9852004BEAFF /* FSOperations */,
-				F17CDC23295B9852004BEAFF /* NSTask */,
 			);
 			productName = TSSwissKnife;
 			productReference = F13DCCF3294D270700EBA2DF /* TrollBox.app */;
@@ -415,7 +397,6 @@
 				F15BA7052953D31D00740E5E /* XCRemoteSwiftPackageReference "ACarousel" */,
 				F1DAC9AD295685A4003BB965 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				F1DAC9B529568DC2003BB965 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
-				F17CDC18295B9852004BEAFF /* XCRemoteSwiftPackageReference "SantanderWrappers" */,
 			);
 			productRefGroup = F13DCCF4294D270700EBA2DF /* Products */;
 			projectDirPath = "";
@@ -713,14 +694,6 @@
 				minimumVersion = 0.2.0;
 			};
 		};
-		F17CDC18295B9852004BEAFF /* XCRemoteSwiftPackageReference "SantanderWrappers" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SerenaKit/SantanderWrappers";
-			requirement = {
-				branch = main;
-				kind = branch;
-			};
-		};
 		F1DAC9AD295685A4003BB965 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire";
@@ -760,36 +733,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F15BA7052953D31D00740E5E /* XCRemoteSwiftPackageReference "ACarousel" */;
 			productName = ACarousel;
-		};
-		F17CDC19295B9852004BEAFF /* ApplicationsWrapper */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F17CDC18295B9852004BEAFF /* XCRemoteSwiftPackageReference "SantanderWrappers" */;
-			productName = ApplicationsWrapper;
-		};
-		F17CDC1B295B9852004BEAFF /* AssetCatalogWrapper */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F17CDC18295B9852004BEAFF /* XCRemoteSwiftPackageReference "SantanderWrappers" */;
-			productName = AssetCatalogWrapper;
-		};
-		F17CDC1D295B9852004BEAFF /* CompressionWrapper */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F17CDC18295B9852004BEAFF /* XCRemoteSwiftPackageReference "SantanderWrappers" */;
-			productName = CompressionWrapper;
-		};
-		F17CDC1F295B9852004BEAFF /* DiskImagesWrapper */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F17CDC18295B9852004BEAFF /* XCRemoteSwiftPackageReference "SantanderWrappers" */;
-			productName = DiskImagesWrapper;
-		};
-		F17CDC21295B9852004BEAFF /* FSOperations */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F17CDC18295B9852004BEAFF /* XCRemoteSwiftPackageReference "SantanderWrappers" */;
-			productName = FSOperations;
-		};
-		F17CDC23295B9852004BEAFF /* NSTask */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F17CDC18295B9852004BEAFF /* XCRemoteSwiftPackageReference "SantanderWrappers" */;
-			productName = NSTask;
 		};
 		F1DAC9AE295685A4003BB965 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
