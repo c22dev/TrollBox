@@ -31,9 +31,9 @@
 		F16942D0295B1FC900C99444 /* vm_unaligned_copy_switch_race.c in Sources */ = {isa = PBXBuildFile; fileRef = F16942CE295B1FC800C99444 /* vm_unaligned_copy_switch_race.c */; };
 		F16942D2295B1FFC00C99444 /* OverwriteFontImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16942D1295B1FFC00C99444 /* OverwriteFontImpl.swift */; };
 		F16942D4295B201000C99444 /* FCView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16942D3295B201000C99444 /* FCView.swift */; };
-		F16942D7295B257100C99444 /* PreviewFonts in Resources */ = {isa = PBXBuildFile; fileRef = F16942D5295B257100C99444 /* PreviewFonts */; };
-		F16942D8295B257100C99444 /* RepackedFonts in Resources */ = {isa = PBXBuildFile; fileRef = F16942D6295B257100C99444 /* RepackedFonts */; };
 		F16942DB295B2C6700C99444 /* LSFootNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16942DA295B2C6700C99444 /* LSFootNote.swift */; };
+		F18495A229620CB3002C9557 /* PreviewFonts in Resources */ = {isa = PBXBuildFile; fileRef = F18495A029620CB3002C9557 /* PreviewFonts */; };
+		F18495A329620CB3002C9557 /* RepackedFonts in Resources */ = {isa = PBXBuildFile; fileRef = F18495A129620CB3002C9557 /* RepackedFonts */; };
 		F1A59FB629526F6800A57361 /* WallSetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A59FB529526F6800A57361 /* WallSetView.swift */; };
 		F1A59FB929526FC700A57361 /* invoke.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A59FB829526FC700A57361 /* invoke.m */; };
 		F1A59FE429527A6600A57361 /* PasscodeEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A59FE329527A6600A57361 /* PasscodeEditorView.swift */; };
@@ -86,9 +86,9 @@
 		F16942CF295B1FC900C99444 /* vm_unaligned_copy_switch_race.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vm_unaligned_copy_switch_race.h; sourceTree = "<group>"; };
 		F16942D1295B1FFC00C99444 /* OverwriteFontImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverwriteFontImpl.swift; sourceTree = "<group>"; };
 		F16942D3295B201000C99444 /* FCView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCView.swift; sourceTree = "<group>"; };
-		F16942D5295B257100C99444 /* PreviewFonts */ = {isa = PBXFileReference; lastKnownFileType = folder; name = PreviewFonts; path = "../../../../../Downloads/WDBFontOverwrite-main/WDBFontOverwrite/PreviewFonts"; sourceTree = "<group>"; };
-		F16942D6295B257100C99444 /* RepackedFonts */ = {isa = PBXFileReference; lastKnownFileType = folder; name = RepackedFonts; path = "../../../../../Downloads/WDBFontOverwrite-main/WDBFontOverwrite/RepackedFonts"; sourceTree = "<group>"; };
 		F16942DA295B2C6700C99444 /* LSFootNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSFootNote.swift; sourceTree = "<group>"; };
+		F18495A029620CB3002C9557 /* PreviewFonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = PreviewFonts; sourceTree = "<group>"; };
+		F18495A129620CB3002C9557 /* RepackedFonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = RepackedFonts; sourceTree = "<group>"; };
 		F1A59FB529526F6800A57361 /* WallSetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallSetView.swift; sourceTree = "<group>"; };
 		F1A59FB829526FC700A57361 /* invoke.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = invoke.m; sourceTree = "<group>"; };
 		F1A59FE329527A6600A57361 /* PasscodeEditorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasscodeEditorView.swift; sourceTree = "<group>"; };
@@ -174,8 +174,8 @@
 		F13DCCF5294D270700EBA2DF /* TrollBox */ = {
 			isa = PBXGroup;
 			children = (
-				F16942D5295B257100C99444 /* PreviewFonts */,
-				F16942D6295B257100C99444 /* RepackedFonts */,
+				F18495A029620CB3002C9557 /* PreviewFonts */,
+				F18495A129620CB3002C9557 /* RepackedFonts */,
 				F16942D1295B1FFC00C99444 /* OverwriteFontImpl.swift */,
 				F16942D3295B201000C99444 /* FCView.swift */,
 				F1ECFC7629552E5B007E24CC /* Assets.xcassets */,
@@ -414,9 +414,9 @@
 			files = (
 				F13DCCFE294D270900EBA2DF /* Preview Assets.xcassets in Resources */,
 				F135173E294D3E72005C8DE3 /* Trollface.png in Resources */,
+				F18495A229620CB3002C9557 /* PreviewFonts in Resources */,
 				F1ECFC7829552E5C007E24CC /* Assets.xcassets in Resources */,
-				F16942D8295B257100C99444 /* RepackedFonts in Resources */,
-				F16942D7295B257100C99444 /* PreviewFonts in Resources */,
+				F18495A329620CB3002C9557 /* RepackedFonts in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

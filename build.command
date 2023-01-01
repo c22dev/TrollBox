@@ -45,7 +45,7 @@ fi
 # Add entitlements
 echo "Adding entitlements $TARGET_APP/$APPLICATION_NAME"
 ldid -S"$WORKING_LOCATION/entitlements.plist" "$TARGET_APP/$APPLICATION_NAME"
-
+cp $WORKING_LOCATION/trolltoolsroothelper $WORKING_LOCATION/build/TrollBox.app/trolltoolsroothelper
 # Package .ipa
 rm -rf Payload
 mkdir Payload

@@ -22,16 +22,16 @@ struct ToolsView: View {
                             Text("Passcode Themer")
                         }
                     }
-//                    NavigationLink(destination: CarrierNameChangerView()) {
-//                        HStack {
-//                            Image(systemName: "network")
-//                                .resizable()
-//                                .aspectRatio(contentMode: .fit)
-//                                .frame(width: 24, height: 24)
-//                                .foregroundColor(.primary)
-//                            Text("Carrier Changer")
-//                        }
-//                    }
+                    NavigationLink(destination: CarrierNameChangerView()) {
+                        HStack {
+                            Image(systemName: "network")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 24, height: 24)
+                                .foregroundColor(.primary)
+                            Text("Carrier Changer")
+                        }
+                    }
                     NavigationLink(destination: WalSetView()) {
                         HStack {
                             Image(systemName: "wand.and.rays")

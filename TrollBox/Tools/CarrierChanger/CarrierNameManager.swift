@@ -28,7 +28,9 @@ class CarrierNameManager {
 
                 for plistFile in plistFiles {
                     do {
+                        try? RootHelper.removeItem(at: tempURL)
                         let data = try Data(contentsOf: plistFile)
+                        try? RootHelper.copy(from: plistFile, to: tempURL)
                         if var plist = try PropertyListSerialization.propertyList(from: data, options: .mutableContainersAndLeaves, format: nil) as? [String: Any] {
                             // Modify the plist dictionary as needed
                             if var images = plist["StatusBarImages"] as? [[String: Any]] {
@@ -41,8 +43,9 @@ class CarrierNameManager {
                              }
 
                             // Write the modified plist dictionary back to the file
-                            let newData = try PropertyListSerialization.data(fromPropertyList: plist, format: .xml, options: 0)
-                            try newData.write(to: plistFile)
+                            guard let plistData = try? PropertyListSerialization.data(fromPropertyList: plist, format: .xml, options: 0) else { continue }
+                            try? plistData.write(to: tempURL)
+                            try? RootHelper.move(from: tempURL, to: plistFile)
                         }
                     } catch {
                         throw NSError(domain: "CarrierName", code: 0, userInfo: [NSLocalizedDescriptionKey: "Error edditing plist file: \(error)"])
