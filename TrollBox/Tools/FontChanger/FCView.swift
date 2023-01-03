@@ -21,7 +21,6 @@ struct FCView: View {
                 } else {
                     customFontsList
                 }
-                actionSection
             }
         .sheet(isPresented: $viewModel.importPresented) {
             DocumentPicker(
@@ -122,22 +121,6 @@ struct FCView: View {
                 }
             } label: {
                 Text("Apply \(viewModel.selectedCustomFont.name)")
-            }
-        }
-    }
-    
-    private var actionSection: some View {
-        Section {
-            Button {
-                let sharedApplication = UIApplication.shared
-                let windows = sharedApplication.windows
-                if let window = windows.first {
-                    while true {
-                        window.snapshotView(afterScreenUpdates: false)
-                    }
-                }
-            } label: {
-                Text("Respring")
             }
         }
     }
