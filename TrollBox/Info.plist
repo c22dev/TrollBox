@@ -16,6 +16,32 @@
 	</array>
 	<key>UIFileSharingEnabled</key>
 	<true/>
+	<key>UTImportedTypeDeclarations</key>
+	<array>
+		<dict>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.font</string>
+			</array>
+			<key>UTTypeDescription</key>
+			<string>WOFF2 Font</string>
+			<key>UTTypeIconFiles</key>
+			<array/>
+			<key>UTTypeIdentifier</key>
+			<string>public.woff2</string>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>woff2</string>
+				</array>
+				<key>public.mime-type</key>
+				<array>
+					<string>font/woff2</string>
+				</array>
+			</dict>
+		</dict>
+	</array>
 	<key>com.apple.springboard.wallpaper-access</key>
 	<string>True</string>
 </dict>

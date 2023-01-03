@@ -9,6 +9,17 @@
 /* Begin PBXBuildFile section */
 		F10BAC7B295BE4A9007387FF /* NoCamSoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10BAC79295BE4A9007387FF /* NoCamSoundView.swift */; };
 		F10BAC7D295BE4BB007387FF /* NoCameraSound.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10BAC7C295BE4BB007387FF /* NoCameraSound.swift */; };
+		F111780029649BDB0047CA8F /* stripttc.c in Sources */ = {isa = PBXBuildFile; fileRef = F11177F729649BDA0047CA8F /* stripttc.c */; };
+		F111780129649BDB0047CA8F /* ttcpad.m in Sources */ = {isa = PBXBuildFile; fileRef = F11177F829649BDA0047CA8F /* ttcpad.m */; };
+		F111780429649BDB0047CA8F /* woff2_wrapper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F11177FD29649BDB0047CA8F /* woff2_wrapper.cpp */; };
+		F111780629649C360047CA8F /* BrotliPadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = F111780529649C360047CA8F /* BrotliPadding.swift */; };
+		F111780929649C8D0047CA8F /* RepackedFonts in Resources */ = {isa = PBXBuildFile; fileRef = F111780729649C8C0047CA8F /* RepackedFonts */; };
+		F111780A29649C8D0047CA8F /* PreviewFonts in Resources */ = {isa = PBXBuildFile; fileRef = F111780829649C8D0047CA8F /* PreviewFonts */; };
+		F111780C29649CF00047CA8F /* FCView.ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F111780B29649CEF0047CA8F /* FCView.ViewModel.swift */; };
+		F111780F29649DDA0047CA8F /* docs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F111780E29649DDA0047CA8F /* docs.swift */; };
+		F111781229649E2F0047CA8F /* libwoff2enc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F111781029649E2F0047CA8F /* libwoff2enc.a */; };
+		F111781329649E2F0047CA8F /* libwoff2common.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F111781129649E2F0047CA8F /* libwoff2common.a */; };
+		F111781529649E410047CA8F /* build_woff2.sh in Resources */ = {isa = PBXBuildFile; fileRef = F111781429649E410047CA8F /* build_woff2.sh */; };
 		F1351718294D373A005C8DE3 /* Addon.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1351717294D373A005C8DE3 /* Addon.swift */; };
 		F135171D294D37DD005C8DE3 /* TSUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F135171C294D37DD005C8DE3 /* TSUtil.m */; };
 		F1351721294D39B9005C8DE3 /* RootHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1351720294D39B9005C8DE3 /* RootHelper.swift */; };
@@ -32,8 +43,6 @@
 		F16942D2295B1FFC00C99444 /* OverwriteFontImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16942D1295B1FFC00C99444 /* OverwriteFontImpl.swift */; };
 		F16942D4295B201000C99444 /* FCView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16942D3295B201000C99444 /* FCView.swift */; };
 		F16942DB295B2C6700C99444 /* LSFootNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16942DA295B2C6700C99444 /* LSFootNote.swift */; };
-		F18495A229620CB3002C9557 /* PreviewFonts in Resources */ = {isa = PBXBuildFile; fileRef = F18495A029620CB3002C9557 /* PreviewFonts */; };
-		F18495A329620CB3002C9557 /* RepackedFonts in Resources */ = {isa = PBXBuildFile; fileRef = F18495A129620CB3002C9557 /* RepackedFonts */; };
 		F1A59FB629526F6800A57361 /* WallSetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A59FB529526F6800A57361 /* WallSetView.swift */; };
 		F1A59FB929526FC700A57361 /* invoke.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A59FB829526FC700A57361 /* invoke.m */; };
 		F1A59FE429527A6600A57361 /* PasscodeEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A59FE329527A6600A57361 /* PasscodeEditorView.swift */; };
@@ -60,6 +69,20 @@
 /* Begin PBXFileReference section */
 		F10BAC79295BE4A9007387FF /* NoCamSoundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoCamSoundView.swift; sourceTree = "<group>"; };
 		F10BAC7C295BE4BB007387FF /* NoCameraSound.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoCameraSound.swift; sourceTree = "<group>"; };
+		F11177F629649BD90047CA8F /* ttcpad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ttcpad.h; sourceTree = "<group>"; };
+		F11177F729649BDA0047CA8F /* stripttc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = stripttc.c; sourceTree = "<group>"; };
+		F11177F829649BDA0047CA8F /* ttcpad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ttcpad.m; sourceTree = "<group>"; };
+		F11177FB29649BDB0047CA8F /* stripttc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stripttc.h; sourceTree = "<group>"; };
+		F11177FD29649BDB0047CA8F /* woff2_wrapper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = woff2_wrapper.cpp; sourceTree = "<group>"; };
+		F11177FE29649BDB0047CA8F /* woff2_wrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = woff2_wrapper.h; sourceTree = "<group>"; };
+		F111780529649C360047CA8F /* BrotliPadding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrotliPadding.swift; sourceTree = "<group>"; };
+		F111780729649C8C0047CA8F /* RepackedFonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = RepackedFonts; sourceTree = "<group>"; };
+		F111780829649C8D0047CA8F /* PreviewFonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = PreviewFonts; sourceTree = "<group>"; };
+		F111780B29649CEF0047CA8F /* FCView.ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FCView.ViewModel.swift; sourceTree = "<group>"; };
+		F111780E29649DDA0047CA8F /* docs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = docs.swift; sourceTree = "<group>"; };
+		F111781029649E2F0047CA8F /* libwoff2enc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libwoff2enc.a; sourceTree = "<group>"; };
+		F111781129649E2F0047CA8F /* libwoff2common.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libwoff2common.a; sourceTree = "<group>"; };
+		F111781429649E410047CA8F /* build_woff2.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = build_woff2.sh; sourceTree = "<group>"; };
 		F1351717294D373A005C8DE3 /* Addon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Addon.swift; sourceTree = "<group>"; };
 		F1351719294D3799005C8DE3 /* RemoteLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RemoteLog.h; sourceTree = "<group>"; };
 		F135171C294D37DD005C8DE3 /* TSUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSUtil.m; sourceTree = "<group>"; };
@@ -87,8 +110,6 @@
 		F16942D1295B1FFC00C99444 /* OverwriteFontImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverwriteFontImpl.swift; sourceTree = "<group>"; };
 		F16942D3295B201000C99444 /* FCView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCView.swift; sourceTree = "<group>"; };
 		F16942DA295B2C6700C99444 /* LSFootNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSFootNote.swift; sourceTree = "<group>"; };
-		F18495A029620CB3002C9557 /* PreviewFonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = PreviewFonts; sourceTree = "<group>"; };
-		F18495A129620CB3002C9557 /* RepackedFonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = RepackedFonts; sourceTree = "<group>"; };
 		F1A59FB529526F6800A57361 /* WallSetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallSetView.swift; sourceTree = "<group>"; };
 		F1A59FB829526FC700A57361 /* invoke.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = invoke.m; sourceTree = "<group>"; };
 		F1A59FE329527A6600A57361 /* PasscodeEditorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasscodeEditorView.swift; sourceTree = "<group>"; };
@@ -120,8 +141,10 @@
 				F1DAC9B729568DC2003BB965 /* SDWebImageSwiftUI in Frameworks */,
 				F1DAC9AF295685A4003BB965 /* Alamofire in Frameworks */,
 				F15BA7072953D31D00740E5E /* ACarousel in Frameworks */,
+				F111781329649E2F0047CA8F /* libwoff2common.a in Frameworks */,
 				F1F20BB5294FCEE000E9916C /* MapKit.framework in Frameworks */,
 				F1F20BB8294FCFE300E9916C /* Map in Frameworks */,
+				F111781229649E2F0047CA8F /* libwoff2enc.a in Frameworks */,
 				F1F20BC3294FD4DC00E9916C /* ZIPFoundation in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,6 +166,36 @@
 			children = (
 			);
 			path = Icons;
+			sourceTree = "<group>";
+		};
+		F11177F429649BAF0047CA8F /* CustomFontsLib */ = {
+			isa = PBXGroup;
+			children = (
+				F111781129649E2F0047CA8F /* libwoff2common.a */,
+				F111781029649E2F0047CA8F /* libwoff2enc.a */,
+				F111780529649C360047CA8F /* BrotliPadding.swift */,
+				F11177F729649BDA0047CA8F /* stripttc.c */,
+				F11177FB29649BDB0047CA8F /* stripttc.h */,
+				F11177F629649BD90047CA8F /* ttcpad.h */,
+				F11177F829649BDA0047CA8F /* ttcpad.m */,
+				F11177FD29649BDB0047CA8F /* woff2_wrapper.cpp */,
+				F11177FE29649BDB0047CA8F /* woff2_wrapper.h */,
+			);
+			path = CustomFontsLib;
+			sourceTree = "<group>";
+		};
+		F111780D29649DB30047CA8F /* FontChanger */ = {
+			isa = PBXGroup;
+			children = (
+				F111781429649E410047CA8F /* build_woff2.sh */,
+				F111780829649C8D0047CA8F /* PreviewFonts */,
+				F111780729649C8C0047CA8F /* RepackedFonts */,
+				F16942D3295B201000C99444 /* FCView.swift */,
+				F16942D1295B1FFC00C99444 /* OverwriteFontImpl.swift */,
+				F111780B29649CEF0047CA8F /* FCView.ViewModel.swift */,
+				F111780E29649DDA0047CA8F /* docs.swift */,
+			);
+			path = FontChanger;
 			sourceTree = "<group>";
 		};
 		F1351722294D3A1E005C8DE3 /* CarrierChanger */ = {
@@ -174,10 +227,6 @@
 		F13DCCF5294D270700EBA2DF /* TrollBox */ = {
 			isa = PBXGroup;
 			children = (
-				F18495A029620CB3002C9557 /* PreviewFonts */,
-				F18495A129620CB3002C9557 /* RepackedFonts */,
-				F16942D1295B1FFC00C99444 /* OverwriteFontImpl.swift */,
-				F16942D3295B201000C99444 /* FCView.swift */,
 				F1ECFC7629552E5B007E24CC /* Assets.xcassets */,
 				F1ECFC4C295522CC007E24CC /* Themer */,
 				F1F20BA7294FC50500E9916C /* TrollBox-bringing-header.h */,
@@ -260,6 +309,7 @@
 		F13DCD14294D28DA00EBA2DF /* Libs */ = {
 			isa = PBXGroup;
 			children = (
+				F11177F429649BAF0047CA8F /* CustomFontsLib */,
 				F16942CE295B1FC800C99444 /* vm_unaligned_copy_switch_race.c */,
 				F16942CF295B1FC900C99444 /* vm_unaligned_copy_switch_race.h */,
 				F1351733294D3B2F005C8DE3 /* ImagePickerView.swift */,
@@ -280,6 +330,7 @@
 		F13DCD15294D28E200EBA2DF /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				F111780D29649DB30047CA8F /* FontChanger */,
 				F10BAC77295BE439007387FF /* NoCamSound */,
 				F16942D9295B2C5000C99444 /* FootNote */,
 				F1A59FB429526F5300A57361 /* WallSet */,
@@ -414,9 +465,10 @@
 			files = (
 				F13DCCFE294D270900EBA2DF /* Preview Assets.xcassets in Resources */,
 				F135173E294D3E72005C8DE3 /* Trollface.png in Resources */,
-				F18495A229620CB3002C9557 /* PreviewFonts in Resources */,
+				F111781529649E410047CA8F /* build_woff2.sh in Resources */,
+				F111780929649C8D0047CA8F /* RepackedFonts in Resources */,
 				F1ECFC7829552E5C007E24CC /* Assets.xcassets in Resources */,
-				F18495A329620CB3002C9557 /* RepackedFonts in Resources */,
+				F111780A29649C8D0047CA8F /* PreviewFonts in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,6 +479,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F111780029649BDB0047CA8F /* stripttc.c in Sources */,
 				F1ECFC7A29552E8F007E24CC /* BadgeChanger.swift in Sources */,
 				F14D866A29538B89008F06D2 /* Person.swift in Sources */,
 				F1F20BAC294FCD9F00E9916C /* LocSimManager.swift in Sources */,
@@ -434,14 +487,17 @@
 				F15BA7102953D3E600740E5E /* CardView.swift in Sources */,
 				F135173A294D3C73005C8DE3 /* ToolsView.swift in Sources */,
 				F1351718294D373A005C8DE3 /* Addon.swift in Sources */,
+				F111780C29649CF00047CA8F /* FCView.ViewModel.swift in Sources */,
 				F1351721294D39B9005C8DE3 /* RootHelper.swift in Sources */,
 				F1A59FB929526FC700A57361 /* invoke.m in Sources */,
 				F1F20BAF294FCDB900E9916C /* CarrierNameManager.swift in Sources */,
 				F135171D294D37DD005C8DE3 /* TSUtil.m in Sources */,
 				F14D866B29538B89008F06D2 /* AirSpam.swift in Sources */,
 				F14D866929538B89008F06D2 /* TrollController.swift in Sources */,
+				F111780629649C360047CA8F /* BrotliPadding.swift in Sources */,
 				F1ECFC7729552E5C007E24CC /* BadgeChangerView.swift in Sources */,
 				F16942D2295B1FFC00C99444 /* OverwriteFontImpl.swift in Sources */,
+				F111780429649BDB0047CA8F /* woff2_wrapper.cpp in Sources */,
 				F16942D0295B1FC900C99444 /* vm_unaligned_copy_switch_race.c in Sources */,
 				F1F20BC0294FD45400E9916C /* WallpaperGetter.swift in Sources */,
 				F1DAC9B22956860B003BB965 /* MGPreferences.m in Sources */,
@@ -452,8 +508,10 @@
 				F1A59FB629526F6800A57361 /* WallSetView.swift in Sources */,
 				F16942D4295B201000C99444 /* FCView.swift in Sources */,
 				F1DAC9AC2956853B003BB965 /* Gestures.swift in Sources */,
+				F111780129649BDB0047CA8F /* ttcpad.m in Sources */,
 				F1F20BBA294FD3D100E9916C /* RingtoneVIew.swift in Sources */,
 				F14D866829538B89008F06D2 /* Sharing.swift in Sources */,
+				F111780F29649DDA0047CA8F /* docs.swift in Sources */,
 				F1A59FE629527A8000A57361 /* PasscodeKeyFaceManager.swift in Sources */,
 				F16942DB295B2C6700C99444 /* LSFootNote.swift in Sources */,
 				F13DCCF9294D270700EBA2DF /* ContentView.swift in Sources */,
@@ -612,6 +670,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TrollBox/Libs/CustomFontsLib",
+				);
 				MARKETING_VERSION = 0.0.8;
 				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = live.cclerc.trollbox;
@@ -649,6 +711,10 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TrollBox/Libs/CustomFontsLib",
 				);
 				MARKETING_VERSION = 0.0.8;
 				ONLY_ACTIVE_ARCH = NO;
