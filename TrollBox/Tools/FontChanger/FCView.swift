@@ -13,7 +13,6 @@ struct FCView: View {
     @Environment(\.openURL) private var openURL
     
     var body: some View {
-        NavigationView {
             Form {
                 progressView
                 segmentControl
@@ -24,9 +23,6 @@ struct FCView: View {
                 }
                 actionSection
             }
-            .navigationTitle("WDBFontOverwrite")
-        }
-        .navigationViewStyle(.stack)
         .sheet(isPresented: $viewModel.importPresented) {
             DocumentPicker(
                 name: viewModel.importName,
