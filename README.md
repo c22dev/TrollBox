@@ -33,6 +33,7 @@ To make this app works, you need to install [TrollStore](https://github.com/opa3
 
 ## Credits
 - [TrollTools](https://github.com/sourcelocation/TrollTools) (some extensions and functions, but mainly some tools/assets)
+- [Lemin]() (Various tools, passcode changer and docking options)
 - [Jaility](https://github.com/haxi0/Jaility) (supervising features)
 - [TrollStore](https://github.com/opa334/TrollStore) (importing objC libs from TrollStore shared)
 - [WallpaperSetter](https://github.com/Skittyblock/WallpaperSetter) (the app in itself)
