@@ -88,6 +88,11 @@ extension FCView {
                 repackedPath: "Comic Sans MS.woff2"
             ),
             FontToReplace(
+                name: "Comic Sans MS",
+                postScriptName: "ComicSansMS",
+                repackedPath: "Comic Sans MS.woff2"
+            ),
+            FontToReplace(
                 name: "Choco Cooky",
                 postScriptName: "Chococooky",
                 repackedPath: "Chococooky.woff2"

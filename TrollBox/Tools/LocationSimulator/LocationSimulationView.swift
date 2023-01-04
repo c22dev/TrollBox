@@ -17,9 +17,7 @@ struct LocationSimulationView: View {
     @State var locations: [Location] = []
     @State private var long = ""
     @State private var lat = ""
-
     @State var directions: MKDirections.Response? = nil
-    
     @State private var region = MKCoordinateRegion(.world)
     
     var body: some View {

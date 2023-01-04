@@ -15,7 +15,7 @@ struct ToolsView: View {
                     NavigationLink(destination: PasscodeEditorView()) {
                         HStack {
                             Image(systemName: "lock.fill")
-                                .resizable()
+                                .resizable() 
                                 .aspectRatio(contentMode: .fit)
                                 .frame(width: 24, height: 24)
                                 .foregroundColor(.primary)
@@ -72,16 +72,6 @@ struct ToolsView: View {
                             Text("Badge Color Changer")
                         }
                     }
-                    NavigationLink(destination: FCView()) {
-                        HStack {
-                            Image(systemName: "character.cursor.ibeam")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .frame(width: 24, height: 24)
-                                .foregroundColor(.primary)
-                            Text("iOS System Font Changer")
-                        }
-                    }
                     NavigationLink(destination: LocationSimulationView()) {
                         HStack {
                             Image(systemName: "globe.americas")
@@ -92,16 +82,6 @@ struct ToolsView: View {
                             Text("LocSim")
                         }
                     }
-                    NavigationLink(destination: NoCamSoundView()) {
-                        HStack {
-                            Image(systemName: "camera")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .frame(width: 24, height: 24)
-                                .foregroundColor(.primary)
-                            Text("No Shutter Sound")
-                        }
-                    }
                     NavigationLink(destination: OtherView()) {
                         HStack {
                             Image(systemName: "ellipsis")
@@ -110,6 +90,38 @@ struct ToolsView: View {
                                 .frame(width: 24, height: 24)
                                 .foregroundColor(.primary)
                             Text("Other minor tools")
+                        }
+                    }
+                    Section {
+                        NavigationLink(destination: NoCamSoundView()) {
+                            HStack {
+                                Image(systemName: "camera")
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .frame(width: 24, height: 24)
+                                    .foregroundColor(.primary)
+                                Text("No Shutter Sound")
+                            }
+                        }
+                        NavigationLink(destination: FCView()) {
+                            HStack {
+                                Image(systemName: "character.cursor.ibeam")
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .frame(width: 24, height: 24)
+                                    .foregroundColor(.primary)
+                                Text("iOS System Font Changer")
+                            }
+                        }
+                        NavigationLink(destination: DockSetView()) {
+                            HStack {
+                                Image(systemName: "rectangle")
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .frame(width: 24, height: 24)
+                                    .foregroundColor(.primary)
+                                Text("Dock Options")
+                            }
                         }
                     }
                 }

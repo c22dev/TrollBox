@@ -63,6 +63,13 @@
 		F1F20BBA294FD3D100E9916C /* RingtoneVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F20BB9294FD3D100E9916C /* RingtoneVIew.swift */; };
 		F1F20BC0294FD45400E9916C /* WallpaperGetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F20BBF294FD45300E9916C /* WallpaperGetter.swift */; };
 		F1F20BC3294FD4DC00E9916C /* ZIPFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = F1F20BC2294FD4DB00E9916C /* ZIPFoundation */; };
+		F1F3D89A2965FC7100A931C4 /* hiddenLight.materialrecipe in Resources */ = {isa = PBXBuildFile; fileRef = F1F3D8952965FC7100A931C4 /* hiddenLight.materialrecipe */; };
+		F1F3D89B2965FC7100A931C4 /* hiddenDark.materialrecipe in Resources */ = {isa = PBXBuildFile; fileRef = F1F3D8962965FC7100A931C4 /* hiddenDark.materialrecipe */; };
+		F1F3D89C2965FC7100A931C4 /* defaultDark.materialrecipe in Resources */ = {isa = PBXBuildFile; fileRef = F1F3D8982965FC7100A931C4 /* defaultDark.materialrecipe */; };
+		F1F3D89D2965FC7100A931C4 /* defaultLight.materialrecipe in Resources */ = {isa = PBXBuildFile; fileRef = F1F3D8992965FC7100A931C4 /* defaultLight.materialrecipe */; };
+		F1F3D89F2965FCBB00A931C4 /* ToolsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F3D89E2965FCBB00A931C4 /* ToolsManager.swift */; };
+		F1F3D8A12965FCE200A931C4 /* DockSetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F3D8A02965FCE200A931C4 /* DockSetView.swift */; };
+		F1F3D8A32966031700A931C4 /* IconChangingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F3D8A22966031700A931C4 /* IconChangingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -129,6 +136,13 @@
 		F1F20BB4294FCEE000E9916C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		F1F20BB9294FD3D100E9916C /* RingtoneVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingtoneVIew.swift; sourceTree = "<group>"; };
 		F1F20BBF294FD45300E9916C /* WallpaperGetter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WallpaperGetter.swift; sourceTree = "<group>"; };
+		F1F3D8952965FC7100A931C4 /* hiddenLight.materialrecipe */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = hiddenLight.materialrecipe; sourceTree = "<group>"; };
+		F1F3D8962965FC7100A931C4 /* hiddenDark.materialrecipe */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = hiddenDark.materialrecipe; sourceTree = "<group>"; };
+		F1F3D8982965FC7100A931C4 /* defaultDark.materialrecipe */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = defaultDark.materialrecipe; sourceTree = "<group>"; };
+		F1F3D8992965FC7100A931C4 /* defaultLight.materialrecipe */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = defaultLight.materialrecipe; sourceTree = "<group>"; };
+		F1F3D89E2965FCBB00A931C4 /* ToolsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToolsManager.swift; sourceTree = "<group>"; };
+		F1F3D8A02965FCE200A931C4 /* DockSetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DockSetView.swift; sourceTree = "<group>"; };
+		F1F3D8A22966031700A931C4 /* IconChangingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconChangingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -228,6 +242,7 @@
 				F1ECFC4C295522CC007E24CC /* Themer */,
 				F1F20BA7294FC50500E9916C /* TrollBox-bringing-header.h */,
 				F1F20BA8294FC50500E9916C /* TrollBoxApp.swift */,
+				F1F3D8A22966031700A931C4 /* IconChangingView.swift */,
 				F13DCD15294D28E200EBA2DF /* Tools */,
 				F13DCD14294D28DA00EBA2DF /* Libs */,
 				F13DCCF8294D270700EBA2DF /* ContentView.swift */,
@@ -309,6 +324,7 @@
 				F11177F429649BAF0047CA8F /* CustomFontsLib */,
 				F16942CE295B1FC800C99444 /* vm_unaligned_copy_switch_race.c */,
 				F16942CF295B1FC900C99444 /* vm_unaligned_copy_switch_race.h */,
+				F1F3D89E2965FCBB00A931C4 /* ToolsManager.swift */,
 				F1351733294D3B2F005C8DE3 /* ImagePickerView.swift */,
 				F1DAC9B029568607003BB965 /* MGPreferences.h */,
 				F1DAC9B12956860B003BB965 /* MGPreferences.m */,
@@ -327,6 +343,7 @@
 		F13DCD15294D28E200EBA2DF /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				F1F3D8922965FC3300A931C4 /* DockSettings */,
 				F111780D29649DB30047CA8F /* FontChanger */,
 				F10BAC77295BE439007387FF /* NoCamSound */,
 				F16942D9295B2C5000C99444 /* FootNote */,
@@ -385,6 +402,42 @@
 				F1ECFC7929552E8F007E24CC /* BadgeChanger.swift */,
 			);
 			path = Badger;
+			sourceTree = "<group>";
+		};
+		F1F3D8922965FC3300A931C4 /* DockSettings */ = {
+			isa = PBXGroup;
+			children = (
+				F1F3D8932965FC7100A931C4 /* DockFiles */,
+				F1F3D8A02965FCE200A931C4 /* DockSetView.swift */,
+			);
+			path = DockSettings;
+			sourceTree = "<group>";
+		};
+		F1F3D8932965FC7100A931C4 /* DockFiles */ = {
+			isa = PBXGroup;
+			children = (
+				F1F3D8942965FC7100A931C4 /* HiddenDocks */,
+				F1F3D8972965FC7100A931C4 /* DefaultDocks */,
+			);
+			path = DockFiles;
+			sourceTree = "<group>";
+		};
+		F1F3D8942965FC7100A931C4 /* HiddenDocks */ = {
+			isa = PBXGroup;
+			children = (
+				F1F3D8952965FC7100A931C4 /* hiddenLight.materialrecipe */,
+				F1F3D8962965FC7100A931C4 /* hiddenDark.materialrecipe */,
+			);
+			path = HiddenDocks;
+			sourceTree = "<group>";
+		};
+		F1F3D8972965FC7100A931C4 /* DefaultDocks */ = {
+			isa = PBXGroup;
+			children = (
+				F1F3D8982965FC7100A931C4 /* defaultDark.materialrecipe */,
+				F1F3D8992965FC7100A931C4 /* defaultLight.materialrecipe */,
+			);
+			path = DefaultDocks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -461,9 +514,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				F13DCCFE294D270900EBA2DF /* Preview Assets.xcassets in Resources */,
+				F1F3D89B2965FC7100A931C4 /* hiddenDark.materialrecipe in Resources */,
+				F1F3D89A2965FC7100A931C4 /* hiddenLight.materialrecipe in Resources */,
 				F135173E294D3E72005C8DE3 /* Trollface.png in Resources */,
 				F111781C2964A81C0047CA8F /* RepackedFonts in Resources */,
 				F1ECFC7829552E5C007E24CC /* Assets.xcassets in Resources */,
+				F1F3D89D2965FC7100A931C4 /* defaultLight.materialrecipe in Resources */,
+				F1F3D89C2965FC7100A931C4 /* defaultDark.materialrecipe in Resources */,
 				F111781D2964A81C0047CA8F /* PreviewFonts in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -488,6 +545,7 @@
 				F1A59FB929526FC700A57361 /* invoke.m in Sources */,
 				F1F20BAF294FCDB900E9916C /* CarrierNameManager.swift in Sources */,
 				F135171D294D37DD005C8DE3 /* TSUtil.m in Sources */,
+				F1F3D8A12965FCE200A931C4 /* DockSetView.swift in Sources */,
 				F14D866B29538B89008F06D2 /* AirSpam.swift in Sources */,
 				F14D866929538B89008F06D2 /* TrollController.swift in Sources */,
 				F111780629649C360047CA8F /* BrotliPadding.swift in Sources */,
@@ -508,6 +566,7 @@
 				F1F20BBA294FD3D100E9916C /* RingtoneVIew.swift in Sources */,
 				F14D866829538B89008F06D2 /* Sharing.swift in Sources */,
 				F111780F29649DDA0047CA8F /* docs.swift in Sources */,
+				F1F3D89F2965FCBB00A931C4 /* ToolsManager.swift in Sources */,
 				F1A59FE629527A8000A57361 /* PasscodeKeyFaceManager.swift in Sources */,
 				F16942DB295B2C6700C99444 /* LSFootNote.swift in Sources */,
 				F13DCCF9294D270700EBA2DF /* ContentView.swift in Sources */,
@@ -515,6 +574,7 @@
 				F10BAC7D295BE4BB007387FF /* NoCameraSound.swift in Sources */,
 				F135173C294D3CAB005C8DE3 /* OtherView.swift in Sources */,
 				F10BAC7B295BE4A9007387FF /* NoCamSoundView.swift in Sources */,
+				F1F3D8A32966031700A931C4 /* IconChangingView.swift in Sources */,
 				F15BA7142953D4C900740E5E /* MainCardView.swift in Sources */,
 				F1A59FE429527A6600A57361 /* PasscodeEditorView.swift in Sources */,
 				F1F20BB3294FCDD200E9916C /* CarrierNameChangerView.swift in Sources */,
@@ -645,7 +705,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TrollBox/Preview Content\"";
@@ -656,6 +718,7 @@
 				INFOPLIST_FILE = TrollBox/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = TrollBox;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "LocSim current loc";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Allow the app to access photo library for choosing passcode faces.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -670,10 +733,11 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/TrollBox/Libs/CustomFontsLib",
 				);
-				MARKETING_VERSION = 0.0.8;
+				MARKETING_VERSION = 0.0.9;
 				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = live.cclerc.trollbox;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "TrollBox/TrollBox-bringing-header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -687,7 +751,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TrollBox/Preview Content\"";
@@ -698,6 +764,7 @@
 				INFOPLIST_FILE = TrollBox/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = TrollBox;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "LocSim current loc";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Allow the app to access photo library for choosing passcode faces.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -712,11 +779,12 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/TrollBox/Libs/CustomFontsLib",
 				);
-				MARKETING_VERSION = 0.0.8;
+				MARKETING_VERSION = 0.0.9;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = live.cclerc.trollbox;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "TrollBox/TrollBox-bringing-header.h";
 				SWIFT_VERSION = 5.0;
