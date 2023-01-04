@@ -15,7 +15,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Install Theos
-         uses: Randomblock1/theos-action@v1.1
+        uses: Randomblock1/theos-action@v1.1
       - name: build
         run: ./build.command
       - name: Upload artifact
