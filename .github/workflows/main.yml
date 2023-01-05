@@ -17,9 +17,9 @@ jobs:
       - name: Install Theos
         uses: Randomblock1/theos-action@v1.1
       - name: build
-        run: ./build.command
+        run:  bash ipabuild.sh
       - name: Upload artifact
         uses: actions/upload-artifact@v3
         with:
-          name: TrollBox.tipa
+          name: TrollBox.tipa - Extract it
           path: /Users/runner/work/${{github.event.repository.name}}/${{github.event.repository.name}}/build/TrollBox.tipa
