@@ -1,48 +1,91 @@
-<p align="center">
-   <img align="center" src='https://i.ibb.co/xgBVM72/logo-modified.png' width=100>
- </p>
- <h1 align="center"> TrollBox </h1>
- <p align="center">All TrollStore tools in one</p>
- 
- ## Features
-- Actually implemented :
-  - AirSpam
-  - Carrier Changer
-  - Location Simulator
-  - PassFace theming
-  - Superviser
-  - Gestures
-  - Lock after respiring
-  - Wallpaper setter
-  - Wallet Image editor
-  - Custom Font for iOS
-  - Footer Text on Lock Screen
-  - No Camera SFX
-  - and various tools
-- To come :
-  - Icon theming (this will take longer than expected)
-  - Homescreen layout editing
-  - Ringtone manager
-  - and more to come!
+<div align="center">
+   <p>
+      <img src="https://i.ibb.co/xgBVM72/logo-modified.png" width=100 alt="TrollBox Logo">
+   </p>
+   <h1> TrollBox 
+      <br/> All TrollStore tools in one.
+   </h1>
+</div>
+
+<h6 align="center"> version 0.0.8 </h6>
+
+## Features <br/> <br/> &nbsp; &nbsp; Already implemented:
+
+- **AirSpammer** 
+   - AirDrop spammer/flodder.
+- **Carrier Changer**
+   - Change carrier name.
+- **Location Simulator**
+   - Fake your location.
+- **Password Keys Themer**
+   - Customize your lockscreen password.
+- **Superviser**
+   - Supervise your device.
+- **Gesture Navigation**
+   - Enable gesture navigation on devices older than iPhone X.
+- **Lock After Respring**
+   - Enable or disable it.
+- **Wallpaper Setter**
+   - Set light/dark mode wallpapers.
+- **Wallet Image Editor**
+   - Use custom images for your Wallet cards.
+- **Custom Fonts**
+   - Use and import custom fonts.
+- **Custom Lockscreen Text**
+   - Customize the lockscreen's bottom text.
+- **Disable Camera SFX**
+   - Turn off the camera shutter sound.
+- **Other Minor Tools.**
+
+<br/>
+
+## &nbsp; &nbsp; To come:
+  
+- **Icon Theming** (this will take longer than expected).
+- **Homescreen Layout Editing.**
+- **Ringtone Manager.**
+- **And more to come!**
+
+<br/> <br/>
+
 ## Screenshots
-<img src='https://i.ibb.co/dBqvHSN/IMG-3816.png' width=200><img src='https://i.ibb.co/grmh9hb/IMG-3817.png' width=200><img src='https://i.ibb.co/W2pjkLG/IMG-3821.png' width=200><img src='https://i.ibb.co/6m0kj0T/IMG-3822.png' width=200><p>0.0.8 version</p>
+<img src='https://i.ibb.co/dBqvHSN/IMG-3816.png' width=400><img src='https://i.ibb.co/grmh9hb/IMG-3817.png' width=400>
+<br/>
+<img src='https://i.ibb.co/W2pjkLG/IMG-3821.png' width=400><img src='https://i.ibb.co/6m0kj0T/IMG-3822.png' width=400>
    
    
 ## Requirements
-To make this app works, you need to install [TrollStore](https://github.com/opa334/TrollStore) 1.0.9 or newer. Regular sideloading just won't work.
+**For this app to work properly, you need to install it via [TrollStore](https://github.com/opa334/TrollStore) v1.0.9 or newer. Regular sideloading just won't work.**
 
 ## Credits
-- [TrollTools](https://github.com/sourcelocation/TrollTools) (some extensions and functions, but mainly some tools/assets)
-- [Lemin]() (Various tools, passcode changer and docking options)
-- [Jaility](https://github.com/haxi0/Jaility) (supervising features)
-- [TrollStore](https://github.com/opa334/TrollStore) (importing objC libs from TrollStore shared)
-- [WallpaperSetter](https://github.com/Skittyblock/WallpaperSetter) (the app in itself)
-- [AirTroller](https://github.com/sourcelocation/AirTroller) (AirDrop spammer)
-- [Cardio](https://github.com/cisc0disco/Cardio) (image for apple pay)
-- [NoCameraSound](https://github.com/straight-tamago/NoCameraSound) (no camera sound)
-- [WDBFontOverwrite](https://github.com/zhuowei/WDBFontOverwrite) (font changer)
-- [Mugunghwa](https://github.com/s8ngyu/Mugunghwa) (badge)
-- [CySxL](https://github.com/CySxL) (iOS14 tester)
+- [TrollTools](https://github.com/sourcelocation/TrollTools) 
+   - Some extensions and functions, mainly tools/assets.
+- Lemin
+   - Various tools, passcode changer and docking options.
+- [Jaility](https://github.com/haxi0/Jaility) 
+   - Supervising features.
+- [TrollStore](https://github.com/opa334/TrollStore) 
+   - Importing objC libs from TrollStore shared.
+- [WallpaperSetter](https://github.com/Skittyblock/WallpaperSetter)
+   - The app itself.
+- [AirTroller](https://github.com/sourcelocation/AirTroller)
+   - AirDrop spammer.
+- [Cardio](https://github.com/cisc0disco/Cardio) 
+   - Tweaking Apple Pay.
+- [NoCameraSound](https://github.com/straight-tamago/NoCameraSound)
+   - No camera shutter.
+- [WDBFontOverwrite](https://github.com/zhuowei/WDBFontOverwrite)
+   - Font changer.
+- [Mugunghwa](https://github.com/s8ngyu/Mugunghwa) 
+   - Badge color theming.
+- [CySxL](https://github.com/CySxL) 
+   - iOS 14 tester.
+- [purp0s3](https://github.com/purp0s3)
+   - Formatting.
+   
+---
+_as some of the tweaks used are under GPL3_
 
-The use of some tweaks mentionned below are under GPL 3 license, so this app will be GPL 3.
-
+<div align="center">
+   <b>This project is licensed under the terms of the GNU General Public License v3.0.</b>
+</div>
