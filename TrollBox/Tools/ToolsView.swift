@@ -82,16 +82,6 @@ struct ToolsView: View {
                             Text("LocSim")
                         }
                     }
-                    NavigationLink(destination: OtherView()) {
-                        HStack {
-                            Image(systemName: "ellipsis")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .frame(width: 24, height: 24)
-                                .foregroundColor(.primary)
-                            Text("Other minor tools")
-                        }
-                    }
                     Section {
                         NavigationLink(destination: NoCamSoundView()) {
                             HStack {
@@ -121,6 +111,16 @@ struct ToolsView: View {
                                     .frame(width: 24, height: 24)
                                     .foregroundColor(.primary)
                                 Text("Dock Options")
+                            }
+                        }
+                        NavigationLink(destination: IconChangingView()) {
+                            HStack {
+                                Image(systemName: "paintbrush")
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .frame(width: 24, height: 24)
+                                    .foregroundColor(.primary)
+                                Text("Change TrollBox Icon")
                             }
                         }
                     }
