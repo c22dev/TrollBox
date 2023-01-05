@@ -46,14 +46,15 @@
 		F1A59FB929526FC700A57361 /* invoke.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A59FB829526FC700A57361 /* invoke.m */; };
 		F1A59FE429527A6600A57361 /* PasscodeEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A59FE329527A6600A57361 /* PasscodeEditorView.swift */; };
 		F1A59FE629527A8000A57361 /* PasscodeKeyFaceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A59FE529527A8000A57361 /* PasscodeKeyFaceManager.swift */; };
-		F1CDC57F296745BC0096EB3C /* iconchangingscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CDC57E296745BC0096EB3C /* iconchangingscript.swift */; };
-		F1CDC5812967468E0096EB3C /* IconChangingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CDC5802967468E0096EB3C /* IconChangingView.swift */; };
+		F1CDC58829674D210096EB3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1CDC58729674D210096EB3C /* Assets.xcassets */; };
+		F1CDC5A52967537F0096EB3C /* ApplicationsWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = F1CDC5A42967537F0096EB3C /* ApplicationsWrapper */; };
+		F1CDC5A72967537F0096EB3C /* AssetCatalogWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = F1CDC5A62967537F0096EB3C /* AssetCatalogWrapper */; };
+		F1CDC5AA2967549B0096EB3C /* Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = F1CDC5A92967549B0096EB3C /* Dynamic */; };
 		F1DAC9AC2956853B003BB965 /* Gestures.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1DAC9AB2956853B003BB965 /* Gestures.swift */; };
 		F1DAC9AF295685A4003BB965 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F1DAC9AE295685A4003BB965 /* Alamofire */; };
 		F1DAC9B22956860B003BB965 /* MGPreferences.m in Sources */ = {isa = PBXBuildFile; fileRef = F1DAC9B12956860B003BB965 /* MGPreferences.m */; };
 		F1DAC9B729568DC2003BB965 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = F1DAC9B629568DC2003BB965 /* SDWebImageSwiftUI */; };
 		F1ECFC7729552E5C007E24CC /* BadgeChangerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1ECFC7529552E56007E24CC /* BadgeChangerView.swift */; };
-		F1ECFC7829552E5C007E24CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1ECFC7629552E5B007E24CC /* Assets.xcassets */; };
 		F1ECFC7A29552E8F007E24CC /* BadgeChanger.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1ECFC7929552E8F007E24CC /* BadgeChanger.swift */; };
 		F1F20BA9294FC50500E9916C /* TrollBoxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F20BA8294FC50500E9916C /* TrollBoxApp.swift */; };
 		F1F20BAC294FCD9F00E9916C /* LocSimManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F20BAB294FCD9F00E9916C /* LocSimManager.swift */; };
@@ -120,13 +121,11 @@
 		F1A59FB829526FC700A57361 /* invoke.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = invoke.m; sourceTree = "<group>"; };
 		F1A59FE329527A6600A57361 /* PasscodeEditorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasscodeEditorView.swift; sourceTree = "<group>"; };
 		F1A59FE529527A8000A57361 /* PasscodeKeyFaceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasscodeKeyFaceManager.swift; sourceTree = "<group>"; };
-		F1CDC57E296745BC0096EB3C /* iconchangingscript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iconchangingscript.swift; sourceTree = "<group>"; };
-		F1CDC5802967468E0096EB3C /* IconChangingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconChangingView.swift; sourceTree = "<group>"; };
+		F1CDC58729674D210096EB3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F1DAC9AB2956853B003BB965 /* Gestures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gestures.swift; sourceTree = "<group>"; };
 		F1DAC9B029568607003BB965 /* MGPreferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGPreferences.h; sourceTree = "<group>"; };
 		F1DAC9B12956860B003BB965 /* MGPreferences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGPreferences.m; sourceTree = "<group>"; };
 		F1ECFC7529552E56007E24CC /* BadgeChangerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BadgeChangerView.swift; sourceTree = "<group>"; };
-		F1ECFC7629552E5B007E24CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Themer/Badger/Assets.xcassets; sourceTree = "<group>"; };
 		F1ECFC7929552E8F007E24CC /* BadgeChanger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeChanger.swift; sourceTree = "<group>"; };
 		F1F20BA7294FC50500E9916C /* TrollBox-bringing-header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TrollBox-bringing-header.h"; sourceTree = "<group>"; };
 		F1F20BA8294FC50500E9916C /* TrollBoxApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrollBoxApp.swift; sourceTree = "<group>"; };
@@ -153,11 +152,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1DAC9B729568DC2003BB965 /* SDWebImageSwiftUI in Frameworks */,
+				F1CDC5A52967537F0096EB3C /* ApplicationsWrapper in Frameworks */,
 				F1DAC9AF295685A4003BB965 /* Alamofire in Frameworks */,
 				F15BA7072953D31D00740E5E /* ACarousel in Frameworks */,
 				F111781329649E2F0047CA8F /* libwoff2common.a in Frameworks */,
 				F1F20BB5294FCEE000E9916C /* MapKit.framework in Frameworks */,
 				F1F20BB8294FCFE300E9916C /* Map in Frameworks */,
+				F1CDC5A72967537F0096EB3C /* AssetCatalogWrapper in Frameworks */,
+				F1CDC5AA2967549B0096EB3C /* Dynamic in Frameworks */,
 				F111781229649E2F0047CA8F /* libwoff2enc.a in Frameworks */,
 				F1F20BC3294FD4DC00E9916C /* ZIPFoundation in Frameworks */,
 			);
@@ -173,13 +175,6 @@
 				F10BAC79295BE4A9007387FF /* NoCamSoundView.swift */,
 			);
 			path = NoCamSound;
-			sourceTree = "<group>";
-		};
-		F10BAC7E295BE904007387FF /* Icons */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Icons;
 			sourceTree = "<group>";
 		};
 		F11177F429649BAF0047CA8F /* CustomFontsLib */ = {
@@ -240,11 +235,10 @@
 		F13DCCF5294D270700EBA2DF /* TrollBox */ = {
 			isa = PBXGroup;
 			children = (
-				F1ECFC7629552E5B007E24CC /* Assets.xcassets */,
+				F1CDC58729674D210096EB3C /* Assets.xcassets */,
 				F1ECFC4C295522CC007E24CC /* Themer */,
 				F1F20BA7294FC50500E9916C /* TrollBox-bringing-header.h */,
 				F1F20BA8294FC50500E9916C /* TrollBoxApp.swift */,
-				F1CDC5822967470A0096EB3C /* TBSelf-Icon */,
 				F13DCD15294D28E200EBA2DF /* Tools */,
 				F13DCD14294D28DA00EBA2DF /* Libs */,
 				F13DCCF8294D270700EBA2DF /* ContentView.swift */,
@@ -388,19 +382,9 @@
 			path = WallSet;
 			sourceTree = "<group>";
 		};
-		F1CDC5822967470A0096EB3C /* TBSelf-Icon */ = {
-			isa = PBXGroup;
-			children = (
-				F1CDC57E296745BC0096EB3C /* iconchangingscript.swift */,
-				F1CDC5802967468E0096EB3C /* IconChangingView.swift */,
-			);
-			path = "TBSelf-Icon";
-			sourceTree = "<group>";
-		};
 		F1ECFC4C295522CC007E24CC /* Themer */ = {
 			isa = PBXGroup;
 			children = (
-				F10BAC7E295BE904007387FF /* Icons */,
 				F1ECFC7329552E3B007E24CC /* Badger */,
 			);
 			path = Themer;
@@ -473,6 +457,9 @@
 				F15BA7062953D31D00740E5E /* ACarousel */,
 				F1DAC9AE295685A4003BB965 /* Alamofire */,
 				F1DAC9B629568DC2003BB965 /* SDWebImageSwiftUI */,
+				F1CDC5A42967537F0096EB3C /* ApplicationsWrapper */,
+				F1CDC5A62967537F0096EB3C /* AssetCatalogWrapper */,
+				F1CDC5A92967549B0096EB3C /* Dynamic */,
 			);
 			productName = TSSwissKnife;
 			productReference = F13DCCF3294D270700EBA2DF /* TrollBox.app */;
@@ -509,6 +496,8 @@
 				F15BA7052953D31D00740E5E /* XCRemoteSwiftPackageReference "ACarousel" */,
 				F1DAC9AD295685A4003BB965 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				F1DAC9B529568DC2003BB965 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				F1CDC5A32967537F0096EB3C /* XCRemoteSwiftPackageReference "SantanderWrappers" */,
+				F1CDC5A82967549B0096EB3C /* XCRemoteSwiftPackageReference "Dynamic" */,
 			);
 			productRefGroup = F13DCCF4294D270700EBA2DF /* Products */;
 			projectDirPath = "";
@@ -529,9 +518,9 @@
 				F1F3D89A2965FC7100A931C4 /* hiddenLight.materialrecipe in Resources */,
 				F135173E294D3E72005C8DE3 /* Trollface.png in Resources */,
 				F111781C2964A81C0047CA8F /* RepackedFonts in Resources */,
-				F1ECFC7829552E5C007E24CC /* Assets.xcassets in Resources */,
 				F1F3D89D2965FC7100A931C4 /* defaultLight.materialrecipe in Resources */,
 				F1F3D89C2965FC7100A931C4 /* defaultDark.materialrecipe in Resources */,
+				F1CDC58829674D210096EB3C /* Assets.xcassets in Resources */,
 				F111781D2964A81C0047CA8F /* PreviewFonts in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -557,7 +546,6 @@
 				F1F20BAF294FCDB900E9916C /* CarrierNameManager.swift in Sources */,
 				F135171D294D37DD005C8DE3 /* TSUtil.m in Sources */,
 				F1F3D8A12965FCE200A931C4 /* DockSetView.swift in Sources */,
-				F1CDC5812967468E0096EB3C /* IconChangingView.swift in Sources */,
 				F14D866B29538B89008F06D2 /* AirSpam.swift in Sources */,
 				F14D866929538B89008F06D2 /* TrollController.swift in Sources */,
 				F111780629649C360047CA8F /* BrotliPadding.swift in Sources */,
@@ -570,7 +558,6 @@
 				F1351724294D3A53005C8DE3 /* RemLog.swift in Sources */,
 				F1F20BB1294FCDC100E9916C /* LocationSimulationView.swift in Sources */,
 				F151CC2B2954DD1200367170 /* ImagePicker.swift in Sources */,
-				F1CDC57F296745BC0096EB3C /* iconchangingscript.swift in Sources */,
 				F1351734294D3B2F005C8DE3 /* ImagePickerView.swift in Sources */,
 				F1A59FB629526F6800A57361 /* WallSetView.swift in Sources */,
 				F16942D4295B201000C99444 /* FCView.swift in Sources */,
@@ -715,7 +702,7 @@
 		F13DCD02294D270900EBA2DF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_ALTERNATE_APPICON_NAMES = oldAppIcon;
+				ASSETCATALOG_COMPILER_ALTERNATE_APPICON_NAMES = "";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
@@ -724,7 +711,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TrollBox/Preview Content\"";
-				DEVELOPMENT_TEAM = 7G89J82G2A;
+				DEVELOPMENT_TEAM = 29TC47BU5J;
 				ENABLE_PREVIEWS = YES;
 				GCC_PREFIX_HEADER = "";
 				GENERATE_INFOPLIST_FILE = YES;
@@ -748,7 +735,7 @@
 				);
 				MARKETING_VERSION = 0.0.9;
 				OTHER_LDFLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = live.cclerc.trollbox;
+				PRODUCT_BUNDLE_IDENTIFIER = "live.cclerc.trollbox-exp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -762,7 +749,7 @@
 		F13DCD03294D270900EBA2DF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_ALTERNATE_APPICON_NAMES = oldAppIcon;
+				ASSETCATALOG_COMPILER_ALTERNATE_APPICON_NAMES = "";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
@@ -771,7 +758,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TrollBox/Preview Content\"";
-				DEVELOPMENT_TEAM = 7G89J82G2A;
+				DEVELOPMENT_TEAM = 29TC47BU5J;
 				ENABLE_PREVIEWS = YES;
 				GCC_PREFIX_HEADER = "";
 				GENERATE_INFOPLIST_FILE = YES;
@@ -796,7 +783,7 @@
 				MARKETING_VERSION = 0.0.9;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = live.cclerc.trollbox;
+				PRODUCT_BUNDLE_IDENTIFIER = "live.cclerc.trollbox-exp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -838,6 +825,22 @@
 				minimumVersion = 0.2.0;
 			};
 		};
+		F1CDC5A32967537F0096EB3C /* XCRemoteSwiftPackageReference "SantanderWrappers" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SerenaKit/SantanderWrappers";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		F1CDC5A82967549B0096EB3C /* XCRemoteSwiftPackageReference "Dynamic" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mhdhejazi/Dynamic/";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 		F1DAC9AD295685A4003BB965 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire";
@@ -877,6 +880,21 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F15BA7052953D31D00740E5E /* XCRemoteSwiftPackageReference "ACarousel" */;
 			productName = ACarousel;
+		};
+		F1CDC5A42967537F0096EB3C /* ApplicationsWrapper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F1CDC5A32967537F0096EB3C /* XCRemoteSwiftPackageReference "SantanderWrappers" */;
+			productName = ApplicationsWrapper;
+		};
+		F1CDC5A62967537F0096EB3C /* AssetCatalogWrapper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F1CDC5A32967537F0096EB3C /* XCRemoteSwiftPackageReference "SantanderWrappers" */;
+			productName = AssetCatalogWrapper;
+		};
+		F1CDC5A92967549B0096EB3C /* Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F1CDC5A82967549B0096EB3C /* XCRemoteSwiftPackageReference "Dynamic" */;
+			productName = Dynamic;
 		};
 		F1DAC9AE295685A4003BB965 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;

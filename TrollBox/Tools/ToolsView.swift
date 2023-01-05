@@ -113,16 +113,6 @@ struct ToolsView: View {
                                 Text("Dock Options")
                             }
                         }
-                        NavigationLink(destination: IconChangingView()) {
-                            HStack {
-                                Image(systemName: "paintbrush")
-                                    .resizable()
-                                    .aspectRatio(contentMode: .fit)
-                                    .frame(width: 24, height: 24)
-                                    .foregroundColor(.primary)
-                                Text("Change TrollBox Icon")
-                            }
-                        }
                     }
                 }
             }
