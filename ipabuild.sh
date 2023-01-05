@@ -8,7 +8,12 @@ WORKING_LOCATION="$(pwd)"
 APPLICATION_NAME=TrollBox
 CONFIGURATION=Debug
 
+if [ ! -d "build" ]; then
+    mkdir build
+fi
+
 cd build
+
 if [ -e "$APPLICATION_NAME.tipa" ]; then
 rm $APPLICATION_NAME.tipa
 fi
