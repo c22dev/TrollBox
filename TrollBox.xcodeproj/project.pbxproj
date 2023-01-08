@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		F1D694EE296A6DEC002332C8 /* Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = F1D694ED296A6DEC002332C8 /* Dynamic */; };
-		F1D69505296A7364002332C8 /* AssetCatalogWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = F1D69504296A7364002332C8 /* AssetCatalogWrapper */; };
 		F1D69510296A7550002332C8 /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = F1D6950F296A7550002332C8 /* ArgumentParser */; };
 		F1F3BED9296A5C3C008D79C7 /* PreviewFonts in Resources */ = {isa = PBXBuildFile; fileRef = F1F3BED7296A5C3C008D79C7 /* PreviewFonts */; };
 		F1F3BEDA296A5C3C008D79C7 /* RepackedFonts in Resources */ = {isa = PBXBuildFile; fileRef = F1F3BED8296A5C3C008D79C7 /* RepackedFonts */; };
@@ -160,7 +159,6 @@
 			files = (
 				F1F4F713296A4C230024218E /* libwoff2enc.a in Frameworks */,
 				F1F4F824296A50450024218E /* Map in Frameworks */,
-				F1D69505296A7364002332C8 /* AssetCatalogWrapper in Frameworks */,
 				F1F4F715296A4C230024218E /* libwoff2common.a in Frameworks */,
 				F1F4F820296A4EFD0024218E /* ZIPFoundation in Frameworks */,
 				F1F4F827296A50B30024218E /* ACarousel in Frameworks */,
@@ -473,7 +471,6 @@
 				F1F4F823296A50450024218E /* Map */,
 				F1F4F826296A50B30024218E /* ACarousel */,
 				F1D694ED296A6DEC002332C8 /* Dynamic */,
-				F1D69504296A7364002332C8 /* AssetCatalogWrapper */,
 				F1D6950F296A7550002332C8 /* ArgumentParser */,
 			);
 			productName = TrollBox;
@@ -510,7 +507,6 @@
 				F1F4F822296A50450024218E /* XCRemoteSwiftPackageReference "Map" */,
 				F1F4F825296A50B30024218E /* XCRemoteSwiftPackageReference "ACarousel" */,
 				F1D694EC296A6DEC002332C8 /* XCRemoteSwiftPackageReference "Dynamic" */,
-				F1D69503296A7364002332C8 /* XCRemoteSwiftPackageReference "SantanderWrappers" */,
 				F1D6950E296A7550002332C8 /* XCRemoteSwiftPackageReference "swift-argument-parser" */,
 			);
 			productRefGroup = F1F4F6DB296A4A5D0024218E /* Products */;
@@ -832,14 +828,6 @@
 				kind = branch;
 			};
 		};
-		F1D69503296A7364002332C8 /* XCRemoteSwiftPackageReference "SantanderWrappers" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SerenaKit/SantanderWrappers";
-			requirement = {
-				branch = main;
-				kind = branch;
-			};
-		};
 		F1D6950E296A7550002332C8 /* XCRemoteSwiftPackageReference "swift-argument-parser" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/apple/swift-argument-parser.git";
@@ -879,11 +867,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F1D694EC296A6DEC002332C8 /* XCRemoteSwiftPackageReference "Dynamic" */;
 			productName = Dynamic;
-		};
-		F1D69504296A7364002332C8 /* AssetCatalogWrapper */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F1D69503296A7364002332C8 /* XCRemoteSwiftPackageReference "SantanderWrappers" */;
-			productName = AssetCatalogWrapper;
 		};
 		F1D6950F296A7550002332C8 /* ArgumentParser */ = {
 			isa = XCSwiftPackageProductDependency;
