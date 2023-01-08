@@ -62,6 +62,16 @@ struct ToolsView: View {
                             Text("Lock Screen Footnote")
                         }
                     }
+                    NavigationLink(destination: ThemesView()) {
+                        HStack {
+                            Image(systemName: "paintbush")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 24, height: 24)
+                                .foregroundColor(.primary)
+                            Text("Themer")
+                        }
+                    }
                     NavigationLink(destination: BadgeChangerView()) {
                         HStack {
                             Image(systemName: "app.badge.fill")

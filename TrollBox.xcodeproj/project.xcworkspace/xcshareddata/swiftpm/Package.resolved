@@ -10,6 +10,15 @@
       }
     },
     {
+      "identity" : "alamofire",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Alamofire/Alamofire",
+      "state" : {
+        "branch" : "master",
+        "revision" : "ce7f662709a152e840b130a158b9afef3402e146"
+      }
+    },
+    {
       "identity" : "dynamic",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/mhdhejazi/Dynamic/",
@@ -34,6 +43,15 @@
       "state" : {
         "branch" : "main",
         "revision" : "78c19b2eeba612b0fb7b13df7ab304062ee22622"
+      }
+    },
+    {
+      "identity" : "sdwebimage",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SDWebImage/SDWebImage.git",
+      "state" : {
+        "revision" : "4178d12a44691182c2eb79c70281b14cb73f4cbf",
+        "version" : "5.14.3"
       }
     },
     {

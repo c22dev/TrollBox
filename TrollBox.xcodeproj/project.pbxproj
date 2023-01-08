@@ -9,7 +9,26 @@
 /* Begin PBXBuildFile section */
 		F1D694EE296A6DEC002332C8 /* Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = F1D694ED296A6DEC002332C8 /* Dynamic */; };
 		F1D69510296A7550002332C8 /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = F1D6950F296A7550002332C8 /* ArgumentParser */; };
-		F1E6A785296B3F7E006DBCBD /* AssetCatalogWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = F1E6A784296B3F7E006DBCBD /* AssetCatalogWrapper */; };
+		F1E6A78B296B5014006DBCBD /* WebclipsThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E6A788296B5014006DBCBD /* WebclipsThemeManager.swift */; };
+		F1E6A78C296B5014006DBCBD /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E6A789296B5014006DBCBD /* ThemeManager.swift */; };
+		F1E6A795296B5028006DBCBD /* AltIconSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E6A78F296B5028006DBCBD /* AltIconSelectionView.swift */; };
+		F1E6A796296B5028006DBCBD /* ThemesSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E6A790296B5028006DBCBD /* ThemesSettingsView.swift */; };
+		F1E6A797296B5028006DBCBD /* ThemeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E6A791296B5028006DBCBD /* ThemeView.swift */; };
+		F1E6A798296B5028006DBCBD /* IndividualIconsEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E6A792296B5028006DBCBD /* IndividualIconsEditorView.swift */; };
+		F1E6A799296B5028006DBCBD /* IconOverridesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E6A793296B5028006DBCBD /* IconOverridesView.swift */; };
+		F1E6A79A296B5028006DBCBD /* ThemesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E6A794296B5028006DBCBD /* ThemesView.swift */; };
+		F1E6A79E296B51AE006DBCBD /* WebClipTemplate.plist in Resources */ = {isa = PBXBuildFile; fileRef = F1E6A79C296B51AE006DBCBD /* WebClipTemplate.plist */; };
+		F1E6A79F296B51AE006DBCBD /* com.apple.springboard.plist in Resources */ = {isa = PBXBuildFile; fileRef = F1E6A79D296B51AE006DBCBD /* com.apple.springboard.plist */; };
+		F1E6A7C4296B55D8006DBCBD /* CatalogThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E6A7C3296B55D8006DBCBD /* CatalogThemeManager.swift */; };
+		F1E6A7C7296B567D006DBCBD /* ApplicationsWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = F1E6A7C6296B567D006DBCBD /* ApplicationsWrapper */; };
+		F1E6A7C9296B567D006DBCBD /* AssetCatalogWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = F1E6A7C8296B567D006DBCBD /* AssetCatalogWrapper */; };
+		F1E6A7CB296B567D006DBCBD /* CompressionWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = F1E6A7CA296B567D006DBCBD /* CompressionWrapper */; };
+		F1E6A7CD296B567D006DBCBD /* DiskImagesWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = F1E6A7CC296B567D006DBCBD /* DiskImagesWrapper */; };
+		F1E6A7CF296B567D006DBCBD /* FSOperations in Frameworks */ = {isa = PBXBuildFile; productRef = F1E6A7CE296B567D006DBCBD /* FSOperations */; };
+		F1E6A7D1296B567D006DBCBD /* NSTask in Frameworks */ = {isa = PBXBuildFile; productRef = F1E6A7D0296B567D006DBCBD /* NSTask */; };
+		F1E6A7D3296B567D006DBCBD /* SVGWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = F1E6A7D2296B567D006DBCBD /* SVGWrapper */; };
+		F1E6A7D6296B5742006DBCBD /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F1E6A7D5296B5742006DBCBD /* Alamofire */; };
+		F1E6A7D9296B575C006DBCBD /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = F1E6A7D8296B575C006DBCBD /* SDWebImage */; };
 		F1F3BED9296A5C3C008D79C7 /* PreviewFonts in Resources */ = {isa = PBXBuildFile; fileRef = F1F3BED7296A5C3C008D79C7 /* PreviewFonts */; };
 		F1F3BEDA296A5C3C008D79C7 /* RepackedFonts in Resources */ = {isa = PBXBuildFile; fileRef = F1F3BED8296A5C3C008D79C7 /* RepackedFonts */; };
 		F1F4F6DE296A4A5D0024218E /* TrollBoxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F4F6DD296A4A5D0024218E /* TrollBoxApp.swift */; };
@@ -77,6 +96,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F1E6A788296B5014006DBCBD /* WebclipsThemeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebclipsThemeManager.swift; sourceTree = "<group>"; };
+		F1E6A789296B5014006DBCBD /* ThemeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
+		F1E6A78F296B5028006DBCBD /* AltIconSelectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AltIconSelectionView.swift; sourceTree = "<group>"; };
+		F1E6A790296B5028006DBCBD /* ThemesSettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemesSettingsView.swift; sourceTree = "<group>"; };
+		F1E6A791296B5028006DBCBD /* ThemeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeView.swift; sourceTree = "<group>"; };
+		F1E6A792296B5028006DBCBD /* IndividualIconsEditorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndividualIconsEditorView.swift; sourceTree = "<group>"; };
+		F1E6A793296B5028006DBCBD /* IconOverridesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IconOverridesView.swift; sourceTree = "<group>"; };
+		F1E6A794296B5028006DBCBD /* ThemesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemesView.swift; sourceTree = "<group>"; };
+		F1E6A79C296B51AE006DBCBD /* WebClipTemplate.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = WebClipTemplate.plist; sourceTree = "<group>"; };
+		F1E6A79D296B51AE006DBCBD /* com.apple.springboard.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = com.apple.springboard.plist; sourceTree = "<group>"; };
+		F1E6A7C3296B55D8006DBCBD /* CatalogThemeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatalogThemeManager.swift; sourceTree = "<group>"; };
 		F1F3BED7296A5C3C008D79C7 /* PreviewFonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = PreviewFonts; sourceTree = "<group>"; };
 		F1F3BED8296A5C3C008D79C7 /* RepackedFonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = RepackedFonts; sourceTree = "<group>"; };
 		F1F4F6DA296A4A5D0024218E /* TrollBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrollBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -158,20 +188,70 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1E6A7D6296B5742006DBCBD /* Alamofire in Frameworks */,
+				F1E6A7D1296B567D006DBCBD /* NSTask in Frameworks */,
+				F1E6A7D9296B575C006DBCBD /* SDWebImage in Frameworks */,
 				F1F4F713296A4C230024218E /* libwoff2enc.a in Frameworks */,
 				F1F4F824296A50450024218E /* Map in Frameworks */,
+				F1E6A7C9296B567D006DBCBD /* AssetCatalogWrapper in Frameworks */,
 				F1F4F715296A4C230024218E /* libwoff2common.a in Frameworks */,
+				F1E6A7D3296B567D006DBCBD /* SVGWrapper in Frameworks */,
+				F1E6A7C7296B567D006DBCBD /* ApplicationsWrapper in Frameworks */,
 				F1F4F820296A4EFD0024218E /* ZIPFoundation in Frameworks */,
 				F1F4F827296A50B30024218E /* ACarousel in Frameworks */,
 				F1D69510296A7550002332C8 /* ArgumentParser in Frameworks */,
 				F1D694EE296A6DEC002332C8 /* Dynamic in Frameworks */,
-				F1E6A785296B3F7E006DBCBD /* AssetCatalogWrapper in Frameworks */,
+				F1E6A7CF296B567D006DBCBD /* FSOperations in Frameworks */,
+				F1E6A7CD296B567D006DBCBD /* DiskImagesWrapper in Frameworks */,
+				F1E6A7CB296B567D006DBCBD /* CompressionWrapper in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F1E6A786296B4FE9006DBCBD /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				F1E6A79B296B51AE006DBCBD /* Templates */,
+				F1E6A78E296B5028006DBCBD /* view */,
+				F1E6A787296B5014006DBCBD /* sys */,
+			);
+			path = Icons;
+			sourceTree = "<group>";
+		};
+		F1E6A787296B5014006DBCBD /* sys */ = {
+			isa = PBXGroup;
+			children = (
+				F1E6A7C3296B55D8006DBCBD /* CatalogThemeManager.swift */,
+				F1E6A788296B5014006DBCBD /* WebclipsThemeManager.swift */,
+				F1E6A789296B5014006DBCBD /* ThemeManager.swift */,
+			);
+			path = sys;
+			sourceTree = "<group>";
+		};
+		F1E6A78E296B5028006DBCBD /* view */ = {
+			isa = PBXGroup;
+			children = (
+				F1E6A78F296B5028006DBCBD /* AltIconSelectionView.swift */,
+				F1E6A790296B5028006DBCBD /* ThemesSettingsView.swift */,
+				F1E6A791296B5028006DBCBD /* ThemeView.swift */,
+				F1E6A792296B5028006DBCBD /* IndividualIconsEditorView.swift */,
+				F1E6A793296B5028006DBCBD /* IconOverridesView.swift */,
+				F1E6A794296B5028006DBCBD /* ThemesView.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		F1E6A79B296B51AE006DBCBD /* Templates */ = {
+			isa = PBXGroup;
+			children = (
+				F1E6A79C296B51AE006DBCBD /* WebClipTemplate.plist */,
+				F1E6A79D296B51AE006DBCBD /* com.apple.springboard.plist */,
+			);
+			path = Templates;
+			sourceTree = "<group>";
+		};
 		F1F4F6D1296A4A5D0024218E = {
 			isa = PBXGroup;
 			children = (
@@ -382,6 +462,7 @@
 		F1F4F7E2296A4D460024218E /* Themer */ = {
 			isa = PBXGroup;
 			children = (
+				F1E6A786296B4FE9006DBCBD /* Icons */,
 				F1F4F7E3296A4D460024218E /* Badger */,
 			);
 			path = Themer;
@@ -474,7 +555,15 @@
 				F1F4F826296A50B30024218E /* ACarousel */,
 				F1D694ED296A6DEC002332C8 /* Dynamic */,
 				F1D6950F296A7550002332C8 /* ArgumentParser */,
-				F1E6A784296B3F7E006DBCBD /* AssetCatalogWrapper */,
+				F1E6A7C6296B567D006DBCBD /* ApplicationsWrapper */,
+				F1E6A7C8296B567D006DBCBD /* AssetCatalogWrapper */,
+				F1E6A7CA296B567D006DBCBD /* CompressionWrapper */,
+				F1E6A7CC296B567D006DBCBD /* DiskImagesWrapper */,
+				F1E6A7CE296B567D006DBCBD /* FSOperations */,
+				F1E6A7D0296B567D006DBCBD /* NSTask */,
+				F1E6A7D2296B567D006DBCBD /* SVGWrapper */,
+				F1E6A7D5296B5742006DBCBD /* Alamofire */,
+				F1E6A7D8296B575C006DBCBD /* SDWebImage */,
 			);
 			productName = TrollBox;
 			productReference = F1F4F6DA296A4A5D0024218E /* TrollBox.app */;
@@ -511,7 +600,9 @@
 				F1F4F825296A50B30024218E /* XCRemoteSwiftPackageReference "ACarousel" */,
 				F1D694EC296A6DEC002332C8 /* XCRemoteSwiftPackageReference "Dynamic" */,
 				F1D6950E296A7550002332C8 /* XCRemoteSwiftPackageReference "swift-argument-parser" */,
-				F1E6A783296B3F7E006DBCBD /* XCRemoteSwiftPackageReference "SantanderWrappers" */,
+				F1E6A7C5296B567D006DBCBD /* XCRemoteSwiftPackageReference "SantanderWrappers" */,
+				F1E6A7D4296B5742006DBCBD /* XCRemoteSwiftPackageReference "Alamofire" */,
+				F1E6A7D7296B575C006DBCBD /* XCRemoteSwiftPackageReference "SDWebImage" */,
 			);
 			productRefGroup = F1F4F6DB296A4A5D0024218E /* Products */;
 			projectDirPath = "";
@@ -533,9 +624,11 @@
 				F1F4F83F296A54B60024218E /* hiddenLight.materialrecipe in Resources */,
 				F1F4F7DA296A4D380024218E /* Trollface.png in Resources */,
 				F1F4F842296A54B60024218E /* defaultLight.materialrecipe in Resources */,
+				F1E6A79F296B51AE006DBCBD /* com.apple.springboard.plist in Resources */,
 				F1F4F841296A54B60024218E /* defaultDark.materialrecipe in Resources */,
 				F1F3BEDA296A5C3C008D79C7 /* RepackedFonts in Resources */,
 				F1F4F6E2296A4A5F0024218E /* Assets.xcassets in Resources */,
+				F1E6A79E296B51AE006DBCBD /* WebClipTemplate.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -553,8 +646,13 @@
 				F1F4F7DD296A4D380024218E /* NoCamSoundView.swift in Sources */,
 				F1F4F701296A4BFD0024218E /* MGPreferences.m in Sources */,
 				F1F4F7E7296A4D460024218E /* BadgeChanger.swift in Sources */,
+				F1E6A78B296B5014006DBCBD /* WebclipsThemeManager.swift in Sources */,
+				F1E6A7C4296B55D8006DBCBD /* CatalogThemeManager.swift in Sources */,
+				F1E6A797296B5028006DBCBD /* ThemeView.swift in Sources */,
+				F1E6A799296B5028006DBCBD /* IconOverridesView.swift in Sources */,
 				F1F4F7DF296A4D380024218E /* CardView.swift in Sources */,
 				F1F4F6FE296A4BFD0024218E /* TSUtil.m in Sources */,
+				F1E6A795296B5028006DBCBD /* AltIconSelectionView.swift in Sources */,
 				F1F4F7E6296A4D460024218E /* BadgeChangerView.swift in Sources */,
 				F1F4F837296A54A80024218E /* ApplicationMonitor.swift in Sources */,
 				F1F4F7D3296A4D380024218E /* LocSimManager.swift in Sources */,
@@ -564,10 +662,13 @@
 				F1F4F7DE296A4D380024218E /* RingtoneVIew.swift in Sources */,
 				F1F4F6FD296A4BFD0024218E /* ImagePickerView.swift in Sources */,
 				F1F4F845296A54D80024218E /* ToolsManager.swift in Sources */,
+				F1E6A78C296B5014006DBCBD /* ThemeManager.swift in Sources */,
 				F1F4F700296A4BFD0024218E /* RootHelper.swift in Sources */,
+				F1E6A796296B5028006DBCBD /* ThemesSettingsView.swift in Sources */,
 				F1F4F836296A54A80024218E /* LocationManager.swift in Sources */,
 				F1F4F6FC296A4BFD0024218E /* WallpaperGetter.swift in Sources */,
 				F1F4F7D4296A4D380024218E /* LocationSimulationView.swift in Sources */,
+				F1E6A79A296B5028006DBCBD /* ThemesView.swift in Sources */,
 				F1F4F710296A4C230024218E /* ttcpad.m in Sources */,
 				F1F4F855296A58120024218E /* CreditsView.swift in Sources */,
 				F1F4F84D296A55B60024218E /* FCView.swift in Sources */,
@@ -584,6 +685,7 @@
 				F1F4F7CC296A4D380024218E /* PasscodeEditorView.swift in Sources */,
 				F1F4F7C6296A4D380024218E /* LSFootNote.swift in Sources */,
 				F1F4F712296A4C230024218E /* stripttc.c in Sources */,
+				F1E6A798296B5028006DBCBD /* IndividualIconsEditorView.swift in Sources */,
 				F1F4F848296A550D0024218E /* DockView.swift in Sources */,
 				F1F4F703296A4BFD0024218E /* RemLog.swift in Sources */,
 				F1F4F81D296A4DCA0024218E /* ToolsView.swift in Sources */,
@@ -746,6 +848,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/TrollBox/Libs/CustomFont",
+					"$(PROJECT_DIR)/TrollBox/Tools/Themer/Icons/Bridge",
 				);
 				MARKETING_VERSION = 0.0.9;
 				PRODUCT_BUNDLE_IDENTIFIER = "live.cclerc.trollbox-b";
@@ -788,6 +891,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/TrollBox/Libs/CustomFont",
+					"$(PROJECT_DIR)/TrollBox/Tools/Themer/Icons/Bridge",
 				);
 				MARKETING_VERSION = 0.0.9;
 				ONLY_ACTIVE_ARCH = YES;
@@ -840,12 +944,28 @@
 				minimumVersion = 1.0.0;
 			};
 		};
-		F1E6A783296B3F7E006DBCBD /* XCRemoteSwiftPackageReference "SantanderWrappers" */ = {
+		F1E6A7C5296B567D006DBCBD /* XCRemoteSwiftPackageReference "SantanderWrappers" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SerenaKit/SantanderWrappers";
 			requirement = {
 				branch = main;
 				kind = branch;
+			};
+		};
+		F1E6A7D4296B5742006DBCBD /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		F1E6A7D7296B575C006DBCBD /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
 			};
 		};
 		F1F4F81E296A4EFD0024218E /* XCRemoteSwiftPackageReference "ZIPFoundation" */ = {
@@ -885,10 +1005,50 @@
 			package = F1D6950E296A7550002332C8 /* XCRemoteSwiftPackageReference "swift-argument-parser" */;
 			productName = ArgumentParser;
 		};
-		F1E6A784296B3F7E006DBCBD /* AssetCatalogWrapper */ = {
+		F1E6A7C6296B567D006DBCBD /* ApplicationsWrapper */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = F1E6A783296B3F7E006DBCBD /* XCRemoteSwiftPackageReference "SantanderWrappers" */;
+			package = F1E6A7C5296B567D006DBCBD /* XCRemoteSwiftPackageReference "SantanderWrappers" */;
+			productName = ApplicationsWrapper;
+		};
+		F1E6A7C8296B567D006DBCBD /* AssetCatalogWrapper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F1E6A7C5296B567D006DBCBD /* XCRemoteSwiftPackageReference "SantanderWrappers" */;
 			productName = AssetCatalogWrapper;
+		};
+		F1E6A7CA296B567D006DBCBD /* CompressionWrapper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F1E6A7C5296B567D006DBCBD /* XCRemoteSwiftPackageReference "SantanderWrappers" */;
+			productName = CompressionWrapper;
+		};
+		F1E6A7CC296B567D006DBCBD /* DiskImagesWrapper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F1E6A7C5296B567D006DBCBD /* XCRemoteSwiftPackageReference "SantanderWrappers" */;
+			productName = DiskImagesWrapper;
+		};
+		F1E6A7CE296B567D006DBCBD /* FSOperations */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F1E6A7C5296B567D006DBCBD /* XCRemoteSwiftPackageReference "SantanderWrappers" */;
+			productName = FSOperations;
+		};
+		F1E6A7D0296B567D006DBCBD /* NSTask */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F1E6A7C5296B567D006DBCBD /* XCRemoteSwiftPackageReference "SantanderWrappers" */;
+			productName = NSTask;
+		};
+		F1E6A7D2296B567D006DBCBD /* SVGWrapper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F1E6A7C5296B567D006DBCBD /* XCRemoteSwiftPackageReference "SantanderWrappers" */;
+			productName = SVGWrapper;
+		};
+		F1E6A7D5296B5742006DBCBD /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F1E6A7D4296B5742006DBCBD /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		F1E6A7D8296B575C006DBCBD /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F1E6A7D7296B575C006DBCBD /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
 		};
 		F1F4F81F296A4EFD0024218E /* ZIPFoundation */ = {
 			isa = XCSwiftPackageProductDependency;
