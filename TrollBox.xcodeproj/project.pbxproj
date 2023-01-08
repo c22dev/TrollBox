@@ -1,0 +1,859 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F1F3BED9296A5C3C008D79C7 /* PreviewFonts in Resources */ = {isa = PBXBuildFile; fileRef = F1F3BED7296A5C3C008D79C7 /* PreviewFonts */; };
+		F1F3BEDA296A5C3C008D79C7 /* RepackedFonts in Resources */ = {isa = PBXBuildFile; fileRef = F1F3BED8296A5C3C008D79C7 /* RepackedFonts */; };
+		F1F4F6DE296A4A5D0024218E /* TrollBoxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F4F6DD296A4A5D0024218E /* TrollBoxApp.swift */; };
+		F1F4F6E0296A4A5D0024218E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F4F6DF296A4A5D0024218E /* ContentView.swift */; };
+		F1F4F6E2296A4A5F0024218E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1F4F6E1296A4A5F0024218E /* Assets.xcassets */; };
+		F1F4F6E5296A4A5F0024218E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1F4F6E4296A4A5F0024218E /* Preview Assets.xcassets */; };
+		F1F4F6FC296A4BFD0024218E /* WallpaperGetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F4F6EF296A4BFC0024218E /* WallpaperGetter.swift */; };
+		F1F4F6FD296A4BFD0024218E /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F4F6F0296A4BFC0024218E /* ImagePickerView.swift */; };
+		F1F4F6FE296A4BFD0024218E /* TSUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F4F6F1296A4BFC0024218E /* TSUtil.m */; };
+		F1F4F700296A4BFD0024218E /* RootHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F4F6F5296A4BFD0024218E /* RootHelper.swift */; };
+		F1F4F701296A4BFD0024218E /* MGPreferences.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F4F6F6296A4BFD0024218E /* MGPreferences.m */; };
+		F1F4F702296A4BFD0024218E /* Addon.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F4F6F7296A4BFD0024218E /* Addon.swift */; };
+		F1F4F703296A4BFD0024218E /* RemLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F4F6F9296A4BFD0024218E /* RemLog.swift */; };
+		F1F4F704296A4BFD0024218E /* vm_unaligned_copy_switch_race.c in Sources */ = {isa = PBXBuildFile; fileRef = F1F4F6FA296A4BFD0024218E /* vm_unaligned_copy_switch_race.c */; };
+		F1F4F710296A4C230024218E /* ttcpad.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F4F708296A4C220024218E /* ttcpad.m */; };
+		F1F4F711296A4C230024218E /* BrotliPadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F4F70A296A4C220024218E /* BrotliPadding.swift */; };
+		F1F4F712296A4C230024218E /* stripttc.c in Sources */ = {isa = PBXBuildFile; fileRef = F1F4F70B296A4C220024218E /* stripttc.c */; };
+		F1F4F713296A4C230024218E /* libwoff2enc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F1F4F70C296A4C230024218E /* libwoff2enc.a */; };
+		F1F4F714296A4C230024218E /* woff2_wrapper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1F4F70E296A4C230024218E /* woff2_wrapper.cpp */; };
+		F1F4F715296A4C230024218E /* libwoff2common.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F1F4F70F296A4C230024218E /* libwoff2common.a */; };
+		F1F4F79A296A4CB80024218E /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F4F799296A4CB80024218E /* AboutView.swift */; };
+		F1F4F7C6296A4D380024218E /* LSFootNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F4F79C296A4D370024218E /* LSFootNote.swift */; };
+		F1F4F7CC296A4D380024218E /* PasscodeEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F4F7A7296A4D370024218E /* PasscodeEditorView.swift */; };
+		F1F4F7CD296A4D380024218E /* PasscodeKeyFaceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F4F7A8296A4D370024218E /* PasscodeKeyFaceManager.swift */; };
+		F1F4F7CE296A4D380024218E /* Gestures.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F4F7AA296A4D370024218E /* Gestures.swift */; };
+		F1F4F7CF296A4D380024218E /* OtherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F4F7AB296A4D370024218E /* OtherView.swift */; };
+		F1F4F7D0296A4D380024218E /* invoke.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F4F7AD296A4D370024218E /* invoke.m */; };
+		F1F4F7D2296A4D380024218E /* WallSetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F4F7AF296A4D370024218E /* WallSetView.swift */; };
+		F1F4F7D3296A4D380024218E /* LocSimManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F4F7B2296A4D370024218E /* LocSimManager.swift */; };
+		F1F4F7D4296A4D380024218E /* LocationSimulationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F4F7B3296A4D370024218E /* LocationSimulationView.swift */; };
+		F1F4F7D7296A4D380024218E /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F4F7B8296A4D370024218E /* Person.swift */; };
+		F1F4F7D8296A4D380024218E /* Sharing.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F4F7B9296A4D370024218E /* Sharing.swift */; };
+		F1F4F7D9296A4D380024218E /* AirSpam.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F4F7BA296A4D370024218E /* AirSpam.swift */; };
+		F1F4F7DA296A4D380024218E /* Trollface.png in Resources */ = {isa = PBXBuildFile; fileRef = F1F4F7BB296A4D370024218E /* Trollface.png */; };
+		F1F4F7DB296A4D380024218E /* TrollController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F4F7BC296A4D370024218E /* TrollController.swift */; };
+		F1F4F7DC296A4D380024218E /* NoCameraSound.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F4F7BE296A4D370024218E /* NoCameraSound.swift */; };
+		F1F4F7DD296A4D380024218E /* NoCamSoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F4F7BF296A4D380024218E /* NoCamSoundView.swift */; };
+		F1F4F7DE296A4D380024218E /* RingtoneVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F4F7C1296A4D380024218E /* RingtoneVIew.swift */; };
+		F1F4F7DF296A4D380024218E /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F4F7C3296A4D380024218E /* CardView.swift */; };
+		F1F4F7E1296A4D380024218E /* MainCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F4F7C5296A4D380024218E /* MainCardView.swift */; };
+		F1F4F7E6296A4D460024218E /* BadgeChangerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F4F7E4296A4D460024218E /* BadgeChangerView.swift */; };
+		F1F4F7E7296A4D460024218E /* BadgeChanger.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F4F7E5296A4D460024218E /* BadgeChanger.swift */; };
+		F1F4F81D296A4DCA0024218E /* ToolsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F4F81C296A4DCA0024218E /* ToolsView.swift */; };
+		F1F4F820296A4EFD0024218E /* ZIPFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = F1F4F81F296A4EFD0024218E /* ZIPFoundation */; };
+		F1F4F824296A50450024218E /* Map in Frameworks */ = {isa = PBXBuildFile; productRef = F1F4F823296A50450024218E /* Map */; };
+		F1F4F827296A50B30024218E /* ACarousel in Frameworks */ = {isa = PBXBuildFile; productRef = F1F4F826296A50B30024218E /* ACarousel */; };
+		F1F4F82B296A514E0024218E /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F4F82A296A514E0024218E /* ImagePicker.swift */; };
+		F1F4F832296A542F0024218E /* CarrierNameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F4F830296A542F0024218E /* CarrierNameManager.swift */; };
+		F1F4F833296A542F0024218E /* CarrierNameChangerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F4F831296A542F0024218E /* CarrierNameChangerView.swift */; };
+		F1F4F836296A54A80024218E /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F4F834296A54A80024218E /* LocationManager.swift */; };
+		F1F4F837296A54A80024218E /* ApplicationMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F4F835296A54A80024218E /* ApplicationMonitor.swift */; };
+		F1F4F83F296A54B60024218E /* hiddenLight.materialrecipe in Resources */ = {isa = PBXBuildFile; fileRef = F1F4F83A296A54B60024218E /* hiddenLight.materialrecipe */; };
+		F1F4F840296A54B60024218E /* hiddenDark.materialrecipe in Resources */ = {isa = PBXBuildFile; fileRef = F1F4F83B296A54B60024218E /* hiddenDark.materialrecipe */; };
+		F1F4F841296A54B60024218E /* defaultDark.materialrecipe in Resources */ = {isa = PBXBuildFile; fileRef = F1F4F83D296A54B60024218E /* defaultDark.materialrecipe */; };
+		F1F4F842296A54B60024218E /* defaultLight.materialrecipe in Resources */ = {isa = PBXBuildFile; fileRef = F1F4F83E296A54B60024218E /* defaultLight.materialrecipe */; };
+		F1F4F845296A54D80024218E /* ToolsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F4F843296A54D80024218E /* ToolsManager.swift */; };
+		F1F4F846296A54D80024218E /* MiscModsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F4F844296A54D80024218E /* MiscModsManager.swift */; };
+		F1F4F848296A550D0024218E /* DockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F4F847296A550D0024218E /* DockView.swift */; };
+		F1F4F84D296A55B60024218E /* FCView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F4F849296A55B50024218E /* FCView.swift */; };
+		F1F4F84E296A55B60024218E /* FCView.ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F4F84A296A55B50024218E /* FCView.ViewModel.swift */; };
+		F1F4F84F296A55B60024218E /* OverwriteFontImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F4F84B296A55B50024218E /* OverwriteFontImpl.swift */; };
+		F1F4F850296A55B60024218E /* docs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F4F84C296A55B50024218E /* docs.swift */; };
+		F1F4F853296A55F70024218E /* VChanger.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F4F852296A55F70024218E /* VChanger.swift */; };
+		F1F4F855296A58120024218E /* CreditsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F4F854296A58120024218E /* CreditsView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F1F3BED7296A5C3C008D79C7 /* PreviewFonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = PreviewFonts; sourceTree = "<group>"; };
+		F1F3BED8296A5C3C008D79C7 /* RepackedFonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = RepackedFonts; sourceTree = "<group>"; };
+		F1F4F6DA296A4A5D0024218E /* TrollBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrollBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1F4F6DD296A4A5D0024218E /* TrollBoxApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrollBoxApp.swift; sourceTree = "<group>"; };
+		F1F4F6DF296A4A5D0024218E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F1F4F6E1296A4A5F0024218E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F1F4F6E4296A4A5F0024218E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F1F4F6ED296A4BFC0024218E /* TrollBox-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TrollBox-Bridging-Header.h"; sourceTree = "<group>"; };
+		F1F4F6EE296A4BFC0024218E /* vm_unaligned_copy_switch_race.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vm_unaligned_copy_switch_race.h; sourceTree = "<group>"; };
+		F1F4F6EF296A4BFC0024218E /* WallpaperGetter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WallpaperGetter.swift; sourceTree = "<group>"; };
+		F1F4F6F0296A4BFC0024218E /* ImagePickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
+		F1F4F6F1296A4BFC0024218E /* TSUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSUtil.m; sourceTree = "<group>"; };
+		F1F4F6F2296A4BFC0024218E /* TSUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSUtil.h; sourceTree = "<group>"; };
+		F1F4F6F3296A4BFC0024218E /* CoreServices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreServices.h; sourceTree = "<group>"; };
+		F1F4F6F5296A4BFD0024218E /* RootHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootHelper.swift; sourceTree = "<group>"; };
+		F1F4F6F6296A4BFD0024218E /* MGPreferences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGPreferences.m; sourceTree = "<group>"; };
+		F1F4F6F7296A4BFD0024218E /* Addon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Addon.swift; sourceTree = "<group>"; };
+		F1F4F6F8296A4BFD0024218E /* RemoteLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemoteLog.h; sourceTree = "<group>"; };
+		F1F4F6F9296A4BFD0024218E /* RemLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemLog.swift; sourceTree = "<group>"; };
+		F1F4F6FA296A4BFD0024218E /* vm_unaligned_copy_switch_race.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = vm_unaligned_copy_switch_race.c; sourceTree = "<group>"; };
+		F1F4F6FB296A4BFD0024218E /* MGPreferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGPreferences.h; sourceTree = "<group>"; };
+		F1F4F706296A4C220024218E /* ttcpad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ttcpad.h; sourceTree = "<group>"; };
+		F1F4F707296A4C220024218E /* stripttc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stripttc.h; sourceTree = "<group>"; };
+		F1F4F708296A4C220024218E /* ttcpad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ttcpad.m; sourceTree = "<group>"; };
+		F1F4F709296A4C220024218E /* TrollBox-bringing-header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TrollBox-bringing-header.h"; sourceTree = "<group>"; };
+		F1F4F70A296A4C220024218E /* BrotliPadding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrotliPadding.swift; sourceTree = "<group>"; };
+		F1F4F70B296A4C220024218E /* stripttc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = stripttc.c; sourceTree = "<group>"; };
+		F1F4F70C296A4C230024218E /* libwoff2enc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libwoff2enc.a; sourceTree = "<group>"; };
+		F1F4F70D296A4C230024218E /* woff2_wrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = woff2_wrapper.h; sourceTree = "<group>"; };
+		F1F4F70E296A4C230024218E /* woff2_wrapper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = woff2_wrapper.cpp; sourceTree = "<group>"; };
+		F1F4F70F296A4C230024218E /* libwoff2common.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libwoff2common.a; sourceTree = "<group>"; };
+		F1F4F799296A4CB80024218E /* AboutView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		F1F4F79C296A4D370024218E /* LSFootNote.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSFootNote.swift; sourceTree = "<group>"; };
+		F1F4F7A7296A4D370024218E /* PasscodeEditorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasscodeEditorView.swift; sourceTree = "<group>"; };
+		F1F4F7A8296A4D370024218E /* PasscodeKeyFaceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasscodeKeyFaceManager.swift; sourceTree = "<group>"; };
+		F1F4F7AA296A4D370024218E /* Gestures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gestures.swift; sourceTree = "<group>"; };
+		F1F4F7AB296A4D370024218E /* OtherView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtherView.swift; sourceTree = "<group>"; };
+		F1F4F7AD296A4D370024218E /* invoke.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = invoke.m; sourceTree = "<group>"; };
+		F1F4F7AF296A4D370024218E /* WallSetView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WallSetView.swift; sourceTree = "<group>"; };
+		F1F4F7B1296A4D370024218E /* LocSimPrivateHeaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocSimPrivateHeaders.h; sourceTree = "<group>"; };
+		F1F4F7B2296A4D370024218E /* LocSimManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocSimManager.swift; sourceTree = "<group>"; };
+		F1F4F7B3296A4D370024218E /* LocationSimulationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationSimulationView.swift; sourceTree = "<group>"; };
+		F1F4F7B8296A4D370024218E /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		F1F4F7B9296A4D370024218E /* Sharing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sharing.swift; sourceTree = "<group>"; };
+		F1F4F7BA296A4D370024218E /* AirSpam.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AirSpam.swift; sourceTree = "<group>"; };
+		F1F4F7BB296A4D370024218E /* Trollface.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Trollface.png; sourceTree = "<group>"; };
+		F1F4F7BC296A4D370024218E /* TrollController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrollController.swift; sourceTree = "<group>"; };
+		F1F4F7BE296A4D370024218E /* NoCameraSound.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoCameraSound.swift; sourceTree = "<group>"; };
+		F1F4F7BF296A4D380024218E /* NoCamSoundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoCamSoundView.swift; sourceTree = "<group>"; };
+		F1F4F7C1296A4D380024218E /* RingtoneVIew.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RingtoneVIew.swift; sourceTree = "<group>"; };
+		F1F4F7C3296A4D380024218E /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		F1F4F7C5296A4D380024218E /* MainCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCardView.swift; sourceTree = "<group>"; };
+		F1F4F7E4296A4D460024218E /* BadgeChangerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BadgeChangerView.swift; sourceTree = "<group>"; };
+		F1F4F7E5296A4D460024218E /* BadgeChanger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BadgeChanger.swift; sourceTree = "<group>"; };
+		F1F4F81C296A4DCA0024218E /* ToolsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToolsView.swift; sourceTree = "<group>"; };
+		F1F4F821296A4F4F0024218E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F1F4F82A296A514E0024218E /* ImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		F1F4F830296A542F0024218E /* CarrierNameManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarrierNameManager.swift; sourceTree = "<group>"; };
+		F1F4F831296A542F0024218E /* CarrierNameChangerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarrierNameChangerView.swift; sourceTree = "<group>"; };
+		F1F4F834296A54A80024218E /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		F1F4F835296A54A80024218E /* ApplicationMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationMonitor.swift; sourceTree = "<group>"; };
+		F1F4F83A296A54B60024218E /* hiddenLight.materialrecipe */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = hiddenLight.materialrecipe; sourceTree = "<group>"; };
+		F1F4F83B296A54B60024218E /* hiddenDark.materialrecipe */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = hiddenDark.materialrecipe; sourceTree = "<group>"; };
+		F1F4F83D296A54B60024218E /* defaultDark.materialrecipe */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = defaultDark.materialrecipe; sourceTree = "<group>"; };
+		F1F4F83E296A54B60024218E /* defaultLight.materialrecipe */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = defaultLight.materialrecipe; sourceTree = "<group>"; };
+		F1F4F843296A54D80024218E /* ToolsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToolsManager.swift; sourceTree = "<group>"; };
+		F1F4F844296A54D80024218E /* MiscModsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiscModsManager.swift; sourceTree = "<group>"; };
+		F1F4F847296A550D0024218E /* DockView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DockView.swift; sourceTree = "<group>"; };
+		F1F4F849296A55B50024218E /* FCView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FCView.swift; sourceTree = "<group>"; };
+		F1F4F84A296A55B50024218E /* FCView.ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FCView.ViewModel.swift; sourceTree = "<group>"; };
+		F1F4F84B296A55B50024218E /* OverwriteFontImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverwriteFontImpl.swift; sourceTree = "<group>"; };
+		F1F4F84C296A55B50024218E /* docs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = docs.swift; sourceTree = "<group>"; };
+		F1F4F852296A55F70024218E /* VChanger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VChanger.swift; sourceTree = "<group>"; };
+		F1F4F854296A58120024218E /* CreditsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditsView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F1F4F6D7296A4A5D0024218E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1F4F713296A4C230024218E /* libwoff2enc.a in Frameworks */,
+				F1F4F824296A50450024218E /* Map in Frameworks */,
+				F1F4F715296A4C230024218E /* libwoff2common.a in Frameworks */,
+				F1F4F820296A4EFD0024218E /* ZIPFoundation in Frameworks */,
+				F1F4F827296A50B30024218E /* ACarousel in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F1F4F6D1296A4A5D0024218E = {
+			isa = PBXGroup;
+			children = (
+				F1F4F6DC296A4A5D0024218E /* TrollBox */,
+				F1F4F6DB296A4A5D0024218E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F1F4F6DB296A4A5D0024218E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F1F4F6DA296A4A5D0024218E /* TrollBox.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F1F4F6DC296A4A5D0024218E /* TrollBox */ = {
+			isa = PBXGroup;
+			children = (
+				F1F4F821296A4F4F0024218E /* Info.plist */,
+				F1F4F6DD296A4A5D0024218E /* TrollBoxApp.swift */,
+				F1F4F798296A4CA90024218E /* Tools */,
+				F1F4F6EC296A4BE30024218E /* Libs */,
+				F1F4F6DF296A4A5D0024218E /* ContentView.swift */,
+				F1F4F854296A58120024218E /* CreditsView.swift */,
+				F1F4F799296A4CB80024218E /* AboutView.swift */,
+				F1F4F6E1296A4A5F0024218E /* Assets.xcassets */,
+				F1F4F6E3296A4A5F0024218E /* Preview Content */,
+			);
+			path = TrollBox;
+			sourceTree = "<group>";
+		};
+		F1F4F6E3296A4A5F0024218E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F1F4F6E4296A4A5F0024218E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F1F4F6EC296A4BE30024218E /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				F1F4F844296A54D80024218E /* MiscModsManager.swift */,
+				F1F4F843296A54D80024218E /* ToolsManager.swift */,
+				F1F4F835296A54A80024218E /* ApplicationMonitor.swift */,
+				F1F4F834296A54A80024218E /* LocationManager.swift */,
+				F1F4F705296A4C0F0024218E /* CustomFont */,
+				F1F4F6F7296A4BFD0024218E /* Addon.swift */,
+				F1F4F6F3296A4BFC0024218E /* CoreServices.h */,
+				F1F4F6F0296A4BFC0024218E /* ImagePickerView.swift */,
+				F1F4F6FB296A4BFD0024218E /* MGPreferences.h */,
+				F1F4F6F6296A4BFD0024218E /* MGPreferences.m */,
+				F1F4F6F9296A4BFD0024218E /* RemLog.swift */,
+				F1F4F6F8296A4BFD0024218E /* RemoteLog.h */,
+				F1F4F6F5296A4BFD0024218E /* RootHelper.swift */,
+				F1F4F6F2296A4BFC0024218E /* TSUtil.h */,
+				F1F4F6F1296A4BFC0024218E /* TSUtil.m */,
+				F1F4F6FA296A4BFD0024218E /* vm_unaligned_copy_switch_race.c */,
+				F1F4F6EE296A4BFC0024218E /* vm_unaligned_copy_switch_race.h */,
+				F1F4F6EF296A4BFC0024218E /* WallpaperGetter.swift */,
+				F1F4F6ED296A4BFC0024218E /* TrollBox-Bridging-Header.h */,
+			);
+			path = Libs;
+			sourceTree = "<group>";
+		};
+		F1F4F705296A4C0F0024218E /* CustomFont */ = {
+			isa = PBXGroup;
+			children = (
+				F1F4F70A296A4C220024218E /* BrotliPadding.swift */,
+				F1F4F70F296A4C230024218E /* libwoff2common.a */,
+				F1F4F70C296A4C230024218E /* libwoff2enc.a */,
+				F1F4F70B296A4C220024218E /* stripttc.c */,
+				F1F4F707296A4C220024218E /* stripttc.h */,
+				F1F4F709296A4C220024218E /* TrollBox-bringing-header.h */,
+				F1F4F706296A4C220024218E /* ttcpad.h */,
+				F1F4F708296A4C220024218E /* ttcpad.m */,
+				F1F4F70E296A4C230024218E /* woff2_wrapper.cpp */,
+				F1F4F70D296A4C230024218E /* woff2_wrapper.h */,
+			);
+			path = CustomFont;
+			sourceTree = "<group>";
+		};
+		F1F4F798296A4CA90024218E /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				F1F4F851296A55DD0024218E /* VersionChanger */,
+				F1F4F81C296A4DCA0024218E /* ToolsView.swift */,
+				F1F4F7E8296A4DA00024218E /* FontChanger */,
+				F1F4F7E2296A4D460024218E /* Themer */,
+				F1F4F7B7296A4D370024218E /* AirSpam */,
+				F1F4F7B4296A4D370024218E /* CarrierChanger */,
+				F1F4F79D296A4D370024218E /* DockSettings */,
+				F1F4F79B296A4D370024218E /* FootNote */,
+				F1F4F7B0296A4D370024218E /* LocationSimulator */,
+				F1F4F7BD296A4D370024218E /* NoCamSound */,
+				F1F4F7A9296A4D370024218E /* OtherTools */,
+				F1F4F7A6296A4D370024218E /* PasscodeTheming */,
+				F1F4F7C0296A4D380024218E /* RingtoneManager */,
+				F1F4F7C2296A4D380024218E /* WalletEditor */,
+				F1F4F7AC296A4D370024218E /* WallSet */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		F1F4F79B296A4D370024218E /* FootNote */ = {
+			isa = PBXGroup;
+			children = (
+				F1F4F79C296A4D370024218E /* LSFootNote.swift */,
+			);
+			path = FootNote;
+			sourceTree = "<group>";
+		};
+		F1F4F79D296A4D370024218E /* DockSettings */ = {
+			isa = PBXGroup;
+			children = (
+				F1F4F847296A550D0024218E /* DockView.swift */,
+				F1F4F838296A54B60024218E /* DockFiles */,
+			);
+			path = DockSettings;
+			sourceTree = "<group>";
+		};
+		F1F4F7A6296A4D370024218E /* PasscodeTheming */ = {
+			isa = PBXGroup;
+			children = (
+				F1F4F7A7296A4D370024218E /* PasscodeEditorView.swift */,
+				F1F4F7A8296A4D370024218E /* PasscodeKeyFaceManager.swift */,
+			);
+			path = PasscodeTheming;
+			sourceTree = "<group>";
+		};
+		F1F4F7A9296A4D370024218E /* OtherTools */ = {
+			isa = PBXGroup;
+			children = (
+				F1F4F7AA296A4D370024218E /* Gestures.swift */,
+				F1F4F7AB296A4D370024218E /* OtherView.swift */,
+			);
+			path = OtherTools;
+			sourceTree = "<group>";
+		};
+		F1F4F7AC296A4D370024218E /* WallSet */ = {
+			isa = PBXGroup;
+			children = (
+				F1F4F82A296A514E0024218E /* ImagePicker.swift */,
+				F1F4F7AD296A4D370024218E /* invoke.m */,
+				F1F4F7AF296A4D370024218E /* WallSetView.swift */,
+			);
+			path = WallSet;
+			sourceTree = "<group>";
+		};
+		F1F4F7B0296A4D370024218E /* LocationSimulator */ = {
+			isa = PBXGroup;
+			children = (
+				F1F4F7B1296A4D370024218E /* LocSimPrivateHeaders.h */,
+				F1F4F7B2296A4D370024218E /* LocSimManager.swift */,
+				F1F4F7B3296A4D370024218E /* LocationSimulationView.swift */,
+			);
+			path = LocationSimulator;
+			sourceTree = "<group>";
+		};
+		F1F4F7B4296A4D370024218E /* CarrierChanger */ = {
+			isa = PBXGroup;
+			children = (
+				F1F4F831296A542F0024218E /* CarrierNameChangerView.swift */,
+				F1F4F830296A542F0024218E /* CarrierNameManager.swift */,
+			);
+			path = CarrierChanger;
+			sourceTree = "<group>";
+		};
+		F1F4F7B7296A4D370024218E /* AirSpam */ = {
+			isa = PBXGroup;
+			children = (
+				F1F4F7B8296A4D370024218E /* Person.swift */,
+				F1F4F7B9296A4D370024218E /* Sharing.swift */,
+				F1F4F7BA296A4D370024218E /* AirSpam.swift */,
+				F1F4F7BB296A4D370024218E /* Trollface.png */,
+				F1F4F7BC296A4D370024218E /* TrollController.swift */,
+			);
+			path = AirSpam;
+			sourceTree = "<group>";
+		};
+		F1F4F7BD296A4D370024218E /* NoCamSound */ = {
+			isa = PBXGroup;
+			children = (
+				F1F4F7BE296A4D370024218E /* NoCameraSound.swift */,
+				F1F4F7BF296A4D380024218E /* NoCamSoundView.swift */,
+			);
+			path = NoCamSound;
+			sourceTree = "<group>";
+		};
+		F1F4F7C0296A4D380024218E /* RingtoneManager */ = {
+			isa = PBXGroup;
+			children = (
+				F1F4F7C1296A4D380024218E /* RingtoneVIew.swift */,
+			);
+			path = RingtoneManager;
+			sourceTree = "<group>";
+		};
+		F1F4F7C2296A4D380024218E /* WalletEditor */ = {
+			isa = PBXGroup;
+			children = (
+				F1F4F7C3296A4D380024218E /* CardView.swift */,
+				F1F4F7C5296A4D380024218E /* MainCardView.swift */,
+			);
+			path = WalletEditor;
+			sourceTree = "<group>";
+		};
+		F1F4F7E2296A4D460024218E /* Themer */ = {
+			isa = PBXGroup;
+			children = (
+				F1F4F7E3296A4D460024218E /* Badger */,
+			);
+			path = Themer;
+			sourceTree = "<group>";
+		};
+		F1F4F7E3296A4D460024218E /* Badger */ = {
+			isa = PBXGroup;
+			children = (
+				F1F4F7E4296A4D460024218E /* BadgeChangerView.swift */,
+				F1F4F7E5296A4D460024218E /* BadgeChanger.swift */,
+			);
+			path = Badger;
+			sourceTree = "<group>";
+		};
+		F1F4F7E8296A4DA00024218E /* FontChanger */ = {
+			isa = PBXGroup;
+			children = (
+				F1F3BED7296A5C3C008D79C7 /* PreviewFonts */,
+				F1F3BED8296A5C3C008D79C7 /* RepackedFonts */,
+				F1F4F84C296A55B50024218E /* docs.swift */,
+				F1F4F849296A55B50024218E /* FCView.swift */,
+				F1F4F84A296A55B50024218E /* FCView.ViewModel.swift */,
+				F1F4F84B296A55B50024218E /* OverwriteFontImpl.swift */,
+				F1F4F7F7296A4DA00024218E /* FontDiscovery */,
+			);
+			path = FontChanger;
+			sourceTree = "<group>";
+		};
+		F1F4F7F7296A4DA00024218E /* FontDiscovery */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = FontDiscovery;
+			sourceTree = "<group>";
+		};
+		F1F4F838296A54B60024218E /* DockFiles */ = {
+			isa = PBXGroup;
+			children = (
+				F1F4F839296A54B60024218E /* HiddenDocks */,
+				F1F4F83C296A54B60024218E /* DefaultDocks */,
+			);
+			path = DockFiles;
+			sourceTree = "<group>";
+		};
+		F1F4F839296A54B60024218E /* HiddenDocks */ = {
+			isa = PBXGroup;
+			children = (
+				F1F4F83A296A54B60024218E /* hiddenLight.materialrecipe */,
+				F1F4F83B296A54B60024218E /* hiddenDark.materialrecipe */,
+			);
+			path = HiddenDocks;
+			sourceTree = "<group>";
+		};
+		F1F4F83C296A54B60024218E /* DefaultDocks */ = {
+			isa = PBXGroup;
+			children = (
+				F1F4F83D296A54B60024218E /* defaultDark.materialrecipe */,
+				F1F4F83E296A54B60024218E /* defaultLight.materialrecipe */,
+			);
+			path = DefaultDocks;
+			sourceTree = "<group>";
+		};
+		F1F4F851296A55DD0024218E /* VersionChanger */ = {
+			isa = PBXGroup;
+			children = (
+				F1F4F852296A55F70024218E /* VChanger.swift */,
+			);
+			path = VersionChanger;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F1F4F6D9296A4A5D0024218E /* TrollBox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1F4F6E8296A4A5F0024218E /* Build configuration list for PBXNativeTarget "TrollBox" */;
+			buildPhases = (
+				F1F4F6D6296A4A5D0024218E /* Sources */,
+				F1F4F6D7296A4A5D0024218E /* Frameworks */,
+				F1F4F6D8296A4A5D0024218E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TrollBox;
+			packageProductDependencies = (
+				F1F4F81F296A4EFD0024218E /* ZIPFoundation */,
+				F1F4F823296A50450024218E /* Map */,
+				F1F4F826296A50B30024218E /* ACarousel */,
+			);
+			productName = TrollBox;
+			productReference = F1F4F6DA296A4A5D0024218E /* TrollBox.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F1F4F6D2296A4A5D0024218E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					F1F4F6D9296A4A5D0024218E = {
+						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
+					};
+				};
+			};
+			buildConfigurationList = F1F4F6D5296A4A5D0024218E /* Build configuration list for PBXProject "TrollBox" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F1F4F6D1296A4A5D0024218E;
+			packageReferences = (
+				F1F4F81E296A4EFD0024218E /* XCRemoteSwiftPackageReference "ZIPFoundation" */,
+				F1F4F822296A50450024218E /* XCRemoteSwiftPackageReference "Map" */,
+				F1F4F825296A50B30024218E /* XCRemoteSwiftPackageReference "ACarousel" */,
+			);
+			productRefGroup = F1F4F6DB296A4A5D0024218E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F1F4F6D9296A4A5D0024218E /* TrollBox */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F1F4F6D8296A4A5D0024218E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1F3BED9296A5C3C008D79C7 /* PreviewFonts in Resources */,
+				F1F4F6E5296A4A5F0024218E /* Preview Assets.xcassets in Resources */,
+				F1F4F840296A54B60024218E /* hiddenDark.materialrecipe in Resources */,
+				F1F4F83F296A54B60024218E /* hiddenLight.materialrecipe in Resources */,
+				F1F4F7DA296A4D380024218E /* Trollface.png in Resources */,
+				F1F4F842296A54B60024218E /* defaultLight.materialrecipe in Resources */,
+				F1F4F841296A54B60024218E /* defaultDark.materialrecipe in Resources */,
+				F1F3BEDA296A5C3C008D79C7 /* RepackedFonts in Resources */,
+				F1F4F6E2296A4A5F0024218E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F1F4F6D6296A4A5D0024218E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1F4F853296A55F70024218E /* VChanger.swift in Sources */,
+				F1F4F7D7296A4D380024218E /* Person.swift in Sources */,
+				F1F4F7CD296A4D380024218E /* PasscodeKeyFaceManager.swift in Sources */,
+				F1F4F79A296A4CB80024218E /* AboutView.swift in Sources */,
+				F1F4F7DD296A4D380024218E /* NoCamSoundView.swift in Sources */,
+				F1F4F701296A4BFD0024218E /* MGPreferences.m in Sources */,
+				F1F4F7E7296A4D460024218E /* BadgeChanger.swift in Sources */,
+				F1F4F7DF296A4D380024218E /* CardView.swift in Sources */,
+				F1F4F6FE296A4BFD0024218E /* TSUtil.m in Sources */,
+				F1F4F7E6296A4D460024218E /* BadgeChangerView.swift in Sources */,
+				F1F4F837296A54A80024218E /* ApplicationMonitor.swift in Sources */,
+				F1F4F7D3296A4D380024218E /* LocSimManager.swift in Sources */,
+				F1F4F704296A4BFD0024218E /* vm_unaligned_copy_switch_race.c in Sources */,
+				F1F4F7CF296A4D380024218E /* OtherView.swift in Sources */,
+				F1F4F82B296A514E0024218E /* ImagePicker.swift in Sources */,
+				F1F4F7DE296A4D380024218E /* RingtoneVIew.swift in Sources */,
+				F1F4F6FD296A4BFD0024218E /* ImagePickerView.swift in Sources */,
+				F1F4F845296A54D80024218E /* ToolsManager.swift in Sources */,
+				F1F4F700296A4BFD0024218E /* RootHelper.swift in Sources */,
+				F1F4F836296A54A80024218E /* LocationManager.swift in Sources */,
+				F1F4F6FC296A4BFD0024218E /* WallpaperGetter.swift in Sources */,
+				F1F4F7D4296A4D380024218E /* LocationSimulationView.swift in Sources */,
+				F1F4F710296A4C230024218E /* ttcpad.m in Sources */,
+				F1F4F855296A58120024218E /* CreditsView.swift in Sources */,
+				F1F4F84D296A55B60024218E /* FCView.swift in Sources */,
+				F1F4F832296A542F0024218E /* CarrierNameManager.swift in Sources */,
+				F1F4F833296A542F0024218E /* CarrierNameChangerView.swift in Sources */,
+				F1F4F7E1296A4D380024218E /* MainCardView.swift in Sources */,
+				F1F4F6E0296A4A5D0024218E /* ContentView.swift in Sources */,
+				F1F4F7D2296A4D380024218E /* WallSetView.swift in Sources */,
+				F1F4F7D0296A4D380024218E /* invoke.m in Sources */,
+				F1F4F7CE296A4D380024218E /* Gestures.swift in Sources */,
+				F1F4F7D8296A4D380024218E /* Sharing.swift in Sources */,
+				F1F4F711296A4C230024218E /* BrotliPadding.swift in Sources */,
+				F1F4F7D9296A4D380024218E /* AirSpam.swift in Sources */,
+				F1F4F7CC296A4D380024218E /* PasscodeEditorView.swift in Sources */,
+				F1F4F7C6296A4D380024218E /* LSFootNote.swift in Sources */,
+				F1F4F712296A4C230024218E /* stripttc.c in Sources */,
+				F1F4F848296A550D0024218E /* DockView.swift in Sources */,
+				F1F4F703296A4BFD0024218E /* RemLog.swift in Sources */,
+				F1F4F81D296A4DCA0024218E /* ToolsView.swift in Sources */,
+				F1F4F702296A4BFD0024218E /* Addon.swift in Sources */,
+				F1F4F846296A54D80024218E /* MiscModsManager.swift in Sources */,
+				F1F4F7DB296A4D380024218E /* TrollController.swift in Sources */,
+				F1F4F84F296A55B60024218E /* OverwriteFontImpl.swift in Sources */,
+				F1F4F7DC296A4D380024218E /* NoCameraSound.swift in Sources */,
+				F1F4F6DE296A4A5D0024218E /* TrollBoxApp.swift in Sources */,
+				F1F4F714296A4C230024218E /* woff2_wrapper.cpp in Sources */,
+				F1F4F850296A55B60024218E /* docs.swift in Sources */,
+				F1F4F84E296A55B60024218E /* FCView.ViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F1F4F6E6296A4A5F0024218E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F1F4F6E7296A4A5F0024218E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F1F4F6E9296A4A5F0024218E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TrollBox/Preview Content\"";
+				DEVELOPMENT_TEAM = 7G89J82G2A;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TrollBox/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = TrollBox;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "LocSim current loc";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Allow the app to access photo library for choosing passcode faces.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TrollBox/Libs/CustomFont",
+				);
+				MARKETING_VERSION = 0.0.9;
+				PRODUCT_BUNDLE_IDENTIFIER = "live.cclerc.trollbox-b";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "TrollBox/Libs/TrollBox-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F1F4F6EA296A4A5F0024218E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TrollBox/Preview Content\"";
+				DEVELOPMENT_TEAM = 7G89J82G2A;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TrollBox/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = TrollBox;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "LocSim current loc";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Allow the app to access photo library for choosing passcode faces.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TrollBox/Libs/CustomFont",
+				);
+				MARKETING_VERSION = 0.0.9;
+				PRODUCT_BUNDLE_IDENTIFIER = "live.cclerc.trollbox-b";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "TrollBox/Libs/TrollBox-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F1F4F6D5296A4A5D0024218E /* Build configuration list for PBXProject "TrollBox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1F4F6E6296A4A5F0024218E /* Debug */,
+				F1F4F6E7296A4A5F0024218E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1F4F6E8296A4A5F0024218E /* Build configuration list for PBXNativeTarget "TrollBox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1F4F6E9296A4A5F0024218E /* Debug */,
+				F1F4F6EA296A4A5F0024218E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F1F4F81E296A4EFD0024218E /* XCRemoteSwiftPackageReference "ZIPFoundation" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/weichsel/ZIPFoundation";
+			requirement = {
+				branch = development;
+				kind = branch;
+			};
+		};
+		F1F4F822296A50450024218E /* XCRemoteSwiftPackageReference "Map" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pauljohanneskraft/Map";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		F1F4F825296A50B30024218E /* XCRemoteSwiftPackageReference "ACarousel" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/JWAutumn/ACarousel";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F1F4F81F296A4EFD0024218E /* ZIPFoundation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F1F4F81E296A4EFD0024218E /* XCRemoteSwiftPackageReference "ZIPFoundation" */;
+			productName = ZIPFoundation;
+		};
+		F1F4F823296A50450024218E /* Map */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F1F4F822296A50450024218E /* XCRemoteSwiftPackageReference "Map" */;
+			productName = Map;
+		};
+		F1F4F826296A50B30024218E /* ACarousel */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F1F4F825296A50B30024218E /* XCRemoteSwiftPackageReference "ACarousel" */;
+			productName = ACarousel;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = F1F4F6D2296A4A5D0024218E /* Project object */;
+}

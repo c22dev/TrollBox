@@ -1,0 +1,32 @@
+{
+  "pins" : [
+    {
+      "identity" : "acarousel",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/JWAutumn/ACarousel",
+      "state" : {
+        "branch" : "main",
+        "revision" : "807d859fb39ccaae2caf8ff60fb2ee1a5048f4ca"
+      }
+    },
+    {
+      "identity" : "map",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/pauljohanneskraft/Map",
+      "state" : {
+        "branch" : "main",
+        "revision" : "3301884b87bc2ebf5325992e4bee8b075c1e12eb"
+      }
+    },
+    {
+      "identity" : "zipfoundation",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/weichsel/ZIPFoundation",
+      "state" : {
+        "branch" : "development",
+        "revision" : "43ec568034b3731101dbf7670765d671c30f54f3"
+      }
+    }
+  ],
+  "version" : 2
+}
