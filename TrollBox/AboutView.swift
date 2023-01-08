@@ -34,14 +34,6 @@ struct AboutView: View {
                }
                .padding()
                Button(action: {
-                   UIApplication.shared.alert(title: "Rebuilding icon cache...", body: "Please wait", animated: false, withButton: false)
-                   do {
-                       respring()
-                   }
-               }) {
-                   Text("Respring")
-               }
-               Button(action: {
                    if let url = URL(string: "https://github.com/c22dev/TrollBox/releases/latest") {
                        UIApplication.shared.open(url)
                    }

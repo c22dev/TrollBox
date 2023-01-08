@@ -17,9 +17,6 @@ struct VChangerView: View {
                 .font(.largeTitle)
                 .bold()
                 .padding(.bottom)
-            Text("Please not that this will not downgrade you're phone, just change it in settings app.")
-                .font(.title2)
-                .padding(.bottom, 40)
             HStack {
                 Image(systemName: "gear.circle")
                     .resizable()
@@ -34,7 +31,7 @@ struct VChangerView: View {
                 Button(CurrentVersion, action: {
                     let defaults = UserDefaults.standard
                     // create and configure alert controller
-                    let alert = UIAlertController(title: "Input Product Version", message: "No respring required to apply.", preferredStyle: .alert)
+                    let alert = UIAlertController(title: "Input Product Version", message: "Please note that this will not downgrade your phone, just change it in settings app. Do not use this on iOS 14, or go at you're own risk.", preferredStyle: .alert)
                     // bring up the text prompt
                     alert.addTextField { (textField) in
                         textField.placeholder = "Version"

@@ -88,7 +88,7 @@ struct OtherView: View {
                     }
                     Button("Enable") {
                         showingAlert.toggle()
-                        writeToFileWithContents(contents: "Placeholder text that was edited by Jaility.", filepath: "/var/Managed Preferences/mobile/com.apple.springboard.plist")
+                        writeToFileWithContents(contents: "welcome there, i'm c22dev lol", filepath: "/var/Managed Preferences/mobile/com.apple.springboard.plist")
                     }
                     .alert(isPresented: $showingAlert) {
                         Alert(
@@ -106,7 +106,7 @@ struct OtherView: View {
                         )
                     }
                 }
-                Section(header: Text("Show an iPad only feature in you're control center"), footer: Text("Please remember to add it through Settings -> Control Center")) {
+                Section(header: Text("Show an iPad only feature in your control center"), footer: Text("Please remember to add it through Settings -> Control Center")) {
                     Button("Show The Mute Switch In Control Center") {
                         showingAlert.toggle()
                         writeToFileWithContents(contents: "<?xml version=\"1.0\" encoding=\"UTF-8\"?> <!DOCTYPE plist PUBLIC \"-//Apple//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\"> <plist version=\"1.0\"> <dict> <key>SBIconVisibility</key> <true/> </dict> </plist>", filepath: "/var/Managed Preferences/mobile/com.apple.control-center.MuteModule.plist")
@@ -147,12 +147,18 @@ struct OtherView: View {
                     }
                 }
                     Section(header: Text("Home Gesture"), footer: Text("Device Layout to iPhone XS layout. It is totally safe but you may experience some UI glitches and screenshot is not working at the moment.")) {
-                        Toggle("Enabled", isOn: $homeGesture)
-                            .disabled(homeGestureToggleDisabled())
-                        Button("Apply") {
-                            applyHomeGuesture(homeGesture)
+                        Button("Enable") {
+                            checkAndCreateBackupFolder()
+                            let helper = ObjcHelper.init()
+                            let prefs = MGPreferences.init(identifier: "live.cclerc.TrollBox")
+                            UserDefaults.standard.set(prefs.dictionary, forKey: "devicesubits")
+                            enableTheseGestures()
                             showingAlert.toggle()
-                        }.disabled(homeGestureButtonDisabled(homeGesture))
+                        }
+                        Button("Disable") {
+                            goodbyegestures()
+                            showingAlert.toggle()
+                        }
                             .alert(isPresented: $showingAlert) {
                                 Alert(
                                     title: Text("Success!"),

@@ -5,31 +5,28 @@
 //  Created by Constantin Clerc on 24/12/2022.
 //
 
-func applyHomeGuesture(_ enabled: Bool) {
-    if enabled {
-        // Enable
-        let helper = ObjcHelper.init()
-        checkAndCreateBackupFolder()
-        
-        let prefs = MGPreferences.init(identifier: "live.cclerc.TrollBox")
-        if prefs.dictionary["DeviceSubType"] == nil {
-            prefs.dictionary.setValue(helper.getDeviceSubType(), forKey: "DeviceSubType")
-            prefs.updatePlist()
-        }
-        helper.updateDeviceSubType(2436)
-    } else {
-        // Disable
-        checkAndCreateBackupFolder()
-        let helper = ObjcHelper.init()
-        let prefs = MGPreferences.init(identifier: "live.cclerc.TrollBox")
-        if prefs.dictionary["DeviceSubType"] != nil {
-            helper.updateDeviceSubType(prefs.dictionary["DeviceSubType"] as! Int)
-        }
-        let olddevicesubtype = UserDefaults.standard.string(forKey: "devicesubits")!
-        helper.updateDeviceSubType(Int(olddevicesubtype) ?? 569)
+func enableTheseGestures() {
+    let helper = ObjcHelper.init()
+    checkAndCreateBackupFolder()
+    let prefs = MGPreferences.init(identifier: "live.cclerc.TrollBox")
+    if prefs.dictionary["DeviceSubType"] == nil {
+        prefs.dictionary.setValue(helper.getDeviceSubType(), forKey: "DeviceSubType")
+        prefs.updatePlist()
     }
+    helper.updateDeviceSubType(2436)
 }
 
+func goodbyegestures(){
+    // Disable
+    checkAndCreateBackupFolder()
+    let helper = ObjcHelper.init()
+    let prefs = MGPreferences.init(identifier: "live.cclerc.TrollBox")
+    if prefs.dictionary["DeviceSubType"] != nil {
+        helper.updateDeviceSubType(prefs.dictionary["DeviceSubType"] as! Int)
+    }
+    let olddevicesubtype = UserDefaults.standard.string(forKey: "devicesubits")!
+    helper.updateDeviceSubType(Int(olddevicesubtype) ?? 569)
+}
 func checkAndCreateBackupFolder() {
     let fileManager = FileManager.default
     if !fileManager.fileExists(atPath: "/private/var/mobile/TrollBox/") {
