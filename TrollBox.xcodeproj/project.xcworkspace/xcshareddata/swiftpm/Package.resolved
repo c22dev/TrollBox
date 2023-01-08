@@ -10,12 +10,39 @@
       }
     },
     {
+      "identity" : "dynamic",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/mhdhejazi/Dynamic/",
+      "state" : {
+        "branch" : "master",
+        "revision" : "772883073d044bc754d401cabb6574624eb3778f"
+      }
+    },
+    {
       "identity" : "map",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/pauljohanneskraft/Map",
       "state" : {
         "branch" : "main",
         "revision" : "3301884b87bc2ebf5325992e4bee8b075c1e12eb"
+      }
+    },
+    {
+      "identity" : "santanderwrappers",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SerenaKit/SantanderWrappers",
+      "state" : {
+        "branch" : "main",
+        "revision" : "78c19b2eeba612b0fb7b13df7ab304062ee22622"
+      }
+    },
+    {
+      "identity" : "swift-argument-parser",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-argument-parser.git",
+      "state" : {
+        "revision" : "fddd1c00396eed152c45a46bea9f47b98e59301d",
+        "version" : "1.2.0"
       }
     },
     {
