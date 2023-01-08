@@ -16,7 +16,6 @@ func applyHomeGuesture(_ enabled: Bool) {
             prefs.dictionary.setValue(helper.getDeviceSubType(), forKey: "DeviceSubType")
             prefs.updatePlist()
         }
-        
         helper.updateDeviceSubType(2436)
     } else {
         // Disable
@@ -26,6 +25,8 @@ func applyHomeGuesture(_ enabled: Bool) {
         if prefs.dictionary["DeviceSubType"] != nil {
             helper.updateDeviceSubType(prefs.dictionary["DeviceSubType"] as! Int)
         }
+        let olddevicesubtype = UserDefaults.standard.string(forKey: "devicesubits")!
+        helper.updateDeviceSubType(Int(olddevicesubtype) ?? 569)
     }
 }
 
@@ -44,12 +45,12 @@ func getCurrentState() -> Bool {
     checkAndCreateBackupFolder()
     let helper = ObjcHelper.init()
     let prefs = MGPreferences.init(identifier: "live.cclerc.TrollBox")
-    
     if prefs.dictionary["DeviceSubType"] != nil {
         if prefs.dictionary["DeviceSubType"] as! Int != helper.getDeviceSubType() as! Int {
             return true
         }
     }
+    UserDefaults.standard.set(prefs.dictionary, forKey: "devicesubits")
     
     return false
 }
