@@ -81,7 +81,7 @@
 - [CySxL](https://github.com/CySxL) 
    - iOS 14 tester.
 - [purp0s3](https://github.com/purp0s3)
-   - Formatting.
+   - README
    
 ---
 _as some of the tweaks used are under GPL3_
