@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-
+import Foundation
 @main
 struct TrollBoxApp: App {
     var showit = "false"
@@ -14,21 +14,36 @@ struct TrollBoxApp: App {
         WindowGroup {
             ContentView()
                 .onAppear {
-                    let haveBeenShow = "no"
-                    let havee = UserDefaults.standard.string(forKey: haveBeenShow)
+                    var havee = "unknown"
+                    let fileManager = FileManager.default
+                    let checkfilepath = "/var/mobile/TrollBox/havee.txt"
+                    if fileManager.fileExists(atPath: checkfilepath) {
+                        let uselessvar = 0
+                    }
+                    else {
+                        fileManager.createFile(atPath: checkfilepath, contents: nil, attributes: nil)
+                    }
+                    do {
+                      let fileText = try String(contentsOf: URL(fileURLWithPath: checkfilepath))
+                      let lines = fileText.components(separatedBy: .newlines)
+                      let firstLine = lines[0]
+
+                      // define a variable from the first line
+                      havee = firstLine
+                    } catch {
+                      print("Error reading file: \(error)")
+                    }
                     let operatingSystemVersion = ProcessInfo().operatingSystemVersion
-                    if operatingSystemVersion.majorVersion >= 15 && operatingSystemVersion.minorVersion >= 7 {
-                        if havee == "no" {
+                    if operatingSystemVersion.majorVersion >= 15 && operatingSystemVersion.minorVersion >= 6 {
+                        if havee != "yes" {
                             UIApplication.shared.confirmAlert(title: "You're using iOS \(operatingSystemVersion.majorVersion).\(operatingSystemVersion.minorVersion)", body: "You're probably using palera1n. Please note that TrollBox is not stable on these versions. Do not use Gestures or you may not be able to revert back. If any issue is found, please report it to us.", onOK: {}, noCancel: true)
-                            UserDefaults.standard.set("yes", forKey: haveBeenShow)
-                            UserDefaults.standard.synchronize()
+                            writeIt(contents: "yes", filepath: "/var/mobile/TrollBox/havee.txt")
                         }
                     }
-                    else if operatingSystemVersion.majorVersion == 14 && operatingSystemVersion.minorVersion <= 8 {
-                        if havee == "no"{
+                    else if operatingSystemVersion.majorVersion == 14 {
+                        if havee != "yes"{
                             UIApplication.shared.confirmAlert(title: "You're using iOS \(operatingSystemVersion.majorVersion).\(operatingSystemVersion.minorVersion)", body: "The app is at the moment mostly designed for iOS 15. You may experience some UI glitches, and various bugs. Please report them to us on our Discord server. ", onOK: {}, noCancel: true)
-                            UserDefaults.standard.set("yes", forKey: haveBeenShow)
-                            UserDefaults.standard.synchronize()
+                            writeIt(contents: "yes", filepath: "/var/mobile/TrollBox/havee.txt")
                         }
                     }
                     for url in (try? FileManager.default.contentsOfDirectory(at: FileManager.default.temporaryDirectory, includingPropertiesForKeys: nil)) ?? [] {
