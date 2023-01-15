@@ -7,43 +7,110 @@
 //
 
 import SwiftUI
+import Photos
+
 struct BadgeChangerView: View {
-    @State private var dotColour = Color.red
-    @State private var showingAlert = false
+    @State private var color = Color.red
+    @State private var radius: CGFloat = 24
+    @State private var showingImagePicker = false
+    @State private var image: UIImage?
+    @State private var didChange: Bool = false
+    
     var body: some View {
-            List {
-                Section {
-                    ColorPicker(selection: $dotColour) {
-                        Text("Colour")
-                    }
-                    Button("Apply") {
-                        changeColour(colour: UIColor(dotColour))
-                        showingAlert.toggle()
-                    }.disabled(badgeButtonDiabled())
-                        .alert(isPresented: $showingAlert) {
-                            Alert(
-                                title: Text("Done!"),
-                                message: Text("Respring your device to apply changes."),
-                                primaryButton: .default(
-                                    Text("Respring"),
-                                    action: {
-                                        let helper = ObjcHelper.init()
-                                        helper.respring()
-                                    }
-                                ),
-                                secondaryButton: .cancel(
-                                    Text("Later"),
-                                    action: {}
-                                )
-                            )
+        GeometryReader { proxy in
+            let minSize = min(proxy.size.width, proxy.size.height)
+            ZStack(alignment: .center) {
+                Image(uiImage: WallpaperGetter.homescreen() ?? UIImage(named: "wallpaper")!)
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .scaleEffect(1.5)
+                    .frame(width: proxy.size.width, height: proxy.size.height)
+                MaterialView(.light)
+                    .brightness(-0.4)
+                    .ignoresSafeArea()
+                VStack {
+                    ZStack(alignment: .topTrailing) {
+                        Image(uiImage: UIImage(named: "AppIcon")!)
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: minSize / 2, height: minSize / 2)
+                            .cornerRadius(minSize / 8)
+                        ZStack {
+                            if image == nil {
+                                Rectangle()
+                                    .fill(color)
+                                    .frame(width: minSize / 5, height: minSize / 5)
+                                    .cornerRadius(minSize * radius / 240)
+                            } else {
+                                Image(uiImage: image!)
+                                    .resizable()
+                                    .frame(width: minSize / 5, height: minSize / 5)
+                            }
+                            Text("1")
+                                .foregroundColor(.white)
+                                .font(.system(size: 45))
                         }
+                        .offset(x: minSize / 12, y:  -minSize / 12)
+                    }
+                    Text("TrollBox")
+                        .font(.title)
+                        .foregroundColor(.white)
+                        .fontWeight(.medium)
+                    HStack {
+                        ColorPicker("Set badge color", selection: $color)
+                            .labelsHidden()
+                            .scaleEffect(1.5)
+                            .padding()
+                        Slider(value: $radius, in: 0...24)
+                            .frame(width: minSize / 2)
+                    }
+                    Button(action: {
+                        if image == nil {
+                            showPicker()
+                        } else {
+                            image = nil
+                        }
+                    }) {
+                        Text(image == nil ? "Custom image" : "Clear image")
+                            .padding(10)
+                            .background(Color.secondary)
+                            .cornerRadius(8)
+                            .foregroundColor(.init(uiColor14: .systemBackground))
+                            .padding(.top, 24)
+                    }
+                    Button("Apply!", action: {
+                        do {
+                            if image == nil {
+                                try BadgeChanger.change(to: UIColor(color), with: radius)
+                            } else {
+                                try BadgeChanger.change(to: image!)
+                            }
+                            respring()
+                        } catch {
+                            UIApplication.shared.alert(body:"An error occured. " + error.localizedDescription)
+                        }
+                    })
+                    .padding(10)
+                    .background(Color.accentColor)
                 }
             }
+            .navigationBarTitleDisplayMode(.inline)
+        }
+        .sheet(isPresented: $showingImagePicker) {
+            ImagePickerView(image: $image, didChange: $didChange)
+        }
+    }
+    
+    func showPicker() {
+        PHPhotoLibrary.requestAuthorization(for: .readWrite) { status in
+            DispatchQueue.main.async {
+                showingImagePicker = status == .authorized
+            }
+        }
     }
 }
 
-
-struct BadgeChangerView_Previews: PreviewProvider {
+struct BadgeColorChangerView_Previews: PreviewProvider {
     static var previews: some View {
         BadgeChangerView()
     }
