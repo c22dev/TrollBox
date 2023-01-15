@@ -13,12 +13,12 @@ struct CreditsView: View {
             List {
                 Section {
                     LinkCell(imageName: "mypage-icon", url: "https://github.com/c22dev", title: "c22dev (main dev, adapting code)")
+                    LinkCell(imageName: "lemin", url: "https://github.com/leminlimez", title: "leminlimez (dock hider, and passcode themer)")
                     LinkCell(imageName: "sourcelocation", url: "https://github.com/sourcelocation", title: "sourcelocation (Plugins and Tools/AirTroller)")
                     LinkCell(imageName: "s8ngyu", url: "https://github.com/s8ngyu", title: "s8ngyu (gestures, badge)")
                     LinkCell(imageName: "Skittyblock", url: "https://github.com/Skittyblock", title: "Skittyblock (WallSet)")
                     LinkCell(imageName: "cisc0disco", url: "https://github.com/cisc0disco", title: "cisc0disco (card changer)")
                     LinkCell(imageName: "haxi0", url: "https://github.com/haxi0", title: "haxi0 (supervising)")
-                    LinkCell(imageName: "lemin", url: "https://github.com/leminlimez", title: "leminlimez (dock hider, and passcode themer)")
                     LinkCell(imageName: "ginsudev", url: "https://github.com/ginsudev", title: "Ginsudev (font overwrite)")
                     LinkCell(imageName: "tamago", url: "https://github.com/straight-tamago", title: "Tamago (no shutter sound)")
                     Section{
