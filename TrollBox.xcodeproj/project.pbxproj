@@ -7,11 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F185C321297761BC005245BB /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F185C320297761BC005245BB /* AudioManager.swift */; };
-		F185C324297761E1005245BB /* AudioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F185C322297761DC005245BB /* AudioView.swift */; };
-		F185C325297761E1005245BB /* AudioChangerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F185C323297761E1005245BB /* AudioChangerView.swift */; };
-		F185C32729776210005245BB /* AudioConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F185C3262977620F005245BB /* AudioConverter.swift */; };
-		F185C32B297763F5005245BB /* ToolsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F185C32A297763F5005245BB /* ToolsManager.swift */; };
 		F1B412C5297755D8005555C8 /* Map in Frameworks */ = {isa = PBXBuildFile; productRef = F1B412C4297755D8005555C8 /* Map */; };
 		F1D694EE296A6DEC002332C8 /* Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = F1D694ED296A6DEC002332C8 /* Dynamic */; };
 		F1D69510296A7550002332C8 /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = F1D6950F296A7550002332C8 /* ArgumentParser */; };
@@ -78,6 +73,7 @@
 		F1F4F840296A54B60024218E /* hiddenDark.materialrecipe in Resources */ = {isa = PBXBuildFile; fileRef = F1F4F83B296A54B60024218E /* hiddenDark.materialrecipe */; };
 		F1F4F841296A54B60024218E /* defaultDark.materialrecipe in Resources */ = {isa = PBXBuildFile; fileRef = F1F4F83D296A54B60024218E /* defaultDark.materialrecipe */; };
 		F1F4F842296A54B60024218E /* defaultLight.materialrecipe in Resources */ = {isa = PBXBuildFile; fileRef = F1F4F83E296A54B60024218E /* defaultLight.materialrecipe */; };
+		F1F4F845296A54D80024218E /* ToolsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F4F843296A54D80024218E /* ToolsManager.swift */; };
 		F1F4F846296A54D80024218E /* MiscModsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F4F844296A54D80024218E /* MiscModsManager.swift */; };
 		F1F4F848296A550D0024218E /* DockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F4F847296A550D0024218E /* DockView.swift */; };
 		F1F4F84D296A55B60024218E /* FCView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F4F849296A55B50024218E /* FCView.swift */; };
@@ -89,11 +85,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F185C320297761BC005245BB /* AudioManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
-		F185C322297761DC005245BB /* AudioView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioView.swift; sourceTree = "<group>"; };
-		F185C323297761E1005245BB /* AudioChangerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioChangerView.swift; sourceTree = "<group>"; };
-		F185C3262977620F005245BB /* AudioConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioConverter.swift; sourceTree = "<group>"; };
-		F185C32A297763F5005245BB /* ToolsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToolsManager.swift; sourceTree = "<group>"; };
 		F1F3BED7296A5C3C008D79C7 /* PreviewFonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = PreviewFonts; sourceTree = "<group>"; };
 		F1F3BED8296A5C3C008D79C7 /* RepackedFonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = RepackedFonts; sourceTree = "<group>"; };
 		F1F4F6DA296A4A5D0024218E /* TrollBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrollBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -159,6 +150,7 @@
 		F1F4F83B296A54B60024218E /* hiddenDark.materialrecipe */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = hiddenDark.materialrecipe; sourceTree = "<group>"; };
 		F1F4F83D296A54B60024218E /* defaultDark.materialrecipe */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = defaultDark.materialrecipe; sourceTree = "<group>"; };
 		F1F4F83E296A54B60024218E /* defaultLight.materialrecipe */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = defaultLight.materialrecipe; sourceTree = "<group>"; };
+		F1F4F843296A54D80024218E /* ToolsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToolsManager.swift; sourceTree = "<group>"; };
 		F1F4F844296A54D80024218E /* MiscModsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiscModsManager.swift; sourceTree = "<group>"; };
 		F1F4F847296A550D0024218E /* DockView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DockView.swift; sourceTree = "<group>"; };
 		F1F4F849296A55B50024218E /* FCView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FCView.swift; sourceTree = "<group>"; };
@@ -196,16 +188,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		F185C31F297761BC005245BB /* Sounds */ = {
-			isa = PBXGroup;
-			children = (
-				F185C3262977620F005245BB /* AudioConverter.swift */,
-				F185C323297761E1005245BB /* AudioChangerView.swift */,
-				F185C322297761DC005245BB /* AudioView.swift */,
-			);
-			path = Sounds;
-			sourceTree = "<group>";
-		};
 		F1F4F6D1296A4A5D0024218E = {
 			isa = PBXGroup;
 			children = (
@@ -249,8 +231,8 @@
 		F1F4F6EC296A4BE30024218E /* Libs */ = {
 			isa = PBXGroup;
 			children = (
-				F185C32A297763F5005245BB /* ToolsManager.swift */,
 				F1F4F844296A54D80024218E /* MiscModsManager.swift */,
+				F1F4F843296A54D80024218E /* ToolsManager.swift */,
 				F1F4F835296A54A80024218E /* ApplicationMonitor.swift */,
 				F1F4F834296A54A80024218E /* LocationManager.swift */,
 				F1F4F705296A4C0F0024218E /* CustomFont */,
@@ -259,7 +241,6 @@
 				F1F4F6F0296A4BFC0024218E /* ImagePickerView.swift */,
 				F1F4F6FB296A4BFD0024218E /* MGPreferences.h */,
 				F1F4F6F6296A4BFD0024218E /* MGPreferences.m */,
-				F185C320297761BC005245BB /* AudioManager.swift */,
 				F1F4F6F9296A4BFD0024218E /* RemLog.swift */,
 				F1F4F6F8296A4BFD0024218E /* RemoteLog.h */,
 				F1F4F6F5296A4BFD0024218E /* RootHelper.swift */,
@@ -293,7 +274,6 @@
 		F1F4F798296A4CA90024218E /* Tools */ = {
 			isa = PBXGroup;
 			children = (
-				F185C31F297761BC005245BB /* Sounds */,
 				F1F4F851296A55DD0024218E /* VersionChanger */,
 				F1F4F81C296A4DCA0024218E /* ToolsView.swift */,
 				F1F4F7E8296A4DA00024218E /* FontChanger */,
@@ -595,7 +575,6 @@
 				F1F4F853296A55F70024218E /* VChanger.swift in Sources */,
 				F1F4F7D7296A4D380024218E /* Person.swift in Sources */,
 				F1F4F7CD296A4D380024218E /* PasscodeKeyFaceManager.swift in Sources */,
-				F185C321297761BC005245BB /* AudioManager.swift in Sources */,
 				F1F4F79A296A4CB80024218E /* AboutView.swift in Sources */,
 				F1F4F7DD296A4D380024218E /* NoCamSoundView.swift in Sources */,
 				F1F4F701296A4BFD0024218E /* MGPreferences.m in Sources */,
@@ -610,22 +589,19 @@
 				F1F4F82B296A514E0024218E /* ImagePicker.swift in Sources */,
 				F1F4F7DE296A4D380024218E /* RingtoneVIew.swift in Sources */,
 				F1F4F6FD296A4BFD0024218E /* ImagePickerView.swift in Sources */,
+				F1F4F845296A54D80024218E /* ToolsManager.swift in Sources */,
 				F1F4F700296A4BFD0024218E /* RootHelper.swift in Sources */,
 				F1F4F836296A54A80024218E /* LocationManager.swift in Sources */,
-				F185C32729776210005245BB /* AudioConverter.swift in Sources */,
-				F185C32B297763F5005245BB /* ToolsManager.swift in Sources */,
 				F1F4F6FC296A4BFD0024218E /* WallpaperGetter.swift in Sources */,
 				F1F4F7D4296A4D380024218E /* LocationSimulationView.swift in Sources */,
 				F1F4F710296A4C230024218E /* ttcpad.m in Sources */,
 				F1F4F855296A58120024218E /* CreditsView.swift in Sources */,
-				F185C325297761E1005245BB /* AudioChangerView.swift in Sources */,
 				F1F4F84D296A55B60024218E /* FCView.swift in Sources */,
 				F1F4F832296A542F0024218E /* CarrierNameManager.swift in Sources */,
 				F1F4F833296A542F0024218E /* CarrierNameChangerView.swift in Sources */,
 				F1F4F7E1296A4D380024218E /* MainCardView.swift in Sources */,
 				F1F4F6E0296A4A5D0024218E /* ContentView.swift in Sources */,
 				F1F4F7D2296A4D380024218E /* WallSetView.swift in Sources */,
-				F185C324297761E1005245BB /* AudioView.swift in Sources */,
 				F1F4F7D0296A4D380024218E /* invoke.m in Sources */,
 				F1F4F7CE296A4D380024218E /* Gestures.swift in Sources */,
 				F1F4F7D8296A4D380024218E /* Sharing.swift in Sources */,
