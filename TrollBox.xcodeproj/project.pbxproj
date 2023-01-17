@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F1B412C5297755D8005555C8 /* Map in Frameworks */ = {isa = PBXBuildFile; productRef = F1B412C4297755D8005555C8 /* Map */; };
 		F1D694EE296A6DEC002332C8 /* Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = F1D694ED296A6DEC002332C8 /* Dynamic */; };
 		F1D69510296A7550002332C8 /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = F1D6950F296A7550002332C8 /* ArgumentParser */; };
 		F1E6A7C7296B567D006DBCBD /* ApplicationsWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = F1E6A7C6296B567D006DBCBD /* ApplicationsWrapper */; };
@@ -62,7 +63,6 @@
 		F1F4F7E7296A4D460024218E /* BadgeChanger.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F4F7E5296A4D460024218E /* BadgeChanger.swift */; };
 		F1F4F81D296A4DCA0024218E /* ToolsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F4F81C296A4DCA0024218E /* ToolsView.swift */; };
 		F1F4F820296A4EFD0024218E /* ZIPFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = F1F4F81F296A4EFD0024218E /* ZIPFoundation */; };
-		F1F4F824296A50450024218E /* Map in Frameworks */ = {isa = PBXBuildFile; productRef = F1F4F823296A50450024218E /* Map */; };
 		F1F4F827296A50B30024218E /* ACarousel in Frameworks */ = {isa = PBXBuildFile; productRef = F1F4F826296A50B30024218E /* ACarousel */; };
 		F1F4F82B296A514E0024218E /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F4F82A296A514E0024218E /* ImagePicker.swift */; };
 		F1F4F832296A542F0024218E /* CarrierNameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F4F830296A542F0024218E /* CarrierNameManager.swift */; };
@@ -170,12 +170,12 @@
 				F1E6A7D1296B567D006DBCBD /* NSTask in Frameworks */,
 				F1E6A7D9296B575C006DBCBD /* SDWebImage in Frameworks */,
 				F1F4F713296A4C230024218E /* libwoff2enc.a in Frameworks */,
-				F1F4F824296A50450024218E /* Map in Frameworks */,
 				F1E6A7C9296B567D006DBCBD /* AssetCatalogWrapper in Frameworks */,
 				F1F4F715296A4C230024218E /* libwoff2common.a in Frameworks */,
 				F1E6A7D3296B567D006DBCBD /* SVGWrapper in Frameworks */,
 				F1E6A7C7296B567D006DBCBD /* ApplicationsWrapper in Frameworks */,
 				F1F4F820296A4EFD0024218E /* ZIPFoundation in Frameworks */,
+				F1B412C5297755D8005555C8 /* Map in Frameworks */,
 				F1F4F827296A50B30024218E /* ACarousel in Frameworks */,
 				F1D69510296A7550002332C8 /* ArgumentParser in Frameworks */,
 				F1D694EE296A6DEC002332C8 /* Dynamic in Frameworks */,
@@ -486,7 +486,6 @@
 			name = TrollBox;
 			packageProductDependencies = (
 				F1F4F81F296A4EFD0024218E /* ZIPFoundation */,
-				F1F4F823296A50450024218E /* Map */,
 				F1F4F826296A50B30024218E /* ACarousel */,
 				F1D694ED296A6DEC002332C8 /* Dynamic */,
 				F1D6950F296A7550002332C8 /* ArgumentParser */,
@@ -499,6 +498,7 @@
 				F1E6A7D2296B567D006DBCBD /* SVGWrapper */,
 				F1E6A7D5296B5742006DBCBD /* Alamofire */,
 				F1E6A7D8296B575C006DBCBD /* SDWebImage */,
+				F1B412C4297755D8005555C8 /* Map */,
 			);
 			productName = TrollBox;
 			productReference = F1F4F6DA296A4A5D0024218E /* TrollBox.app */;
@@ -531,13 +531,13 @@
 			mainGroup = F1F4F6D1296A4A5D0024218E;
 			packageReferences = (
 				F1F4F81E296A4EFD0024218E /* XCRemoteSwiftPackageReference "ZIPFoundation" */,
-				F1F4F822296A50450024218E /* XCRemoteSwiftPackageReference "Map" */,
 				F1F4F825296A50B30024218E /* XCRemoteSwiftPackageReference "ACarousel" */,
 				F1D694EC296A6DEC002332C8 /* XCRemoteSwiftPackageReference "Dynamic" */,
 				F1D6950E296A7550002332C8 /* XCRemoteSwiftPackageReference "swift-argument-parser" */,
 				F1E6A7C5296B567D006DBCBD /* XCRemoteSwiftPackageReference "SantanderWrappers" */,
 				F1E6A7D4296B5742006DBCBD /* XCRemoteSwiftPackageReference "Alamofire" */,
 				F1E6A7D7296B575C006DBCBD /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				F1B412C3297755D8005555C8 /* XCRemoteSwiftPackageReference "Map" */,
 			);
 			productRefGroup = F1F4F6DB296A4A5D0024218E /* Products */;
 			projectDirPath = "";
@@ -852,6 +852,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		F1B412C3297755D8005555C8 /* XCRemoteSwiftPackageReference "Map" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pauljohanneskraft/Map";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 		F1D694EC296A6DEC002332C8 /* XCRemoteSwiftPackageReference "Dynamic" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/mhdhejazi/Dynamic/";
@@ -900,14 +908,6 @@
 				kind = branch;
 			};
 		};
-		F1F4F822296A50450024218E /* XCRemoteSwiftPackageReference "Map" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/pauljohanneskraft/Map";
-			requirement = {
-				branch = main;
-				kind = branch;
-			};
-		};
 		F1F4F825296A50B30024218E /* XCRemoteSwiftPackageReference "ACarousel" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/JWAutumn/ACarousel";
@@ -919,6 +919,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		F1B412C4297755D8005555C8 /* Map */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F1B412C3297755D8005555C8 /* XCRemoteSwiftPackageReference "Map" */;
+			productName = Map;
+		};
 		F1D694ED296A6DEC002332C8 /* Dynamic */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = F1D694EC296A6DEC002332C8 /* XCRemoteSwiftPackageReference "Dynamic" */;
@@ -978,11 +983,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F1F4F81E296A4EFD0024218E /* XCRemoteSwiftPackageReference "ZIPFoundation" */;
 			productName = ZIPFoundation;
-		};
-		F1F4F823296A50450024218E /* Map */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F1F4F822296A50450024218E /* XCRemoteSwiftPackageReference "Map" */;
-			productName = Map;
 		};
 		F1F4F826296A50B30024218E /* ACarousel */ = {
 			isa = XCSwiftPackageProductDependency;
