@@ -60,7 +60,7 @@ struct VChangerView: View {
         }
         .onAppear{
             if operatingSystemVersion.majorVersion <= 14 && operatingSystemVersion.minorVersion <= 8 {
-                UIApplication.shared.confirmAlert(title: "WARNING !", body: "You're using this tool on a specific version of iOS, and all the modifications may be irreversible. Changing version can make you lose your jailbreak. More information by clicking OK.", onOK: {
+                UIApplication.shared.confirmAlert(title: "WARNING !", body: "You're using this tool on a specific version of iOS, and all the modifications may be irreversible. Changing version can make you lose your jailbreak. More information by clicking Yes.", onOK: {
                     UIApplication.shared.open(URL(string: "https://www.reddit.com/r/jailbreak/comments/zxm9i7/tip_do_not_install_wdbfontoverwrite_via/")!)
                 }, noCancel: false)
             }
@@ -68,7 +68,7 @@ struct VChangerView: View {
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {
                 Button(action: {
-                    UIApplication.shared.confirmAlert(title: "WARNING !", body: "Using this tool on jailbreak and other versions of iOS may be irreversible, and changing version can make you lose your jailbreak. More information by clicking OK.", onOK: {
+                    UIApplication.shared.confirmAlert(title: "WARNING !", body: "Using this tool on jailbreak and other versions of iOS may be irreversible, and changing version can make you lose your jailbreak. More information by clicking Yes.", onOK: {
                         UIApplication.shared.open(URL(string: "https://www.reddit.com/r/jailbreak/comments/zxm9i7/tip_do_not_install_wdbfontoverwrite_via/")!)
                     }, noCancel: false)
                 }) {
