@@ -784,7 +784,7 @@
 					"$(PROJECT_DIR)",
 				);
 				MARKETING_VERSION = 0.0.9;
-				PRODUCT_BUNDLE_IDENTIFIER = "live.cclerc.trollbox-b";
+				PRODUCT_BUNDLE_IDENTIFIER = live.cclerc.trollbox;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "TrollBox/Libs/TrollBox-Bridging-Header.h";
@@ -829,7 +829,7 @@
 				);
 				MARKETING_VERSION = 0.0.9;
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "live.cclerc.trollbox-b";
+				PRODUCT_BUNDLE_IDENTIFIER = live.cclerc.trollbox;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "TrollBox/Libs/TrollBox-Bridging-Header.h";
