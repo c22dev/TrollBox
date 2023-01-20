@@ -30,7 +30,7 @@ struct BadgeChangerView: View {
                     .ignoresSafeArea()
                 VStack {
                     ZStack(alignment: .topTrailing) {
-                        Image(uiImage: UIImage(named: "AppIcon")!)
+                        Image(uiImage: UIImage(named: "HighKalidad")!)
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .frame(width: minSize / 2, height: minSize / 2)
@@ -92,6 +92,8 @@ struct BadgeChangerView: View {
                     })
                     .padding(10)
                     .background(Color.accentColor)
+                    .cornerRadius(8)
+                    .foregroundColor(.white)
                 }
             }
             .navigationBarTitleDisplayMode(.inline)
