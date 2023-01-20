@@ -1,13 +1,13 @@
 <div align="center">
    <p>
-      <img src="https://i.ibb.co/xgBVM72/logo-modified.png" width=100 alt="TrollBox Logo">
+      <img src="https://i.ibb.co/b5MpwmK/Untitled-modified.png" width=100 alt="TrollBox Logo">
    </p>
    <h1> TrollBox 
       <br/> All TrollStore tools in one.
    </h1>
 </div>
 
-<h6 align="center"> version 0.0.8 </h6>
+<h6 align="center"> version 0.0.9 </h6>
 
 ## Features <br/> <br/> &nbsp; &nbsp; Already implemented:
 
@@ -27,6 +27,8 @@
    - Enable or disable it.
 - **Wallpaper Setter**
    - Set light/dark mode wallpapers.
+- **Dock/HomeScreen settings**
+   - Set custom settings for your dock
 - **Wallet Image Editor**
    - Use custom images for your Wallet cards.
 - **Custom Fonts**
@@ -49,7 +51,7 @@
 <br/> <br/>
 
 ## Screenshots
-<img src='https://i.ibb.co/dBqvHSN/IMG-3816.png' width=400><img src='https://i.ibb.co/grmh9hb/IMG-3817.png' width=400>
+<img src='https://i.ibb.co/hsR6nFr/IMG-4250.png' width=400><img src='https://i.ibb.co/grmh9hb/IMG-3817.png' width=400>
 <br/>
 <img src='https://i.ibb.co/W2pjkLG/IMG-3821.png' width=400><img src='https://i.ibb.co/6m0kj0T/IMG-3822.png' width=400>
    
