@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F110031A297AC10F00C7AA2D /* libwoff2common.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F1100318297AC10F00C7AA2D /* libwoff2common.a */; };
+		F110031B297AC10F00C7AA2D /* libwoff2enc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F1100319297AC10F00C7AA2D /* libwoff2enc.a */; };
+		F110031E297AC11600C7AA2D /* libwoff2enc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F110031C297AC11500C7AA2D /* libwoff2enc.a */; };
+		F110031F297AC11600C7AA2D /* libwoff2common.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F110031D297AC11600C7AA2D /* libwoff2common.a */; };
 		F1B412C5297755D8005555C8 /* Map in Frameworks */ = {isa = PBXBuildFile; productRef = F1B412C4297755D8005555C8 /* Map */; };
 		F1D694EE296A6DEC002332C8 /* Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = F1D694ED296A6DEC002332C8 /* Dynamic */; };
 		F1D69510296A7550002332C8 /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = F1D6950F296A7550002332C8 /* ArgumentParser */; };
@@ -36,9 +40,7 @@
 		F1F4F710296A4C230024218E /* ttcpad.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F4F708296A4C220024218E /* ttcpad.m */; };
 		F1F4F711296A4C230024218E /* BrotliPadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F4F70A296A4C220024218E /* BrotliPadding.swift */; };
 		F1F4F712296A4C230024218E /* stripttc.c in Sources */ = {isa = PBXBuildFile; fileRef = F1F4F70B296A4C220024218E /* stripttc.c */; };
-		F1F4F713296A4C230024218E /* libwoff2enc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F1F4F70C296A4C230024218E /* libwoff2enc.a */; };
 		F1F4F714296A4C230024218E /* woff2_wrapper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1F4F70E296A4C230024218E /* woff2_wrapper.cpp */; };
-		F1F4F715296A4C230024218E /* libwoff2common.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F1F4F70F296A4C230024218E /* libwoff2common.a */; };
 		F1F4F79A296A4CB80024218E /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F4F799296A4CB80024218E /* AboutView.swift */; };
 		F1F4F7C6296A4D380024218E /* LSFootNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F4F79C296A4D370024218E /* LSFootNote.swift */; };
 		F1F4F7CC296A4D380024218E /* PasscodeEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F4F7A7296A4D370024218E /* PasscodeEditorView.swift */; };
@@ -85,6 +87,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F1100318297AC10F00C7AA2D /* libwoff2common.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libwoff2common.a; sourceTree = SOURCE_ROOT; };
+		F1100319297AC10F00C7AA2D /* libwoff2enc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libwoff2enc.a; sourceTree = SOURCE_ROOT; };
+		F110031C297AC11500C7AA2D /* libwoff2enc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libwoff2enc.a; sourceTree = SOURCE_ROOT; };
+		F110031D297AC11600C7AA2D /* libwoff2common.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libwoff2common.a; sourceTree = SOURCE_ROOT; };
 		F1F3BED7296A5C3C008D79C7 /* PreviewFonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = PreviewFonts; sourceTree = "<group>"; };
 		F1F3BED8296A5C3C008D79C7 /* RepackedFonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = RepackedFonts; sourceTree = "<group>"; };
 		F1F4F6DA296A4A5D0024218E /* TrollBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrollBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -112,10 +118,8 @@
 		F1F4F709296A4C220024218E /* TrollBox-bringing-header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TrollBox-bringing-header.h"; sourceTree = "<group>"; };
 		F1F4F70A296A4C220024218E /* BrotliPadding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrotliPadding.swift; sourceTree = "<group>"; };
 		F1F4F70B296A4C220024218E /* stripttc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = stripttc.c; sourceTree = "<group>"; };
-		F1F4F70C296A4C230024218E /* libwoff2enc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libwoff2enc.a; sourceTree = "<group>"; };
 		F1F4F70D296A4C230024218E /* woff2_wrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = woff2_wrapper.h; sourceTree = "<group>"; };
 		F1F4F70E296A4C230024218E /* woff2_wrapper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = woff2_wrapper.cpp; sourceTree = "<group>"; };
-		F1F4F70F296A4C230024218E /* libwoff2common.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libwoff2common.a; sourceTree = "<group>"; };
 		F1F4F799296A4CB80024218E /* AboutView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		F1F4F79C296A4D370024218E /* LSFootNote.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSFootNote.swift; sourceTree = "<group>"; };
 		F1F4F7A7296A4D370024218E /* PasscodeEditorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasscodeEditorView.swift; sourceTree = "<group>"; };
@@ -169,18 +173,20 @@
 				F1E6A7D6296B5742006DBCBD /* Alamofire in Frameworks */,
 				F1E6A7D1296B567D006DBCBD /* NSTask in Frameworks */,
 				F1E6A7D9296B575C006DBCBD /* SDWebImage in Frameworks */,
-				F1F4F713296A4C230024218E /* libwoff2enc.a in Frameworks */,
 				F1E6A7C9296B567D006DBCBD /* AssetCatalogWrapper in Frameworks */,
-				F1F4F715296A4C230024218E /* libwoff2common.a in Frameworks */,
 				F1E6A7D3296B567D006DBCBD /* SVGWrapper in Frameworks */,
 				F1E6A7C7296B567D006DBCBD /* ApplicationsWrapper in Frameworks */,
 				F1F4F820296A4EFD0024218E /* ZIPFoundation in Frameworks */,
 				F1B412C5297755D8005555C8 /* Map in Frameworks */,
 				F1F4F827296A50B30024218E /* ACarousel in Frameworks */,
+				F110031E297AC11600C7AA2D /* libwoff2enc.a in Frameworks */,
 				F1D69510296A7550002332C8 /* ArgumentParser in Frameworks */,
 				F1D694EE296A6DEC002332C8 /* Dynamic in Frameworks */,
 				F1E6A7CF296B567D006DBCBD /* FSOperations in Frameworks */,
+				F110031F297AC11600C7AA2D /* libwoff2common.a in Frameworks */,
 				F1E6A7CD296B567D006DBCBD /* DiskImagesWrapper in Frameworks */,
+				F110031B297AC10F00C7AA2D /* libwoff2enc.a in Frameworks */,
+				F110031A297AC10F00C7AA2D /* libwoff2common.a in Frameworks */,
 				F1E6A7CB296B567D006DBCBD /* CompressionWrapper in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,9 +263,11 @@
 		F1F4F705296A4C0F0024218E /* CustomFont */ = {
 			isa = PBXGroup;
 			children = (
+				F1100318297AC10F00C7AA2D /* libwoff2common.a */,
+				F110031D297AC11600C7AA2D /* libwoff2common.a */,
+				F1100319297AC10F00C7AA2D /* libwoff2enc.a */,
+				F110031C297AC11500C7AA2D /* libwoff2enc.a */,
 				F1F4F70A296A4C220024218E /* BrotliPadding.swift */,
-				F1F4F70F296A4C230024218E /* libwoff2common.a */,
-				F1F4F70C296A4C230024218E /* libwoff2enc.a */,
 				F1F4F70B296A4C220024218E /* stripttc.c */,
 				F1F4F707296A4C220024218E /* stripttc.h */,
 				F1F4F709296A4C220024218E /* TrollBox-bringing-header.h */,
@@ -773,6 +781,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/TrollBox/Libs/CustomFont",
 					"$(PROJECT_DIR)/TrollBox/Tools/Themer/Icons/Bridge",
+					"$(PROJECT_DIR)",
 				);
 				MARKETING_VERSION = 0.0.9;
 				PRODUCT_BUNDLE_IDENTIFIER = "live.cclerc.trollbox-b";
@@ -816,6 +825,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/TrollBox/Libs/CustomFont",
 					"$(PROJECT_DIR)/TrollBox/Tools/Themer/Icons/Bridge",
+					"$(PROJECT_DIR)",
 				);
 				MARKETING_VERSION = 0.0.9;
 				ONLY_ACTIVE_ARCH = YES;
