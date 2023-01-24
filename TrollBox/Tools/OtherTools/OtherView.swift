@@ -19,11 +19,10 @@ func writeIt(contents: String, filepath: String) {
     }
 struct OtherView: View {
     @State private var dotColour = Color.red
-    @State private var homeGesture = getCurrentState()
     @State private var showingAlert = false
     @State private var showingAlerty = false
     @State private var showAlert = false
-    @State var enabled = UserDefaults.standard.bool(forKey: "RespringAfterRespringEnabled")
+    @State var enabled = UserDefaults.standard.bool(forKey: "GesturesEnabled")
     var body: some View {
             List {
                 Section(header: Text("Supervising"), footer: Text("Supervision gives you a greater control over the devices that you own. With supervision, your can apply extra features/restrictions to youre device by various profiles.")) {
@@ -167,38 +166,53 @@ struct OtherView: View {
                     }
                 }
                     Section(header: Text("Home Gesture"), footer: Text("Device Layout to iPhone XS layout. It is totally safe but you may experience some UI glitches and screenshot is not working at the moment.")) {
-                        Button("Enable") {
-                            checkAndCreateBackupFolder()
-                            let helper = ObjcHelper.init()
-                            let prefs = MGPreferences.init(identifier: "live.cclerc.TrollBox")
-                            UserDefaults.standard.set(prefs.dictionary, forKey: "devicesubits")
-                            enableTheseGestures()
-                            showingAlert.toggle()
+                        Text("Enabled")
+                            .font(.headline)
+                            .padding(.horizontal, 4)
+                        Toggle(isOn: $enabled) {
+                            Text("Notched Device Gestures")
                         }
-                        Button("Disable") {
-                            goodbyegestures()
-                            showingAlert.toggle()
-                        }
-                            .alert(isPresented: $showingAlert) {
-                                Alert(
-                                    title: Text("Success!"),
-                                    message: Text("It worked ! Respring and check you're gestures will be working !"),
-                                    primaryButton: .default(
-                                        Text("Respring"),
-                                        action: {
-                                           respring()
-                                        }
-                                    ),
-                                    secondaryButton: .default(
-                                        Text("OK")
-                                    )
-                                )
+                        .labelsHidden()
+                    }
+                    .onChange(of: enabled) { isEnabled in
+                        do {
+                            let url = URL(fileURLWithPath: "/var/containers/Shared/SystemGroup/systemgroup.com.apple.mobilegestaltcache/Library/Caches/com.apple.MobileGestalt.plist")
+                            let data = try Data(contentsOf: url)
+                            
+                            guard var plist = try PropertyListSerialization.propertyList(from: data, format: nil) as? [String:Any] else { throw "Couldn't read com.apple.MobileGestalt.plist" }
+                            let origDeviceTypeURL = URL(fileURLWithPath: "/var/mobile/TrollBox/ArtworkDeviceSubTypeBackup")
+                            var origDeviceType = 0
+                            
+                            if !FileManager.default.fileExists(atPath: origDeviceTypeURL.path) {
+                                guard let currentType = ((plist["CacheExtra"] as? [String: Any] ?? [:])["oPeik/9e8lQWMszEjbPzng"] as? [String: Any] ?? [:])["ArtworkDeviceSubType"] as? Int else { throw "Couldn't get current device subtype" }
+                                origDeviceType = currentType
+                                remLog(origDeviceType)
+                                guard let backupData = String(currentType).data(using: .utf8) else { throw "Unable to convert device type to data" }
+                                try backupData.write(to: origDeviceTypeURL)
+                            } else {
+                                guard let data = try? Data(contentsOf: origDeviceTypeURL), let deviceTypeStr = String(data: data, encoding: .utf8), let deviceType = Int(deviceTypeStr) else { throw "Couldn't retrieve original device type" }
+                                origDeviceType = deviceType
                             }
+                            
+                            if var firstLevel = plist["CacheExtra"] as? [String : Any], var secondLevel = firstLevel["oPeik/9e8lQWMszEjbPzng"] as? [String: Any], var thirdLevel = secondLevel["ArtworkDeviceSubType"] as? Int {
+                                thirdLevel = isEnabled ? 2436 : origDeviceType
+                                secondLevel["ArtworkDeviceSubType"] = thirdLevel
+                                firstLevel["oPeik/9e8lQWMszEjbPzng"] = secondLevel
+                                plist["CacheExtra"] = firstLevel
+                            }
+                            
+                            // Save plist
+                            let plistData = try PropertyListSerialization.data(fromPropertyList: plist, format: .xml, options: 0)
+                            try plistData.write(to: url)
+                            
+                            UserDefaults.standard.set(isEnabled, forKey: "GesturesEnabled")
+                        } catch {
+                            UIApplication.shared.alert(body: "Error occured while applying changes. \(error)")
+                        }
                     }
-                    }
-                    
+                }
             }
-        }
+    }
 func writeToFileWithContents(contents: String, filepath: String) {
         let fileManager = FileManager.default
         let url = URL(fileURLWithPath: filepath)

@@ -48,7 +48,6 @@
 		F1F4F7C6296A4D380024218E /* LSFootNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F4F79C296A4D370024218E /* LSFootNote.swift */; };
 		F1F4F7CC296A4D380024218E /* PasscodeEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F4F7A7296A4D370024218E /* PasscodeEditorView.swift */; };
 		F1F4F7CD296A4D380024218E /* PasscodeKeyFaceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F4F7A8296A4D370024218E /* PasscodeKeyFaceManager.swift */; };
-		F1F4F7CE296A4D380024218E /* Gestures.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F4F7AA296A4D370024218E /* Gestures.swift */; };
 		F1F4F7CF296A4D380024218E /* OtherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F4F7AB296A4D370024218E /* OtherView.swift */; };
 		F1F4F7D0296A4D380024218E /* invoke.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F4F7AD296A4D370024218E /* invoke.m */; };
 		F1F4F7D2296A4D380024218E /* WallSetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F4F7AF296A4D370024218E /* WallSetView.swift */; };
@@ -130,7 +129,6 @@
 		F1F4F79C296A4D370024218E /* LSFootNote.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSFootNote.swift; sourceTree = "<group>"; };
 		F1F4F7A7296A4D370024218E /* PasscodeEditorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasscodeEditorView.swift; sourceTree = "<group>"; };
 		F1F4F7A8296A4D370024218E /* PasscodeKeyFaceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasscodeKeyFaceManager.swift; sourceTree = "<group>"; };
-		F1F4F7AA296A4D370024218E /* Gestures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gestures.swift; sourceTree = "<group>"; };
 		F1F4F7AB296A4D370024218E /* OtherView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtherView.swift; sourceTree = "<group>"; };
 		F1F4F7AD296A4D370024218E /* invoke.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = invoke.m; sourceTree = "<group>"; };
 		F1F4F7AF296A4D370024218E /* WallSetView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WallSetView.swift; sourceTree = "<group>"; };
@@ -347,7 +345,6 @@
 			isa = PBXGroup;
 			children = (
 				F1EBEFE329809CEB001C9E21 /* RegionRestrict.swift */,
-				F1F4F7AA296A4D370024218E /* Gestures.swift */,
 				F1F4F7AB296A4D370024218E /* OtherView.swift */,
 			);
 			path = OtherTools;
@@ -629,7 +626,6 @@
 				F1F4F6E0296A4A5D0024218E /* ContentView.swift in Sources */,
 				F1F4F7D2296A4D380024218E /* WallSetView.swift in Sources */,
 				F1F4F7D0296A4D380024218E /* invoke.m in Sources */,
-				F1F4F7CE296A4D380024218E /* Gestures.swift in Sources */,
 				F1F4F7D8296A4D380024218E /* Sharing.swift in Sources */,
 				F1F4F711296A4C230024218E /* BrotliPadding.swift in Sources */,
 				F1F4F7D9296A4D380024218E /* AirSpam.swift in Sources */,
