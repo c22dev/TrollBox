@@ -116,8 +116,8 @@ func removeST() {
         catch {
             UIApplication.shared.alert(title: "error while removing file !", body: "\(error)")
         }
-        killall("ScreenTimeAgent")
-        UIApplication.shared.alert(title: "Succes ! Please restart.", body: "Success ! As we couldn't kill ScreenTimeAgent, please be sure to restart you're device.")
+//        killall("ScreenTimeAgent")
+        UIApplication.shared.alert(title: "Succes ! Please restart.", body: "Success ! As we are not able to kill ScreenTimeAgent, please be sure to restart you're device.")
         }, noCancel: false)
 }
 
