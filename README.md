@@ -62,7 +62,7 @@
 ## Credits
 - [TrollTools](https://github.com/sourcelocation/TrollTools) 
    - Some extensions and functions, mainly tools/assets.
-- Lemin
+- [Lemin](https://github.com/leminlimez) 
    - Various tools, passcode changer and docking options.
 - [Jaility](https://github.com/haxi0/Jaility) 
    - Supervising features.
