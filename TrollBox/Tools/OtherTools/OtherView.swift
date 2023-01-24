@@ -68,7 +68,7 @@ struct OtherView: View {
                 Section(header: Text("Lock after Respring"), footer: Text("Choose to go to lockscreen or go to homescreen when respringing.")) {
                     Button("Disable") {
                         showingAlert.toggle()
-                        writeToFileWithContents(contents: "<?xml version=\"1.0\" encoding=\"utf-8\"?> <!DOCTYPE plist PUBLIC \"-//Apple Computer//DTD PLIST 1.0//EN\" \"apple.com/DTDs/PropertyList-1.0.dtd\"> <plist version=\"1.0\"> <dict> <key>SBDontLockAfterCrash</key> <true/> </dict> </plist>", filepath: "/var/Managed Preferences/mobile/com.apple.springboard.plist")
+                        writeToFileWithContents(contents: "<?xml version=\"1.0\" encoding=\"utf-8\"?> <!DOCTYPE plist PUBLIC \"-//Apple Computer//DTD PLIST 1.0//EN\" \"apple.com/DTDs/PropertyList-1.0.dtd\"> <plist version=\"1.0\"> <dict> <key>SBDontLockAfterCrash</key> <true/> </dict> </plist>", filepath: "/var/preferences/com.apple.springboard.plist")
                     }
                     .alert(isPresented: $showingAlert) {
                         Alert(
@@ -87,7 +87,7 @@ struct OtherView: View {
                     }
                     Button("Enable") {
                         showingAlert.toggle()
-                        writeToFileWithContents(contents: "welcome there, i'm c22dev lol", filepath: "/var/Managed Preferences/mobile/com.apple.springboard.plist")
+                        writeToFileWithContents(contents: "welcome there, i'm c22dev lol", filepath: "/var/preferences/com.apple.springboard.plist")
                     }
                     .alert(isPresented: $showingAlert) {
                         Alert(
