@@ -26,6 +26,7 @@
 		F1EB8845298003D500D5BA9C /* STA_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EB8844298003D500D5BA9C /* STA_View.swift */; };
 		F1EBEFE229809A5D001C9E21 /* MacDirtyCowTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EBEFE129809A5D001C9E21 /* MacDirtyCowTools.swift */; };
 		F1EBEFE429809CEB001C9E21 /* RegionRestrict.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EBEFE329809CEB001C9E21 /* RegionRestrict.swift */; };
+		F1EBEFE72980A20A001C9E21 /* CalculatorErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EBEFE62980A20A001C9E21 /* CalculatorErrorView.swift */; };
 		F1F3BED9296A5C3C008D79C7 /* PreviewFonts in Resources */ = {isa = PBXBuildFile; fileRef = F1F3BED7296A5C3C008D79C7 /* PreviewFonts */; };
 		F1F3BEDA296A5C3C008D79C7 /* RepackedFonts in Resources */ = {isa = PBXBuildFile; fileRef = F1F3BED8296A5C3C008D79C7 /* RepackedFonts */; };
 		F1F4F6DE296A4A5D0024218E /* TrollBoxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F4F6DD296A4A5D0024218E /* TrollBoxApp.swift */; };
@@ -96,6 +97,7 @@
 		F1EB8844298003D500D5BA9C /* STA_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STA_View.swift; sourceTree = "<group>"; };
 		F1EBEFE129809A5D001C9E21 /* MacDirtyCowTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacDirtyCowTools.swift; sourceTree = "<group>"; };
 		F1EBEFE329809CEB001C9E21 /* RegionRestrict.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionRestrict.swift; sourceTree = "<group>"; };
+		F1EBEFE62980A20A001C9E21 /* CalculatorErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorErrorView.swift; sourceTree = "<group>"; };
 		F1F3BED7296A5C3C008D79C7 /* PreviewFonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = PreviewFonts; sourceTree = "<group>"; };
 		F1F3BED8296A5C3C008D79C7 /* RepackedFonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = RepackedFonts; sourceTree = "<group>"; };
 		F1F4F6DA296A4A5D0024218E /* TrollBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrollBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -206,6 +208,14 @@
 			path = ScreenTimeAtomizer;
 			sourceTree = "<group>";
 		};
+		F1EBEFE52980A1F7001C9E21 /* CalculatorError */ = {
+			isa = PBXGroup;
+			children = (
+				F1EBEFE62980A20A001C9E21 /* CalculatorErrorView.swift */,
+			);
+			path = CalculatorError;
+			sourceTree = "<group>";
+		};
 		F1F4F6D1296A4A5D0024218E = {
 			isa = PBXGroup;
 			children = (
@@ -294,6 +304,7 @@
 		F1F4F798296A4CA90024218E /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				F1EBEFE52980A1F7001C9E21 /* CalculatorError */,
 				F1EB8843298003BE00D5BA9C /* ScreenTimeAtomizer */,
 				F1F4F851296A55DD0024218E /* VersionChanger */,
 				F1F4F81C296A4DCA0024218E /* ToolsView.swift */,
@@ -624,6 +635,7 @@
 				F1F4F833296A542F0024218E /* CarrierNameChangerView.swift in Sources */,
 				F1F4F7E1296A4D380024218E /* MainCardView.swift in Sources */,
 				F1F4F6E0296A4A5D0024218E /* ContentView.swift in Sources */,
+				F1EBEFE72980A20A001C9E21 /* CalculatorErrorView.swift in Sources */,
 				F1F4F7D2296A4D380024218E /* WallSetView.swift in Sources */,
 				F1F4F7D0296A4D380024218E /* invoke.m in Sources */,
 				F1F4F7D8296A4D380024218E /* Sharing.swift in Sources */,

@@ -93,6 +93,16 @@ struct ToolsView: View {
                                 Text("ScreenTime Remover")
                             }
                         }
+                        NavigationLink(destination: CalculatorErrorView()) {
+                            HStack {
+                                Image(systemName: "entry.lever.keypad.trianglebadge.exclamationmark.fill")
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .frame(width: 24, height: 24)
+                                    .foregroundColor(.primary)
+                                Text("Calculator Error Changer")
+                            }
+                        }
                         NavigationLink(destination: OtherView()) {
                             HStack {
                                 Image(systemName: "ellipsis")
