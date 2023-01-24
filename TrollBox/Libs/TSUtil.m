@@ -33,6 +33,11 @@
     exit(0);
 }
 
+-(void)killsta {
+    killall(@"ScreenTimeAgent");
+    exit(0);
+}
+
 -(UIImage *)getImageFromData:(NSString *)path {
     NSData *data = [NSData dataWithContentsOfFile:path];
     UIImage *image = [UIImage imageWithData:data];
