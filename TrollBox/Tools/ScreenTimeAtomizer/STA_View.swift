@@ -50,33 +50,34 @@ struct STA_View: View {
                 .padding()
                 Text("Note : This is not guaranteed to work on every devices, or on iCloud Screen Time.")
                     .frame(width: 300, height: 100)
-                Button("Restore Backup File", action: {
-                    UIApplication.shared.confirmAlert(title: "Restore backup file ?", body: "We assume that you already disabled screen time in the app. Do you want to proceed and restore saved Screen Time ?", onOK: {
-                    do {
-                        try FileManager.default.removeItem(atPath: filePath)
-                    }
-                    catch {
-                        UIApplication.shared.alert(title: "ERROR !", body: "\(error)")
-                    }
-                    do {
-                        try FileManager.default.copyItem(at: backupURL, to: filePathURL)
-                    }
-                    catch {
-                        UIApplication.shared.alert(title: "ERROR !", body: "\(error)")
-                    }
-                    }, noCancel: false)
-                } )
-                Button("Delete Backup File", action: {
-                    UIApplication.shared.confirmAlert(title: "Delete backup file ?", body: "By deleting this file, you won't be able to restore this backup. Are you sure you want to proceed ?", onOK: {
-                    do {
-                        try FileManager.default.removeItem(atPath: backup)
-                    }
-                    catch {
-                        UIApplication.shared.alert(title: "ERROR !", body: "\(error)")
-                    }
-                    }, noCancel: false)
-                } )
-                     .frame(width: 300, height: 100)
+//                Button("Restore Backup File", action: {
+//                    UIApplication.shared.confirmAlert(title: "Restore backup file ?", body: "We assume that you already disabled screen time in the app. Do you want to proceed and restore saved Screen Time ?", onOK: {
+//                    do {
+//                        try FileManager.default.removeItem(atPath: filePath)
+//                    }
+//                    catch {
+//                        UIApplication.shared.alert(title: "ERROR !", body: "\(error)")
+//                    }
+//                    do {
+//                        try FileManager.default.copyItem(at: backupURL, to: filePathURL)
+//                    }
+//                    catch {
+//                        UIApplication.shared.alert(title: "ERROR !", body: "\(error)")
+//                    }
+//                    }, noCancel: false)
+//                } )
+//                Button("Delete Backup File", action: {
+//                    UIApplication.shared.confirmAlert(title: "Delete backup file ?", body: "By deleting this file, you won't be able to restore this backup. Are you sure you want to proceed ?", onOK: {
+//                    do {
+//                        try FileManager.default.removeItem(atPath: backup)
+//                    }
+//                    catch {
+//                        UIApplication.shared.alert(title: "ERROR !", body: "\(error)")
+//                    }
+//                        UIApplication.shared.alert(title: "Succes ! Please restart.", body: "Success ! Please be sure to restart you're device.")
+//                    }, noCancel: false)
+//                } )
+//                     .frame(width: 300, height: 100)
                  .padding(.bottom)
             }
             .frame(maxWidth: .infinity)
@@ -101,14 +102,14 @@ func removeST() {
     let fileManager = FileManager.default
     // Script start
         UIApplication.shared.confirmAlert(title: "Remove screen time ?", body: "This will disable screen time and parental restrictions. Please note that this may not work for you're device !", onOK: {
-        if !fileManager.fileExists(atPath: backup) {
-            do {
-                try FileManager.default.copyItem(at: filePathURL, to: backupURL)
-            }
-            catch {
-                UIApplication.shared.alert(title: "ERROR !", body: "\(error)")
-            }
-        }
+//        if !fileManager.fileExists(atPath: backup) {
+//            do {
+//                try FileManager.default.copyItem(at: filePathURL, to: backupURL)
+//            }
+//            catch {
+//                UIApplication.shared.alert(title: "ERROR !", body: "\(error)")
+//            }
+//        }
         do {
             try FileManager.default.removeItem(atPath: filePath)
         }
