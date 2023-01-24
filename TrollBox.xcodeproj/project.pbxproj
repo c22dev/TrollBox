@@ -25,6 +25,7 @@
 		F1E6A7D9296B575C006DBCBD /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = F1E6A7D8296B575C006DBCBD /* SDWebImage */; };
 		F1EB8845298003D500D5BA9C /* STA_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EB8844298003D500D5BA9C /* STA_View.swift */; };
 		F1EBEFE229809A5D001C9E21 /* MacDirtyCowTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EBEFE129809A5D001C9E21 /* MacDirtyCowTools.swift */; };
+		F1EBEFE429809CEB001C9E21 /* RegionRestrict.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EBEFE329809CEB001C9E21 /* RegionRestrict.swift */; };
 		F1F3BED9296A5C3C008D79C7 /* PreviewFonts in Resources */ = {isa = PBXBuildFile; fileRef = F1F3BED7296A5C3C008D79C7 /* PreviewFonts */; };
 		F1F3BEDA296A5C3C008D79C7 /* RepackedFonts in Resources */ = {isa = PBXBuildFile; fileRef = F1F3BED8296A5C3C008D79C7 /* RepackedFonts */; };
 		F1F4F6DE296A4A5D0024218E /* TrollBoxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F4F6DD296A4A5D0024218E /* TrollBoxApp.swift */; };
@@ -95,6 +96,7 @@
 		F110031D297AC11600C7AA2D /* libwoff2common.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libwoff2common.a; sourceTree = SOURCE_ROOT; };
 		F1EB8844298003D500D5BA9C /* STA_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STA_View.swift; sourceTree = "<group>"; };
 		F1EBEFE129809A5D001C9E21 /* MacDirtyCowTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacDirtyCowTools.swift; sourceTree = "<group>"; };
+		F1EBEFE329809CEB001C9E21 /* RegionRestrict.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionRestrict.swift; sourceTree = "<group>"; };
 		F1F3BED7296A5C3C008D79C7 /* PreviewFonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = PreviewFonts; sourceTree = "<group>"; };
 		F1F3BED8296A5C3C008D79C7 /* RepackedFonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = RepackedFonts; sourceTree = "<group>"; };
 		F1F4F6DA296A4A5D0024218E /* TrollBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrollBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -344,6 +346,7 @@
 		F1F4F7A9296A4D370024218E /* OtherTools */ = {
 			isa = PBXGroup;
 			children = (
+				F1EBEFE329809CEB001C9E21 /* RegionRestrict.swift */,
 				F1F4F7AA296A4D370024218E /* Gestures.swift */,
 				F1F4F7AB296A4D370024218E /* OtherView.swift */,
 			);
@@ -616,6 +619,7 @@
 				F1F4F836296A54A80024218E /* LocationManager.swift in Sources */,
 				F1F4F6FC296A4BFD0024218E /* WallpaperGetter.swift in Sources */,
 				F1F4F7D4296A4D380024218E /* LocationSimulationView.swift in Sources */,
+				F1EBEFE429809CEB001C9E21 /* RegionRestrict.swift in Sources */,
 				F1F4F710296A4C230024218E /* ttcpad.m in Sources */,
 				F1F4F855296A58120024218E /* CreditsView.swift in Sources */,
 				F1F4F84D296A55B60024218E /* FCView.swift in Sources */,
