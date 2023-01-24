@@ -14,6 +14,10 @@ struct ContentView: View {
                 .tabItem {
                     Label("Tools", systemImage: "wrench.and.screwdriver.fill")
                 }
+            MacDirtyCowTools()
+                .tabItem {
+                    Label("DirtyCow", systemImage: "pencil.and.outline")
+                }
             AirSpam()
                 .tabItem {
                     Label("AirSpammer", systemImage: "antenna.radiowaves.left.and.right")
