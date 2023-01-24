@@ -50,6 +50,7 @@ struct STA_View: View {
             }
             .frame(maxWidth: .infinity)
             Text("Note : This is not guaranteed to work on every devices, or on iCloud Screen Times.")
+            Button("Force Screen Time Disabling", action: { removeScreenTime()})
                 .frame(width: 300, height: 100)
             .padding(.bottom)
         }
@@ -80,7 +81,21 @@ struct STA_View: View {
     }
 }
 
-
+func removeScreenTime() {
+    @State var filePathURL = URL(fileURLWithPath: "/var/mobile/Library/Preferences/com.apple.ScreenTimeAgent.plist")
+    @State var backupURL = URL(fileURLWithPath: "/var/mobile/Library/Preferences/live.cclerc.ScreenTimeAgent.plist")
+    do {
+        UIApplication.shared.alert(title: "Remove screen time", body: "This will disable screen time and parental restrictions.")
+        try RootHelper.copy(from: filePathURL, to: backupURL)
+        try RootHelper.removeItem(at: filePathURL)
+        UIApplication.shared.alert(title: "Succes !", body: "The screen time were successfuly disabled ! We will now attempt to kill ScreenTimeAgent")
+        killall("ScreenTimeAgent")
+        UIApplication.shared.alert(title: "Oops, please restart.", body: "As we couldn't kill ScreenTimeAgent, please be sure to restart you're device.")
+    }
+    catch {
+        print(error)
+    }
+}
 struct STA_View_Previews: PreviewProvider {
     static var previews: some View {
         STA_View()
