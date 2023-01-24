@@ -83,17 +83,16 @@ struct ToolsView: View {
                         }
                     }
                     Section {
-
-                    NavigationLink(destination: STA_View()) {
-                        HStack {
-                            Image(systemName: "g")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .frame(width: 24, height: 24)
-                                .foregroundColor(.primary)
-                            Text("ScreenTime Remover")
+                        NavigationLink(destination: STA_View()) {
+                            HStack {
+                                Image(systemName: "hourglass")
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .frame(width: 24, height: 24)
+                                    .foregroundColor(.primary)
+                                Text("ScreenTime Remover")
+                            }
                         }
-                    }
                         NavigationLink(destination: NoCamSoundView()) {
                             HStack {
                                 Image(systemName: "camera")
