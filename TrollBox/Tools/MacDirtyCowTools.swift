@@ -10,7 +10,8 @@ struct MacDirtyCowTools: View {
     @State private var CurrentVersion: String = getSystemVersion()
     let operatingSystemVersion = ProcessInfo().operatingSystemVersion
     var body: some View {
-        List {
+        NavigationView {
+            List {
                     Section {
                         NavigationLink(destination: NoCamSoundView()) {
                             HStack {
@@ -54,6 +55,8 @@ struct MacDirtyCowTools: View {
                         }
                     }
                 }
+            }
+        .navigationTitle("MacDirtyCow Tools")
 //            .navigationBarTitle("MacDirtyCow Tools")
 //            .padding(.top, 10)
 //            .toolbar {
