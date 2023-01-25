@@ -9,7 +9,8 @@ import SwiftUI
 struct MacDirtyCowTools: View {
     @State private var CurrentVersion: String = getSystemVersion()
     let operatingSystemVersion = ProcessInfo().operatingSystemVersion
-    var body: some View {            List {
+    var body: some View {
+        List {
                     Section {
                         NavigationLink(destination: NoCamSoundView()) {
                             HStack {
