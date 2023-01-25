@@ -166,9 +166,6 @@ struct OtherView: View {
                     }
                 }
                     Section(header: Text("Home Gesture"), footer: Text("Device Layout to iPhone XS layout. It is totally safe but you may experience some UI glitches and screenshot is not working at the moment.")) {
-                        Text("Enabled")
-                            .font(.headline)
-                            .padding(.horizontal, 4)
                         Toggle(isOn: $enabled) {
                             Text("Notched Device Gestures")
                         }
