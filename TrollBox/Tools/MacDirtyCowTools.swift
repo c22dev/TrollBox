@@ -56,7 +56,7 @@ struct MacDirtyCowTools: View {
                     }
                 }
             }
-            .navigationBarTitle("TrollBox")
+            .navigationBarTitle("MacDirtyCow Tools")
             .padding(.top, 10)
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {

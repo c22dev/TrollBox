@@ -95,7 +95,7 @@ struct ToolsView: View {
                         }
                         NavigationLink(destination: CalculatorErrorView()) {
                             HStack {
-                                Image(systemName: "entry.lever.keypad.trianglebadge.exclamationmark.fill")
+                                Image(systemName: "exclamationmark.circle")
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
                                     .frame(width: 24, height: 24)

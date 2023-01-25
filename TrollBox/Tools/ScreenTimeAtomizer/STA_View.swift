@@ -76,6 +76,18 @@ struct STA_View: View {
             .frame(maxWidth: .infinity)
         }
         .navigationTitle("Screen Time Disabler")
+        .toolbar {
+            ToolbarItem(placement: .navigationBarTrailing) {
+                Button(action: {
+                    UIApplication.shared.alert(title: "Various Info", body: "If this tool is not working for you, you should delete a file located in : /var/mobile/Library/Preferences/com.apple.ScreenTimeAgent.plist with the file explorer of you're chocie.")
+                }) {
+                    Image(systemName: "info.circle")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 24, height: 24)
+            }
+        }
+    }
     }
 }
 
