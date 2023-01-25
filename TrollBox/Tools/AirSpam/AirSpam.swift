@@ -62,6 +62,7 @@ struct AirSpam: View {
                 }
                 }
             }
+        .navigationTitle("AirSpammer")
             .navigationViewStyle(StackNavigationViewStyle())
             .onAppear {
                 // Start searching nodes
