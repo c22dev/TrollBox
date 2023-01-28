@@ -75,6 +75,5 @@ rm -rf Payload
 mkdir Payload
 cp -r $APPLICATION_NAME.app Payload/$APPLICATION_NAME.app
 zip -vr $APPLICATION_NAME.tipa Payload
-zip -vr $APPLICATION_NAME.ipa Payload
 rm -rf $APPLICATION_NAME.app
 rm -rf Payload
