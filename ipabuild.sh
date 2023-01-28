@@ -17,6 +17,9 @@ cd build
 if [ -e "$APPLICATION_NAME.tipa" ]; then
 rm $APPLICATION_NAME.tipa
 fi
+if [ -e "TrollBox16.ipa" ]; then
+rm TrollBox16.ipa
+fi
 
 # Build .app
 xcodebuild -project "$WORKING_LOCATION/$APPLICATION_NAME.xcodeproj" \
