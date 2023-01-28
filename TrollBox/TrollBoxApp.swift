@@ -72,13 +72,6 @@ struct TrollBoxApp: App {
                     for url in (try? FileManager.default.contentsOfDirectory(at: FileManager.default.temporaryDirectory, includingPropertiesForKeys: nil)) ?? [] {
                         try? FileManager.default.removeItem(at: url)
                     }
-                    
-                    // root ?
-                    do {
-                        try FileManager.default.contentsOfDirectory(at: URL(fileURLWithPath: "/var/mobile"), includingPropertiesForKeys: nil)
-                    } catch {
-                        UIApplication.shared.alert(body: "The app needs to be installed either using TrollStore or on Jailbroken devices error: \(error)", withButton: false)
-                    }
                     //update ?
                     if let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String, let url = URL(string: "https://api.github.com/repos/c22dev/TrollBox/releases/latest") {
                         let task = URLSession.shared.dataTask(with: url) {(data, response, error) in
