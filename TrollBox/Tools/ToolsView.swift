@@ -145,10 +145,10 @@ struct ToolsView: View {
                                 UIApplication.shared.open(url3)
                             }
                         }) {
-                        Image(systemName: "person.3.fill")
+                        Image(systemName: "d.circle")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
-                            .frame(width: 27, height: 27)
+                            .frame(width: 24, height: 24)
                         }
                     } else {
                         Button(action: {
