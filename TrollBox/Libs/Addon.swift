@@ -148,3 +148,18 @@ extension UIApplication {
         }
     }
 }
+
+func checkSandbox() -> Bool {
+    let fileManager = FileManager.default
+    fileManager.createFile(atPath: "/var/mobile/tboxtemp", contents: nil)
+    if fileManager.fileExists(atPath: "/var/mobile/tboxtemp") {
+        do {
+            try fileManager.removeItem(atPath: "/var/mobile/tboxtemp")
+        } catch {
+            print("Failed to remove sandbox check file")
+        }
+        return false
+    }
+    
+    return true
+}

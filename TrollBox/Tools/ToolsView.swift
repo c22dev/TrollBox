@@ -8,6 +8,7 @@
 
 import SwiftUI
 struct ToolsView: View {
+    var issbx = UserDefaults.standard.string(forKey: "latsandbox")
     var body: some View {
         NavigationView {
             List {
@@ -22,14 +23,18 @@ struct ToolsView: View {
                             Text("Passcode Themer")
                         }
                     }
-                    NavigationLink(destination: CarrierNameChangerView()) {
-                        HStack {
-                            Image(systemName: "network")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .frame(width: 24, height: 24)
-                                .foregroundColor(.primary)
-                            Text("Carrier Changer")
+                    if issbx == "false" {
+                    }
+                    else {
+                        NavigationLink(destination: CarrierNameChangerView()) {
+                            HStack {
+                                Image(systemName: "network")
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .frame(width: 24, height: 24)
+                                    .foregroundColor(.primary)
+                                Text("Carrier Changer")
+                            }
                         }
                     }
                     NavigationLink(destination: WalSetView()) {
@@ -72,14 +77,18 @@ struct ToolsView: View {
                             Text("Badge Color Changer")
                         }
                     }
-                    NavigationLink(destination: LocationSimulationView()) {
-                        HStack {
-                            Image(systemName: "globe.americas")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .frame(width: 24, height: 24)
-                                .foregroundColor(.primary)
-                            Text("LocSim")
+                    if issbx == "false" {
+                    }
+                    else {
+                        NavigationLink(destination: LocationSimulationView()) {
+                            HStack {
+                                Image(systemName: "mappin")
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .frame(width: 24, height: 24)
+                                    .foregroundColor(.primary)
+                                Text("LocSim")
+                            }
                         }
                     }
                     Section {
@@ -130,19 +139,32 @@ struct ToolsView: View {
                     }
                 }
                 ToolbarItem(placement: .navigationBarTrailing) {
-                    Button(action: {
-                        if let url3 = URL(string: "https://discord.gg/8gMyK6DSnB") {
-                            UIApplication.shared.open(url3)
-                        }
-                    }) {
-                        Image("discord")
+                    if #available(iOS 14.0, *) {
+                        Button(action: {
+                            if let url3 = URL(string: "https://discord.gg/8gMyK6DSnB") {
+                                UIApplication.shared.open(url3)
+                            }
+                        }) {
+                        Image(systemName: "person.3.fill")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .frame(width: 27, height: 27)
+                        }
+                    } else {
+                        Button(action: {
+                            if let url3 = URL(string: "https://discord.gg/8gMyK6DSnB") {
+                                UIApplication.shared.open(url3)
+                            }
+                        }) {
+                            Image("discord")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 27, height: 27)
+                        }
                     }
                 }
+                }
             }
-        }
     }
 }
 

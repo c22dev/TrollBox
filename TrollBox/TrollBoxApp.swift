@@ -14,6 +14,28 @@ struct TrollBoxApp: App {
         WindowGroup {
             ContentView()
                 .onAppear {
+                    var sbxed = checkSandbox()
+                    if sbxed == false{
+                        // grant r/w access
+                        grant_full_disk_access() { error in
+                            
+                        }
+                        var sbxed = checkSandbox()
+                        if sbxed == false {
+                            let latsandboxed = "false"
+                            UserDefaults.standard.set(latsandboxed, forKey: "latsandbox")
+                            UIApplication.shared.alert(title:"Sandbox is now disabled !", body: "You're now able to use TrollBox on iOS 16.")
+                        }
+                        else if sbxed == true {
+                            let latsandboxed = "true"
+                            UserDefaults.standard.set(latsandboxed, forKey: "latsandbox")
+                            UIApplication.shared.alert(title:"Sandbox couldn't be disabled", body: "You're not able to use TrollBox on iOS 16. Please delete and install back TrollBox.")
+                        }
+                    }
+                    else {
+                        let latsandboxed = "blank"
+                        UserDefaults.standard.set(latsandboxed, forKey: "blank")
+                    }
                     var havee = "unknown"
                     let fileManager = FileManager.default
                     let checkfilepath = "/var/mobile/TrollBox/havee.txt"

@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    var issbx = UserDefaults.standard.string(forKey: "latsandbox")
     var body: some View {
         TabView {
             ToolsView()
@@ -18,10 +19,14 @@ struct ContentView: View {
                 .tabItem {
                     Label("DirtyCow", systemImage: "pencil.and.outline")
                 }
-            AirSpam()
-                .tabItem {
-                    Label("AirSpammer", systemImage: "antenna.radiowaves.left.and.right")
-                }
+            if issbx == "false" {
+            }
+            else {
+                AirSpam()
+                    .tabItem {
+                        Label("AirSpammer", systemImage: "antenna.radiowaves.left.and.right")
+                    }
+            }
             CreditsView()
                 .tabItem {
                     Label("Credits", systemImage: "heart.fill")
