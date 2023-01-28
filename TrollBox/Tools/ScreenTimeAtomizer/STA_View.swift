@@ -45,12 +45,14 @@ struct STA_View: View {
                     .frame(width: 300, height: 100)
                 Button("Restore Backup File", action: {
                     UIApplication.shared.confirmAlert(title: "Restore backup file ?", body: "We assume that you already disabled screen time in the app. Do you want to proceed and restore saved Screen Time ?", onOK: {
-                    do {
-                        try FileManager.default.removeItem(atPath: filePath)
-                    }
-                    catch {
-                        UIApplication.shared.alert(title: "ERROR !", body: "\(error)")
-                    }
+                        if fileManager.fileExists(atPath: filePath) {
+                            do {
+                                try FileManager.default.removeItem(atPath: filePath)
+                            }
+                            catch {
+                                UIApplication.shared.alert(title: "ERROR !", body: "\(error)")
+                            }
+                        }
                     do {
                         try FileManager.default.copyItem(at: backupURL, to: filePathURL)
                     }
