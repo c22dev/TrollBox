@@ -22,4 +22,6 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: TrollBox - Extract it
-          path: /Users/runner/work/${{github.event.repository.name}}/${{github.event.repository.name}}/build/TrollBox.tipa
+          path: |
+            /Users/runner/work/${{github.event.repository.name}}/${{github.event.repository.name}}/build/TrollBox.tipa
+            /Users/runner/work/${{github.event.repository.name}}/${{github.event.repository.name}}/build/TrollBox16.ipa
