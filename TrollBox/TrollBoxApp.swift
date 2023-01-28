@@ -16,7 +16,7 @@ struct TrollBoxApp: App {
                 .onAppear {
                     var latsandbox = ""
                     var sbxed = checkSandbox()
-                    if sbxed == false{
+                    if sbxed == true {
                         // grant r/w access
                         grant_full_disk_access() { error in
                             
