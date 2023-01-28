@@ -7,6 +7,7 @@
 
 import SwiftUI
 import Foundation
+import Darwin
 @main
 struct TrollBoxApp: App {
     var showit = "false"
@@ -25,12 +26,12 @@ struct TrollBoxApp: App {
                         if sbxed == false {
                             let latsandboxed = "false"
                             UserDefaults.standard.set(latsandboxed, forKey: "latsandbox")
-                            UIApplication.shared.alert(title:"Sandbox is now disabled !", body: "You're now able to use TrollBox on iOS 16.")
+                            UIApplication.shared.confirmAlert(title: "Sandbox is now disabled !", body: "You're now able to use TrollBox on iOS 16. The app will now force-close to disable things that won't work.", onOK: {exit(0)}, noCancel: true)
                         }
                         else if sbxed == true {
                             let latsandboxed = "true"
                             UserDefaults.standard.set(latsandboxed, forKey: "latsandbox")
-                            UIApplication.shared.alert(title:"Sandbox couldn't be disabled", body: "Try restarting the app.")
+                            UIApplication.shared.confirmAlert(title: "Sandbox maybe was disabled", body: "The app will now quit. Please open it again", onOK: {exit(0)}, noCancel: false)
                         }
                     }
                     else {
