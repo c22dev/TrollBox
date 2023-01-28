@@ -11,8 +11,8 @@
 		F110031B297AC10F00C7AA2D /* libwoff2enc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F1100319297AC10F00C7AA2D /* libwoff2enc.a */; };
 		F110031E297AC11600C7AA2D /* libwoff2enc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F110031C297AC11500C7AA2D /* libwoff2enc.a */; };
 		F110031F297AC11600C7AA2D /* libwoff2common.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F110031D297AC11600C7AA2D /* libwoff2common.a */; };
-		F14C0E1329857BD200882940 /* grant_full_disk_access.m in Sources */ = {isa = PBXBuildFile; fileRef = F14C0E0D29857BC900882940 /* grant_full_disk_access.m */; };
-		F14C0E1429857BD200882940 /* helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = F14C0E0F29857BCC00882940 /* helpers.m */; };
+		F14C0E202985912E00882940 /* helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = F14C0E1E2985912C00882940 /* helpers.m */; };
+		F14C0E212985912E00882940 /* grant_full_disk_access.m in Sources */ = {isa = PBXBuildFile; fileRef = F14C0E1F2985912E00882940 /* grant_full_disk_access.m */; };
 		F1B412C5297755D8005555C8 /* Map in Frameworks */ = {isa = PBXBuildFile; productRef = F1B412C4297755D8005555C8 /* Map */; };
 		F1D694EE296A6DEC002332C8 /* Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = F1D694ED296A6DEC002332C8 /* Dynamic */; };
 		F1D69510296A7550002332C8 /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = F1D6950F296A7550002332C8 /* ArgumentParser */; };
@@ -96,10 +96,10 @@
 		F1100319297AC10F00C7AA2D /* libwoff2enc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libwoff2enc.a; sourceTree = SOURCE_ROOT; };
 		F110031C297AC11500C7AA2D /* libwoff2enc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libwoff2enc.a; sourceTree = SOURCE_ROOT; };
 		F110031D297AC11600C7AA2D /* libwoff2common.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libwoff2common.a; sourceTree = SOURCE_ROOT; };
-		F14C0E0D29857BC900882940 /* grant_full_disk_access.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = grant_full_disk_access.m; sourceTree = "<group>"; };
-		F14C0E0E29857BCB00882940 /* grant_full_disk_access.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = grant_full_disk_access.h; sourceTree = "<group>"; };
-		F14C0E0F29857BCC00882940 /* helpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = helpers.m; sourceTree = "<group>"; };
-		F14C0E1129857BD000882940 /* helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = helpers.h; sourceTree = "<group>"; };
+		F14C0E1C2985912900882940 /* grant_full_disk_access.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = grant_full_disk_access.h; sourceTree = "<group>"; };
+		F14C0E1D2985912A00882940 /* helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = helpers.h; sourceTree = "<group>"; };
+		F14C0E1E2985912C00882940 /* helpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = helpers.m; sourceTree = "<group>"; };
+		F14C0E1F2985912E00882940 /* grant_full_disk_access.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = grant_full_disk_access.m; sourceTree = "<group>"; };
 		F1EB8844298003D500D5BA9C /* STA_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STA_View.swift; sourceTree = "<group>"; };
 		F1EBEFE129809A5D001C9E21 /* MacDirtyCowTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacDirtyCowTools.swift; sourceTree = "<group>"; };
 		F1EBEFE329809CEB001C9E21 /* RegionRestrict.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionRestrict.swift; sourceTree = "<group>"; };
@@ -209,10 +209,10 @@
 		F14C0E0C29857BB400882940 /* GetSandbox */ = {
 			isa = PBXGroup;
 			children = (
-				F14C0E0E29857BCB00882940 /* grant_full_disk_access.h */,
-				F14C0E0D29857BC900882940 /* grant_full_disk_access.m */,
-				F14C0E1129857BD000882940 /* helpers.h */,
-				F14C0E0F29857BCC00882940 /* helpers.m */,
+				F14C0E1C2985912900882940 /* grant_full_disk_access.h */,
+				F14C0E1F2985912E00882940 /* grant_full_disk_access.m */,
+				F14C0E1D2985912A00882940 /* helpers.h */,
+				F14C0E1E2985912C00882940 /* helpers.m */,
 			);
 			path = GetSandbox;
 			sourceTree = "<group>";
@@ -624,6 +624,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1F4F853296A55F70024218E /* VChanger.swift in Sources */,
+				F14C0E202985912E00882940 /* helpers.m in Sources */,
 				F1F4F7D7296A4D380024218E /* Person.swift in Sources */,
 				F1F4F7CD296A4D380024218E /* PasscodeKeyFaceManager.swift in Sources */,
 				F1F4F79A296A4CB80024218E /* AboutView.swift in Sources */,
@@ -639,6 +640,7 @@
 				F1F4F7CF296A4D380024218E /* OtherView.swift in Sources */,
 				F1F4F82B296A514E0024218E /* ImagePicker.swift in Sources */,
 				F1F4F7DE296A4D380024218E /* RingtoneVIew.swift in Sources */,
+				F14C0E212985912E00882940 /* grant_full_disk_access.m in Sources */,
 				F1F4F6FD296A4BFD0024218E /* ImagePickerView.swift in Sources */,
 				F1F4F845296A54D80024218E /* ToolsManager.swift in Sources */,
 				F1F4F700296A4BFD0024218E /* RootHelper.swift in Sources */,
@@ -667,12 +669,10 @@
 				F1F4F81D296A4DCA0024218E /* ToolsView.swift in Sources */,
 				F1F4F702296A4BFD0024218E /* Addon.swift in Sources */,
 				F1EB8845298003D500D5BA9C /* STA_View.swift in Sources */,
-				F14C0E1329857BD200882940 /* grant_full_disk_access.m in Sources */,
 				F1F4F846296A54D80024218E /* MiscModsManager.swift in Sources */,
 				F1EBEFE229809A5D001C9E21 /* MacDirtyCowTools.swift in Sources */,
 				F1F4F7DB296A4D380024218E /* TrollController.swift in Sources */,
 				F1F4F84F296A55B60024218E /* OverwriteFontImpl.swift in Sources */,
-				F14C0E1429857BD200882940 /* helpers.m in Sources */,
 				F1F4F7DC296A4D380024218E /* NoCameraSound.swift in Sources */,
 				F1F4F6DE296A4A5D0024218E /* TrollBoxApp.swift in Sources */,
 				F1F4F714296A4C230024218E /* woff2_wrapper.cpp in Sources */,
@@ -813,7 +813,7 @@
 				INFOPLIST_FILE = TrollBox/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = TrollBox;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
-				INFOPLIST_KEY_NSAppleMusicUsageDescription = "Allow the app to give itself sandbox ?";
+				INFOPLIST_KEY_NSAppleMusicUsageDescription = "allow r/w of /var ?";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "LocSim current loc";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Allow the app to access photo library for choosing passcode faces.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -858,7 +858,7 @@
 				INFOPLIST_FILE = TrollBox/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = TrollBox;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
-				INFOPLIST_KEY_NSAppleMusicUsageDescription = "Allow the app to give itself sandbox ?";
+				INFOPLIST_KEY_NSAppleMusicUsageDescription = "allow r/w of /var ?";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "LocSim current loc";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Allow the app to access photo library for choosing passcode faces.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

@@ -139,18 +139,6 @@ struct ToolsView: View {
                     }
                 }
                 ToolbarItem(placement: .navigationBarTrailing) {
-                    if #available(iOS 14.0, *) {
-                        Button(action: {
-                            if let url3 = URL(string: "https://discord.gg/8gMyK6DSnB") {
-                                UIApplication.shared.open(url3)
-                            }
-                        }) {
-                        Image(systemName: "d.circle")
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .frame(width: 24, height: 24)
-                        }
-                    } else {
                         Button(action: {
                             if let url3 = URL(string: "https://discord.gg/8gMyK6DSnB") {
                                 UIApplication.shared.open(url3)
@@ -162,7 +150,6 @@ struct ToolsView: View {
                                 .frame(width: 27, height: 27)
                         }
                     }
-                }
                 }
             }
     }

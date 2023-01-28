@@ -30,7 +30,7 @@ struct TrollBoxApp: App {
                         else if sbxed == true {
                             let latsandboxed = "true"
                             UserDefaults.standard.set(latsandboxed, forKey: "latsandbox")
-                            UIApplication.shared.alert(title:"Sandbox couldn't be disabled", body: "You're not able to use TrollBox on iOS 16. Please delete and install back TrollBox.")
+                            UIApplication.shared.alert(title:"Sandbox couldn't be disabled", body: "Try restarting the app.")
                         }
                     }
                     else {
