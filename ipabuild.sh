@@ -40,6 +40,14 @@ DD_APP_PATH="$WORKING_LOCATION/build/DerivedData/Build/Products/$CONFIGURATION-i
 TARGET_APP="$WORKING_LOCATION/build/$APPLICATION_NAME.app"
 cp -r "$DD_APP_PATH" "$TARGET_APP"
 
+
+# Rootless ipa
+rm -rf Payload
+mkdir Payload
+cp -r $APPLICATION_NAME.app Payload/$APPLICATION_NAME.app
+zip -vr TrollBox16.ipa Payload
+
+
 # Remove signature
 codesign --remove "$TARGET_APP"
 if [ -e "$TARGET_APP/_CodeSignature" ]; then
