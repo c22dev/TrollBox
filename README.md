@@ -7,7 +7,7 @@
    </h1>
 </div>
 
-<h6 align="center"> version 0.0.9 </h6>
+<h6 align="center"> version 0.1 </h6>
 
 ## Features <br/> <br/> &nbsp; &nbsp; Already implemented:
 
@@ -37,6 +37,8 @@
    - Customize the lockscreen's bottom text.
 - **Disable Camera SFX**
    - Turn off the camera shutter sound.
+- **Disable screen time**
+   - Turn off screen time !
 - **Other Minor Tools.**
 
 <br/>
@@ -51,19 +53,19 @@
 <br/> <br/>
 
 ## Screenshots
-<img src='https://i.ibb.co/hsR6nFr/IMG-4250.png' width=400><img src='https://i.ibb.co/grmh9hb/IMG-3817.png' width=400>
+<img src='https://i.ibb.co/KXBJxvy/IMG-4372-iphone13midnight-portrait.png' width=220><img src='https://i.ibb.co/grmh9hb/IMG-3817.png' width=400>
 <br/>
 <img src='https://i.ibb.co/W2pjkLG/IMG-3821.png' width=400><img src='https://i.ibb.co/6m0kj0T/IMG-3822.png' width=400>
    
    
 ## Requirements
-**For this app to work properly, you need to install it via [TrollStore](https://github.com/opa334/TrollStore) v1.0.9 or newer. Regular sideloading just won't work.**
+**For this app to work properly, you need to install it via [TrollStore](https://github.com/opa334/TrollStore) v1.0.9 or newer to access to all features. Regular sideloading works up to iOS 16.1.2 using MacDirtyCow, but you will not be able to access to every tools.**
 
 ## Credits
 - [TrollTools](https://github.com/sourcelocation/TrollTools) 
    - Some extensions and functions, mainly tools/assets.
 - [Lemin](https://github.com/leminlimez) 
-   - Various tools, passcode changer and docking options.
+   - Sandbox for 16, various tools, passcode changer and docking options.
 - [Jaility](https://github.com/haxi0/Jaility) 
    - Supervising features.
 - [TrollStore](https://github.com/opa334/TrollStore) 
