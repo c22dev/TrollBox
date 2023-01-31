@@ -1,20 +1,22 @@
-////
-////  BadgeChanger.swift
-////  TrollBox
-////
-////  Created by Constantin Clerc on 23/12/2022.
-////
 //
-// Badge Colour Changing
-
+//  BadgeColorChanger.swift
+//  DebToIPA
+//
+//  Created by exerhythm on 16.10.2022.
+//
 import UIKit
 import Dynamic
 
 class BadgeChanger {
+    #if targetEnvironment(simulator)
+    static let badgeBitmapPath = "/Users/sourcelocation/Downloads/SBIconBadgeView.BadgeBackground:26:26.cpbitmap"
+    #else
+    static let badgeBitmapPath = "/var/mobile/Library/Caches/MappedImageCache/Persistent/SBIconBadgeView.BadgeBackground:26:26.cpbitmap"
+    #endif
+    
     static func change(to color: UIColor, with radius: CGFloat) throws {
         let radius = max(1, radius)
         let badge: UIImage = try UIImage.circle(radius: UIDevice.current.userInterfaceIdiom == .pad ? radius * 2 : radius, color: color)
-        let badgeBitmapPath = "/var/mobile/Library/Caches/MappedImageCache/Persistent/SBIconBadgeView.BadgeBackground:26:26.cpbitmap"
         try? FileManager.default.removeItem(atPath: badgeBitmapPath)
         
         badge.writeToCPBitmapFile(to: badgeBitmapPath as NSString)
@@ -28,7 +30,6 @@ class BadgeChanger {
         let resizedImage = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
-        let badgeBitmapPath = "/var/mobile/Library/Caches/MappedImageCache/Persistent/SBIconBadgeView.BadgeBackground:26:26.cpbitmap"
         try? FileManager.default.removeItem(atPath: badgeBitmapPath)
 
         resizedImage.writeToCPBitmapFile(to: badgeBitmapPath as NSString)
@@ -42,7 +43,7 @@ extension UIImage {
     
     static func circle(radius: CGFloat, color: UIColor) throws -> UIImage {
         UIGraphicsBeginImageContextWithOptions(CGSize(width: radius, height: radius), false, 0)
-        guard let ctx = UIGraphicsGetCurrentContext() else { throw "Unable to get context" }
+        guard let ctx = UIGraphicsGetCurrentContext() else { throw NSError(domain: "context", code: 0, userInfo: [NSLocalizedDescriptionKey: "Could not get context"]) }
         defer { UIGraphicsEndImageContext() }
         ctx.saveGState()
         
@@ -51,7 +52,7 @@ extension UIImage {
         ctx.fillEllipse(in: rect)
         
         ctx.restoreGState()
-        guard let img = UIGraphicsGetImageFromCurrentImageContext() else { throw "Unable to get image"}
+        guard let img = UIGraphicsGetImageFromCurrentImageContext() else { throw NSError(domain: "Image", code: 0, userInfo: [NSLocalizedDescriptionKey: "Could not get images"])}
         
         return img
     }
@@ -71,8 +72,4 @@ extension UIImage {
         UIGraphicsEndImageContext()
         return image
     }
-}
-
-extension String: LocalizedError {
-    public var errorDescription: String? { return self }
 }

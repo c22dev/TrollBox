@@ -44,7 +44,7 @@ struct CalculatorErrorView: View {
                 Button(action: {
                     do {
                         remLog("hmm?")
-                        guard let calculatorBundleURL = calculatorBundleURL, let bundle = Bundle(url: calculatorBundleURL) else { throw "Unable to find calculator app. Maybe you're on an iPad? :troll:" }
+                        guard let calculatorBundleURL = calculatorBundleURL, let bundle = Bundle(url: calculatorBundleURL) else { throw NSError(domain: "app", code: 0, userInfo: [NSLocalizedDescriptionKey: "Could not find calculator app ?"]) }
                         
                         for code in bundle.localizations {
                             remLog(code, bundle.bundleURL.appendingPathComponent("\(code).lproj/Localizable.strings"))
