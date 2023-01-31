@@ -17,21 +17,26 @@ struct TrollBoxApp: App {
                 .onAppear {
                     var latsandbox = ""
                     var sbxed = checkSandbox()
-                    if sbxed == true {
-                        // grant r/w access
-                        grant_full_disk_access() { error in
-                            
-                        }
-                        var sbxed = checkSandbox()
-                        if sbxed == false {
-                            let latsandboxed = "false"
-                            UserDefaults.standard.set(latsandboxed, forKey: "latsandbox")
-                            UIApplication.shared.alert(title: "Sandbox is now disabled !", body: "You're now able to use TrollBox on iOS 16.")
-                        }
-                        else if sbxed == true {
-                            let latsandboxed = "true"
-                            UserDefaults.standard.set(latsandboxed, forKey: "latsandbox")
-                            UIApplication.shared.confirmAlert(title: "Sandbox maybe was disabled", body: "The app will now quit. Please open it again", onOK: {exit(0)}, noCancel: false)
+                    if ProcessInfo().operatingSystemVersion.majorVersion != 14 {
+                        if sbxed == true {
+                            // grant r/w access
+                            grant_full_disk_access() { error in
+                                
+                            }
+                            var sbxed = checkSandbox()
+                            if sbxed == false {
+                                var latsandboxede = UserDefaults.standard.string(forKey: "latsandbox")
+                                if latsandboxede != "false" {
+                                    UIApplication.shared.alert(title: "Sandbox is now disabled !", body: "You're now able to use TrollBox on iOS 16. The app will now force-close to disable things that won't work.")
+                                }
+                                var latsandboxed = "false"
+                                UserDefaults.standard.set(latsandboxed, forKey: "latsandbox")
+                            }
+                            else if sbxed == true {
+                                let latsandboxed = "true"
+                                UserDefaults.standard.set(latsandboxed, forKey: "latsandbox")
+                                UIApplication.shared.confirmAlert(title: "Sandbox maybe was disabled", body: "The app will now quit. Please open it again", onOK: {exit(0)}, noCancel: false)
+                            }
                         }
                     }
                     else {
