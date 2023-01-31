@@ -41,7 +41,6 @@ struct MainCardView: View {
     
     /*func getName(id: String) -> String {
         let jsonPath = "/var/mobile/Library/Passes/Cards/" + id + "/pass.json"
-
         
         do {
             let contents = try String(contentsOfFile: jsonPath)
