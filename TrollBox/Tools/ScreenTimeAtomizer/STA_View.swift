@@ -11,12 +11,7 @@ import Foundation
 
 struct STA_View: View {
     @State var enabled = true
-    @State var filePath = "/var/mobile/Library/Preferences/com.apple.ScreenTimeAgent.plist"
-    @State var backup = "/var/mobile/Library/Preferences/live.cclerc.ScreenTimeAgent.plist"
-    @State var filePathURL = URL(fileURLWithPath: "/var/mobile/Library/Preferences/com.apple.ScreenTimeAgent.plist")
-    @State var backupURL = URL(fileURLWithPath: "/var/mobile/Library/Preferences/live.cclerc.ScreenTimeAgent.plist")
     var body: some View {
-        let fileManager = FileManager.default
         GeometryReader { proxy in
             VStack {
                 HStack {
@@ -44,33 +39,10 @@ struct STA_View: View {
                 Text("Note : This is not guaranteed to work on every devices, or on iCloud Screen Time.")
                     .frame(width: 300, height: 100)
                 Button("Restore Backup File", action: {
-                    UIApplication.shared.confirmAlert(title: "Restore backup file ?", body: "We assume that you already disabled screen time in the app. Do you want to proceed and restore saved Screen Time ?", onOK: {
-                        if fileManager.fileExists(atPath: filePath) {
-                            do {
-                                try FileManager.default.removeItem(atPath: filePath)
-                            }
-                            catch {
-                                UIApplication.shared.alert(title: "ERROR !", body: "\(error)")
-                            }
-                        }
-                    do {
-                        try FileManager.default.copyItem(at: backupURL, to: filePathURL)
-                    }
-                    catch {
-                        UIApplication.shared.alert(title: "ERROR !", body: "\(error)")
-                    }
-                    }, noCancel: false)
+                    restoreST()
                 } )
                 Button("Delete Backup File", action: {
-                    UIApplication.shared.confirmAlert(title: "Delete backup file ?", body: "By deleting this file, you won't be able to restore this backup. Are you sure you want to proceed ?", onOK: {
-                    do {
-                        try FileManager.default.removeItem(atPath: backup)
-                    }
-                    catch {
-                        UIApplication.shared.alert(title: "ERROR !", body: "\(error)")
-                    }
-                        UIApplication.shared.alert(title: "Succes ! Please restart.", body: "Success ! Please be sure to restart you're device.")
-                    }, noCancel: false)
+                    deletebackup()
                 } )
                      .frame(width: 300, height: 100)
                  .padding(.bottom)
@@ -87,11 +59,15 @@ struct STA_View: View {
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 24, height: 24)
+                }
             }
         }
     }
-    }
 }
+
+
+
+
 
 
 // Screen time function
@@ -105,27 +81,60 @@ func removeST() {
     // File manager var
     let fileManager = FileManager.default
     // Script start
+    if fileManager.fileExists(atPath: filePath) {
         UIApplication.shared.confirmAlert(title: "Remove screen time ?", body: "This will disable screen time and parental restrictions. Please note that this may not work for you're device !", onOK: {
-        if !fileManager.fileExists(atPath: backup) {
-            do {
-                try FileManager.default.copyItem(at: filePathURL, to: backupURL)
+            if fileManager.fileExists(atPath: backup) {
+                try! FileManager.default.removeItem(at: backupURL)
             }
-            catch {
-                UIApplication.shared.alert(title: "ERROR !", body: "\(error)")
+            
+            if !fileManager.fileExists(atPath: backup) {
+                try! FileManager.default.moveItem(at: filePathURL, to: backupURL)
             }
-        }
-        do {
-            try FileManager.default.removeItem(atPath: filePath)
-        }
-        catch {
-            UIApplication.shared.alert(title: "error while removing file !", body: "\(error)")
-        }
-//        killall("ScreenTimeAgent")
-        UIApplication.shared.alert(title: "Succes ! Please restart.", body: "Success ! As we are not able to kill ScreenTimeAgent, please be sure to restart you're device.")
+            killall("ScreenTimeAgent")
+            UIApplication.shared.alert(title: "Succes ! Please restart.", body: "Success ! As we are not able to kill ScreenTimeAgent, please be sure to restart you're device.")
         }, noCancel: false)
+    }
+    else {
+        UIApplication.shared.alert(title: "There is no screentime on you're device.", body: "Why are you doing that ?.")
+    }
 }
 
 
+func deletebackup() {
+    @State var backup = "/var/mobile/Library/Preferences/live.cclerc.ScreenTimeAgent.plist"
+    UIApplication.shared.confirmAlert(title: "Delete backup file ?", body: "By deleting this file, you won't be able to restore this backup. Are you sure you want to proceed ?", onOK: {
+    do {
+        try FileManager.default.removeItem(atPath: backup)
+    }
+    catch {
+        UIApplication.shared.alert(title: "ERROR !", body: "\(error)")
+    }
+        UIApplication.shared.alert(title: "Succes ! Please restart.", body: "Success ! Please be sure to restart you're device.")
+    }, noCancel: false)
+}
+
+
+func restoreST() {
+    @State var filePath = "/var/mobile/Library/Preferences/com.apple.ScreenTimeAgent.plist"
+    @State var backup = "/var/mobile/Library/Preferences/live.cclerc.ScreenTimeAgent.plist"
+    @State var filePathURL = URL(fileURLWithPath: "/var/mobile/Library/Preferences/com.apple.ScreenTimeAgent.plist")
+    @State var backupURL = URL(fileURLWithPath: "/var/mobile/Library/Preferences/live.cclerc.ScreenTimeAgent.plist")
+    if FileManager.default.fileExists(atPath: backup) {
+        UIApplication.shared.confirmAlert(title: "Restore backup file ?", body: "Do you want to proceed and restore saved Screen Time ?", onOK: {
+            let fileManager = FileManager.default
+            if fileManager.fileExists(atPath: filePath) {
+                UIApplication.shared.confirmAlert(title: "Discovered existing Screen Time", body: "Delete this ?", onOK: {
+                    try! FileManager.default.removeItem(atPath: filePath)
+                }, noCancel: true)
+            }
+            UIApplication.shared.confirmAlert(title: "Ready to move back the backup", body: "Ready ?", onOK: {
+                try! FileManager.default.moveItem(at: backupURL, to: filePathURL)
+                killall("ScreenTimeAgent")
+                UIApplication.shared.alert(title:"Restart is required", body:"Restart you're iPhone to apply changes.")
+            }, noCancel: true)
+        }, noCancel: false)
+    }
+}
 struct STA_View_Previews: PreviewProvider {
     static var previews: some View {
         STA_View()
