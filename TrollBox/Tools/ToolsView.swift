@@ -37,14 +37,18 @@ struct ToolsView: View {
                             }
                         }
                     }
-                    NavigationLink(destination: WalSetView()) {
-                        HStack {
-                            Image(systemName: "wand.and.rays")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .frame(width: 24, height: 24)
-                                .foregroundColor(.primary)
-                            Text("Wallpaper Setter")
+                    if issbx == "false" {
+                    }
+                    else {
+                        NavigationLink(destination: WalSetView()) {
+                            HStack {
+                                Image(systemName: "wand.and.rays")
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .frame(width: 24, height: 24)
+                                    .foregroundColor(.primary)
+                                Text("Wallpaper Setter")
+                            }
                         }
                     }
                     NavigationLink(destination: MainCardView()) {
