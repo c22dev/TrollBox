@@ -145,26 +145,27 @@ struct OtherView: View {
                         )
                     }
                 }
-                Section(header: Text("Remove some restrictions on you're device"), footer: Text("This will allow you to remove region restrictions on you're device, enabling services such as FaceTime. This is not working for everyone.")) {
-                    Button("Disable region restrictions") {
-                        setRegion()
-                    }
-                    .alert(isPresented: $showingAlert) {
-                        Alert(
-                            title: Text("Success!"),
-                            message: Text("It worked ! Respring or restarting should apply it."),
-                            primaryButton: .default(
-                                Text("Respring"),
-                                action: {
-                                    respring()
-                                }
-                            ),
-                            secondaryButton: .default(
-                                Text("OK")
+                    Section(header: Text("Remove some restrictions on you're device"), footer: Text("This will allow you to remove region restrictions on you're device, enabling services such as FaceTime. This is not working for everyone.")) {
+                        Button("Disable region restrictions") {
+                            setRegion()
+                        }
+                        .alert(isPresented: $showingAlert) {
+                            Alert(
+                                title: Text("Success!"),
+                                message: Text("It worked ! Respring or restarting should apply it."),
+                                primaryButton: .default(
+                                    Text("Respring"),
+                                    action: {
+                                        respring()
+                                    }
+                                ),
+                                secondaryButton: .default(
+                                    Text("OK")
+                                )
                             )
-                        )
-                    }
-                }
+                        }
+                    }.opacity(0.5)
+
                     Section(header: Text("Home Gesture"), footer: Text("Device Layout to iPhone XS layout. It is totally safe but you may experience some UI glitches and screenshot is not working at the moment.")) {
                         Toggle(isOn: $enabled) {
                             Text("Notched Device Gestures")
