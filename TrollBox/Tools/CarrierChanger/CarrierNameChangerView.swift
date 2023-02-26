@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import StatusManager.h
 
 struct CarrierNameChangerView: View {
     @Environment(\.openURL) var openURL
