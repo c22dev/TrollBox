@@ -6,12 +6,11 @@
 //
 
 import SwiftUI
-import StatusSetter16_1.h
 
 struct CarrierNameChangerView: View {
-    @State var str: String = "test"
     @State private var carrierBoxSize: [CGFloat] = [.zero, .zero]
     @State private var carrierOffset: [CGFloat] = [.zero, .zero]
+    @State private var carrierText: String = StatusManager.sharedInstance().getCarrierOverride()
     
     var body: some View {
         GeometryReader { proxy in
@@ -33,7 +32,7 @@ struct CarrierNameChangerView: View {
                                 }
                                 return .clear
                             })
-                        TextField("carrier", text: $str)
+                        TextField("carrier", text: $carrierText)
                             .offset(x: carrierOffset[0], y: carrierOffset[1])
                             .frame(width: carrierBoxSize[0], height: carrierBoxSize[1], alignment: .center)
                             .multilineTextAlignment(.leading)
@@ -44,7 +43,7 @@ struct CarrierNameChangerView: View {
                 
                 Button("Apply") {
                     do {
-                        try StatusManager.sharedInstance.setCarrier(str)
+                        try StatusManager.sharedInstance.setCarrier(carrierText)
                         UIApplication.shared.alert(title: "Success!", body: "Please respring your device for the changes to take effect.")
                     } catch {
                         UIApplication.shared.alert(body: error.localizedDescription)
