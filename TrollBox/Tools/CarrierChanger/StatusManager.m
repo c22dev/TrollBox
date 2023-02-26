@@ -53,10 +53,6 @@
             }
         } else if (@available(iOS 16, *)) {
             _setter = [StatusSetter16 new];
-        } else if (@available(iOS 15, *)) {
-            _setter =  [StatusSetter15 new];
-        } else if (@available(iOS 14, *)) {
-            _setter = [StatusSetter14 new];
         }
     }
     return _setter;
