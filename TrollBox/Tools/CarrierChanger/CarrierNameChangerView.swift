@@ -6,9 +6,10 @@
 //
 
 import SwiftUI
+import StatusSetter16_1.h
 
 struct CarrierNameChangerView: View {
-    @State var str: String = (try? CarrierNameManager.getCarrierName()) ?? ""
+    @State var str: String = "test"
     @State private var carrierBoxSize: [CGFloat] = [.zero, .zero]
     @State private var carrierOffset: [CGFloat] = [.zero, .zero]
     
@@ -43,15 +44,12 @@ struct CarrierNameChangerView: View {
                 
                 Button("Apply") {
                     do {
-                        try CarrierNameManager.change(to: str)
-                        UIApplication.shared.alert(title: "Success!", body: "Please reboot your device for the changes to take effect.")
+                        try StatusManager.sharedInstance.setCarrier(str)
+                        UIApplication.shared.alert(title: "Success!", body: "Please respring your device for the changes to take effect.")
                     } catch {
                         UIApplication.shared.alert(body: error.localizedDescription)
                     }
                 }
-                Text("Note : This carrier changer isn't working for everyone and is not stable at the moment.")
-                    .frame(width: 300, height: 100)
-                .padding(.bottom)
             }
             .ignoresSafeArea(.keyboard)
             .frame(maxWidth: .infinity)

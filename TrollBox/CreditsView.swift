@@ -24,6 +24,7 @@ struct CreditsView: View {
                     Section{
                         LinkCell(imageName: "CySxL", url: "https://github.com/CySxL", title: "CySxL (helped with iOS 14 issues)")
                         LinkCell(imageName: "Uub", url: "http://discordapp.com/users/530385486301102090", title: "Uub (being cool)")
+                        LinkCell(imageName: "fartlocation", url: "http://discordapp.com/users/860808281425575976", title: "fartlocation (created MDC support for some tools)")
                     }
                 }
             }

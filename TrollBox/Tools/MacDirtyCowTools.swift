@@ -52,6 +52,16 @@ struct MacDirtyCowTools: View {
                             Text("iOS Version Number Editor")
                         }
                     }
+                    NavigationLink(destination: CarrierNameChangerView()) {
+                        HStack {
+                            Image(systemName: "network")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 24, height: 24)
+                                .foregroundColor(.primary)
+                            Text("Carrier Changer")
+                        }
+                    }
                 }
             }
             .navigationTitle("MacDirtyCow Tools")
