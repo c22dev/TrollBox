@@ -43,7 +43,7 @@ struct CarrierNameChangerView: View {
                 
                 Button("Apply") {
                     do {
-                        try StatusManager.sharedInstance.setCarrier(carrierText)
+                        try StatusManager.sharedInstance!().setCarrier(carrierText)
                         UIApplication.shared.alert(title: "Success!", body: "Please respring your device for the changes to take effect.")
                     } catch {
                         UIApplication.shared.alert(body: error.localizedDescription)
