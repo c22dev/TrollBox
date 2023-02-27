@@ -88,7 +88,6 @@
 		F1F4F853296A55F70024218E /* VChanger.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F4F852296A55F70024218E /* VChanger.swift */; };
 		F1F4F855296A58120024218E /* CreditsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F4F854296A58120024218E /* CreditsView.swift */; };
 		F8D0EFB629ACE43D00362246 /* CarrierNameChangerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F4F831296A542F0024218E /* CarrierNameChangerView.swift */; };
-		F8D0EFB829ACE45B00362246 /* StatusManager in Resources */ = {isa = PBXBuildFile; fileRef = F8D0EFB729ACE45A00362246 /* StatusManager */; };
 		F8D0EFC429ACE60C00362246 /* StatusSetter16.m in Sources */ = {isa = PBXBuildFile; fileRef = F8D0EFBD29ACE60B00362246 /* StatusSetter16.m */; };
 		F8D0EFC529ACE60C00362246 /* StatusSetter14.m in Sources */ = {isa = PBXBuildFile; fileRef = F8D0EFBE29ACE60B00362246 /* StatusSetter14.m */; };
 		F8D0EFC629ACE60C00362246 /* StatusManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F8D0EFBF29ACE60B00362246 /* StatusManager.m */; };
@@ -180,7 +179,6 @@
 		F1F4F852296A55F70024218E /* VChanger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VChanger.swift; sourceTree = "<group>"; };
 		F1F4F854296A58120024218E /* CreditsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditsView.swift; sourceTree = "<group>"; };
 		F8D0EFB329AC0CC000362246 /* TrollBox */ = {isa = PBXFileReference; lastKnownFileType = folder; path = TrollBox; sourceTree = "<group>"; };
-		F8D0EFB729ACE45A00362246 /* StatusManager */ = {isa = PBXFileReference; lastKnownFileType = folder; path = StatusManager; sourceTree = "<group>"; };
 		F8D0EFB929ACE60A00362246 /* StatusSetter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatusSetter.h; sourceTree = "<group>"; };
 		F8D0EFBA29ACE60A00362246 /* StatusSetter15.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatusSetter15.h; sourceTree = "<group>"; };
 		F8D0EFBB29ACE60B00362246 /* StatusSetter14.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatusSetter14.h; sourceTree = "<group>"; };
@@ -271,7 +269,6 @@
 			isa = PBXGroup;
 			children = (
 				F1F4F6ED296A4BFC0024218E /* TrollBox-Bridging-Header.h */,
-				F8D0EFB729ACE45A00362246 /* StatusManager */,
 				F1F4F821296A4F4F0024218E /* Info.plist */,
 				F1F4F6DD296A4A5D0024218E /* TrollBoxApp.swift */,
 				F1F4F798296A4CA90024218E /* Tools */,
@@ -643,7 +640,6 @@
 			files = (
 				F1F3BED9296A5C3C008D79C7 /* PreviewFonts in Resources */,
 				F1F4F6E5296A4A5F0024218E /* Preview Assets.xcassets in Resources */,
-				F8D0EFB829ACE45B00362246 /* StatusManager in Resources */,
 				F1F4F840296A54B60024218E /* hiddenDark.materialrecipe in Resources */,
 				F1F4F83F296A54B60024218E /* hiddenLight.materialrecipe in Resources */,
 				F1F4F7DA296A4D380024218E /* Trollface.png in Resources */,
