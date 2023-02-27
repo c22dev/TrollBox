@@ -7,12 +7,31 @@
 
 import SwiftUI
 struct CarrierNameChangerView: View {
+    let fm = FileManager.default
     @Environment(\.openURL) var openURL
     @State private var carrierBoxSize: [CGFloat] = [.zero, .zero]
     @State private var carrierOffset: [CGFloat] = [.zero, .zero]
-    @State private var carrierText: String = StatusManager.sharedInstance().getCarrierOverride()
-    
+    @State private var currentText: String = "ae"
+    @State private var currentcarrier: String = StatusManager.sharedInstance().getCarrierOverride()
     var body: some View {
+        NavigationView {
+            List {
+                if (StatusManager.sharedInstance().isMDCMode()) {
+                    Section (footer: Text("Your device will respring.")) {
+                        Button("Apply") {
+                            if fm.fileExists(atPath: "/var/mobile/Library/SpringBoard/statusBarOverridesEditing") {
+                                do {
+                                    _ = trz fm.replaceItemAt(URL(fileURLWithPath: "/var/mobile/Libray/SpringBoard/statusBarOverrides"), withItemAt: URL(fileURLWithPath: "/var/mobile/Libray/SpringBoard/statusBarOverridesEditing"))
+                                    respringFrontBoard()
+                                } catch {
+                                    UIApplication.shared.alert(body: "\(error)")
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
         GeometryReader { proxy in
             VStack {
                 Group {
@@ -32,10 +51,11 @@ struct CarrierNameChangerView: View {
                                 }
                                 return .clear
                             })
-                        TextField("carrier", text: $carrierText)
+                        TextField("carrier", text: $currentcarrier)
                             .offset(x: carrierOffset[0], y: carrierOffset[1])
                             .frame(width: carrierBoxSize[0], height: carrierBoxSize[1], alignment: .center)
                             .multilineTextAlignment(.leading)
+                        
                     }
                 }
                 .frame(maxWidth: proxy.size.width * 0.9)
@@ -43,7 +63,7 @@ struct CarrierNameChangerView: View {
                 
                 Button("Apply") {
                     do {
-                        try StatusManager.sharedInstance().setCarrier(carrierText)
+                        try StatusManager.sharedInstance().setCarrier(currentText)
                         UIApplication.shared.alert(title: "Success!", body: "Please respring your device for the changes to take effect.")
                     } catch {
                         UIApplication.shared.alert(body: error.localizedDescription)

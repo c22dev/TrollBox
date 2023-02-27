@@ -17,16 +17,16 @@ struct AboutView: View {
                    .frame(width: 100, height: 100)
                    .clipShape(Circle())
 
-               Text("c22dev")
+               Text("fartlocation")
                    .font(.largeTitle)
                    .padding()
 
-               Text("Welcome to my ToolBox app for TrollStore ! Pack up a lot of different tools for TrollStore, hope you enjoy it !")
+               Text("Welcome to my fork of TrollBox, it's just trollbox but with MDC support to most tools so I hope you enjoy it !")
                    .font(.body)
                    .padding()
 
                Button(action: {
-                   if let url = URL(string: "https://github.com/c22dev/TrollBox") {
+                   if let url = URL(string: "https://github.com/diyar2137237243/TrollBox") {
                        UIApplication.shared.open(url)
                    }
                }) {
@@ -34,7 +34,7 @@ struct AboutView: View {
                }
                .padding()
                Button(action: {
-                   if let url = URL(string: "https://github.com/c22dev/TrollBox/releases/latest") {
+                   if let url = URL(string: "https://github.com/diyar2137237243/TrollBox/releases/latest") {
                        UIApplication.shared.open(url)
                    }
                })  {
