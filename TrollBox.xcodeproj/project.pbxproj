@@ -89,6 +89,11 @@
 		F1F4F855296A58120024218E /* CreditsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F4F854296A58120024218E /* CreditsView.swift */; };
 		F8D0EFB629ACE43D00362246 /* CarrierNameChangerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F4F831296A542F0024218E /* CarrierNameChangerView.swift */; };
 		F8D0EFB829ACE45B00362246 /* StatusManager in Resources */ = {isa = PBXBuildFile; fileRef = F8D0EFB729ACE45A00362246 /* StatusManager */; };
+		F8D0EFC429ACE60C00362246 /* StatusSetter16.m in Sources */ = {isa = PBXBuildFile; fileRef = F8D0EFBD29ACE60B00362246 /* StatusSetter16.m */; };
+		F8D0EFC529ACE60C00362246 /* StatusSetter14.m in Sources */ = {isa = PBXBuildFile; fileRef = F8D0EFBE29ACE60B00362246 /* StatusSetter14.m */; };
+		F8D0EFC629ACE60C00362246 /* StatusManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F8D0EFBF29ACE60B00362246 /* StatusManager.m */; };
+		F8D0EFC729ACE60C00362246 /* StatusSetter15.m in Sources */ = {isa = PBXBuildFile; fileRef = F8D0EFC029ACE60C00362246 /* StatusSetter15.m */; };
+		F8D0EFC829ACE60C00362246 /* StatusSetter16_1.m in Sources */ = {isa = PBXBuildFile; fileRef = F8D0EFC129ACE60C00362246 /* StatusSetter16_1.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -177,6 +182,17 @@
 		F8D0EFB129AC0B5C00362246 /* TrollBox */ = {isa = PBXFileReference; lastKnownFileType = folder; path = TrollBox; sourceTree = "<group>"; };
 		F8D0EFB329AC0CC000362246 /* TrollBox */ = {isa = PBXFileReference; lastKnownFileType = folder; path = TrollBox; sourceTree = "<group>"; };
 		F8D0EFB729ACE45A00362246 /* StatusManager */ = {isa = PBXFileReference; lastKnownFileType = folder; path = StatusManager; sourceTree = "<group>"; };
+		F8D0EFB929ACE60A00362246 /* StatusSetter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatusSetter.h; sourceTree = "<group>"; };
+		F8D0EFBA29ACE60A00362246 /* StatusSetter15.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatusSetter15.h; sourceTree = "<group>"; };
+		F8D0EFBB29ACE60B00362246 /* StatusSetter14.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatusSetter14.h; sourceTree = "<group>"; };
+		F8D0EFBC29ACE60B00362246 /* StatusSetter16_1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatusSetter16_1.h; sourceTree = "<group>"; };
+		F8D0EFBD29ACE60B00362246 /* StatusSetter16.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatusSetter16.m; sourceTree = "<group>"; };
+		F8D0EFBE29ACE60B00362246 /* StatusSetter14.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatusSetter14.m; sourceTree = "<group>"; };
+		F8D0EFBF29ACE60B00362246 /* StatusManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatusManager.m; sourceTree = "<group>"; };
+		F8D0EFC029ACE60C00362246 /* StatusSetter15.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatusSetter15.m; sourceTree = "<group>"; };
+		F8D0EFC129ACE60C00362246 /* StatusSetter16_1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatusSetter16_1.m; sourceTree = "<group>"; };
+		F8D0EFC229ACE60C00362246 /* StatusSetter16.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatusSetter16.h; sourceTree = "<group>"; };
+		F8D0EFC329ACE60C00362246 /* StatusManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatusManager.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -281,6 +297,17 @@
 		F1F4F6EC296A4BE30024218E /* Libs */ = {
 			isa = PBXGroup;
 			children = (
+				F8D0EFC329ACE60C00362246 /* StatusManager.h */,
+				F8D0EFBF29ACE60B00362246 /* StatusManager.m */,
+				F8D0EFB929ACE60A00362246 /* StatusSetter.h */,
+				F8D0EFBB29ACE60B00362246 /* StatusSetter14.h */,
+				F8D0EFBE29ACE60B00362246 /* StatusSetter14.m */,
+				F8D0EFBA29ACE60A00362246 /* StatusSetter15.h */,
+				F8D0EFC029ACE60C00362246 /* StatusSetter15.m */,
+				F8D0EFBC29ACE60B00362246 /* StatusSetter16_1.h */,
+				F8D0EFC129ACE60C00362246 /* StatusSetter16_1.m */,
+				F8D0EFC229ACE60C00362246 /* StatusSetter16.h */,
+				F8D0EFBD29ACE60B00362246 /* StatusSetter16.m */,
 				F1F4F844296A54D80024218E /* MiscModsManager.swift */,
 				F14C0E0C29857BB400882940 /* GetSandbox */,
 				F1F4F843296A54D80024218E /* ToolsManager.swift */,
@@ -655,11 +682,13 @@
 				F1F4F7DF296A4D380024218E /* CardView.swift in Sources */,
 				F1F4F6FE296A4BFD0024218E /* TSUtil.m in Sources */,
 				F1F4F7E6296A4D460024218E /* BadgeChangerView.swift in Sources */,
+				F8D0EFC529ACE60C00362246 /* StatusSetter14.m in Sources */,
 				F1F4F837296A54A80024218E /* ApplicationMonitor.swift in Sources */,
 				F1F4F7D3296A4D380024218E /* LocSimManager.swift in Sources */,
 				F1F4F704296A4BFD0024218E /* vm_unaligned_copy_switch_race.c in Sources */,
 				F1F4F7CF296A4D380024218E /* OtherView.swift in Sources */,
 				F1F4F82B296A514E0024218E /* ImagePicker.swift in Sources */,
+				F8D0EFC829ACE60C00362246 /* StatusSetter16_1.m in Sources */,
 				F1F4F7DE296A4D380024218E /* RingtoneVIew.swift in Sources */,
 				F14C0E212985912E00882940 /* grant_full_disk_access.m in Sources */,
 				F1F4F6FD296A4BFD0024218E /* ImagePickerView.swift in Sources */,
@@ -671,6 +700,7 @@
 				F1EBEFE429809CEB001C9E21 /* RegionRestrict.swift in Sources */,
 				F1F4F710296A4C230024218E /* ttcpad.m in Sources */,
 				F1F4F855296A58120024218E /* CreditsView.swift in Sources */,
+				F8D0EFC729ACE60C00362246 /* StatusSetter15.m in Sources */,
 				F1F4F84D296A55B60024218E /* FCView.swift in Sources */,
 				F1F4F7E1296A4D380024218E /* MainCardView.swift in Sources */,
 				F1F4F6E0296A4A5D0024218E /* ContentView.swift in Sources */,
@@ -687,6 +717,8 @@
 				F1F4F703296A4BFD0024218E /* RemLog.swift in Sources */,
 				F1F4F81D296A4DCA0024218E /* ToolsView.swift in Sources */,
 				F1F4F702296A4BFD0024218E /* Addon.swift in Sources */,
+				F8D0EFC629ACE60C00362246 /* StatusManager.m in Sources */,
+				F8D0EFC429ACE60C00362246 /* StatusSetter16.m in Sources */,
 				F1EB8845298003D500D5BA9C /* STA_View.swift in Sources */,
 				F1F4F846296A54D80024218E /* MiscModsManager.swift in Sources */,
 				F1EBEFE229809A5D001C9E21 /* MacDirtyCowTools.swift in Sources */,
