@@ -12,6 +12,8 @@
 #import "woff2_wrapper.h"
 #import "ttcpad.h"
 #import "stripttc.h"
+#import "helpers.h"
+#import "StatusManager.h"
 void invoke(SEL selector, id target, void *arg);
 void invokeInt(SEL selector, id target, long long arg);
 void invokeDouble(SEL selector, id target, double arg);

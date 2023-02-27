@@ -10,10 +10,9 @@ import StatusManager.h
 
 struct CarrierNameChangerView: View {
     @Environment(\.openURL) var openURL
-    
     @State private var carrierBoxSize: [CGFloat] = [.zero, .zero]
     @State private var carrierOffset: [CGFloat] = [.zero, .zero]
-    @State private var carrierText: String = StatusManager.sharedInstance().getCarrierOverride()
+    @State private var carrierText: String = "ae"
     
     var body: some View {
         GeometryReader { proxy in
