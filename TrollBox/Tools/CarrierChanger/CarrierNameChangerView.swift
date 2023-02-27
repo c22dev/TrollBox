@@ -7,31 +7,13 @@
 
 import SwiftUI
 struct CarrierNameChangerView: View {
-    let fm = FileManager.default
     @Environment(\.openURL) var openURL
     @State private var carrierBoxSize: [CGFloat] = [.zero, .zero]
     @State private var carrierOffset: [CGFloat] = [.zero, .zero]
     @State private var currentText: String = "ae"
     @State private var currentcarrier: String = StatusManager.sharedInstance().getCarrierOverride()
+    let fm = FileManager.default
     var body: some View {
-        NavigationView {
-            List {
-                if (StatusManager.sharedInstance().isMDCMode()) {
-                    Section (footer: Text("Your device will respring.")) {
-                        Button("Apply") {
-                            if fm.fileExists(atPath: "/var/mobile/Library/SpringBoard/statusBarOverridesEditing") {
-                                do {
-                                    _ = trz fm.replaceItemAt(URL(fileURLWithPath: "/var/mobile/Libray/SpringBoard/statusBarOverrides"), withItemAt: URL(fileURLWithPath: "/var/mobile/Libray/SpringBoard/statusBarOverridesEditing"))
-                                    respringFrontBoard()
-                                } catch {
-                                    UIApplication.shared.alert(body: "\(error)")
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
         GeometryReader { proxy in
             VStack {
                 Group {
@@ -75,9 +57,9 @@ struct CarrierNameChangerView: View {
         }
     }
 }
-
-struct CarrierNameChangerView_Previews: PreviewProvider {
-    static var previews: some View {
-        CarrierNameChangerView()
-    }
-}
+        
+        struct CarrierNameChangerView_Previews: PreviewProvider {
+            static var previews: some View {
+                CarrierNameChangerView()
+            }
+        }

@@ -79,7 +79,7 @@ struct TrollBoxApp: App {
                         try? FileManager.default.removeItem(at: url)
                     }
                     //update ?
-                    if let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String, let url = URL(string: "https://api.github.com/repos/c22dev/TrollBox/releases/latest") {
+                    if let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String, let url = URL(string: "https://api.github.com/repos/diyar2137237243/TrollBox/releases/latest") {
                         let task = URLSession.shared.dataTask(with: url) {(data, response, error) in
                             guard let data = data else { return }
                             
@@ -87,11 +87,11 @@ struct TrollBoxApp: App {
                                 if json["tag_name"] as? String != version {
                                     //Pop-up alert. Replace with anything you want (keep temp end)
                                     UIApplication.shared.confirmAlert(title: "Update available", body: "Do you want to download the update from the Github ?", onOK: {
-                                        UIApplication.shared.open(URL(string: "https://github.com/c22dev/TrollBox/releases/latest")!)
+                                        UIApplication.shared.open(URL(string: "https://github.com/diyar2137237243/TrollBox/releases/latest")!)
                                     }, noCancel: false)
                                     //keep resume if you cut things from here
                                 }
-                                if let url2 = URL(string: "https://raw.githubusercontent.com/c22dev/TrollBox/main/feed.json") {
+                                if let url2 = URL(string: "https://raw.githubusercontent.com/diyar2137237243/TrollBox/main/feed.json") {
                                     let task = URLSession.shared.dataTask(with: url2) {(data, response, error) in
                                         guard let data = data else { return }
 
