@@ -87,10 +87,8 @@
 		F1F4F850296A55B60024218E /* docs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F4F84C296A55B50024218E /* docs.swift */; };
 		F1F4F853296A55F70024218E /* VChanger.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F4F852296A55F70024218E /* VChanger.swift */; };
 		F1F4F855296A58120024218E /* CreditsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F4F854296A58120024218E /* CreditsView.swift */; };
-		F8D0EFAC29AC09E700362246 /* StatusSetter16_1.m in Sources */ = {isa = PBXBuildFile; fileRef = F8D0EFA529AC09E000362246 /* StatusSetter16_1.m */; };
-		F8D0EFAD29AC09E700362246 /* StatusManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F8D0EFA629AC09E200362246 /* StatusManager.m */; };
-		F8D0EFAE29AC09E700362246 /* StatusSetter16.m in Sources */ = {isa = PBXBuildFile; fileRef = F8D0EFAA29AC09E500362246 /* StatusSetter16.m */; };
-		F8D0EFB529AC0CE400362246 /* StatusManager.h in Frameworks */ = {isa = PBXBuildFile; fileRef = F8D0EFA929AC09E400362246 /* StatusManager.h */; };
+		F8D0EFB629ACE43D00362246 /* CarrierNameChangerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F4F831296A542F0024218E /* CarrierNameChangerView.swift */; };
+		F8D0EFB829ACE45B00362246 /* StatusManager in Resources */ = {isa = PBXBuildFile; fileRef = F8D0EFB729ACE45A00362246 /* StatusManager */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -160,7 +158,6 @@
 		F1F4F81C296A4DCA0024218E /* ToolsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToolsView.swift; sourceTree = "<group>"; };
 		F1F4F821296A4F4F0024218E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		F1F4F82A296A514E0024218E /* ImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
-		F1F4F830296A542F0024218E /* CarrierNameManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarrierNameManager.swift; sourceTree = "<group>"; };
 		F1F4F831296A542F0024218E /* CarrierNameChangerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarrierNameChangerView.swift; sourceTree = "<group>"; };
 		F1F4F834296A54A80024218E /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		F1F4F835296A54A80024218E /* ApplicationMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationMonitor.swift; sourceTree = "<group>"; };
@@ -177,15 +174,9 @@
 		F1F4F84C296A55B50024218E /* docs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = docs.swift; sourceTree = "<group>"; };
 		F1F4F852296A55F70024218E /* VChanger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VChanger.swift; sourceTree = "<group>"; };
 		F1F4F854296A58120024218E /* CreditsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditsView.swift; sourceTree = "<group>"; };
-		F8D0EFA529AC09E000362246 /* StatusSetter16_1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatusSetter16_1.m; sourceTree = "<group>"; };
-		F8D0EFA629AC09E200362246 /* StatusManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatusManager.m; sourceTree = "<group>"; };
-		F8D0EFA729AC09E300362246 /* StatusSetter16.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatusSetter16.h; sourceTree = "<group>"; };
-		F8D0EFA829AC09E300362246 /* StatusSetter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatusSetter.h; sourceTree = "<group>"; };
-		F8D0EFA929AC09E400362246 /* StatusManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StatusManager.h; path = /Users/deeznutsenjoyer/Documents/TrollBox/TrollBox/Tools/CarrierChanger/StatusManager.h; sourceTree = "<absolute>"; };
-		F8D0EFAA29AC09E500362246 /* StatusSetter16.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatusSetter16.m; sourceTree = "<group>"; };
-		F8D0EFAB29AC09E600362246 /* StatusSetter16_1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatusSetter16_1.h; sourceTree = "<group>"; };
 		F8D0EFB129AC0B5C00362246 /* TrollBox */ = {isa = PBXFileReference; lastKnownFileType = folder; path = TrollBox; sourceTree = "<group>"; };
 		F8D0EFB329AC0CC000362246 /* TrollBox */ = {isa = PBXFileReference; lastKnownFileType = folder; path = TrollBox; sourceTree = "<group>"; };
+		F8D0EFB729ACE45A00362246 /* StatusManager */ = {isa = PBXFileReference; lastKnownFileType = folder; path = StatusManager; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,7 +184,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F8D0EFB529AC0CE400362246 /* StatusManager.h in Frameworks */,
 				F1E6A7D6296B5742006DBCBD /* Alamofire in Frameworks */,
 				F1E6A7D1296B567D006DBCBD /* NSTask in Frameworks */,
 				F1E6A7D9296B575C006DBCBD /* SDWebImage in Frameworks */,
@@ -266,6 +256,7 @@
 		F1F4F6DC296A4A5D0024218E /* TrollBox */ = {
 			isa = PBXGroup;
 			children = (
+				F8D0EFB729ACE45A00362246 /* StatusManager */,
 				F1F4F821296A4F4F0024218E /* Info.plist */,
 				F1F4F6DD296A4A5D0024218E /* TrollBoxApp.swift */,
 				F1F4F798296A4CA90024218E /* Tools */,
@@ -417,14 +408,6 @@
 			isa = PBXGroup;
 			children = (
 				F1F4F831296A542F0024218E /* CarrierNameChangerView.swift */,
-				F8D0EFA929AC09E400362246 /* StatusManager.h */,
-				F8D0EFA629AC09E200362246 /* StatusManager.m */,
-				F8D0EFA829AC09E300362246 /* StatusSetter.h */,
-				F8D0EFAB29AC09E600362246 /* StatusSetter16_1.h */,
-				F8D0EFA529AC09E000362246 /* StatusSetter16_1.m */,
-				F8D0EFA729AC09E300362246 /* StatusSetter16.h */,
-				F8D0EFAA29AC09E500362246 /* StatusSetter16.m */,
-				F1F4F830296A542F0024218E /* CarrierNameManager.swift */,
 			);
 			path = CarrierChanger;
 			sourceTree = "<group>";
@@ -643,6 +626,7 @@
 			files = (
 				F1F3BED9296A5C3C008D79C7 /* PreviewFonts in Resources */,
 				F1F4F6E5296A4A5F0024218E /* Preview Assets.xcassets in Resources */,
+				F8D0EFB829ACE45B00362246 /* StatusManager in Resources */,
 				F1F4F840296A54B60024218E /* hiddenDark.materialrecipe in Resources */,
 				F1F4F83F296A54B60024218E /* hiddenLight.materialrecipe in Resources */,
 				F1F4F7DA296A4D380024218E /* Trollface.png in Resources */,
@@ -669,7 +653,6 @@
 				F1F4F701296A4BFD0024218E /* MGPreferences.m in Sources */,
 				F1F4F7E7296A4D460024218E /* BadgeChanger.swift in Sources */,
 				F1F4F7DF296A4D380024218E /* CardView.swift in Sources */,
-				F8D0EFAE29AC09E700362246 /* StatusSetter16.m in Sources */,
 				F1F4F6FE296A4BFD0024218E /* TSUtil.m in Sources */,
 				F1F4F7E6296A4D460024218E /* BadgeChangerView.swift in Sources */,
 				F1F4F837296A54A80024218E /* ApplicationMonitor.swift in Sources */,
@@ -684,7 +667,6 @@
 				F1F4F700296A4BFD0024218E /* RootHelper.swift in Sources */,
 				F1F4F836296A54A80024218E /* LocationManager.swift in Sources */,
 				F1F4F6FC296A4BFD0024218E /* WallpaperGetter.swift in Sources */,
-				F8D0EFAC29AC09E700362246 /* StatusSetter16_1.m in Sources */,
 				F1F4F7D4296A4D380024218E /* LocationSimulationView.swift in Sources */,
 				F1EBEFE429809CEB001C9E21 /* RegionRestrict.swift in Sources */,
 				F1F4F710296A4C230024218E /* ttcpad.m in Sources */,
@@ -703,7 +685,6 @@
 				F1F4F712296A4C230024218E /* stripttc.c in Sources */,
 				F1F4F848296A550D0024218E /* DockView.swift in Sources */,
 				F1F4F703296A4BFD0024218E /* RemLog.swift in Sources */,
-				F8D0EFAD29AC09E700362246 /* StatusManager.m in Sources */,
 				F1F4F81D296A4DCA0024218E /* ToolsView.swift in Sources */,
 				F1F4F702296A4BFD0024218E /* Addon.swift in Sources */,
 				F1EB8845298003D500D5BA9C /* STA_View.swift in Sources */,
@@ -714,6 +695,7 @@
 				F1F4F7DC296A4D380024218E /* NoCameraSound.swift in Sources */,
 				F1F4F6DE296A4A5D0024218E /* TrollBoxApp.swift in Sources */,
 				F1F4F714296A4C230024218E /* woff2_wrapper.cpp in Sources */,
+				F8D0EFB629ACE43D00362246 /* CarrierNameChangerView.swift in Sources */,
 				F1F4F850296A55B60024218E /* docs.swift in Sources */,
 				F1F4F84E296A55B60024218E /* FCView.ViewModel.swift in Sources */,
 			);
@@ -874,7 +856,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = live.cclerc.trollbox;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "TrollBox/Libs/TrollBox-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "TrollBox-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -920,7 +902,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = live.cclerc.trollbox;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "TrollBox/Libs/TrollBox-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "TrollBox-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
