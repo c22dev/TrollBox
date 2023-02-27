@@ -179,7 +179,6 @@
 		F1F4F84C296A55B50024218E /* docs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = docs.swift; sourceTree = "<group>"; };
 		F1F4F852296A55F70024218E /* VChanger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VChanger.swift; sourceTree = "<group>"; };
 		F1F4F854296A58120024218E /* CreditsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditsView.swift; sourceTree = "<group>"; };
-		F8D0EFB129AC0B5C00362246 /* TrollBox */ = {isa = PBXFileReference; lastKnownFileType = folder; path = TrollBox; sourceTree = "<group>"; };
 		F8D0EFB329AC0CC000362246 /* TrollBox */ = {isa = PBXFileReference; lastKnownFileType = folder; path = TrollBox; sourceTree = "<group>"; };
 		F8D0EFB729ACE45A00362246 /* StatusManager */ = {isa = PBXFileReference; lastKnownFileType = folder; path = StatusManager; sourceTree = "<group>"; };
 		F8D0EFB929ACE60A00362246 /* StatusSetter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatusSetter.h; sourceTree = "<group>"; };
@@ -254,7 +253,6 @@
 		F1F4F6D1296A4A5D0024218E = {
 			isa = PBXGroup;
 			children = (
-				F8D0EFB029AC0B5C00362246 /* Packages */,
 				F1F4F6DC296A4A5D0024218E /* TrollBox */,
 				F1F4F6DB296A4A5D0024218E /* Products */,
 				F8D0EFB229AC0CBF00362246 /* Frameworks */,
@@ -272,6 +270,7 @@
 		F1F4F6DC296A4A5D0024218E /* TrollBox */ = {
 			isa = PBXGroup;
 			children = (
+				F1F4F6ED296A4BFC0024218E /* TrollBox-Bridging-Header.h */,
 				F8D0EFB729ACE45A00362246 /* StatusManager */,
 				F1F4F821296A4F4F0024218E /* Info.plist */,
 				F1F4F6DD296A4A5D0024218E /* TrollBoxApp.swift */,
@@ -327,7 +326,6 @@
 				F1F4F6FA296A4BFD0024218E /* vm_unaligned_copy_switch_race.c */,
 				F1F4F6EE296A4BFC0024218E /* vm_unaligned_copy_switch_race.h */,
 				F1F4F6EF296A4BFC0024218E /* WallpaperGetter.swift */,
-				F1F4F6ED296A4BFC0024218E /* TrollBox-Bridging-Header.h */,
 			);
 			path = Libs;
 			sourceTree = "<group>";
@@ -548,14 +546,6 @@
 				F1F4F852296A55F70024218E /* VChanger.swift */,
 			);
 			path = VersionChanger;
-			sourceTree = "<group>";
-		};
-		F8D0EFB029AC0B5C00362246 /* Packages */ = {
-			isa = PBXGroup;
-			children = (
-				F8D0EFB129AC0B5C00362246 /* TrollBox */,
-			);
-			name = Packages;
 			sourceTree = "<group>";
 		};
 		F8D0EFB229AC0CBF00362246 /* Frameworks */ = {
