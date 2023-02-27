@@ -10,7 +10,7 @@ struct CarrierNameChangerView: View {
     @Environment(\.openURL) var openURL
     @State private var carrierBoxSize: [CGFloat] = [.zero, .zero]
     @State private var carrierOffset: [CGFloat] = [.zero, .zero]
-    @State private var carrierText: String = "ae"
+    @State private var carrierText: String = StatusManager.sharedInstance().getCarrierOverride()
     
     var body: some View {
         GeometryReader { proxy in
@@ -43,7 +43,7 @@ struct CarrierNameChangerView: View {
                 
                 Button("Apply") {
                     do {
-                        try StatusManager.sharedInstance!().setCarrier(carrierText)
+                        try StatusManager.sharedInstance().setCarrier(carrierText)
                         UIApplication.shared.alert(title: "Success!", body: "Please respring your device for the changes to take effect.")
                     } catch {
                         UIApplication.shared.alert(body: error.localizedDescription)

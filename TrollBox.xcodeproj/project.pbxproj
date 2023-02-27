@@ -251,6 +251,7 @@
 		F1F4F6D1296A4A5D0024218E = {
 			isa = PBXGroup;
 			children = (
+				F1F4F6ED296A4BFC0024218E /* TrollBox-Bridging-Header.h */,
 				F1F4F6DC296A4A5D0024218E /* TrollBox */,
 				F1F4F6DB296A4A5D0024218E /* Products */,
 				F8D0EFB229AC0CBF00362246 /* Frameworks */,
@@ -268,7 +269,6 @@
 		F1F4F6DC296A4A5D0024218E /* TrollBox */ = {
 			isa = PBXGroup;
 			children = (
-				F1F4F6ED296A4BFC0024218E /* TrollBox-Bridging-Header.h */,
 				F1F4F821296A4F4F0024218E /* Info.plist */,
 				F1F4F6DD296A4A5D0024218E /* TrollBoxApp.swift */,
 				F1F4F798296A4CA90024218E /* Tools */,
