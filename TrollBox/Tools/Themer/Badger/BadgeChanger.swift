@@ -9,7 +9,7 @@ import Dynamic
 
 class BadgeChanger {
     #if targetEnvironment(simulator)
-    static let badgeBitmapPath = "/Users/sourcelocation/Downloads/SBIconBadgeView.BadgeBackground:26:26.cpbitmap"
+    static let badgeBitmapPath = "/Users/c22dev/Desktop/SBIconBadgeView.BadgeBackground:26:26.cpbitmap"
     #else
     static let badgeBitmapPath = "/var/mobile/Library/Caches/MappedImageCache/Persistent/SBIconBadgeView.BadgeBackground:26:26.cpbitmap"
     #endif

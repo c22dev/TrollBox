@@ -813,7 +813,7 @@
 				INFOPLIST_FILE = TrollBox/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = TrollBox;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
-				INFOPLIST_KEY_NSAppleMusicUsageDescription = "allow r/w of /var ?";
+				INFOPLIST_KEY_NSAppleMusicUsageDescription = "Allow r/w of /var ?";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "LocSim current loc";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Allow the app to access photo library for choosing passcode faces.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -858,7 +858,7 @@
 				INFOPLIST_FILE = TrollBox/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = TrollBox;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
-				INFOPLIST_KEY_NSAppleMusicUsageDescription = "allow r/w of /var ?";
+				INFOPLIST_KEY_NSAppleMusicUsageDescription = "Allow r/w of /var ?";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "LocSim current loc";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Allow the app to access photo library for choosing passcode faces.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
