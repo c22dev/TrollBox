@@ -9,6 +9,14 @@ import Map
 import MapKit
 import SwiftUI
 
+struct EquatableCoordinate: Equatable {
+    var coordinate: CLLocationCoordinate2D
+    
+    static func ==(lhs: EquatableCoordinate, rhs: EquatableCoordinate) -> Bool {
+        lhs.coordinate.latitude == rhs.coordinate.latitude && lhs.coordinate.longitude == rhs.coordinate.longitude
+    }
+}
+
 struct LocationSimulationView: View {
     struct Location: Identifiable {
         var coordinate: CLLocationCoordinate2D
@@ -21,9 +29,10 @@ struct LocationSimulationView: View {
     @State private var region = MKCoordinateRegion(.world)
     @State private var bookmarks: [String: (Double, Double)] = UserDefaults.standard.dictionary(forKey: "bookmarks") as? [String: (Double, Double)] ?? [:]
     @State private var currentListName = ""
+    @State private var tappedCoordinate: EquatableCoordinate? = nil
+    
     var body: some View {
     VStack {
-        Text("Grab you're cordinates at [LatLong.net](https://www.latlong.net)")
         TextField("Enter latitude", text: $lat)
             .textFieldStyle(RoundedBorderTextFieldStyle())
         
@@ -31,12 +40,13 @@ struct LocationSimulationView: View {
             .textFieldStyle(RoundedBorderTextFieldStyle())
         let latitudeValue = Double(lat)
         let longitudeValue = Double(long)
+        
         HStack {
             Button(action: {
                 LocSimManager.startLocSim(location: .init(latitude: latitudeValue!, longitude: longitudeValue!))
                 locations = [.init(coordinate: .init(latitude: latitudeValue!, longitude: longitudeValue! )),.init(coordinate: .init(latitude: latitudeValue!, longitude: longitudeValue!)),]
                 calculateDirections()
-                print("LOCSIM ENABLED YEAH")
+                print("LOCSIM ENABLED for Latitude: \(lat), Longitude: \(long)")
             }) {
                 Text("Apply")
             }
@@ -81,27 +91,17 @@ struct LocationSimulationView: View {
         }) {
             Text("Stop")
         }
-        Map(
-            coordinateRegion: $region,
-            informationVisibility: .default.union(.userLocation),
-            interactionModes: [.all],
-            overlays: directions?.routes.map { $0.polyline } ?? [],
-            overlayContent: { overlay in
-                RendererMapOverlay(overlay: overlay) { (mapView, overlay) in
-                    guard let polyline = overlay as? MKPolyline else {
-                        return MKOverlayRenderer(overlay: overlay)
-                    }
-                    let renderer = MKPolylineRenderer(polyline: polyline)
-                    renderer.lineWidth = 4
-                    renderer.strokeColor = .red
-                    return renderer
+        CustomMapView(tappedCoordinate: $tappedCoordinate)
+            .onAppear {
+                CLLocationManager().requestAlwaysAuthorization()
+            }
+    }
+    .onChange(of: tappedCoordinate) { newValue in
+                if let coordinate = newValue {
+                    lat = String(coordinate.coordinate.latitude)
+                    long = String(coordinate.coordinate.longitude)
                 }
             }
-        )
-        .onAppear {
-            CLLocationManager().requestAlwaysAuthorization()
-        }
-    }
  }
         func calculateDirections() {
             guard locations.count >= 2 else { return }
@@ -117,6 +117,41 @@ struct LocationSimulationView: View {
             }
         }
     }
+
+struct CustomMapView: UIViewRepresentable {
+    @Binding var tappedCoordinate: EquatableCoordinate?
+    
+    func makeUIView(context: Context) -> MKMapView {
+        let mapView = MKMapView()
+        mapView.delegate = context.coordinator
+        let tapRecognizer = UITapGestureRecognizer(target: context.coordinator, action: #selector(Coordinator.handleTap(_:)))
+        mapView.addGestureRecognizer(tapRecognizer)
+        return mapView
+    }
+    
+    func updateUIView(_ uiView: MKMapView, context: Context) {}
+    
+    func makeCoordinator() -> Coordinator {
+        Coordinator(self)
+    }
+    
+    class Coordinator: NSObject, MKMapViewDelegate {
+        var parent: CustomMapView
+        
+        init(_ parent: CustomMapView) {
+            self.parent = parent
+        }
+        
+        @objc func handleTap(_ gesture: UITapGestureRecognizer) {
+            let mapView = gesture.view as! MKMapView
+            let touchPoint = gesture.location(in: mapView)
+            let coordinate = mapView.convert(touchPoint, toCoordinateFrom: mapView)
+            parent.tappedCoordinate = EquatableCoordinate(coordinate: coordinate)
+        }
+    }
+}
+
+
 
 struct LocationSimulationView_Previews: PreviewProvider {
     static var previews: some View {
