@@ -71,14 +71,18 @@ struct ToolsView: View {
                             Text("Lock Screen Footnote")
                         }
                     }
-                    NavigationLink(destination: BadgeChangerView()) {
-                        HStack {
-                            Image(systemName: "app.badge.fill")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .frame(width: 24, height: 24)
-                                .foregroundColor(.primary)
-                            Text("Badge Color Changer")
+                    if issbx == "false" {
+                    }
+                    else {
+                        NavigationLink(destination: BadgeChangerView()) {
+                            HStack {
+                                Image(systemName: "app.badge.fill")
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .frame(width: 24, height: 24)
+                                    .foregroundColor(.primary)
+                                Text("Badge Color Changer")
+                            }
                         }
                     }
                     if issbx == "false" {

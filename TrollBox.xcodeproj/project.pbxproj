@@ -13,16 +13,16 @@
 		F110031F297AC11600C7AA2D /* libwoff2common.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F110031D297AC11600C7AA2D /* libwoff2common.a */; };
 		F14C0E202985912E00882940 /* helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = F14C0E1E2985912C00882940 /* helpers.m */; };
 		F14C0E212985912E00882940 /* grant_full_disk_access.m in Sources */ = {isa = PBXBuildFile; fileRef = F14C0E1F2985912E00882940 /* grant_full_disk_access.m */; };
+		F1955E5529C3C42600DFE48A /* ApplicationsWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = F1955E5429C3C42600DFE48A /* ApplicationsWrapper */; };
+		F1955E5729C3C42600DFE48A /* AssetCatalogWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = F1955E5629C3C42600DFE48A /* AssetCatalogWrapper */; };
+		F1955E5929C3C42600DFE48A /* CompressionWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = F1955E5829C3C42600DFE48A /* CompressionWrapper */; };
+		F1955E5B29C3C42600DFE48A /* DiskImagesWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = F1955E5A29C3C42600DFE48A /* DiskImagesWrapper */; };
+		F1955E5D29C3C42600DFE48A /* FSOperations in Frameworks */ = {isa = PBXBuildFile; productRef = F1955E5C29C3C42600DFE48A /* FSOperations */; };
+		F1955E5F29C3C42600DFE48A /* NSTask in Frameworks */ = {isa = PBXBuildFile; productRef = F1955E5E29C3C42600DFE48A /* NSTask */; };
+		F1955E6129C3C42600DFE48A /* SVGWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = F1955E6029C3C42600DFE48A /* SVGWrapper */; };
 		F1B412C5297755D8005555C8 /* Map in Frameworks */ = {isa = PBXBuildFile; productRef = F1B412C4297755D8005555C8 /* Map */; };
 		F1D694EE296A6DEC002332C8 /* Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = F1D694ED296A6DEC002332C8 /* Dynamic */; };
 		F1D69510296A7550002332C8 /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = F1D6950F296A7550002332C8 /* ArgumentParser */; };
-		F1E6A7C7296B567D006DBCBD /* ApplicationsWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = F1E6A7C6296B567D006DBCBD /* ApplicationsWrapper */; };
-		F1E6A7C9296B567D006DBCBD /* AssetCatalogWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = F1E6A7C8296B567D006DBCBD /* AssetCatalogWrapper */; };
-		F1E6A7CB296B567D006DBCBD /* CompressionWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = F1E6A7CA296B567D006DBCBD /* CompressionWrapper */; };
-		F1E6A7CD296B567D006DBCBD /* DiskImagesWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = F1E6A7CC296B567D006DBCBD /* DiskImagesWrapper */; };
-		F1E6A7CF296B567D006DBCBD /* FSOperations in Frameworks */ = {isa = PBXBuildFile; productRef = F1E6A7CE296B567D006DBCBD /* FSOperations */; };
-		F1E6A7D1296B567D006DBCBD /* NSTask in Frameworks */ = {isa = PBXBuildFile; productRef = F1E6A7D0296B567D006DBCBD /* NSTask */; };
-		F1E6A7D3296B567D006DBCBD /* SVGWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = F1E6A7D2296B567D006DBCBD /* SVGWrapper */; };
 		F1E6A7D6296B5742006DBCBD /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F1E6A7D5296B5742006DBCBD /* Alamofire */; };
 		F1E6A7D9296B575C006DBCBD /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = F1E6A7D8296B575C006DBCBD /* SDWebImage */; };
 		F1EB8845298003D500D5BA9C /* STA_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EB8844298003D500D5BA9C /* STA_View.swift */; };
@@ -183,23 +183,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1E6A7D6296B5742006DBCBD /* Alamofire in Frameworks */,
-				F1E6A7D1296B567D006DBCBD /* NSTask in Frameworks */,
+				F1955E6129C3C42600DFE48A /* SVGWrapper in Frameworks */,
 				F1E6A7D9296B575C006DBCBD /* SDWebImage in Frameworks */,
-				F1E6A7C9296B567D006DBCBD /* AssetCatalogWrapper in Frameworks */,
-				F1E6A7D3296B567D006DBCBD /* SVGWrapper in Frameworks */,
-				F1E6A7C7296B567D006DBCBD /* ApplicationsWrapper in Frameworks */,
+				F1955E5F29C3C42600DFE48A /* NSTask in Frameworks */,
 				F1F4F820296A4EFD0024218E /* ZIPFoundation in Frameworks */,
 				F1B412C5297755D8005555C8 /* Map in Frameworks */,
 				F1F4F827296A50B30024218E /* ACarousel in Frameworks */,
 				F110031E297AC11600C7AA2D /* libwoff2enc.a in Frameworks */,
 				F1D69510296A7550002332C8 /* ArgumentParser in Frameworks */,
+				F1955E5529C3C42600DFE48A /* ApplicationsWrapper in Frameworks */,
 				F1D694EE296A6DEC002332C8 /* Dynamic in Frameworks */,
-				F1E6A7CF296B567D006DBCBD /* FSOperations in Frameworks */,
+				F1955E5D29C3C42600DFE48A /* FSOperations in Frameworks */,
 				F110031F297AC11600C7AA2D /* libwoff2common.a in Frameworks */,
-				F1E6A7CD296B567D006DBCBD /* DiskImagesWrapper in Frameworks */,
 				F110031B297AC10F00C7AA2D /* libwoff2enc.a in Frameworks */,
+				F1955E5B29C3C42600DFE48A /* DiskImagesWrapper in Frameworks */,
 				F110031A297AC10F00C7AA2D /* libwoff2common.a in Frameworks */,
-				F1E6A7CB296B567D006DBCBD /* CompressionWrapper in Frameworks */,
+				F1955E5729C3C42600DFE48A /* AssetCatalogWrapper in Frameworks */,
+				F1955E5929C3C42600DFE48A /* CompressionWrapper in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -540,16 +540,16 @@
 				F1F4F826296A50B30024218E /* ACarousel */,
 				F1D694ED296A6DEC002332C8 /* Dynamic */,
 				F1D6950F296A7550002332C8 /* ArgumentParser */,
-				F1E6A7C6296B567D006DBCBD /* ApplicationsWrapper */,
-				F1E6A7C8296B567D006DBCBD /* AssetCatalogWrapper */,
-				F1E6A7CA296B567D006DBCBD /* CompressionWrapper */,
-				F1E6A7CC296B567D006DBCBD /* DiskImagesWrapper */,
-				F1E6A7CE296B567D006DBCBD /* FSOperations */,
-				F1E6A7D0296B567D006DBCBD /* NSTask */,
-				F1E6A7D2296B567D006DBCBD /* SVGWrapper */,
 				F1E6A7D5296B5742006DBCBD /* Alamofire */,
 				F1E6A7D8296B575C006DBCBD /* SDWebImage */,
 				F1B412C4297755D8005555C8 /* Map */,
+				F1955E5429C3C42600DFE48A /* ApplicationsWrapper */,
+				F1955E5629C3C42600DFE48A /* AssetCatalogWrapper */,
+				F1955E5829C3C42600DFE48A /* CompressionWrapper */,
+				F1955E5A29C3C42600DFE48A /* DiskImagesWrapper */,
+				F1955E5C29C3C42600DFE48A /* FSOperations */,
+				F1955E5E29C3C42600DFE48A /* NSTask */,
+				F1955E6029C3C42600DFE48A /* SVGWrapper */,
 			);
 			productName = TrollBox;
 			productReference = F1F4F6DA296A4A5D0024218E /* TrollBox.app */;
@@ -585,10 +585,10 @@
 				F1F4F825296A50B30024218E /* XCRemoteSwiftPackageReference "ACarousel" */,
 				F1D694EC296A6DEC002332C8 /* XCRemoteSwiftPackageReference "Dynamic" */,
 				F1D6950E296A7550002332C8 /* XCRemoteSwiftPackageReference "swift-argument-parser" */,
-				F1E6A7C5296B567D006DBCBD /* XCRemoteSwiftPackageReference "SantanderWrappers" */,
 				F1E6A7D4296B5742006DBCBD /* XCRemoteSwiftPackageReference "Alamofire" */,
 				F1E6A7D7296B575C006DBCBD /* XCRemoteSwiftPackageReference "SDWebImage" */,
 				F1B412C3297755D8005555C8 /* XCRemoteSwiftPackageReference "Map" */,
+				F1955E5329C3C42600DFE48A /* XCRemoteSwiftPackageReference "PrivateKits" */,
 			);
 			productRefGroup = F1F4F6DB296A4A5D0024218E /* Products */;
 			projectDirPath = "";
@@ -912,6 +912,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		F1955E5329C3C42600DFE48A /* XCRemoteSwiftPackageReference "PrivateKits" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SerenaKit/PrivateKits";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 		F1B412C3297755D8005555C8 /* XCRemoteSwiftPackageReference "Map" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/pauljohanneskraft/Map";
@@ -934,14 +942,6 @@
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 1.0.0;
-			};
-		};
-		F1E6A7C5296B567D006DBCBD /* XCRemoteSwiftPackageReference "SantanderWrappers" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SerenaKit/SantanderWrappers";
-			requirement = {
-				branch = main;
-				kind = branch;
 			};
 		};
 		F1E6A7D4296B5742006DBCBD /* XCRemoteSwiftPackageReference "Alamofire" */ = {
@@ -979,6 +979,41 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		F1955E5429C3C42600DFE48A /* ApplicationsWrapper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F1955E5329C3C42600DFE48A /* XCRemoteSwiftPackageReference "PrivateKits" */;
+			productName = ApplicationsWrapper;
+		};
+		F1955E5629C3C42600DFE48A /* AssetCatalogWrapper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F1955E5329C3C42600DFE48A /* XCRemoteSwiftPackageReference "PrivateKits" */;
+			productName = AssetCatalogWrapper;
+		};
+		F1955E5829C3C42600DFE48A /* CompressionWrapper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F1955E5329C3C42600DFE48A /* XCRemoteSwiftPackageReference "PrivateKits" */;
+			productName = CompressionWrapper;
+		};
+		F1955E5A29C3C42600DFE48A /* DiskImagesWrapper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F1955E5329C3C42600DFE48A /* XCRemoteSwiftPackageReference "PrivateKits" */;
+			productName = DiskImagesWrapper;
+		};
+		F1955E5C29C3C42600DFE48A /* FSOperations */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F1955E5329C3C42600DFE48A /* XCRemoteSwiftPackageReference "PrivateKits" */;
+			productName = FSOperations;
+		};
+		F1955E5E29C3C42600DFE48A /* NSTask */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F1955E5329C3C42600DFE48A /* XCRemoteSwiftPackageReference "PrivateKits" */;
+			productName = NSTask;
+		};
+		F1955E6029C3C42600DFE48A /* SVGWrapper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F1955E5329C3C42600DFE48A /* XCRemoteSwiftPackageReference "PrivateKits" */;
+			productName = SVGWrapper;
+		};
 		F1B412C4297755D8005555C8 /* Map */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = F1B412C3297755D8005555C8 /* XCRemoteSwiftPackageReference "Map" */;
@@ -993,41 +1028,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F1D6950E296A7550002332C8 /* XCRemoteSwiftPackageReference "swift-argument-parser" */;
 			productName = ArgumentParser;
-		};
-		F1E6A7C6296B567D006DBCBD /* ApplicationsWrapper */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F1E6A7C5296B567D006DBCBD /* XCRemoteSwiftPackageReference "SantanderWrappers" */;
-			productName = ApplicationsWrapper;
-		};
-		F1E6A7C8296B567D006DBCBD /* AssetCatalogWrapper */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F1E6A7C5296B567D006DBCBD /* XCRemoteSwiftPackageReference "SantanderWrappers" */;
-			productName = AssetCatalogWrapper;
-		};
-		F1E6A7CA296B567D006DBCBD /* CompressionWrapper */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F1E6A7C5296B567D006DBCBD /* XCRemoteSwiftPackageReference "SantanderWrappers" */;
-			productName = CompressionWrapper;
-		};
-		F1E6A7CC296B567D006DBCBD /* DiskImagesWrapper */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F1E6A7C5296B567D006DBCBD /* XCRemoteSwiftPackageReference "SantanderWrappers" */;
-			productName = DiskImagesWrapper;
-		};
-		F1E6A7CE296B567D006DBCBD /* FSOperations */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F1E6A7C5296B567D006DBCBD /* XCRemoteSwiftPackageReference "SantanderWrappers" */;
-			productName = FSOperations;
-		};
-		F1E6A7D0296B567D006DBCBD /* NSTask */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F1E6A7C5296B567D006DBCBD /* XCRemoteSwiftPackageReference "SantanderWrappers" */;
-			productName = NSTask;
-		};
-		F1E6A7D2296B567D006DBCBD /* SVGWrapper */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F1E6A7C5296B567D006DBCBD /* XCRemoteSwiftPackageReference "SantanderWrappers" */;
-			productName = SVGWrapper;
 		};
 		F1E6A7D5296B5742006DBCBD /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;

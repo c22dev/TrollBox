@@ -37,12 +37,12 @@
       }
     },
     {
-      "identity" : "santanderwrappers",
+      "identity" : "privatekits",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/SerenaKit/SantanderWrappers",
+      "location" : "https://github.com/SerenaKit/PrivateKits",
       "state" : {
         "branch" : "main",
-        "revision" : "78c19b2eeba612b0fb7b13df7ab304062ee22622"
+        "revision" : "4f31b8b9e82e7b04771a716c62e59abe3c7a6701"
       }
     },
     {
