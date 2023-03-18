@@ -130,6 +130,25 @@ extension UIApplication {
             self.present(alert: currentUIAlertController!)
         }
     }
+    
+    func TextFieldAlert(title: String, textFieldPlaceHolder: String, completion: @escaping (String?) -> Void) {
+        let alertController = UIAlertController(title: title, message: nil, preferredStyle: .alert)
+        alertController.addTextField { (textField) in
+            textField.placeholder = textFieldPlaceHolder
+        }
+        let okAction = UIAlertAction(title: "OK", style: .default) { (action) in
+            if let text = alertController.textFields?.first?.text {
+                completion(text)
+            } else {
+                completion(nil)
+            }
+        }
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        alertController.addAction(okAction)
+        alertController.addAction(cancelAction)
+        present(alert: alertController)
+    }
+    
     func change(title: String = "Error", body: String) {
         DispatchQueue.main.async {
             currentUIAlertController?.title = title
@@ -162,4 +181,14 @@ func checkSandbox() -> Bool {
     }
     
     return true
+}
+
+func impactVibrate() {
+    let impact = UIImpactFeedbackGenerator(style: .medium)
+    impact.impactOccurred()
+}
+
+func miniimpactVibrate() {
+    let impact = UIImpactFeedbackGenerator(style: .light)
+    impact.impactOccurred()
 }

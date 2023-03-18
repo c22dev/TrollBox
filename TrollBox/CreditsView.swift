@@ -20,7 +20,7 @@ struct CreditsView: View {
                     LinkCell(imageName: "cisc0disco", url: "https://github.com/cisc0disco", title: "cisc0disco (card changer)")
                     LinkCell(imageName: "haxi0", url: "https://github.com/haxi0", title: "haxi0 (supervising)")
                     LinkCell(imageName: "ginsudev", url: "https://github.com/ginsudev", title: "Ginsudev (exploit)")
-                    LinkCell(imageName: "tamago", url: "https://github.com/straight-tamago", title: "Tamago (no shutter sound)")
+                    LinkCell(imageName: "felipecn", url: "https://github.com/felipecn", title: "felipecn (LocSim Map Touch)")
                     Section{
                         LinkCell(imageName: "CySxL", url: "https://github.com/CySxL", title: "CySxL (helped with iOS 14 issues)")
                         LinkCell(imageName: "Uub", url: "http://discordapp.com/users/530385486301102090", title: "Uub (being cool)")

@@ -22,9 +22,9 @@ struct ContentView: View {
             if issbx == "false" {
             }
             else {
-                AirSpam()
+                LocationSimulationView()
                     .tabItem {
-                        Label("AirSpammer", systemImage: "antenna.radiowaves.left.and.right")
+                        Label("LocSim", systemImage: "mappin")
                     }
             }
             CreditsView()

@@ -88,14 +88,14 @@ struct ToolsView: View {
                     if issbx == "false" {
                     }
                     else {
-                        NavigationLink(destination: LocationSimulationView()) {
+                        NavigationLink(destination: AirSpam()) {
                             HStack {
-                                Image(systemName: "mappin")
+                                Image(systemName: "antenna.radiowaves.left.and.right")
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
                                     .frame(width: 24, height: 24)
                                     .foregroundColor(.primary)
-                                Text("LocSim")
+                                Text("AirSpammer")
                             }
                         }
                     }
