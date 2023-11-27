@@ -15,34 +15,6 @@ struct TrollBoxApp: App {
         WindowGroup {
             ContentView()
                 .onAppear {
-                    var latsandbox = ""
-                    var sbxed = checkSandbox()
-                    if ProcessInfo().operatingSystemVersion.majorVersion != 14 {
-                        if sbxed == true {
-                            // grant r/w access
-                            grant_full_disk_access() { error in
-                                
-                            }
-                            var sbxed = checkSandbox()
-                            if sbxed == false {
-                                var latsandboxede = UserDefaults.standard.string(forKey: "latsandbox")
-                                if latsandboxede != "false" {
-                                    UIApplication.shared.alert(title: "Sandbox is now disabled !", body: "You're now able to use TrollBox on iOS 16.")
-                                }
-                                var latsandboxed = "false"
-                                UserDefaults.standard.set(latsandboxed, forKey: "latsandbox")
-                            }
-                            else if sbxed == true {
-                                let latsandboxed = "true"
-                                UserDefaults.standard.set(latsandboxed, forKey: "latsandbox")
-                                UIApplication.shared.confirmAlert(title: "Sandbox maybe was disabled", body: "The app will now quit. Please open it again", onOK: {exit(0)}, noCancel: false)
-                            }
-                        }
-                    }
-                    else {
-                        var latsandbox = "blank"
-                        UserDefaults.standard.set(latsandbox, forKey: "blank")
-                    }
                     var havee = "unknown"
                     let fileManager = FileManager.default
                     let checkfilepath = "/var/mobile/TrollBox/havee.txt"
@@ -63,7 +35,7 @@ struct TrollBoxApp: App {
                       print("Error reading file: \(error)")
                     }
                     let operatingSystemVersion = ProcessInfo().operatingSystemVersion
-                    if operatingSystemVersion.majorVersion >= 15 && operatingSystemVersion.minorVersion >= 6 &&  latsandbox == "blank" {
+                    if operatingSystemVersion.majorVersion >= 16 && operatingSystemVersion.minorVersion >= 7 &&  latsandbox == "blank" {
                         if havee != "yes" {
                             UIApplication.shared.confirmAlert(title: "You're using iOS \(operatingSystemVersion.majorVersion).\(operatingSystemVersion.minorVersion)", body: "You're probably using palera1n. Please note that TrollBox is not stable on these versions. Do not use Gestures or you may not be able to revert back. If any issue is found, please report it to us.", onOK: {}, noCancel: true)
                             writeIt(contents: "yes", filepath: "/var/mobile/TrollBox/havee.txt")
