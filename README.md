@@ -7,7 +7,7 @@
    </h1>
 </div>
 
-<h6 align="center"> version 0.1 </h6>
+<h6 align="center"> version 0.2 </h6>
 
 ## Features <br/> <br/> &nbsp; &nbsp; Already implemented:
 
