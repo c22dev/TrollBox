@@ -59,7 +59,7 @@
    
    
 ## Requirements
-**For this app to work properly, you need to install it via [TrollStore](https://github.com/opa334/TrollStore) v1.0.9 or newer to access to all features. Regular sideloading works up to iOS 16.1.2 using MacDirtyCow, but you will not be able to access to every tools.**
+**For this app to work properly, you need to install it via [TrollStore](https://github.com/opa334/TrollStore) v2.0.7 or newer to access to all features.**
 
 ## Credits
 - [TrollTools](https://github.com/sourcelocation/TrollTools) 
