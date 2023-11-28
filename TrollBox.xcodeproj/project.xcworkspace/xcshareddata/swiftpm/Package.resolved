@@ -37,15 +37,6 @@
       }
     },
     {
-      "identity" : "privatekits",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/SerenaKit/PrivateKits",
-      "state" : {
-        "branch" : "main",
-        "revision" : "4f31b8b9e82e7b04771a716c62e59abe3c7a6701"
-      }
-    },
-    {
       "identity" : "sdwebimage",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/SDWebImage/SDWebImage.git",

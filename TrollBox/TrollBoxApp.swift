@@ -35,7 +35,7 @@ struct TrollBoxApp: App {
                       print("Error reading file: \(error)")
                     }
                     let operatingSystemVersion = ProcessInfo().operatingSystemVersion
-                    if operatingSystemVersion.majorVersion >= 16 && operatingSystemVersion.minorVersion >= 7 &&  latsandbox == "blank" {
+                    if operatingSystemVersion.majorVersion >= 17 && operatingSystemVersion.minorVersion >= 1 {
                         if havee != "yes" {
                             UIApplication.shared.confirmAlert(title: "You're using iOS \(operatingSystemVersion.majorVersion).\(operatingSystemVersion.minorVersion)", body: "You're probably using palera1n. Please note that TrollBox is not stable on these versions. Do not use Gestures or you may not be able to revert back. If any issue is found, please report it to us.", onOK: {}, noCancel: true)
                             writeIt(contents: "yes", filepath: "/var/mobile/TrollBox/havee.txt")
