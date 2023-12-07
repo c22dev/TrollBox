@@ -1,5 +1,5 @@
 # TrollBox is now canceled, developement is stopped.
-## I'm creating a new app, mooving to something better.
+## I'm creating a new app, moving to something better.
 <div align="center">
    <p>
       <img src="https://i.ibb.co/b5MpwmK/Untitled-modified.png" width=100 alt="TrollBox Logo">
