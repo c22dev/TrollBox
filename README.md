@@ -1,5 +1,6 @@
 # TrollBox is now canceled, developement is stopped.
 ## I'm creating a new app, moving to something better.
+### More detailed information [this gist](https://gist.github.com/c22dev/cdc6c9a81f2bd8a253368376909b5249)
 <div align="center">
    <p>
       <img src="https://i.ibb.co/b5MpwmK/Untitled-modified.png" width=100 alt="TrollBox Logo">
