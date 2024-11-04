@@ -1,7 +1,7 @@
 {
-  "showpopup": "no",
+  "showpopup": "yes",
   "skippable": "yes",
-  "popuptitle": "Hey There",
-  "popupcontent": "how are you ",
-  "nocancel": "false",
+  "popuptitle": "This app is deprecated. Please use Geranium",
+  "popupcontent": "Available on GitHub.",
+  "nocancel": "true",
 }
