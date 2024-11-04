@@ -1,5 +1,5 @@
 # TrollBox is now canceled, developement is stopped.
-## I'm creating a new app, moving to something better.
+## I'm creating a new app, moving to something better. Please use [Geranium](https://github.com/c22dev/Geranium) instead.
 ### More detailed information [this gist](https://gist.github.com/c22dev/cdc6c9a81f2bd8a253368376909b5249)
 <div align="center">
    <p>
