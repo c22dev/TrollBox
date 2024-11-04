@@ -3,5 +3,5 @@
   "skippable": "yes",
   "popuptitle": "This app is deprecated. Please use Geranium",
   "popupcontent": "Available on GitHub.",
-  "nocancel": "true",
+  "nocancel": "false",
 }
