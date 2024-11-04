@@ -1,5 +1,5 @@
 {
-  "showpopup": "yes",
+  "showpopup": "no",
   "skippable": "yes",
   "popuptitle": "This app is deprecated. Please use Geranium",
   "popupcontent": "Available on GitHub.",
